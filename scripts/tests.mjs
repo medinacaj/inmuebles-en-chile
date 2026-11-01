@@ -53,7 +53,7 @@ test('el catálogo y las acciones esenciales funcionan en un DOM simulado', () =
       id, value: ({ufprice:2498,ufvalue:39000,down:20,rate:4.07,years:25}[id] ?? ''),
       innerHTML:'', textContent:'', dataset:{}, isConnected:true,
       classList:{add(){},remove(){},toggle(){},contains(){return false}},
-      focus(){}, scrollIntoView(){}, setAttribute(){}, removeAttribute(){},
+      focus(){}, scrollIntoView(){}, setAttribute(){}, removeAttribute(){}, addEventListener(){},
       getClientRects(){return [1]},querySelector(){return {focus(){}}},
       querySelectorAll(){return []}
     };
@@ -257,3 +257,7 @@ test('la propuesta de publicación es gratuita y requiere revisión editorial', 
  assert.match(toolsPage,/proponer-proyecto\.yml/);
  assert.match(toolsPage,/revis[aó] manualmente/i);
 });
+
+test('el nuevo lenguaje visual dispone de hoja y portada con imagen ambientacional',async()=>{const css=await fs.readFile('assets/css/experience.css','utf8');assert.match(page,/class="hero-photo"/);assert.match(page,/class="hero-panels"/);assert.match(page,/id="menuToggle"/);assert.match(page,/assets\/css\/experience\.css/);assert.match(css,/@media\(max-width:680px\)/);assert.match(css, /prefers-reduced-motion/);assert.match(page,/fotograf[ií]a de ambientaci[oó]n/i)});
+
+test('páginas de apoyo siguen el sistema visual y mantienen sus funcionalidades',async()=>{for(const path of ['guia.html','herramientas.html','informacion.html']){const body=await fs.readFile(path,'utf8');assert.match(body,/class="subpage"/);assert.match(body,/assets\/css\/subpages\.css/)}const style=await fs.readFile('assets/css/subpages.css','utf8');assert.match(style,/prefers-color-scheme:dark/)});

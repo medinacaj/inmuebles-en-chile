@@ -1,0 +1,55 @@
+/* Páginas de apoyo: misma identidad editorial que la portada. */
+:root{
+ --bg:#f8f7f4;--paper:#fffefa;--ink:#18221d;--muted:#57645c;
+ --line:#deded7;--gold:#4b6859;--soft:#edf0e9
+}
+body.subpage{
+ background:var(--bg);color:var(--ink);
+ font-family:Inter,"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+ line-height:1.6;-webkit-font-smoothing:antialiased
+}
+.subpage h1,.subpage h2,.subpage h3{font-family:inherit;line-height:1.1;letter-spacing:-.055em}
+.subpage h1{font-weight:820;font-size:clamp(35px,5vw,60px);line-height:1.04}
+.subpage h2{font-weight:780;letter-spacing:-.045em}
+.subpage header,.subpage .top{background:var(--paper);border-bottom:1px solid var(--line)}
+.subpage header a,.subpage .top a{color:var(--ink);text-decoration:none;font-weight:650}
+.subpage header a:hover,.subpage .top a:hover{text-decoration:underline;text-underline-offset:4px}
+.subpage .brand{font-family:inherit;font-weight:850;font-size:22px;letter-spacing:-.07em}
+.subpage main{padding-top:clamp(36px,5vw,70px)}
+.subpage .lead{max-width:68ch;color:var(--muted);font-size:clamp(15px,1.5vw,18px);line-height:1.7}
+.subpage .kicker,.subpage .eyebrow{font-size:11px;letter-spacing:.15em;font-weight:780;color:var(--gold)}
+.subpage .panel,.subpage .card,.subpage .sources a,.subpage .suggest-project{
+ background:var(--paper);color:var(--ink);border:1px solid var(--line);
+ border-radius:18px;box-shadow:0 7px 28px #14251a0b
+}
+.subpage .note,.subpage .notice{background:var(--soft);border-radius:14px;padding:17px 20px}
+.subpage input,.subpage select,.subpage textarea{
+ border-radius:10px;border:1px solid var(--line);background:var(--paper);
+ color:var(--ink);min-height:45px
+}
+.subpage button,.subpage .suggest-project a{border-radius:999px;min-height:44px;font-weight:690}
+.subpage button:not(.secondary),.subpage .suggest-project a{background:var(--ink);color:var(--bg)}
+.subpage button.secondary{border-color:var(--line);background:var(--paper);color:var(--ink)}
+.subpage :is(a,button,input,select,textarea):focus-visible{outline:3px solid #ab7c3a;outline-offset:3px}
+.subpage .check{line-height:1.5}.subpage .check input{accent-color:var(--gold)}
+.subpage .sources a:hover{border-color:var(--gold);text-decoration:none}
+.subpage footer{border-top:1px solid var(--line);background:transparent;color:var(--muted)}
+.subpage footer a{color:var(--ink)}
+.subpage #result{background:var(--soft);border:1px solid var(--line);border-radius:13px}
+.subpage main>p{max-width:72ch}
+.subpage .grid{gap:22px}
+.subpage .form{gap:13px}
+.subpage .error{color:#a63d31}
+@media(max-width:680px){
+ .subpage header,.subpage .top{position:static}
+ .subpage main{padding-top:30px}
+ .subpage .panel,.subpage .card{padding:20px}
+ .subpage h1{font-size:clamp(36px,9.5vw,54px)}
+}
+@media(prefers-color-scheme:dark){
+ :root{--bg:#101816;--paper:#202b26;--ink:#f3f5f1;--muted:#becac2;
+ --line:#3b5046;--gold:#c4ddc6;--soft:#293a30}
+ .subpage .panel,.subpage .card,.subpage .sources a,.subpage .suggest-project{box-shadow:none}
+ .subpage button:not(.secondary),.subpage .suggest-project a{color:#17211b}
+ .subpage .error{color:#ffaca0}
+}

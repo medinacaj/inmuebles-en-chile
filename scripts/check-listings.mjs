@@ -41,7 +41,9 @@ export function classifyResponse(status, html = '') {
     /esta propiedad ya no se encuentra disponible/i,
     /esta publicaci[oó]n ya no est[aá] disponible/i,
     /el aviso ya no se encuentra disponible/i,
-    /este inmueble ya no est[aá] disponible/i
+    /este inmueble ya no est[aá] disponible/i,
+    /esta propiedad no se encuentra/i,
+    /el enlace no arroja ninguna propiedad/i
   ];
   if (withdrawal.some(pattern => pattern.test(visible)))
     return { status: 'unavailable', reason: 'Aviso explícito de baja en el sitio de origen' };

@@ -5,11 +5,11 @@
 ## Estado actual
 
 - Catálogo de diez referencias externas de cinco regiones con identificador interno, precio anunciado en origen y enlace directo; **no se garantiza disponibilidad**. Incluye proyectos de CFL Inmobiliaria y una parcelación anunciada por Inmobiliaria Patagonia.
-- Portada con exploración por región y seis referencias destacadas; el catálogo filtra por región, tipo, operación y texto.
+- Portada con buscador directo por proyecto/comuna y región, exploración geográfica y seis referencias destacadas; el catálogo también filtra por precio inicial anunciado, tipo, operación y texto.
 - Las dos referencias originales utilizan fotografías ilustrativas. Las otras ocho tienen **ilustraciones SVG originales y diferenciadas**: ninguna representa la propiedad real. Todas se etiquetan como referenciales y enlazan a la ficha original para consultar fotografías oficiales.
-- Las tarjetas incorporan un acceso principal a las fotos y detalles en origen, corazón discreto para favoritos y un menú de opciones para comparar o compartir.
+- Las tarjetas incorporan un acceso principal a las fotos y detalles en origen, corazón discreto para favoritos y un menú con ficha informativa ampliada, procedencia, estado del enlace, comparación y compartir.
 - Enlaces al portal de origen desde las imágenes y los títulos.
-- Filtros por texto, operación, tipo y región; ordenamiento por precio y superficie.
+- Filtros por texto, operación, tipo, región y presupuesto inicial en UF; búsqueda tolerante a acentos y ordenamiento por precio y superficie.
 - Favoritos y comparación de hasta tres inmuebles, guardados **solo en el navegador**.
 - Mercado Inteligente con indicadores orientativos y calculadora hipotecaria.
 - Selección editorial de enlaces de actualidad, sin sincronización automática.
@@ -26,6 +26,7 @@ La tarea [Revisar vigencia de publicaciones](.github/workflows/verificar-publica
 
 - `unavailable`: solo cuando el servidor responde 404/410 o la página muestra un aviso explícito de baja. Se oculta del catálogo.
 - `unknown`: no se pudo comprobar disponibilidad; una respuesta HTTP 200 **no** significa oferta disponible.
+- En la vista pública se indica qué enlaces respondieron a la comprobación y cuáles bloquearon el acceso; los estados de disponibilidad siguen sin confirmarse.
 - Las bajas confirmadas se conservan si después la fuente se vuelve inaccesible.
 - Los falsos positivos, bloqueos, JavaScript de terceros y cambios de diseño aún exigen revisión manual.
 
@@ -41,14 +42,14 @@ Ejecutar pruebas locales con Node.js 22 o superior:
 node --test scripts/tests.mjs
 ```
 
-[Calidad del sitio](.github/workflows/validar-sitio.yml) ejecuta estas pruebas automáticamente ante cada cambio a `main` y en solicitudes de integración. [QA visual responsivo](.github/workflows/qa-responsive.yml) prueba Chromium en seis tamaños y dos temas, además de los enlaces profundos, la guía y la herramienta de fichas.
+[Calidad del sitio](.github/workflows/validar-sitio.yml) ejecuta estas pruebas automáticamente ante cada cambio a `main` y en solicitudes de integración. [QA visual responsivo](.github/workflows/qa-responsive.yml) prueba Chromium en seis tamaños y dos temas; también incluye controles de Firefox y WebKit en móvil y escritorio y valida los enlaces profundos, fichas, el buscador de portada, la guía y la herramienta de anunciantes.
 
 ### Requisitos antes de producción comercial
 
 1. Catálogo auténtico con fuentes autorizadas, imágenes originales licenciadas y verificación de vigencia.
 2. Migrar datos a almacenamiento central y crear administración autenticada, permisos y auditoría.
 3. Revisar normativa, responsabilidad editorial, privacidad y tratamiento de datos por asesoría competente.
-4. Probar accesibilidad WCAG 2.2 AA, navegación, contrastes y vistas de dispositivos en navegadores reales.
+4. Completar auditoría manual WCAG 2.2 AA y validación en Safari iOS, Chrome Android y dispositivos físicos; WebKit automatizado no equivale a Safari en un iPhone real.
 5. Configurar monitorización y analítica conforme a privacidad, y revisar indicadores de rendimiento.
 6. Plan SEO con URLs propias, canonical, sitemap y datos estructurados **solo cuando el contenido sea fiable**.
 

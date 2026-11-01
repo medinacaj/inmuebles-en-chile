@@ -6,7 +6,8 @@
 
 - Catálogo de diez referencias externas de cinco regiones con identificador interno, precio anunciado en origen y enlace directo; **no se garantiza disponibilidad**. Incluye proyectos de CFL Inmobiliaria y una parcelación anunciada por Inmobiliaria Patagonia.
 - Portada con exploración por región y seis referencias destacadas; el catálogo filtra por región, tipo, operación y texto.
-- Las dos referencias originales mantienen imágenes locales **ilustrativas** (no son fotos de los inmuebles enlazados). Las nuevas referencias no copian imágenes de terceros.
+- Las dos referencias originales utilizan fotografías ilustrativas. Las otras ocho tienen **ilustraciones SVG originales y diferenciadas**: ninguna representa la propiedad real. Todas se etiquetan como referenciales y enlazan a la ficha original para consultar fotografías oficiales.
+- Las tarjetas incorporan un acceso principal a las fotos y detalles en origen, corazón discreto para favoritos y un menú de opciones para comparar o compartir.
 - Enlaces al portal de origen desde las imágenes y los títulos.
 - Filtros por texto, operación, tipo y región; ordenamiento por precio y superficie.
 - Favoritos y comparación de hasta tres inmuebles, guardados **solo en el navegador**.

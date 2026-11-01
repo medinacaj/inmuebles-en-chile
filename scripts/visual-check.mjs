@@ -17,7 +17,7 @@ try {
    if (theme==='dark') await page.locator('#theme').click();
    assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('dark')),theme==='dark');
    await page.getByRole('button',{name:'Propiedades',exact:true}).click();
-   assert.equal(await page.locator('.property-card').count(),2);
+   assert.equal(await page.locator('#propertyGrid .property-card').count(),2);
    await page.locator('.listing-tools button').first().click();
    await page.getByRole('button',{name:/Favoritos/}).click();
    assert.equal(await page.getByRole('dialog').isVisible(),true);

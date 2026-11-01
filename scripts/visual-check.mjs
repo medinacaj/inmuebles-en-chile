@@ -21,6 +21,9 @@ try {
    assert.ok(await editorialHero.evaluate(img=>img.naturalWidth>=500),'Debe cargar la fotografía de portada');
    assert.equal(await page.locator('.hero-picture source').count(),1,'La foto móvil debe tener su fuente propia');
    assert.ok(await page.locator('.hero-copy h1').isVisible(),'El titular editorial debe estar visible');
+   assert.ok(await page.locator('#actualidad-inicio').isVisible(),'Actualidad debe estar visible en Inicio');
+   assert.ok(await page.locator('#homeNews .news').count()>0,'Inicio debe mostrar titulares inmobiliarios');
+   assert.equal(await page.evaluate(()=>{const a=document.querySelector('#actualidad-inicio'),b=document.querySelector('.region-discovery');return Boolean(a&&b&&a.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING)}),true,'Actualidad debe aparecer antes de explorar regiones');
    assert.ok(await page.locator('.hero-panels .hero-panel').count()>=3);
    if(width<=680){assert.equal(await page.locator('#menuToggle').isVisible(),true);assert.equal(await page.locator('#nav').isVisible(),false)}
    if (theme==='dark') await page.locator('#theme').click();
@@ -78,6 +81,9 @@ try {
  await newsPage.route('**/data/news-feed.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(mockNews)}));
  await newsPage.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  assert.equal(await newsPage.locator('#homeNews .news').count(),2,'La portada debe publicar titulares RSS');
+ assert.ok(await newsPage.locator('#actualidad-inicio').isVisible());
+ assert.match(await newsPage.locator('#homeNewsStatus').innerText(),/Sincronización RSS/);
+ assert.equal(await newsPage.locator('#actualidad-inicio .home-news-more').count(),1);
  await navTo(newsPage,'Actualidad');
  assert.equal(await newsPage.locator('#newsGrid .news').count(),2);
  assert.match(await newsPage.locator('#newsUpdate').innerText(),/Sincronización RSS/);

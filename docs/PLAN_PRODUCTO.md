@@ -4,8 +4,8 @@
 - Diseño adaptable a móvil, tablet y escritorio mediante CSS responsive.
 - Referencias externas con ID interno, fuente, fecha y disponibilidad no confirmada.
 - Favoritos y comparación local (sin cuentas), filtros y ordenamiento.
-- Trabajo programado de GitHub Actions que revisa diariamente URLs, escribe `data/listing-status.json` y permite ocultar publicaciones con señales explícitas de baja.
-- Página pública sin acceso visible al administrador local de demostración.
+- GitHub Actions comprueba diariamente las URLs y al cambiar el catálogo, escribe `data/listing-status.json` y oculta publicaciones con señales explícitas de baja. El primer intento recibió HTTP 403 en ambas fuentes, sin poder comprobar su disponibilidad.
+- El administrador ficticio y los datos DEMO fueron retirados del HTML público; falta construir un backend seguro.
 - Las fotografías locales son **ilustrativas**, no imágenes auténticas de las propiedades.
 - Se mantiene `noindex,nofollow` hasta contar con contenido verificable y política editorial operativa.
 
@@ -13,9 +13,14 @@
 1. El chequeo automatizado puede encontrar bloqueos, páginas dinámicas, captchas y falsos positivos. Estado `unknown` **no** significa disponible.
 2. No existe API autorizada de disponibilidad de unidades ni confirmación de agentes. No publicar sello "disponible" solo por HTTP 200.
 3. No hay permisos documentados para descargar fotos auténticas; no copiar fotos de terceros sin licencia.
-4. El administrador antiguo en localStorage **no** es seguro y no publica cambios reales. Está oculto en la interfaz pública; se debe retirar completamente al migrar a un backend.
+4. El administrador antiguo en localStorage **no** es seguro y no publica cambios reales. Fue retirado del HTML público. Una administración real requiere autenticación y autorización del servidor.
 5. El catálogo nacional requiere fuentes y acuerdos de publicación; no se debe inventar inventario.
 6. Las noticias son una selección estática. La automatización necesita fuentes RSS/API autorizadas, control editorial, fechas y deduplicación.
+
+## Mejoras de calidad ya añadidas
+- Pruebas unitarias y de interacción con Node.js (`node --test scripts/tests.mjs`) ejecutadas en CI.
+- Gestión de foco y teclado en diálogos, aviso de privacidad y mejoras de contraste.
+- La lectura HTTP 403 de los portales inmobiliarios se considera estado desconocido, no disponible.
 
 ## Siguientes entregables antes de producción
 - Migración de catálogo a PostgreSQL con tablas `properties`, `listings`, `sources`, `verification_events`, `media_licenses` y `audit_logs`.

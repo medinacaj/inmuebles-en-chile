@@ -23,6 +23,7 @@ try {
    await visibleImage.scrollIntoViewIfNeeded();
    assert.equal(await visibleImage.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),true,'Debe cargar la imagen de la ficha');
    await page.locator('#propertyGrid .card-fav').first().click();
+   assert.equal(await page.locator('#propertyGrid .card-fav').first().getAttribute('aria-pressed'),'true');
    assert.equal(await page.locator('#propertyGrid .photo-link.has-photo img').count(),await page.locator('#propertyGrid .property-card').count());
    assert.ok(await page.locator('#propertyGrid .card-options').count()>=1);
    await page.locator('#propertyGrid .card-options').first().click();
@@ -52,13 +53,20 @@ try {
  assert.equal(await sourceCards.locator('.card-options').count(),1);
  await sourceCards.locator('.card-options').first().click();
  assert.equal(await page.getByRole('dialog').isVisible(),true);
+ await page.evaluate(()=>Object.defineProperty(navigator,'share',{configurable:true,value:async data=>{window.__shareData=data;}}));
  await page.getByRole('button',{name:'Compartir enlace'}).click();
  assert.equal(await page.getByRole('dialog').isVisible(),false);
+ assert.match(await page.evaluate(()=>window.__shareData?.url||''),/IEC-PUB-2026-000001$/);
  await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  assert.ok((await page.locator('#regionQuick .region-button').count())>=5);
  await page.locator('#regionQuick .region-button[data-region="O\'Higgins"]').click();
  assert.equal(await page.locator('#region').inputValue(),"O'Higgins");
  assert.ok((await page.locator('#propertyGrid .property-card').count())>=2);
+ await page.locator('#budget').selectOption('3000');
+ assert.equal(await page.locator('#propertyGrid .property-card').count(),0);
+ await page.getByRole('button',{name:'Limpiar',exact:true}).click();
+ await page.locator('#search').fill('penalolen');
+ assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
  await page.goto('http://127.0.0.1:8765/guia.html',{waitUntil:'domcontentloaded'});
  assert.equal(await page.locator('#checks input[type="checkbox"]').count(),6);
  await page.locator('#checks input[type="checkbox"]').first().check();

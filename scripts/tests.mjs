@@ -85,3 +85,24 @@ test('el catálogo y las acciones esenciales funcionan en un DOM simulado', () =
   app.showCompare();
   assert.match(getElementById('modalContent').innerHTML,/UF\/m²/);
 });
+
+test('contraste mínimo de tokens tipográficos prioritarios', () => {
+ function luminance(hex) {
+   const color=hex.replace('#','');
+   const rgb=(color.length===3?color.split('').map(x=>x+x):color.match(/../g)).map(x=>parseInt(x,16)/255);
+   const linear=rgb.map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);
+   return .2126*linear[0]+.7152*linear[1]+.0722*linear[2];
+ }
+ function contrast(fg,bg) {
+   const a=luminance(fg),b=luminance(bg);
+   return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+ }
+ const targets=[
+   ['#626e74','#f7f6f3'],['#626e74','#ffffff'],
+   ['#88652d','#f0eee8'],['#d6af6d','#263236'],
+   ['#b0babd','#101719']
+ ];
+ for (const [foreground,background] of targets)
+   assert.ok(contrast(foreground,background)>=4.5,
+      'Contraste insuficiente '+foreground+' sobre '+background);
+});

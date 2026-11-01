@@ -46,6 +46,14 @@ SOURCES = (
         "filter": True,
     },
     {
+        "id": "la-tercera",
+        "name": "La Tercera",
+        "feed": "https://www.latercera.com/arcio/rss/",
+        "hosts": ("latercera.com",),
+        "category": "Mercado",
+        "filter": True,
+    },
+    {
         "id": "sii-noticias",
         "name": "Servicio de Impuestos Internos",
         "feed": "https://www.sii.cl/pagina/actualizada/noticias/rss/siiall_rss.xml",

@@ -46,6 +46,14 @@ SOURCES = (
         "filter": True,
     },
     {
+        "id": "diario-inmobiliario",
+        "name": "El Diario Inmobiliario",
+        "feed": "https://eldiarioinmobiliario.cl/feed/",
+        "hosts": ("eldiarioinmobiliario.cl",),
+        "category": "Mercado",
+        "filter": True,
+    },
+    {
         "id": "la-tercera",
         "name": "La Tercera",
         "feed": "https://www.latercera.com/arcio/rss/",

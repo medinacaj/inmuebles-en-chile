@@ -23,7 +23,7 @@ jobs:
           curl --fail --location --retry 3 --max-time 45 --silent --show-error "https://images.unsplash.com/photo-1516069429726-51d80d545cbf?auto=format&fit=crop&w=960&q=72&fm=jpg" --output "assets/photos/tres-pascualas.jpg"
           curl --fail --location --retry 3 --max-time 45 --silent --show-error "https://images.unsplash.com/photo-1768162485696-b67b380571a4?auto=format&fit=crop&w=960&q=72&fm=jpg" --output "assets/photos/mirador-oceanico.jpg"
           # Fotografía editorial de portada, separada de las fichas de inmuebles.
-          curl --fail --location --retry 3 --max-time 45 --silent --show-error "https://images.unsplash.com/photo-1776222075410-5acc108845c8?auto=format&fit=crop&w=1850&q=80&fm=webp" --output "assets/photos/hero-editorial.webp"
+          curl --fail --location --retry 3 --max-time 45 --silent --show-error "https://images.unsplash.com/photo-1776222075410-5acc108845c8?auto=format&fit=crop&w=1650&q=68&fm=webp" --output "assets/photos/hero-editorial.webp"
           curl --fail --location --retry 3 --max-time 45 --silent --show-error "https://images.unsplash.com/photo-1776222075410-5acc108845c8?auto=format&fit=crop&w=840&q=76&fm=webp" --output "assets/photos/hero-editorial-mobile.webp"
           file assets/photos/*.jpg assets/photos/*.webp
           test "$(wc -c < assets/photos/hero-editorial.webp)" -gt 12000

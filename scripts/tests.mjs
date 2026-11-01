@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { extractCatalog, classifyResponse, preserveConfirmedWithdrawal, isAllowedSourceUrl, inspectSource, readHtmlResponse } from './check-listings.mjs';
+import { buildReviewSummary } from './audit-status.mjs';
 
 const page = await fs.readFile('index.html', 'utf8');
 const catalog = extractCatalog(page);
@@ -215,4 +216,33 @@ test('descargas grandes o no HTML no provocan carga ilimitada', async () => {
  assert.match(html, /válido/);
  await assert.rejects(() => readHtmlResponse(new Response('archivo binario',{headers:{'content-type':'image/png'}})),/HTML/);
  await assert.rejects(() => readHtmlResponse(new Response('x'.repeat(200),{headers:{'content-type':'text/html'}}),100),/límite/);
+});
+
+
+test('el informe operativo identifica bloqueos, bajas, ausencias y caducidad', () => {
+ const start = Date.parse('2026-11-01T12:00:00Z');
+ const report = {
+   checkedAt: '2026-11-01T12:00:00Z',
+   listings: [
+     {id:catalog[0].publicationId,status:'unknown',httpStatus:200,reason:'Accesible'},
+     {id:catalog[1].publicationId,status:'unknown',httpStatus:403,reason:'Bloqueado'},
+     {id:catalog[2].publicationId,status:'unavailable',httpStatus:404,reason:'Retirado'}
+   ]
+ };
+ const {counts,stale,markdown} = buildReviewSummary(catalog,report,start);
+ assert.equal(counts.accessible,1);
+ assert.equal(counts.restricted,1);
+ assert.equal(counts.gone,1);
+ assert.equal(counts.missing,catalog.length-3);
+ assert.equal(stale,false);
+ assert.match(markdown,/NO disponibilidad confirmada/);
+ assert.equal(buildReviewSummary(catalog,report,start+9*86400000).stale,true);
+ const duplicado={...report,listings:[...report.listings,report.listings[0]]};
+ assert.throws(()=>buildReviewSummary(catalog,duplicado),/duplicado/);
+});
+test('el formulario de incidencia no solicita datos sensibles de usuarios', async () => {
+ const template=await fs.readFile('.github/ISSUE_TEMPLATE/reporte-referencia.yml','utf8');
+ assert.match(template,/No incluyas RUT/);
+ assert.match(template,/Identificador de la publicación/);
+ assert.doesNotMatch(template,/required: true[\s\S]*RUT|teléfono obligatorio/i);
 });

@@ -89,8 +89,7 @@ async function loadListingStatus(){try{const res=await fetch('data/listing-statu
  const url=esc(p.url),id=Number(p.id);
  const saved=favorites.includes(id);
  const hasImage=!!p.image;
- const review=listingStatuses.get(p.publicationId);
- const sourceLabel=review?.httpStatus===403?'Origen con acceso restringido':'Disponibilidad por confirmar';
+ // Estado completo disponible en la comprobación del catálogo; no se presume vigencia.
  const illustration=p.imageKind==='editorial_illustration';
  const picture=hasImage?'<img src="'+esc(p.image)+'" width="960" height="560" alt="" loading="lazy" decoding="async">':'';
  const photoLabel=illustration?'Ilustración referencial':'Imagen ilustrativa';
@@ -110,9 +109,9 @@ async function loadListingStatus(){try{const res=await fetch('data/listing-statu
   '<h3><a class="property-title" href="'+url+'" target="_blank" rel="noopener noreferrer">'+esc(p.title)+'</a></h3>'+
   '<p class="card-location">'+attrs.map(esc).join(' · ')+'</p>'+
   '<div class="card-price"><strong>'+esc(p.pricePrefix||'UF')+' '+Number(p.price).toLocaleString('es-CL')+'</strong><small>Precio de referencia</small></div>'+
-  '<div class="card-actions"><a class="card-visit" href="'+url+'" target="_blank" rel="noopener noreferrer">Ver proyecto <span aria-hidden="true">↗</span></a>'+
+  '<div class="card-actions"><a class="card-visit" href="'+url+'" target="_blank" rel="noopener noreferrer">Ver fotos y detalles <span aria-hidden="true">↗</span></a>'+
    '<button type="button" class="card-options" onclick="openCardActions('+id+')" aria-label="Más opciones para '+esc(p.title)+'" title="Comparar o compartir">···</button></div>'+
-  '<div class="card-metadata"><span>'+esc(p.publicationId)+'</span><span>'+esc(sourceLabel)+'</span></div>'+
+  '<div class="card-metadata"><span>'+esc(p.publicationId)+'</span><span>Consultada: '+esc(p.checkedOn)+'</span></div>'+
   '</div></article>';
 }
 function openCardActions(id){

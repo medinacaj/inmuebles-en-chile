@@ -1,0 +1,58 @@
+name: Autoalimentación editorial RSS
+
+on:
+  schedule:
+    - cron: '17 10,18 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/ingest-news.py'
+      - '.github/workflows/auto-noticias.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-noticias
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Descargar la versión actual
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pruebas del recolector
+        run: python -m unittest discover -s scripts -p 'test_news.py' -v
+      - name: Actualizar titulares y guardar si cambian
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for intento in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/ingest-news.py
+            git add data/news-feed.json
+            if git diff --cached --quiet; then
+              echo "Noticias sin cambios"
+              exit 0
+            fi
+            git commit -m "data: sincronizar titulares RSS de fuentes inmobiliarias"
+            if git push origin HEAD:main; then
+              echo "Titulares actualizados y publicados en el repositorio"
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "No fue posible publicar tras tres intentos"
+          exit 1

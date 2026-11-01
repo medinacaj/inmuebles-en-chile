@@ -261,3 +261,20 @@ test('la propuesta de publicación es gratuita y requiere revisión editorial', 
 test('el nuevo lenguaje visual dispone de hoja y portada con imagen ambientacional',async()=>{const css=await fs.readFile('assets/css/experience.css','utf8');assert.match(page,/class="hero-photo"/);assert.match(page,/class="hero-panels"/);assert.match(page,/id="menuToggle"/);assert.match(page,/assets\/css\/experience\.css/);assert.match(css,/@media\(max-width:680px\)/);assert.match(css, /prefers-reduced-motion/);assert.match(page,/fotograf[ií]a de ambientaci[oó]n/i)});
 
 test('páginas de apoyo siguen el sistema visual y mantienen sus funcionalidades',async()=>{for(const path of ['guia.html','herramientas.html','informacion.html']){const body=await fs.readFile(path,'utf8');assert.match(body,/class="subpage"/);assert.match(body,/assets\/css\/subpages\.css/)}const style=await fs.readFile('assets/css/subpages.css','utf8');assert.match(style,/prefers-color-scheme:dark/)});
+
+
+test('Inicio prioriza inmuebles después de un carrusel RSS con imágenes ilustrativas', async()=>{
+ const css=await fs.readFile('assets/css/experience.css','utf8');
+ assert.ok(page.indexOf('id="homeNews"')<page.indexOf('id="featured"'));
+ assert.ok(page.indexOf('id="featured"')<page.indexOf('id="regionQuick"'));
+ assert.match(page,/id="homeNewsPrev"/);
+ assert.match(page,/id="homeNewsNext"/);
+ assert.match(page,/NEWS\.slice\(0,10\)\.map\(homeNewsCard\)/);
+ assert.match(page,/news-image-note/);
+ assert.match(css,/scroll-snap-type:x mandatory/);
+ assert.match(css,/height:clamp\(510px,67svh,600px\)/);
+ for(const name of ['mercado','vivienda','financiamiento','normativa']){
+  const art=await fs.readFile('assets/illustrations/news-'+name+'.svg','utf8');
+  assert.match(art,/<svg/);
+ }
+});

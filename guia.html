@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Guía práctica para comprobar una publicación inmobiliaria en Chile: fuentes, antecedentes, visitas y señales de riesgo.">
+<title>Guía para evaluar un inmueble | Inmuebles en Chile</title>
+<style>
+:root{--bg:#f7f6f3;--paper:#fff;--ink:#192329;--muted:#626e74;--line:#dcdedb;--gold:#88652d;--soft:#f0eee8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}.top{border-bottom:1px solid var(--line);background:var(--paper)}.top .wrap{display:flex;gap:16px;justify-content:space-between;align-items:center;padding:15px 20px}.brand{font-family:Georgia,serif;font-weight:bold;font-size:21px;text-decoration:none}
+main{padding:35px 0 65px}h1,h2{font-family:Georgia,serif;line-height:1.2}h1{font-size:clamp(34px,6vw,52px);margin:12px 0 18px}h2{font-size:26px;margin:30px 0 14px}.kicker{font-size:12px;text-transform:uppercase;color:var(--gold);letter-spacing:1.5px;font-weight:700}.lead{font-size:18px;color:var(--muted);max-width:65ch}
+.notice{padding:16px 18px;background:var(--soft);border-radius:12px;margin:20px 0}.card{border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:18px;margin:13px 0}.check{display:flex;align-items:flex-start;gap:12px;cursor:pointer}.check input{width:20px;height:20px;flex:0 0 20px;margin-top:4px;accent-color:var(--gold)}.check strong{display:block}.check span span{display:block;font-size:14px;color:var(--muted);margin-top:3px}
+.sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.sources a{display:block;text-decoration:none;border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:16px}.sources a:hover{text-decoration:underline;border-color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:25px 0;font-size:13px;color:var(--muted)}
+button{border:1px solid var(--line);color:var(--ink);background:var(--paper);border-radius:8px;padding:10px 14px;cursor:pointer;min-height:44px}
+@media(max-width:600px){.sources{grid-template-columns:1fr}.top .wrap{flex-direction:column;align-items:flex-start;gap:7px}main{padding-top:25px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(prefers-color-scheme:dark){:root{--bg:#101719;--paper:#1b2529;--ink:#f1f0e9;--muted:#bac4c7;--line:#344145;--gold:#d6af6d;--soft:#263236}}
+</style></head>
+<body><header class="top"><div class="wrap"><a class="brand" href="./">INMUEBLES EN CHILE</a><a href="./">← Volver al portal</a></div></header>
+<main class="wrap">
+<div class="kicker">Herramientas para decidir</div><h1>Antes de contactar, comprueba.</h1>
+<p class="lead">Una ficha atractiva no basta para saber si una propiedad sigue publicada, si su precio está vigente o si la persona que la ofrece está autorizada. Utiliza esta lista como orientación.</p>
+<div class="notice"><strong>Importante:</strong> este recurso no es una certificación inmobiliaria ni reemplaza la revisión de títulos por un profesional competente. Los datos de los portales externos pueden cambiar.</div>
+<h2>Lista de comprobación</h2><p id="progress" aria-live="polite">0 de 6 puntos revisados en esta sesión.</p>
+<div id="checks">
+<section class="card"><label class="check"><input type="checkbox"><span><strong>1. La publicación sigue disponible</strong><span>Abre la ficha original y confirma con el anunciante que la unidad concreta sigue en oferta y que el precio es actual.</span></span></label></section>
+<section class="card"><label class="check"><input type="checkbox"><span><strong>2. Identificaste al anunciante</strong><span>Solicita nombre y datos profesionales, y verifica su relación con el inmueble antes de entregar información sensible.</span></span></label></section>
+<section class="card"><label class="check"><input type="checkbox"><span><strong>3. Comprendiste los costos reales</strong><span>Confirma precio, gastos comunes, contribuciones, gastos operacionales y condiciones del financiamiento cuando correspondan.</span></span></label></section>
+<section class="card"><label class="check"><input type="checkbox"><span><strong>4. Revisaste los antecedentes de dominio</strong><span>Si se trata de una compraventa, solicita los antecedentes pertinentes del Conservador de Bienes Raíces competente y consulta su actualidad.</span></span></label></section>
+<section class="card"><label class="check"><input type="checkbox"><span><strong>5. Revisaste gravámenes y prohibiciones</strong><span>Consulta los certificados que correspondan a la operación y pide asesoría especializada para interpretar sus efectos.</span></span></label></section>
+<section class="card"><label class="check"><input type="checkbox"><span><strong>6. Inspeccionaste antes de comprometer dinero</strong><span>Verifica ubicación, superficie, estado de conservación, características y forma segura de formalizar cualquier reserva o promesa.</span></span></label></section>
+</div>
+<button type="button" id="reset">Limpiar lista</button>
+<h2>Consultar fuentes oficiales</h2>
+<div class="sources">
+<a href="https://www.chileatiende.gob.cl/fichas/457-certificado-de-gravamenes-y-prohibiciones-de-una-propiedad-gp" target="_blank" rel="noopener noreferrer"><strong>ChileAtiende · Gravámenes y prohibiciones ↗</strong><span style="display:block;color:var(--muted);font-size:13px">Información sobre los certificados y la tramitación.</span></a>
+<a href="https://conservador.cl/portal/copia_dominio_vigente" target="_blank" rel="noopener noreferrer"><strong>Conservador de Santiago · Dominio vigente ↗</strong><span style="display:block;color:var(--muted);font-size:13px">Consulta el Conservador que corresponda a la ubicación del inmueble.</span></a>
+</div>
+<h2>¿Para corredores de propiedades?</h2>
+<p>Una ficha compartible que distingue claramente la fuente, el identificador y la disponibilidad puede ayudar a informar al cliente. A futuro, el portal podría ofrecer perfiles profesionales, gestión de inventario y sincronización autorizada, sin cobrar por un supuesto certificado de disponibilidad.</p>
+</main><footer><div class="wrap">Inmuebles en Chile · Información orientativa · <a href="informacion.html">Información y privacidad</a></div></footer>
+<script>
+const checks=[...document.querySelectorAll('#checks input[type="checkbox"]')];
+const progress=document.getElementById('progress');
+function update(){progress.textContent=checks.filter(el=>el.checked).length+' de '+checks.length+' puntos revisados en esta sesión.'}
+checks.forEach(box=>box.addEventListener('change',update));
+document.getElementById('reset').addEventListener('click',()=>{checks.forEach(box=>box.checked=false);update()});
+</script>
+</body></html>

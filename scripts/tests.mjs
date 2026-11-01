@@ -115,6 +115,28 @@ test('hay nuevas regiones con fichas directas y atributos no inventados',()=>{
  assert.ok(catalog.some(p=>p.city==="Ancud"&&p.source==="Inmobiliaria Patagonia"));
  for(const p of catalog.filter(x=>x.source==="CFL Inmobiliaria")){
    assert.equal(p.area,null,'No asignar superficies ficticias a proyectos');
-   assert.equal(p.image,null,'No copiar fotografías sin permiso');
+   assert.match(p.image,/^assets\/illustrations\/[a-z-]+\.svg$/,'Usar ilustraciones originales locales');
+   assert.equal(p.imageKind,'editorial_illustration');
+   assert.equal(p.imageIsReference,true,'No presentar ilustraciones como fotos reales');
  }
+});
+
+test('todas las imágenes del catálogo tienen un recurso local',async()=>{
+ for(const p of catalog){
+   assert.ok(p.image,'No dejar fichas sin imagen');
+   const image=await fs.readFile(p.image);
+   assert.ok(image.byteLength>500,'Imagen vacía o no encontrada: '+p.image);
+   if(p.image.endsWith('.svg')){
+     const content=image.toString('utf8');
+     assert.match(content,/<svg\b/);
+     assert.match(content,/<\/svg>/);
+     assert.match(content,/Ilustraci[oó]n editorial referencial/);
+   }
+ }
+});
+test('las acciones compactas son accesibles',()=>{
+ assert.match(page,/class="card-fav/);
+ assert.match(page,/card-options/);
+ assert.match(page,/aria-pressed/);
+ assert.match(page,/function openCardActions\(/);
 });

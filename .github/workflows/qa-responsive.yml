@@ -1,0 +1,31 @@
+name: QA visual responsivo
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'scripts/visual-check.mjs'
+      - '.github/workflows/qa-responsive.yml'
+permissions:
+  contents: read
+concurrency:
+  group: qa-responsive
+  cancel-in-progress: true
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar navegador para pruebas (solo CI)
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Servir sitio localmente
+        run: python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/inmuebles-site.log 2>&1 &
+      - name: Probar navegación y desbordamientos en 12 escenarios
+        run: node scripts/visual-check.mjs

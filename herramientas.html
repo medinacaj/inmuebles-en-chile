@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Herramienta gratuita para preparar fichas inmobiliarias descriptivas y compartirlas, sin crear anuncios ni almacenar información en el portal.">
+<title>Herramientas para corredores | Inmuebles en Chile</title>
+<style>
+:root{--bg:#f7f6f3;--paper:#fff;--ink:#192329;--muted:#626e74;--line:#dedfdb;--gold:#88652d;--soft:#f0eee8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-underline-offset:3px}.wrap{max-width:1050px;margin:auto;padding:0 20px}
+header{padding:17px 0;border-bottom:1px solid var(--line);background:var(--paper)}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font:700 21px Georgia,serif;text-decoration:none}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold);font-weight:800}
+h1,h2{font-family:Georgia,serif;line-height:1.17}h1{font-size:clamp(32px,6vw,49px);margin:13px 0}h2{font-size:26px}main{padding:35px 0 50px}.lead{color:var(--muted);max-width:64ch}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:22px;align-items:start}.panel{background:var(--paper);padding:24px;border:1px solid var(--line);border-radius:15px}
+.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:650}.full{grid-column:1/-1}
+input,select,textarea{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:12px 11px;border-radius:8px;font:inherit;min-width:0}
+textarea{resize:vertical;min-height:100px}#result{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:18px;border-radius:10px;min-height:160px;font-size:14px}
+button{border:0;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:8px;cursor:pointer;min-height:44px;font:600 14px system-ui}
+button.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}button:disabled{opacity:.45;cursor:not-allowed}
+.actions{display:flex;gap:9px;flex-wrap:wrap}.note{font-size:13px;color:var(--muted)}.error{color:#a03425;font-size:13px;min-height:20px}.footer{border-top:1px solid var(--line);font-size:13px;color:var(--muted);padding:25px 0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+@media(max-width:480px){.form{grid-template-columns:1fr}.full{grid-column:1}.panel{padding:17px}}
+@media(prefers-color-scheme:dark){:root{--bg:#101719;--paper:#1b2529;--ink:#f1f0e9;--muted:#bbc5c8;--line:#344145;--gold:#d6af6d;--soft:#263236}.error{color:#ffab9c}}
+</style></head>
+<body><header><div class="wrap"><a class="brand" href="./">INMUEBLES EN CHILE</a><a href="./">← Volver al portal</a></div></header>
+<main class="wrap">
+<div class="eyebrow">Herramienta gratuita · Sin registro</div><h1>Prepara una ficha para compartir.</h1>
+<p class="lead">Para propietarios y corredores: redacta un resumen profesional de una propiedad a partir de datos que tú proporcionas. Puedes copiarlo para WhatsApp, correo o tus publicaciones.</p>
+<div class="grid">
+<section class="panel" aria-labelledby="formTitle">
+<h2 id="formTitle">Datos de la propiedad</h2>
+<form id="briefForm" class="form">
+<label class="full">Nombre o título<input id="name" required maxlength="120" placeholder="Departamento en Concepción"></label>
+<label>Comuna<input id="city" maxlength="80" required placeholder="Concepción"></label>
+<label>Operación<select id="operation"><option>Venta</option><option>Arriendo</option></select></label>
+<label>Precio en UF<input id="price" type="number" min="0.01" step="0.01" inputmode="decimal" required></label>
+<label>Superficie (m²)<input id="area" type="number" min="0.01" step="0.01" inputmode="decimal"></label>
+<label>Dormitorios<input id="beds" type="number" min="0" step="1" inputmode="numeric"></label>
+<label class="full">URL de la publicación original (opcional)<input id="source" type="url" placeholder="https://..."></label>
+<label class="full">Detalles adicionales (opcional)<textarea id="details" maxlength="450" placeholder="Características relevantes, condiciones y disponibilidad por confirmar..."></textarea></label>
+<div class="full error" id="error" role="alert"></div>
+<div class="full actions"><button type="submit">Crear resumen</button><button type="reset" class="secondary">Limpiar</button></div>
+</form></section>
+<section class="panel" aria-labelledby="previewTitle">
+<h2 id="previewTitle">Vista previa</h2><p class="note">No constituye una publicación dentro del portal. No certificamos identidad, precio, inmueble ni disponibilidad.</p>
+<div id="result" aria-live="polite">Completa el formulario para generar tu ficha.</div>
+<div class="actions" style="margin-top:16px"><button type="button" id="copy" disabled>Copiar ficha</button></div>
+<p class="note" id="copyStatus" role="status" aria-live="polite"></p>
+<p class="note">Los datos se procesan en tu navegador. No se envían ni almacenan en servidores de Inmuebles en Chile.</p>
+</section></div>
+</main><footer class="footer"><div class="wrap">Inmuebles en Chile · <a href="informacion.html">Información y privacidad</a> · <a href="guia.html">Guía para evaluar una propiedad</a></div></footer>
+<script>
+const form=document.getElementById('briefForm'),result=document.getElementById('result'),copy=document.getElementById('copy');
+let generated='';
+form.addEventListener('submit',event=>{
+ event.preventDefault();
+ const get=id=>document.getElementById(id).value.trim();
+ const title=get('name'),city=get('city'),price=Number(get('price')),area=Number(get('area')),beds=get('beds'),source=get('source'),details=get('details');
+ if(!title||!city||!Number.isFinite(price)||price<=0){document.getElementById('error').textContent='Completa título, comuna y precio válido.';return}
+ if(get('area')&&(!Number.isFinite(area)||area<=0)){document.getElementById('error').textContent='La superficie debe ser positiva.';return}
+ if(beds!==''&&(!Number.isSafeInteger(Number(beds))||Number(beds)<0)){document.getElementById('error').textContent='Los dormitorios deben ser un número entero válido.';return}
+ if(source){try{const url=new URL(source);if(!['http:','https:'].includes(url.protocol))throw Error('protocolo')}catch{document.getElementById('error').textContent='Ingresa un enlace http o https válido.';return}}
+ document.getElementById('error').textContent='';
+ const lines=[title,city+' · '+get('operation'),'Precio informado: UF '+price.toLocaleString('es-CL')];
+ if(get('area'))lines.push('Superficie informada: '+area.toLocaleString('es-CL')+' m²');
+ if(beds!=='')lines.push('Dormitorios: '+beds);
+ if(details)lines.push(details);
+ if(source)lines.push('Publicación original: '+source);
+ lines.push('Datos proporcionados por el anunciante. Precio y disponibilidad por confirmar en origen.');
+ generated=lines.join('\n');
+ result.textContent=generated;copy.disabled=false;document.getElementById('copyStatus').textContent='';
+});
+form.addEventListener('reset',()=>{generated='';result.textContent='Completa el formulario para generar tu ficha.';copy.disabled=true;document.getElementById('error').textContent='';document.getElementById('copyStatus').textContent=''});
+copy.addEventListener('click',async()=>{
+ if(!generated)return;
+ try{await navigator.clipboard.writeText(generated);document.getElementById('copyStatus').textContent='Ficha copiada.'}
+ catch{document.getElementById('copyStatus').textContent='No se pudo copiar automáticamente. Selecciona el texto de la vista previa.'}
+});
+</script></body></html>

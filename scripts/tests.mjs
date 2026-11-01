@@ -74,7 +74,7 @@ test('el catálogo y las acciones esenciales funcionan en un DOM simulado', () =
   const script = page.match(/<script>([\s\S]*?)<\/script>/)[1];
   const app = new Function('document','localStorage','window','fetch','alert',script+
     ';return {toggleFavorite,toggleCompare,showSaved,showCompare,closeModal};')(
-      document,localStorage,{scrollTo(){}},async()=>({ok:false}),()=>{});
+      document,localStorage,{scrollTo(){},addEventListener(){},requestAnimationFrame(fn){fn()},matchMedia(){return {matches:true}}},async()=>({ok:false}),()=>{});
   assert.equal(getElementById('count').textContent, catalog.length+' referencias');
   assert.equal((getElementById('propertyGrid').innerHTML.match(/class="card property-card"/g)||[]).length,catalog.length);
   app.toggleFavorite(catalog[0].id);

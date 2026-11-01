@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-01T15:09:25.261Z",
+  "checkedAt": "2026-11-01T15:15:05.761Z",
   "listings": [
     {
       "id": "IEC-PUB-2026-000001",
@@ -8,7 +8,7 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-01T15:09:25.197Z"
+      "checkedAt": "2026-11-01T15:14:54.163Z"
     },
     {
       "id": "IEC-PUB-2026-000002",
@@ -16,7 +16,71 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-01T15:09:25.259Z"
+      "checkedAt": "2026-11-01T15:14:54.210Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000003",
+      "source": "CFL Inmobiliaria",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:14:56.119Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000004",
+      "source": "CFL Inmobiliaria",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:14:57.748Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000005",
+      "source": "CFL Inmobiliaria",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:14:59.312Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000006",
+      "source": "CFL Inmobiliaria",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:15:00.902Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000007",
+      "source": "CFL Inmobiliaria",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:15:02.440Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000008",
+      "source": "CFL Inmobiliaria",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:15:03.953Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000009",
+      "source": "CFL Inmobiliaria",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:15:05.521Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000010",
+      "source": "Inmobiliaria Patagonia",
+      "status": "unknown",
+      "reason": "Ficha accesible; disponibilidad no confirmada",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-01T15:15:05.761Z"
     }
   ]
 }

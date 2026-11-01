@@ -16,6 +16,10 @@ try {
    page.on('pageerror',error=>failures.push(error.message));
    await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
    assert.equal(await page.locator('.hero-photo').count(),1);
+   const editorialHero=page.locator('.hero-photo');
+   await editorialHero.evaluate(img=>img.decode());
+   assert.ok(await editorialHero.evaluate(img=>img.naturalWidth>=500),'Debe cargar la fotografía de portada');
+   assert.equal(await page.locator('.hero-picture source').count(),1,'La foto móvil debe tener su fuente propia');
    assert.ok(await page.locator('.hero-copy h1').isVisible(),'El titular editorial debe estar visible');
    assert.ok(await page.locator('.hero-panels .hero-panel').count()>=3);
    if(width<=680){assert.equal(await page.locator('#menuToggle').isVisible(),true);assert.equal(await page.locator('#nav').isVisible(),false)}

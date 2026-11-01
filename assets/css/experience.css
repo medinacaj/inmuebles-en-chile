@@ -424,3 +424,37 @@ footer a:hover{color:#d0e5d1}
  #inicio .home-news-grid{scroll-behavior:auto}
  #inicio .home-news-grid .news .news-image-link img{transition:none}
 }
+
+/* 09 · INTERIOR PAGES — unified editorial language and stable navigation */
+html{scrollbar-gutter:stable;overflow-y:scroll}
+body{overflow-anchor:none}
+.page{min-height:calc(100dvh - 170px)}
+#propiedades,#noticias{padding-top:clamp(30px,4vw,56px)}
+#propiedades>.eyebrow,#noticias>.eyebrow{display:inline-flex;align-items:center;min-height:24px;margin-bottom:12px}
+#propiedades>h1,#noticias>h1{font-size:clamp(42px,5.3vw,76px);font-weight:810;letter-spacing:-.075em;line-height:1.02;max-width:1000px;margin:0 0 16px;text-wrap:balance}
+#propiedades>.muted,#noticias>.lead{max-width:850px;margin:0 0 24px;color:var(--muted);font-size:clamp(14px,1.3vw,17px);line-height:1.65}
+#propiedades>.filters,#noticias>.filters{margin:26px 0 22px;padding:17px;gap:11px;border-radius:20px;box-shadow:var(--shadow)}
+#propiedades>.filters :is(input,select),#noticias>.filters :is(input,select){background:var(--bg);border:1px solid var(--line);border-radius:11px;min-height:48px}
+#propiedades .media-explain{margin-block:14px 22px;padding:16px 20px;border:1px solid var(--line);border-radius:16px;background:var(--paper)}
+#propiedades .media-explain summary{font-weight:700;cursor:pointer}
+#propiedades .source-summary,#propiedades .notice,#noticias .news-update{border-radius:14px}
+#propiedades .property-card,#noticias .news{border-radius:20px;box-shadow:0 5px 20px rgba(19,38,26,.065);transition:box-shadow .2s ease,transform .2s ease}
+#noticias .news{padding:clamp(20px,2.3vw,30px);min-height:190px}
+#noticias .news:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(19,38,26,.12)}
+#noticias .news a{font-size:clamp(20px,2vw,25px);font-weight:760;line-height:1.25;text-wrap:pretty}
+#noticias .newsgrid{gap:18px}
+#propiedades .sectionhead,#noticias .sectionhead{gap:16px}
+#propiedades .panel,#noticias .panel{border-radius:20px;box-shadow:var(--shadow)}
+/* Keep the three views flush at the same viewport scroll origin, not shifted by a floating banner. */
+#inicio,#propiedades,#noticias{scroll-margin-top:0}
+@media(max-width:680px){
+ html{scrollbar-gutter:auto}
+ #propiedades,#noticias{padding-top:28px}
+ #propiedades>h1,#noticias>h1{font-size:clamp(36px,9.2vw,52px)}
+ #propiedades>.filters,#noticias>.filters{padding:12px;margin:20px 0}
+ #noticias .news{min-height:0}
+}
+@media(prefers-reduced-motion:reduce){
+ #noticias .news{transition:none}
+ #noticias .news:hover{transform:none}
+}

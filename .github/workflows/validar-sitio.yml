@@ -17,3 +17,5 @@ jobs:
           node-version: '22'
       - name: Pruebas de integridad y lógica
         run: node --test scripts/tests.mjs
+      - name: Probar recolector RSS sin conexión externa
+        run: python3 -m unittest discover -s scripts -p 'test_news.py' -v

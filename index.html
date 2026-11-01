@@ -203,7 +203,19 @@ function renderRegions(){
  '<span class="region-name">'+esc(name)+'</span><span class="region-total">'+count+' '+(count===1?'referencia':'referencias')+'</span><span aria-hidden="true">↗</span></button>').join('');
 }
 function renderProperties(){const fold=value=>String(value??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const q=fold($('search').value.trim()),op=$('operation').value,t=$('type').value,r=$('region').value,budget=Number($('budget')?.value||0);
-let a=[...REAL].filter(p=>fold([p.title,p.city,p.region,p.source,p.type,p.publicationId].join(' ')).includes(q)&&(!op||p.operation===op)&&(!t||p.type===t)&&(!r||p.region===r)&&(!budget||p.price<=budget)&&!unavailableIds.has(p.publicationId));const order=$('sort')?.value||'recent';if(order==='priceAsc')a.sort((x,y)=>x.price-y.price);if(order==='priceDesc')a.sort((x,y)=>y.price-x.price);if(order==='areaDesc')a.sort((x,y)=>y.area-x.area);$('count').textContent=a.length+' referencias';updateSavedCounts();$('propertyGrid').innerHTML=a.length?a.map(propCard).join(''):'<div class="empty">No hay referencias con estos filtros. Prueba otra comuna o región.</div>';$('featured').innerHTML=REAL.filter(p=>!unavailableIds.has(p.publicationId)).slice(0,6).map(propCard).join('')||'<p>No hay referencias con ficha original disponibles para mostrar.</p>';setupImageFallbacks();renderRegions()}function clearFilters(){if($('sort'))$('sort').value='recent';['search','operation','type','region','budget'].forEach(id=>$(id).value='');renderProperties()}let previousModalFocus=null;
+let a=[...REAL].filter(p=>fold([p.title,p.city,p.region,p.source,p.type,p.publicationId].join(' ')).includes(q)&&(!op||p.operation===op)&&(!t||p.type===t)&&(!r||p.region===r)&&(!budget||p.price<=budget)&&!unavailableIds.has(p.publicationId));const order=$('sort')?.value||'recent';if(order==='priceAsc')a.sort((x,y)=>x.price-y.price);if(order==='priceDesc')a.sort((x,y)=>y.price-x.price);if(order==='areaDesc')a.sort((x,y)=>y.area-x.area);$('count').textContent=a.length+' referencias';updateSavedCounts();$('propertyGrid').innerHTML=a.length?a.map(propCard).join(''):'<div class="empty">No hay referencias con estos filtros. Prueba otra comuna o región.</div>';
+ const featured=REAL.filter(p=>!unavailableIds.has(p.publicationId)).slice(0,6);
+ const key=featured.map(p=>p.id).join(',');
+ if($('featured').dataset.renderKey!==key){
+  $('featured').innerHTML=featured.map(propCard).join('')||'<p>No hay referencias con ficha original disponibles para mostrar.</p>';
+  $('featured').dataset.renderKey=key;
+ }
+ setupImageFallbacks();
+ const available=REAL.filter(p=>!unavailableIds.has(p.publicationId)).map(p=>p.id).join(',');
+ if($('regionQuick').dataset.renderKey!==available){
+  renderRegions();
+  $('regionQuick').dataset.renderKey=available;
+ }}function clearFilters(){if($('sort'))$('sort').value='recent';['search','operation','type','region','budget'].forEach(id=>$(id).value='');renderProperties()}let previousModalFocus=null;
 function openModal(html){
  previousModalFocus=document.activeElement;
  $('modalContent').innerHTML=html;

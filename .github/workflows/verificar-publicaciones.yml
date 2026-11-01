@@ -1,6 +1,11 @@
 name: Revisar vigencia de publicaciones
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'scripts/check-listings.mjs'
   schedule:
     - cron: '23 11 * * *'
 permissions:
@@ -25,5 +30,6 @@ jobs:
           git add data/listing-status.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: actualizar estado de fichas inmobiliarias"
+            git pull --rebase
             git push
           fi

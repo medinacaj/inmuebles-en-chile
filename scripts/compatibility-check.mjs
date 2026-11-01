@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {firefox,webkit} from 'playwright';
 
 const base='http://127.0.0.1:8765/';
+async function navTo(page,name){const nav=page.locator('#nav');if(!(await nav.isVisible()))await page.locator('#menuToggle').click();await page.getByRole('button',{name,exact:true}).click()}
 const results=[];
 for(const [name,engine] of [['Firefox',firefox],['WebKit (motor Safari)',webkit]]) {
  const browser=await engine.launch({headless:true});
@@ -12,7 +13,10 @@ for(const [name,engine] of [['Firefox',firefox],['WebKit (motor Safari)',webkit]
    const errors=[];
    page.on('pageerror',e=>errors.push(e.message));
    await page.goto(base,{waitUntil:'networkidle'});
-   assert.ok(await page.getByRole('button',{name:'Inicio',exact:true}).isVisible());
+   assert.equal(await page.locator('.hero-photo').count(),1);
+   assert.ok(await page.locator('.hero-copy h1').isVisible());
+   if(viewport.width<=680){assert.equal(await page.locator('#menuToggle').isVisible(),true);assert.equal(await page.locator('#nav').isVisible(),false)}
+   else assert.ok(await page.getByRole('button',{name:'Inicio',exact:true}).isVisible());
    const image=page.locator('#featured .photo-link.has-photo img').first();
    await image.scrollIntoViewIfNeeded();
    await page.waitForFunction(()=>{
@@ -20,7 +24,7 @@ for(const [name,engine] of [['Firefox',firefox],['WebKit (motor Safari)',webkit]
      return !!img && img.complete && img.naturalWidth>0;
    },{},{timeout:12000});
    assert.ok(await image.evaluate(img=>img.naturalWidth>0),name+': imagen inválida');
-   await page.getByRole('button',{name:'Propiedades',exact:true}).click();
+   await navTo(page,'Propiedades');
    await page.locator('#sourceSummary > span').first().waitFor({state:'visible'});
    await page.locator('#search').fill('PENALOLEN');
    assert.equal(await page.locator('#propertyGrid .property-card').count(),1,name+': búsqueda sin tildes');

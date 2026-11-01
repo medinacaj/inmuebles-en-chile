@@ -14,22 +14,22 @@ class EditorialFeedTests(unittest.TestCase):
         rss = b'''<?xml version="1.0"?>
         <rss version="2.0"><channel><item>
         <title>Oferta inmobiliaria y construccion de viviendas en Chile</title>
-        <link>https://www.informeconstruccion.com/noticias/proyecto/?utm_source=feed</link>
+        <link>https://www.df.cl/noticias/proyecto/?utm_source=feed</link>
         <pubDate>Sat, 31 Oct 2026 15:00:00 +0000</pubDate>
         </item></channel></rss>'''
         articles = ingest.parse_source(rss, SOURCE, NOW)
         self.assertEqual(len(articles), 1)
-        self.assertEqual(articles[0]["url"], "https://www.informeconstruccion.com/noticias/proyecto/")
+        self.assertEqual(articles[0]["url"], "https://www.df.cl/noticias/proyecto/")
         self.assertEqual(articles[0]["source"], SOURCE["name"])
         self.assertIn("2026-10-31", articles[0]["publishedAt"])
 
     def test_rejects_external_and_malicious_urls(self):
         for url in (
             "https://evil.example/item",
-            "http://www.informeconstruccion.com/news",
-            "https://www.informeconstruccion.com.evil.example/item",
+            "http://www.df.cl/news",
+            "https://www.df.cl.evil.example/item",
             "javascript:alert(1)",
-            "https://www.informeconstruccion.com@evil.example/item",
+            "https://www.df.cl@evil.example/item",
             "https://127.0.0.1/item",
         ):
             with self.subTest(url=url):
@@ -38,7 +38,7 @@ class EditorialFeedTests(unittest.TestCase):
     def test_uses_atom_links_and_dates(self):
         atom = b'''<feed xmlns="http://www.w3.org/2005/Atom">
         <entry><title>El mercado inmobiliario y nueva oferta de viviendas</title>
-        <link rel="alternate" href="https://www.informeconstruccion.com/mercado/"/>
+        <link rel="alternate" href="https://www.df.cl/mercado/"/>
         <updated>2026-10-31T12:00:00Z</updated></entry></feed>'''
         result = ingest.parse_source(atom, SOURCE, NOW)
         self.assertEqual(len(result), 1)
@@ -59,7 +59,7 @@ class EditorialFeedTests(unittest.TestCase):
     def test_dedupe_old_and_new_and_retain_when_offline(self):
         article = {
             "id": "ref01", "title": "Proyecto inmobiliario y construcción en Chile",
-            "url": "https://www.informeconstruccion.com/mercado/",
+            "url": "https://www.df.cl/mercado/",
             "source": SOURCE["name"], "sourceId": SOURCE["id"], "category": "Mercado",
             "publishedAt": "2026-10-31T12:00:00Z"
         }
@@ -78,7 +78,7 @@ class EditorialFeedTests(unittest.TestCase):
 
     def test_preserves_escaped_titles_without_html(self):
         rss = b'''<rss><channel><item><title>Mercado inmobiliario &amp; viviendas &lt;oferta&gt;</title>
-        <link>https://www.informeconstruccion.com/noticias/</link>
+        <link>https://www.df.cl/noticias/</link>
         <pubDate>Sat, 31 Oct 2026 15:00:00 +0000</pubDate>
         </item></channel></rss>'''
         result = ingest.parse_source(rss, SOURCE, NOW)
@@ -87,7 +87,7 @@ class EditorialFeedTests(unittest.TestCase):
 
     def test_no_invented_publication_dates(self):
         rss = b'''<rss><channel><item><title>La vivienda y la actividad inmobiliaria en Chile</title>
-        <link>https://www.informeconstruccion.com/noticias/</link>
+        <link>https://www.df.cl/noticias/</link>
         </item></channel></rss>'''
         self.assertEqual(ingest.parse_source(rss, SOURCE, NOW), [])
 

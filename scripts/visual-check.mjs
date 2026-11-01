@@ -19,6 +19,9 @@ try {
    await page.getByRole('button',{name:'Propiedades',exact:true}).click();
    assert.ok(await page.getByRole('heading',{name:'Explora el mercado inmobiliario.'}).count());
    assert.ok((await page.locator('#propertyGrid .property-card').count())>=8,'El catálogo debe mostrar al menos 8 referencias no retiradas');
+   await page.locator('#sourceSummary > span').first().waitFor({state:'visible'});
+   assert.match(await page.locator('#sourceSummary').innerText(),/referencias en cat[aá]logo/);
+   assert.match(await page.locator('#sourceSummary').innerText(),/Consultable no significa disponible/);
    const visibleImage=page.locator('#propertyGrid .photo-link.has-photo img').first();
    await visibleImage.scrollIntoViewIfNeeded();
    assert.equal(await visibleImage.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),true,'Debe cargar la imagen de la ficha');
@@ -29,6 +32,10 @@ try {
    assert.ok(await page.locator('#propertyGrid .card-options').count()>=1);
    await page.locator('#propertyGrid .card-options').first().click();
    assert.equal(await page.getByRole('dialog').isVisible(),true);
+   assert.ok(await page.locator('.reference-facts').isVisible());
+   assert.match(await page.locator('.reference-description').innerText(),/proyecto|departamentos|parcela/i);
+   assert.match(await page.locator('.reference-status').innerText(),/disponibilidad|comprobaci[oó]n/i);
+   assert.ok(await page.locator('.reference-source-link[href^="https://"]').count());
    await page.getByRole('button',{name:/Añadir a comparación|Quitar de comparación/}).click();
    await page.getByRole('button',{name:/Favoritos/}).click();
    assert.equal(await page.getByRole('dialog').isVisible(),true);
@@ -49,6 +56,9 @@ try {
  await page.goto('http://127.0.0.1:8765/#ficha=IEC-PUB-2026-000001',{waitUntil:'networkidle'});
  assert.equal(await page.locator('#search').inputValue(),'IEC-PUB-2026-000001');
  assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
+ await page.locator('#propertyGrid .card-options').click();
+ assert.match(await page.locator('.reference-status').innerText(),/bloque[oó]|revisi[oó]n|desconocida/i);
+ await page.keyboard.press('Escape');
  const sourceCards=page.locator('#propertyGrid .property-card');
  assert.equal(await sourceCards.locator('.card-fav').count(),1);
  assert.equal(await sourceCards.locator('.card-options').count(),1);

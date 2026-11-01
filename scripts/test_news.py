@@ -85,6 +85,35 @@ class EditorialFeedTests(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertNotIn("&amp;", result[0]["title"])
 
+    def test_foreign_real_estate_is_not_chilean_content(self):
+        self.assertFalse(ingest.is_relevant_title(
+            "El millonario negocio inmobiliario de un empresario en Miami"))
+        self.assertFalse(ingest.is_relevant_title(
+            "El mercado inmobiliario bonaerense muestra recuperación en Argentina"))
+        self.assertTrue(ingest.is_relevant_title(
+            "Subsidios habitacionales para viviendas en Chile"))
+        self.assertTrue(ingest.is_relevant_title(
+            "El mercado inmobiliario de Santiago registra más ventas"))
+
+    def test_book_title_is_not_a_house_listing(self):
+        self.assertFalse(ingest.is_relevant_title(
+            "Isabel Allende ganó el Premio Planeta por La Casa de los Espíritus"))
+        self.assertFalse(ingest.is_relevant_title(
+            "La casa de los Espíritus tendrá nueva adaptación de televisión"))
+
+    def test_previous_irrelevant_items_are_not_preserved(self):
+        old = {
+          "schemaVersion":1, "updatedAt":"2026-11-01T12:00:00Z",
+          "items":[{
+            "id":"foreign", "title":"El negocio inmobiliario de un millonario en Miami",
+            "url":"https://www.latercera.com/pulso/negocio-inmobiliario-en-miami",
+            "source":"La Tercera", "sourceId":"la-tercera", "category":"Mercado",
+            "publishedAt":"2026-11-01T10:00:00Z"
+          }]
+        }
+        result=ingest.assemble(old,[],[{"id":"la-tercera","name":"La Tercera","ok":False,"count":0}],NOW)
+        self.assertEqual(result["items"],[])
+
     def test_no_invented_publication_dates(self):
         rss = b'''<rss><channel><item><title>La vivienda y la actividad inmobiliaria en Chile</title>
         <link>https://www.df.cl/noticias/</link>

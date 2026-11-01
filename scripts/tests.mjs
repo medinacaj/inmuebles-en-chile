@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { extractCatalog, classifyResponse, preserveConfirmedWithdrawal } from './check-listings.mjs';
+import { extractCatalog, classifyResponse, preserveConfirmedWithdrawal, isAllowedSourceUrl, inspectSource, readHtmlResponse } from './check-listings.mjs';
+import { buildReviewSummary } from './audit-status.mjs';
 
 const page = await fs.readFile('index.html', 'utf8');
 const catalog = extractCatalog(page);
@@ -157,4 +158,102 @@ test('fotografías oficiales requieren derechos de reutilización documentados',
    assert.ok(p.imageCredit,p.publicationId+': falta atribución/origen de la fotografía de referencia');
   }
  }
+});
+
+
+test('el verificador solo permite dominios aprobados con HTTPS', () => {
+ for (const url of [
+   'https://www.cfl.cl/proyecto/',
+   'https://enlaceinmobiliario.cl/venta',
+   'https://inmobiliariapatagonia.cl/propiedad'
+ ]) assert.equal(isAllowedSourceUrl(url), true, url);
+ for (const url of [
+   'http://www.cfl.cl/proyecto',
+   'https://cfl.cl.ejemplo.net/malicioso',
+   'https://127.0.0.1/admin',
+   'https://localhost/',
+   'https://cfl.cl@127.0.0.1/privado',
+   'https://cfl.cl:8443/',
+   'file:///etc/passwd',
+   'not-a-url'
+ ]) assert.equal(isAllowedSourceUrl(url), false, url);
+});
+
+test('rechazar redirecciones a dominios no permitidos sin consultarlos', async () => {
+ let calls = 0;
+ const result = await inspectSource('https://www.cfl.cl/test', async () => {
+   calls++;
+   return new Response('', {status:302, headers:{location:'https://127.0.0.1/private'}});
+ });
+ assert.equal(calls, 1);
+ assert.equal(result.status, 'unknown');
+ assert.match(result.reason, /Redirección fuera/);
+});
+
+test('un 404 explícito marca la ficha retirada, pero 403 no confirma nada', async () => {
+ const gone = await inspectSource('https://www.cfl.cl/test', async () => new Response('', {status:404}));
+ assert.equal(gone.status, 'unavailable');
+ const blocked = await inspectSource('https://www.cfl.cl/test', async () => new Response('', {status:403}));
+ assert.equal(blocked.status, 'unknown');
+ const ok = await inspectSource('https://www.cfl.cl/test', async () => new Response('<html>Proyecto</html>', {status:200, headers:{'content-type':'text/html; charset=utf-8'}}));
+ assert.equal(ok.status, 'unknown');
+});
+
+test('redirecciones permitidas solo hacia dominios aprobados', async () => {
+ const calls = [];
+ const result = await inspectSource('https://cfl.cl/inicio', async url => {
+   calls.push(url);
+   return calls.length===1 ?
+     new Response('', {status:301, headers:{location:'/proyecto'}}) :
+     new Response('<main>Esta propiedad ya no se encuentra disponible</main>', {status:200, headers:{'content-type':'text/html'}});
+ });
+ assert.equal(calls[1], 'https://cfl.cl/proyecto');
+ assert.equal(result.status, 'unavailable');
+});
+
+test('descargas grandes o no HTML no provocan carga ilimitada', async () => {
+ const html = await readHtmlResponse(new Response('<html>válido</html>', {headers:{'content-type':'text/html'}}),100);
+ assert.match(html, /válido/);
+ await assert.rejects(() => readHtmlResponse(new Response('archivo binario',{headers:{'content-type':'image/png'}})),/HTML/);
+ await assert.rejects(() => readHtmlResponse(new Response('x'.repeat(200),{headers:{'content-type':'text/html'}}),100),/límite/);
+});
+
+
+test('el informe operativo identifica bloqueos, bajas, ausencias y caducidad', () => {
+ const start = Date.parse('2026-11-01T12:00:00Z');
+ const report = {
+   checkedAt: '2026-11-01T12:00:00Z',
+   listings: [
+     {id:catalog[0].publicationId,status:'unknown',httpStatus:200,reason:'Accesible'},
+     {id:catalog[1].publicationId,status:'unknown',httpStatus:403,reason:'Bloqueado'},
+     {id:catalog[2].publicationId,status:'unavailable',httpStatus:404,reason:'Retirado'}
+   ]
+ };
+ const {counts,stale,markdown} = buildReviewSummary(catalog,report,start);
+ assert.equal(counts.accessible,1);
+ assert.equal(counts.restricted,1);
+ assert.equal(counts.gone,1);
+ assert.equal(counts.missing,catalog.length-3);
+ assert.equal(stale,false);
+ assert.match(markdown,/NO disponibilidad confirmada/);
+ assert.equal(buildReviewSummary(catalog,report,start+9*86400000).stale,true);
+ const duplicado={...report,listings:[...report.listings,report.listings[0]]};
+ assert.throws(()=>buildReviewSummary(catalog,duplicado),/duplicado/);
+});
+test('el formulario de incidencia no solicita datos sensibles de usuarios', async () => {
+ const template=await fs.readFile('.github/ISSUE_TEMPLATE/reporte-referencia.yml','utf8');
+ assert.match(template,/No incluyas RUT/);
+ assert.match(template,/Identificador de la publicación/);
+ assert.doesNotMatch(template,/required: true[\s\S]*RUT|teléfono obligatorio/i);
+});
+
+
+test('la propuesta de publicación es gratuita y requiere revisión editorial', async () => {
+ const template = await fs.readFile('.github/ISSUE_TEMPLATE/proponer-proyecto.yml','utf8');
+ const toolsPage = await fs.readFile('herramientas.html','utf8');
+ assert.match(template,/no publica automáticamente/i);
+ assert.match(template,/No compartas RUT/);
+ assert.match(template,/Enlace oficial de la publicación/);
+ assert.match(toolsPage,/proponer-proyecto\.yml/);
+ assert.match(toolsPage,/revis[aó] manualmente/i);
 });

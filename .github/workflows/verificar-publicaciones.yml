@@ -6,6 +6,7 @@ on:
     paths:
       - 'index.html'
       - 'scripts/check-listings.mjs'
+      - 'scripts/audit-status.mjs'
   schedule:
     - cron: '23 11 * * *'
 permissions:
@@ -29,6 +30,7 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             node scripts/check-listings.mjs
+            node scripts/audit-status.mjs
             git add data/listing-status.json
             if git diff --cached --quiet; then
               echo "Estado sin cambios"

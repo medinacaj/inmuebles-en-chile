@@ -78,7 +78,7 @@ try {
  await newsPage.route('**/data/news-feed.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(mockNews)}));
  await newsPage.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  assert.equal(await newsPage.locator('#homeNews .news').count(),2,'La portada debe publicar titulares RSS');
- await newsPage.getByRole('button',{name:'Actualidad',exact:true}).click();
+ await navTo(newsPage,'Actualidad');
  assert.equal(await newsPage.locator('#newsGrid .news').count(),2);
  assert.match(await newsPage.locator('#newsUpdate').innerText(),/Sincronización RSS/);
  await newsPage.locator('#newsFilter').selectOption('Proyectos');

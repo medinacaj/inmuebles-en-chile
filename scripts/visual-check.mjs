@@ -69,6 +69,12 @@ try {
  assert.equal(await page.getByRole('dialog').isVisible(),false);
  assert.match(await page.evaluate(()=>window.__shareData?.url||''),/IEC-PUB-2026-000001$/);
  await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ await page.locator('#homeQuery').fill('Ancud');
+ await page.locator('#homeRegion').selectOption('Los Lagos');
+ await page.locator('#homeSearch button[type="submit"]').click();
+ assert.equal(await page.locator('#region').inputValue(),'Los Lagos');
+ assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
+ await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  await page.evaluate(()=>{window.__featuredBefore=document.querySelector('#featured .property-card')});
  await page.getByRole('button',{name:'Propiedades',exact:true}).click();
  await page.locator('#search').fill('Rancagua');

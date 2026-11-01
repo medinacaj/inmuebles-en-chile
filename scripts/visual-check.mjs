@@ -100,6 +100,7 @@ try {
  await page.locator('#checks input[type="checkbox"]').first().check();
  assert.match(await page.locator('#progress').innerText(),/1 de 6/);
  await page.goto('http://127.0.0.1:8765/herramientas.html',{waitUntil:'domcontentloaded'});
+ assert.equal(await page.locator('.suggest-project a[href*="proponer-proyecto.yml"]').count(),1);
  await page.locator('#name').fill('Departamento de ejemplo');
  await page.locator('#city').fill('Concepción');
  await page.locator('#price').fill('2500');

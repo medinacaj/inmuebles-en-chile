@@ -7,7 +7,7 @@ const page = await fs.readFile('index.html', 'utf8');
 const catalog = extractCatalog(page);
 
 test('el catálogo se extrae con textos que contienen punto y coma', () => {
-  assert.ok(catalog.length > 0);
+  assert.ok(catalog.length >= 10);
   assert.ok(catalog.some(p => p.description.includes(';')));
 });
 test('los identificadores y las fuentes no se repiten', () => {
@@ -16,7 +16,8 @@ test('los identificadores y las fuentes no se repiten', () => {
   for (const p of catalog) {
     assert.match(p.publicationId, /^IEC-PUB-20\d\d-\d{6}$/);
     assert.match(p.url, /^https:\/\//);
-    assert.ok(p.imageIsReference, 'La imagen debe identificarse como referencial');
+    if (p.image) assert.equal(p.imageIsReference,true,'Las imágenes existentes deben estar rotuladas como referenciales');
+    assert.ok(Number.isFinite(p.price)&&p.price>0,'Precio referencial positivo');
   }
 });
 test('retiros explícitos y 404 no se muestran como activos', () => {
@@ -73,7 +74,7 @@ test('el catálogo y las acciones esenciales funcionan en un DOM simulado', () =
   const app = new Function('document','localStorage','window','fetch','alert',script+
     ';return {toggleFavorite,toggleCompare,showSaved,showCompare,closeModal};')(
       document,localStorage,{scrollTo(){}},async()=>({ok:false}),()=>{});
-  assert.equal(getElementById('count').textContent, catalog.length+' propiedades');
+  assert.equal(getElementById('count').textContent, catalog.length+' referencias');
   assert.equal((getElementById('propertyGrid').innerHTML.match(/class="card property-card"/g)||[]).length,catalog.length);
   app.toggleFavorite(catalog[0].id);
   assert.equal(getElementById('favCount').textContent,1);
@@ -105,4 +106,15 @@ test('contraste mínimo de tokens tipográficos prioritarios', () => {
  for (const [foreground,background] of targets)
    assert.ok(contrast(foreground,background)>=4.5,
       'Contraste insuficiente '+foreground+' sobre '+background);
+});
+
+test('hay nuevas regiones con fichas directas y atributos no inventados',()=>{
+ const regions=new Set(catalog.map(p=>p.region));
+ for(const region of ["Biobío","Valparaíso","Metropolitana","O'Higgins","Los Lagos"])assert.ok(regions.has(region),region);
+ assert.ok(catalog.some(p=>p.city==="Rancagua"&&p.source==="CFL Inmobiliaria"));
+ assert.ok(catalog.some(p=>p.city==="Ancud"&&p.source==="Inmobiliaria Patagonia"));
+ for(const p of catalog.filter(x=>x.source==="CFL Inmobiliaria")){
+   assert.equal(p.area,null,'No asignar superficies ficticias a proyectos');
+   assert.equal(p.image,null,'No copiar fotografías sin permiso');
+ }
 });

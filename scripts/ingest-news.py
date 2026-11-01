@@ -16,7 +16,7 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
-from urllib.request import Request, urlopen
+from urllib.request import HTTPRedirectHandler, Request, build_opener
 from xml.etree import ElementTree as ET
 
 BASE = Path(__file__).resolve().parents[1]
@@ -150,14 +150,34 @@ def parse_source(xml: bytes, source: dict, now: datetime) -> list[dict]:
         })
     return output
 
+class SafeRedirect(HTTPRedirectHandler):
+    def __init__(self, hosts):
+        self.hosts = hosts
+        self.redirects = 0
+
+    def redirect_request(self, request, fp, code, msg, headers, newurl):
+        from urllib.parse import urljoin
+        self.redirects += 1
+        resolved = urljoin(request.full_url, newurl)
+        if self.redirects > 3 or canonical_url(resolved, self.hosts) is None:
+            raise ValueError("Redirección no autorizada")
+        return super().redirect_request(request, fp, code, msg, headers, resolved)
+
+
 def bounded_fetch(source: dict) -> bytes:
     if not canonical_url(source["feed"], source["hosts"]):
         raise ValueError("Fuente no autorizada")
-    # urllib sigue redirecciones por defecto. Se comprueba también la URL final.
-    request = Request(source["feed"], headers={"User-Agent": UA, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"})
-    with urlopen(request, timeout=14) as response:
+    request = Request(source["feed"], headers={
+        "User-Agent": UA,
+        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml",
+    })
+    opener = build_opener(SafeRedirect(source["hosts"]))
+    with opener.open(request, timeout=14) as response:
         if not canonical_url(response.geturl(), source["hosts"]):
-            raise ValueError("Redirección a dominio no autorizado")
+            raise ValueError("Destino de respuesta no autorizado")
+        content_type = response.headers.get("Content-Type", "")
+        if content_type and not any(x in content_type.lower() for x in ("xml", "rss", "atom")):
+            raise ValueError("La fuente no respondió con XML")
         if int(response.headers.get("Content-Length") or 0) > MAX_BYTES:
             raise ValueError("Feed demasiado grande")
         data = response.read(MAX_BYTES + 1)

@@ -32,11 +32,16 @@ try {
    assert.ok(await page.locator('#propertyGrid .card-options').count()>=1);
    await page.locator('#propertyGrid .card-options').first().click();
    assert.equal(await page.getByRole('dialog').isVisible(),true);
+   assert.equal(await page.locator('main').evaluate(el=>el.inert),true,'Fondo debe quedar inerte');
    assert.ok(await page.locator('.reference-facts').isVisible());
+   const reportLink=page.locator('.report-link');
+   assert.equal(await reportLink.count(),1);
+   assert.match(await reportLink.getAttribute('href'),/reporte-referencia\.yml/);
    assert.match(await page.locator('.reference-description').innerText(),/proyecto|departamentos|parcela/i);
    assert.match(await page.locator('.reference-status').innerText(),/disponibilidad|comprobaci[oó]n/i);
    assert.ok(await page.locator('.reference-source-link[href^="https://"]').count());
    await page.getByRole('button',{name:/Añadir a comparación|Quitar de comparación/}).click();
+   assert.equal(await page.locator('main').evaluate(el=>el.inert),false,'Fondo reactivado al cerrar');
    await page.getByRole('button',{name:/Favoritos/}).click();
    assert.equal(await page.getByRole('dialog').isVisible(),true);
    await page.keyboard.press('Escape');

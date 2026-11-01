@@ -30,19 +30,19 @@ ATOM = "{http://www.w3.org/2005/Atom}"
 # Los medios ofrecen expresamente RSS. No extraemos artículos completos.
 SOURCES = (
     {
-        "id": "informe-inmobiliario",
-        "name": "Informe Construcción",
-        "feed": "https://www.informeconstruccion.com/rss/sector-inmobiliario/",
-        "hosts": ("informeconstruccion.com",),
+        "id": "df-economia",
+        "name": "Diario Financiero",
+        "feed": "https://www.df.cl/noticias/site/list/port/rss.xml",
+        "hosts": ("df.cl",),
         "category": "Mercado",
-        "filter": False,
+        "filter": True,
     },
     {
-        "id": "informe-proyectos",
-        "name": "Informe Construcción",
-        "feed": "https://www.informeconstruccion.com/rss/obras-y-proyectos/",
-        "hosts": ("informeconstruccion.com",),
-        "category": "Proyectos",
+        "id": "cooperativa-economia",
+        "name": "Cooperativa Economía",
+        "feed": "https://www.cooperativa.cl/noticias/site/tax/port/all/rss_5___1.xml",
+        "hosts": ("cooperativa.cl",),
+        "category": "Mercado",
         "filter": True,
     },
     {
@@ -54,6 +54,7 @@ SOURCES = (
         "filter": True,
     },
 )
+
 KEYWORDS = re.compile(
     r"\b(?:inmobiliari[oa]s?|viviendas?|departamentos?|casas?|habitacion(?:al|ales)|"
     r"hipotecari[oa]s?|arriendos?|subsidios?|condominios?|"
@@ -127,6 +128,14 @@ def feed_entries(xml: bytes) -> list[tuple[str, str, str]]:
         raise ValueError("El contenido no es RSS ni Atom")
     return entries
 
+
+def categorize(title: str, default: str) -> str:
+    if re.search(r"\b(?:proyecto(?:s)?\s+(?:habitacional|inmobiliario|residencial)|viviendas?\s+nuevas?|edificio(?:s)?\s+residencial)", title, re.IGNORECASE):
+        return "Proyectos"
+    if re.search(r"\b(?:cr[eé]ditos?\s+hipotecari[oa]s?|tasas?\s+hipotecari[oa]s?|financiamient[oa]\s+(?:de\s+)?vivienda|subsidios?)\b", title, re.IGNORECASE):
+        return "Financiamiento"
+    return default
+
 def parse_source(xml: bytes, source: dict, now: datetime) -> list[dict]:
     output: list[dict] = []
     earliest = now - timedelta(days=MAX_AGE_DAYS)
@@ -145,7 +154,7 @@ def parse_source(xml: bytes, source: dict, now: datetime) -> list[dict]:
             "url": link,
             "source": source["name"],
             "sourceId": source["id"],
-            "category": source["category"],
+            "category": categorize(title, source["category"]),
             "publishedAt": published.isoformat(timespec="seconds").replace("+00:00", "Z"),
         })
     return output

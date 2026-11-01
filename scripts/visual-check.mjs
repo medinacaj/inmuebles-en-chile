@@ -56,6 +56,27 @@ try {
   }
  }
 
+ const newsContext=await browser.newContext({viewport:{width:375,height:812}});
+ const newsPage=await newsContext.newPage();
+ const mockNews={
+   schemaVersion:1,updatedAt:new Date().toISOString(),sources:[{id:'informe-inmobiliario',name:'Informe Construcción',ok:true,count:2}],
+   items:[
+    {id:'test-01',title:'Nuevos proyectos inmobiliarios y viviendas en el sur de Chile',url:'https://www.informeconstruccion.com/noticias/proyectos',source:'Informe Construcción',sourceId:'informe-inmobiliario',category:'Mercado',publishedAt:new Date().toISOString()},
+    {id:'test-02',title:'Avances en construcción de viviendas y oferta residencial',url:'https://www.informeconstruccion.com/noticias/obras',source:'Informe Construcción',sourceId:'informe-proyectos',category:'Proyectos',publishedAt:new Date().toISOString()}
+   ]
+ };
+ await newsPage.route('**/data/news-feed.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(mockNews)}));
+ await newsPage.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ assert.equal(await newsPage.locator('#homeNews .news').count(),2,'La portada debe publicar titulares RSS');
+ await newsPage.getByRole('button',{name:'Actualidad',exact:true}).click();
+ assert.equal(await newsPage.locator('#newsGrid .news').count(),2);
+ assert.match(await newsPage.locator('#newsUpdate').innerText(),/Sincronización RSS/);
+ await newsPage.locator('#newsFilter').selectOption('Proyectos');
+ assert.equal(await newsPage.locator('#newsGrid .news').count(),1,'El filtro Proyectos debe funcionar');
+ const outgoing=await newsPage.locator('#newsGrid .news a').first().getAttribute('href');
+ assert.match(outgoing,/^https:\/\/www\.informeconstruccion\.com\//);
+ await newsContext.close();
+
  const context=await browser.newContext({viewport:{width:375,height:812}});
  const page=await context.newPage();
  await page.goto('http://127.0.0.1:8765/#ficha=IEC-PUB-2026-000001',{waitUntil:'networkidle'});

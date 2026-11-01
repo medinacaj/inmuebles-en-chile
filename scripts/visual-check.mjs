@@ -24,6 +24,7 @@ try {
    assert.equal(await visibleImage.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),true,'Debe cargar la imagen de la ficha');
    await page.locator('#propertyGrid .card-fav').first().click();
    assert.equal(await page.locator('#propertyGrid .card-fav').first().getAttribute('aria-pressed'),'true');
+   assert.equal(await page.evaluate(()=>document.activeElement?.classList.contains('card-fav')),true,'El foco debe permanecer en el favorito activado');
    assert.equal(await page.locator('#propertyGrid .photo-link.has-photo img').count(),await page.locator('#propertyGrid .property-card').count());
    assert.ok(await page.locator('#propertyGrid .card-options').count()>=1);
    await page.locator('#propertyGrid .card-options').first().click();
@@ -58,6 +59,12 @@ try {
  assert.equal(await page.getByRole('dialog').isVisible(),false);
  assert.match(await page.evaluate(()=>window.__shareData?.url||''),/IEC-PUB-2026-000001$/);
  await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ await page.evaluate(()=>{window.__featuredBefore=document.querySelector('#featured .property-card')});
+ await page.getByRole('button',{name:'Propiedades',exact:true}).click();
+ await page.locator('#search').fill('Rancagua');
+ assert.equal(await page.evaluate(()=>window.__featuredBefore===document.querySelector('#featured .property-card')),true,'El filtro no debe reconstruir las destacadas');
+ await page.locator('#search').fill('');
+ await page.getByRole('button',{name:'Inicio',exact:true}).click();
  assert.ok((await page.locator('#regionQuick .region-button').count())>=5);
  await page.locator('#regionQuick .region-button[data-region="O\'Higgins"]').click();
  assert.equal(await page.locator('#region').inputValue(),"O'Higgins");

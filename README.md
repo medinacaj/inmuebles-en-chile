@@ -20,6 +20,13 @@
 - Enlaces directos compartibles a referencias: `#ficha=IEC-PUB-2026-000001` (no implican oferta disponible).
 - **Sin administrador público**: el antiguo panel ficticio se retiró del HTML y no existe backend ni autenticación.
 
+## Participación y corrección editorial
+
+- [Proponer un proyecto con fuente pública](https://github.com/medinacaj/inmuebles-en-chile/issues/new?template=proponer-proyecto.yml) es gratuito y **no incorpora el proyecto automáticamente**. Requiere una cuenta GitHub y revisión editorial.
+- [Reportar un enlace o dato incorrecto](https://github.com/medinacaj/inmuebles-en-chile/issues/new?template=reporte-referencia.yml) para que se evalúe la referencia. No se solicitan datos personales.
+- El menú de cada ficha muestra el enlace de reporte y su identificación interna. La propuesta no acredita identidad o autorización del anunciante.
+- [Procedimiento operativo](docs/OPERACION_CATALOGO.md) para revisión de fuentes, informes de estado y seguimiento de incidencias.
+
 ## Fiabilidad de referencias
 
 La tarea [Revisar vigencia de publicaciones](.github/workflows/verificar-publicaciones.yml) comprueba diariamente las URLs y cuando cambia el catálogo o el script. Escribe los resultados en [data/listing-status.json](data/listing-status.json).
@@ -28,6 +35,8 @@ La tarea [Revisar vigencia de publicaciones](.github/workflows/verificar-publica
 - `unknown`: no se pudo comprobar disponibilidad; una respuesta HTTP 200 **no** significa oferta disponible.
 - En la vista pública se indica qué enlaces respondieron a la comprobación y cuáles bloquearon el acceso; los estados de disponibilidad siguen sin confirmarse.
 - Las bajas confirmadas se conservan si después la fuente se vuelve inaccesible.
+- El comprobador está limitado a proveedores HTTPS explícitamente aprobados, controla redirecciones y tamaño de respuestas para evitar solicitudes peligrosas. Ampliar fuentes requiere revisar la lista de dominios.
+- [Resumen operativo de revisión](scripts/audit-status.mjs) en cada GitHub Action de comprobación: muestra fuentes bloqueadas, fallidas y retiradas, así como resultados de más de siete días.
 - Los falsos positivos, bloqueos, JavaScript de terceros y cambios de diseño aún exigen revisión manual.
 
 La fuente de información del catálogo está en `const REAL` dentro de [index.html](index.html). Para proyectos inmobiliarios se admiten fichas oficiales del proyecto, siempre identificadas como tales y sin sugerir que exista una unidad disponible. No incorporar supuestas propiedades individuales sin ficha comprobable. No utilizar imágenes ajenas sin licencia.

@@ -1,0 +1,29 @@
+name: Revisar vigencia de publicaciones
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 11 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: listing-status
+  cancel-in-progress: false
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Revisar fichas de origen
+        run: node scripts/check-listings.mjs
+      - name: Guardar resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/listing-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: actualizar estado de fichas inmobiliarias"
+            git push
+          fi

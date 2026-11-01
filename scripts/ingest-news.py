@@ -64,7 +64,7 @@ SOURCES = (
 )
 
 KEYWORDS = re.compile(
-    r"\b(?:inmobiliari[oa]s?|viviendas?|departamentos?|casas?|habitacion(?:al|ales)|"
+    r"\b(?:inmobiliari[oa]s?|viviendas?|departamentos?|habitacion(?:al|ales)|"
     r"hipotecari[oa]s?|arriendos?|subsidios?|condominios?|"
     r"urbanism[oa]|grav[aá]menes|construcci[oó]n(?:es)?|"
     r"proyectos?\s+(?:residencial(?:es)?|inmobiliarios?|de\s+viviend)|"
@@ -73,6 +73,21 @@ KEYWORDS = re.compile(
     re.IGNORECASE,
 )
 TRACKING = {"fbclid", "gclid", "ref", "mc_cid", "mc_eid"}
+# Evitar noticias de otros países y coincidencias lingüísticas fuera del sector.
+# No basta con que una palabra aislada contenga "casa" o "departamento".
+FOREIGN_MARKERS = re.compile(
+    r"\b(?:miami|argentina|buenos\s+aires|caba|brasil|per[uú]|"
+    r"m[eé]xico|colombia|ee\.?\s?uu\.?|estados\s+unidos|"
+    r"madrid|barcelona|espa[nñ]a|nueva\s+york|new\s+york|"
+    r"par[ií]s|londres|uruguay|bolivia)\b", re.IGNORECASE
+)
+CHILE_MARKERS = re.compile(
+    r"\b(?:chile|chilena?s?|santiago|valpara[ií]so|concepci[oó]n|"
+    r"regi[oó]n\s+metropolitana|biob[ií]o|araucan[ií]a|"
+    r"ma[ií]po|temuco|antofagasta|puerto\s+montt|"
+    r"vi[nñ]a\s+del\s+mar|rancagua|talca|iquique)\b", re.IGNORECASE
+)
+
 
 def host_allowed(host: str, domains: tuple[str, ...]) -> bool:
     return any(host == d or host.endswith("." + d) for d in domains)
@@ -144,13 +159,20 @@ def categorize(title: str, default: str) -> str:
         return "Financiamiento"
     return default
 
+def is_relevant_title(title: str) -> bool:
+    if not KEYWORDS.search(title):
+        return False
+    if FOREIGN_MARKERS.search(title) and not CHILE_MARKERS.search(title):
+        return False
+    return True
+
 def parse_source(xml: bytes, source: dict, now: datetime) -> list[dict]:
     output: list[dict] = []
     earliest = now - timedelta(days=MAX_AGE_DAYS)
     for title, url, date in feed_entries(xml):
         if not 18 <= len(title) <= 230:
             continue
-        if source["filter"] and not KEYWORDS.search(title):
+        if source["filter"] and not is_relevant_title(title):
             continue
         link = canonical_url(url, source["hosts"])
         published = parse_date(date)
@@ -220,7 +242,8 @@ def assemble(prior: dict, gathered: list[dict], source_status: list[dict], now: 
             date = parse_date(item["publishedAt"])
             link = canonical_url(item["url"], source["hosts"])
             if (not link or not date or date < earliest or date > now + timedelta(days=1)
-                    or not 18 <= len(item["title"]) <= 230):
+                    or not 18 <= len(item["title"]) <= 230
+                    or (source["filter"] and not is_relevant_title(item["title"]))):
                 continue
             clean = {key: item[key] for key in ("id","title","url","source","sourceId","category","publishedAt")}
             # Un mismo enlace conserva una única entrada.

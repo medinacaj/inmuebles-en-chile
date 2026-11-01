@@ -23,6 +23,16 @@ try {
    assert.ok(await page.locator('.hero-copy h1').isVisible(),'El titular editorial debe estar visible');
    assert.ok(await page.locator('#actualidad-inicio').isVisible(),'Actualidad debe estar visible en Inicio');
    assert.ok(await page.locator('#homeNews .news').count()>0,'Inicio debe mostrar titulares inmobiliarios');
+   assert.ok(await page.locator('#homeNews .news img').count()>0,'El carrusel debe mostrar imágenes de las noticias');
+   assert.ok(await page.locator('#homeNews .news img').first().evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),'La imagen editorial debe cargar');
+   assert.ok(await page.locator('#inicio .hero').evaluate(el=>el.getBoundingClientRect().height)<=610,'La portada debe ser más corta y dejar espacio para el catálogo');
+   assert.equal(await page.evaluate(()=>{const a=document.querySelector('#featured'),b=document.querySelector('#regionQuick');return Boolean(a&&b&&a.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING)}),true,'Los inmuebles deben aparecer antes que las regiones');
+   assert.ok(await page.locator('#homeNewsNext').isEnabled(),'Debe ser posible recorrer las noticias');
+   const scrollStart=await page.locator('#homeNews').evaluate(el=>el.scrollLeft);
+   await page.locator('#homeNewsNext').click();
+   await page.waitForTimeout(550);
+   assert.ok(await page.locator('#homeNews').evaluate(el=>el.scrollLeft)>scrollStart,'El carrusel debe desplazarse');
+   await page.locator('#homeNewsPrev').click();
    assert.equal(await page.evaluate(()=>{const a=document.querySelector('#actualidad-inicio'),b=document.querySelector('.region-discovery');return Boolean(a&&b&&a.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING)}),true,'Actualidad debe aparecer antes de explorar regiones');
    assert.ok(await page.locator('.hero-panels .hero-panel').count()>=3);
    if(width<=680){assert.equal(await page.locator('#menuToggle').isVisible(),true);assert.equal(await page.locator('#nav').isVisible(),false)}
@@ -81,6 +91,7 @@ try {
  await newsPage.route('**/data/news-feed.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(mockNews)}));
  await newsPage.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  assert.equal(await newsPage.locator('#homeNews .news').count(),2,'La portada debe publicar titulares RSS');
+ assert.equal(await newsPage.locator('#homeNews .news img').count(),2,'Los titulares RSS deben tener imágenes de respaldo');
  assert.ok(await newsPage.locator('#actualidad-inicio').isVisible());
  assert.match(await newsPage.locator('#homeNewsStatus').innerText(),/Sincronización RSS/);
  assert.equal(await newsPage.locator('#actualidad-inicio .home-news-more').count(),1);

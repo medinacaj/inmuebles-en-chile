@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'assets/css/**'
+      - 'assets/illustrations/news-*.svg'
       - 'herramientas.html'
       - 'guia.html'
       - 'informacion.html'

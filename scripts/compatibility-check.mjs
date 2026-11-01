@@ -15,7 +15,11 @@ for(const [name,engine] of [['Firefox',firefox],['WebKit (motor Safari)',webkit]
    assert.ok(await page.getByRole('button',{name:'Inicio',exact:true}).isVisible());
    const image=page.locator('#featured .photo-link.has-photo img').first();
    await image.scrollIntoViewIfNeeded();
-   assert.ok(await image.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),name+': imagen inválida');
+   await page.waitForFunction(()=>{
+     const img=document.querySelector('#featured .photo-link.has-photo img');
+     return !!img && img.complete && img.naturalWidth>0;
+   },{},{timeout:12000});
+   assert.ok(await image.evaluate(img=>img.naturalWidth>0),name+': imagen inválida');
    await page.getByRole('button',{name:'Propiedades',exact:true}).click();
    await page.locator('#sourceSummary > span').first().waitFor({state:'visible'});
    await page.locator('#search').fill('PENALOLEN');

@@ -44,3 +44,44 @@ test('el sitio no publica el administrador ficticio', () => {
   assert.match(page, /name="viewport"/);
   assert.match(page, /name="robots" content="noindex,nofollow"/);
 });
+
+test('el catálogo y las acciones esenciales funcionan en un DOM simulado', () => {
+  function makeElement(id) {
+    return {
+      id, value: ({ufprice:2498,ufvalue:39000,down:20,rate:4.07,years:25}[id] ?? ''),
+      innerHTML:'', textContent:'', dataset:{}, isConnected:true,
+      classList:{add(){},remove(){},toggle(){},contains(){return false}},
+      focus(){}, scrollIntoView(){}, setAttribute(){}, removeAttribute(){},
+      getClientRects(){return [1]},querySelector(){return {focus(){}}},
+      querySelectorAll(){return []}
+    };
+  }
+  const elements = new Map();
+  const getElementById = id => {
+    if (!elements.has(id)) elements.set(id,makeElement(id));
+    return elements.get(id);
+  };
+  const nav = ['inicio','propiedades','noticias'].map(page => ({...makeElement(page),dataset:{page}}));
+  const document = {
+    getElementById, activeElement:makeElement('previous'),
+    body:makeElement('body'),
+    querySelectorAll(selector){return selector==='.navbtn'?nav:[]},
+    addEventListener(){}
+  };
+  const localStorage = {getItem(){return null},setItem(){}};
+  const script = page.match(/<script>([\s\S]*?)<\/script>/)[1];
+  const app = new Function('document','localStorage','window','fetch','alert',script+
+    ';return {toggleFavorite,toggleCompare,showSaved,showCompare,closeModal};')(
+      document,localStorage,{scrollTo(){}},async()=>({ok:false}),()=>{});
+  assert.equal(getElementById('count').textContent, catalog.length+' propiedades');
+  assert.equal((getElementById('propertyGrid').innerHTML.match(/class="card property-card"/g)||[]).length,catalog.length);
+  app.toggleFavorite(catalog[0].id);
+  assert.equal(getElementById('favCount').textContent,1);
+  app.toggleCompare(catalog[0].id);
+  assert.equal(getElementById('compareCount').textContent,1);
+  app.showSaved();
+  assert.match(getElementById('modalContent').innerHTML,/Propiedades guardadas/);
+  app.closeModal();
+  app.showCompare();
+  assert.match(getElementById('modalContent').innerHTML,/UF\/m²/);
+});

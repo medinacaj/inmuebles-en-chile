@@ -140,3 +140,21 @@ test('las acciones compactas son accesibles',()=>{
  assert.match(page,/aria-pressed/);
  assert.match(page,/function openCardActions\(/);
 });
+
+test('fotografías oficiales requieren derechos de reutilización documentados', () => {
+ for (const p of catalog) {
+  if (['official_render','property_photo'].includes(p.imageKind)) {
+   assert.ok(p.mediaRights && typeof p.mediaRights==='object',p.publicationId+': faltan permisos de imagen');
+   for(const key of ['evidenceId','rightsHolder','grantedOn','scope','approvedBy']) {
+    assert.ok(typeof p.mediaRights[key]==='string' && p.mediaRights[key].trim(),p.publicationId+': falta '+key);
+   }
+   assert.ok(p.image && p.image.startsWith('assets/'),p.publicationId+': archivo local controlado obligatorio');
+  } else if(p.imageKind==='editorial_illustration') {
+   assert.match(p.image,/^assets\/illustrations\/[\w-]+\.svg$/);
+   assert.equal(p.imageIsReference,true);
+  } else {
+   assert.equal(p.imageIsReference,true,p.publicationId+': no confundir foto de referencia con inmueble');
+   assert.ok(p.imageCredit,p.publicationId+': falta atribución/origen de la fotografía de referencia');
+  }
+ }
+});

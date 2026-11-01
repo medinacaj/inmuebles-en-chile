@@ -2,6 +2,13 @@
 
 **Tu decisión, bien informada.** Portal informativo estático alojado en GitHub Pages: https://medinacaj.github.io/inmuebles-en-chile/
 
+## Experiencia visual renovada
+- Portada fotográfica editorial con navegación minimalista, tarjetas flotantes y llamada a la acción principal.
+- Composición específica para móviles con menú desplegable accesible.
+- Recursos WebP locales optimizados para móvil y escritorio; no representan ninguna publicación inmobiliaria.
+- Páginas de guía, herramientas y privacidad con el mismo sistema visual.
+- [Sistema visual, fuentes fotográficas y licencias](docs/SISTEMA_VISUAL.md).
+
 ## Estado actual
 
 - Catálogo de diez referencias externas de cinco regiones con identificador interno, precio anunciado en origen y enlace directo; **no se garantiza disponibilidad**. Incluye proyectos de CFL Inmobiliaria y una parcelación anunciada por Inmobiliaria Patagonia.

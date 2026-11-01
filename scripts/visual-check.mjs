@@ -17,7 +17,8 @@ try {
    if (theme==='dark') await page.locator('#theme').click();
    assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('dark')),theme==='dark');
    await page.getByRole('button',{name:'Propiedades',exact:true}).click();
-   assert.equal(await page.locator('#propertyGrid .property-card').count(),2);
+   assert.ok(await page.getByRole('heading',{name:'Explora el mercado inmobiliario.'}).count());
+   assert.ok((await page.locator('#propertyGrid .property-card').count())>=8,'El catálogo debe mostrar al menos 8 referencias no retiradas');
    await page.locator('#propertyGrid .listing-tools button').first().click();
    await page.getByRole('button',{name:/Favoritos/}).click();
    assert.equal(await page.getByRole('dialog').isVisible(),true);
@@ -38,6 +39,11 @@ try {
  await page.goto('http://127.0.0.1:8765/#ficha=IEC-PUB-2026-000001',{waitUntil:'networkidle'});
  assert.equal(await page.locator('#search').inputValue(),'IEC-PUB-2026-000001');
  assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
+ await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ assert.ok((await page.locator('#regionQuick .region-button').count())>=5);
+ await page.locator('#regionQuick .region-button[data-region="O\'Higgins"]').click();
+ assert.equal(await page.locator('#region').inputValue(),"O'Higgins");
+ assert.ok((await page.locator('#propertyGrid .property-card').count())>=2);
  await page.goto('http://127.0.0.1:8765/guia.html',{waitUntil:'domcontentloaded'});
  assert.equal(await page.locator('#checks input[type="checkbox"]').count(),6);
  await page.locator('#checks input[type="checkbox"]').first().check();

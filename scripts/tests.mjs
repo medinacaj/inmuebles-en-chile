@@ -258,4 +258,4 @@ test('la propuesta de publicación es gratuita y requiere revisión editorial', 
  assert.match(toolsPage,/revis[aó] manualmente/i);
 });
 
-test('el nuevo lenguaje visual dispone de hoja y portada con imagen ambientacional',async()=>{const css=await fs.readFile('assets/css/experience.css','utf8');assert.match(page,/class="hero-photo"/);assert.match(page,/class="hero-panels"/);assert.match(page,/id="menuToggle"/);assert.match(page,/assets\/css\/experience\.css/);assert.match(css,/@media\(max-width:680px\)/);assert.match(css, /prefers-reduced-motion/);assert.match(page,/imagen de ambientaci[oó]n/i)});
+test('el nuevo lenguaje visual dispone de hoja y portada con imagen ambientacional',async()=>{const css=await fs.readFile('assets/css/experience.css','utf8');assert.match(page,/class="hero-photo"/);assert.match(page,/class="hero-panels"/);assert.match(page,/id="menuToggle"/);assert.match(page,/assets\/css\/experience\.css/);assert.match(css,/@media\(max-width:680px\)/);assert.match(css, /prefers-reduced-motion/);assert.match(page,/fotograf[ií]a de ambientaci[oó]n/i)});

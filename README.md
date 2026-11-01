@@ -4,8 +4,9 @@
 
 ## Estado actual
 
-- Catálogo limitado de referencias externas con identificador interno y precio referencial; no se garantiza disponibilidad de unidades.
-- Imágenes locales **ilustrativas** (no son fotos de los inmuebles enlazados).
+- Catálogo de diez referencias externas de cinco regiones con identificador interno, precio anunciado en origen y enlace directo; **no se garantiza disponibilidad**. Incluye proyectos de CFL Inmobiliaria y una parcelación anunciada por Inmobiliaria Patagonia.
+- Portada con exploración por región y seis referencias destacadas; el catálogo filtra por región, tipo, operación y texto.
+- Las dos referencias originales mantienen imágenes locales **ilustrativas** (no son fotos de los inmuebles enlazados). Las nuevas referencias no copian imágenes de terceros.
 - Enlaces al portal de origen desde las imágenes y los títulos.
 - Filtros por texto, operación, tipo y región; ordenamiento por precio y superficie.
 - Favoritos y comparación de hasta tres inmuebles, guardados **solo en el navegador**.
@@ -27,7 +28,7 @@ La tarea [Revisar vigencia de publicaciones](.github/workflows/verificar-publica
 - Las bajas confirmadas se conservan si después la fuente se vuelve inaccesible.
 - Los falsos positivos, bloqueos, JavaScript de terceros y cambios de diseño aún exigen revisión manual.
 
-La fuente de información del catálogo está en `const REAL` dentro de [index.html](index.html). No incorporar propiedades sin ficha individual comprobable. No utilizar imágenes ajenas sin licencia.
+La fuente de información del catálogo está en `const REAL` dentro de [index.html](index.html). Para proyectos inmobiliarios se admiten fichas oficiales del proyecto, siempre identificadas como tales y sin sugerir que exista una unidad disponible. No incorporar supuestas propiedades individuales sin ficha comprobable. No utilizar imágenes ajenas sin licencia.
 
 ## Desarrollo y verificación
 
@@ -63,3 +64,20 @@ Este proyecto es independiente de la propuesta futura de registro y certificaci�
 ## Referencia de diseño de producto
 
 Se ha tomado como inspiración conceptual el enfoque de utilidad para profesionales y clientes de The Real Brokerage; no existe afiliación, integración, reproducción de marca, base de datos o propiedad intelectual de esa empresa. La plataforma chilena sigue siendo un portal informativo y no actúa como corredor autorizado ni como intermediario de transacciones.
+
+## Ampliación visible del catálogo (2026-11-01)
+
+Ocho fichas adicionales, cada una con enlace al proyecto o anuncio original:
+
+| Región | Referencia | Fuente |
+|---|---|---|
+| O'Higgins | Viñedos del Cachapoal | CFL Inmobiliaria |
+| O'Higgins | Viñedos de Rancagua | CFL Inmobiliaria |
+| Metropolitana | El Arroyo 10035 | CFL Inmobiliaria |
+| Metropolitana | Vista Parque Las Pircas | CFL Inmobiliaria |
+| Valparaíso | Santa Teresa del Mar | CFL Inmobiliaria |
+| Valparaíso | Mirador El Yeco II | CFL Inmobiliaria |
+| Valparaíso | Parquemar El Tabo | CFL Inmobiliaria |
+| Los Lagos | Parque Estación Pupelde | Inmobiliaria Patagonia |
+
+*Datos referenciales consultados en las fichas oficiales. No existe integración comercial con esas empresas, autorización para replicar sus fotografías ni confirmación independiente de unidades disponibles.*

@@ -6,6 +6,7 @@ on:
     paths:
       - 'index.html'
       - 'scripts/visual-check.mjs'
+      - 'scripts/compatibility-check.mjs'
       - '.github/workflows/qa-responsive.yml'
 permissions:
   contents: read
@@ -15,7 +16,7 @@ concurrency:
 jobs:
   browser:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,8 +25,10 @@ jobs:
       - name: Instalar navegador para pruebas (solo CI)
         run: |
           npm install --no-save playwright@1.55.0
-          npx playwright install --with-deps chromium
+          npx playwright install --with-deps chromium firefox webkit
       - name: Servir sitio localmente
         run: python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/inmuebles-site.log 2>&1 &
       - name: Probar navegación y desbordamientos en 12 escenarios
         run: node scripts/visual-check.mjs
+      - name: Probar compatibilidad Firefox y motor WebKit
+        run: node scripts/compatibility-check.mjs

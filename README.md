@@ -13,6 +13,9 @@
 - Selección editorial de enlaces de actualidad, sin sincronización automática.
 - Navegación adaptativa, modo claro/oscuro y diálogos con gestión de foco.
 - [Información y privacidad](informacion.html).
+- [Guía para evaluar propiedades](guia.html) con lista de comprobación y enlaces a organismos oficiales.
+- [Herramienta gratuita para corredores y propietarios](herramientas.html): crea un resumen compartible sin enviar datos al servidor ni publicar anuncios.
+- Enlaces directos compartibles a referencias: `#ficha=IEC-PUB-2026-000001` (no implican oferta disponible).
 - **Sin administrador público**: el antiguo panel ficticio se retiró del HTML y no existe backend ni autenticación.
 
 ## Fiabilidad de referencias
@@ -36,7 +39,7 @@ Ejecutar pruebas locales con Node.js 22 o superior:
 node --test scripts/tests.mjs
 ```
 
-[Calidad del sitio](.github/workflows/validar-sitio.yml) ejecuta estas pruebas automáticamente ante cada cambio a `main` y en solicitudes de integración.
+[Calidad del sitio](.github/workflows/validar-sitio.yml) ejecuta estas pruebas automáticamente ante cada cambio a `main` y en solicitudes de integración. [QA visual responsivo](.github/workflows/qa-responsive.yml) prueba Chromium en seis tamaños y dos temas, además de los enlaces profundos, la guía y la herramienta de fichas.
 
 ### Requisitos antes de producción comercial
 
@@ -56,3 +59,7 @@ GitHub Pages utiliza la rama `main` y carpeta raíz. Consultar el historial de G
 ## Alcance
 
 Este proyecto es independiente de la propuesta futura de registro y certificación inmobiliaria nacional. Los IDs `IEC-PUB-...` no son identificadores públicos oficiales ni certificaciones.
+
+## Referencia de diseño de producto
+
+Se ha tomado como inspiración conceptual el enfoque de utilidad para profesionales y clientes de The Real Brokerage; no existe afiliación, integración, reproducción de marca, base de datos o propiedad intelectual de esa empresa. La plataforma chilena sigue siendo un portal informativo y no actúa como corredor autorizado ni como intermediario de transacciones.

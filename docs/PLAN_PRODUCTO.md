@@ -31,6 +31,14 @@
 - [Procedimiento para fotografías oficiales](LICENCIAS_FOTOGRAFIAS.md) con autorización escrita, evidencia privada y clasificación de medios.
 - Prueba automatizada que impide marcar una imagen como oficial sin campos de autorización y trazabilidad.
 
+## Mejoras actuales del portal (2026-11-01)
+- Buscador visible en portada por comuna/proyecto y región, sincronizado con los filtros del catálogo.
+- Menú de tarjetas con ficha informativa ampliada: descripción de origen, precio referencial, identificación interna, fuente y estado de comprobación de la URL.
+- Resumen público agregado de enlaces accesibles (HTTP 200), bloqueados (HTTP 403) y no concluyentes. **HTTP 200 nunca confirma disponibilidad**.
+- Controles de Chromium en 6 resoluciones × 2 temas, más pruebas automáticas específicas para filtros, favoritos, enlaces compartibles y buscador de portada.
+- Incorporada batería de compatibilidad para Firefox y WebKit en dos tamaños; su aprobación debe comprobarse en el historial de GitHub Actions, no se presume por disponer del script.
+- Pendiente la revisión manual en iPhone/Safari real y con lector de pantalla.
+
 ## Siguientes entregables antes de producción
 - Migración de catálogo a PostgreSQL con tablas `properties`, `listings`, `sources`, `verification_events`, `media_licenses` y `audit_logs`.
 - API con autenticación MFA para administradores, RBAC, políticas por recurso y validación de entrada.

@@ -76,6 +76,7 @@ body.dark .head{background:rgba(19,28,23,.96);border-bottom-color:var(--line)}
 #inicio .hero{position:relative;isolation:isolate;display:block;min-height:650px;height:clamp(610px,52vw,730px);margin-top:22px;padding:0;border-radius:26px;overflow:hidden;background:#26352d;box-shadow:0 22px 55px #0d201924}
 #inicio .heroart{position:absolute;inset:0;display:block;width:100%;height:100%;min-height:0;border-radius:0;background:#354c3c;overflow:hidden}
 #inicio .heroart:before{display:none}
+.hero-picture{position:absolute;inset:0;width:100%;height:100%;display:block}
 #inicio .heroart:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(7,17,13,.72) 0%,rgba(9,18,13,.48) 37%,rgba(8,17,13,.04) 75%),linear-gradient(0deg,rgba(8,16,12,.6),transparent 30%)}
 .hero-photo{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 53%;filter:saturate(.94) contrast(1.02)}
 .hero-copy{position:absolute;z-index:2;top:13.5%;left:5.7%;width:min(60%,660px);color:#fff}

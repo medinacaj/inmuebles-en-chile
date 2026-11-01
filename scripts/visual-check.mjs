@@ -32,5 +32,25 @@ try {
    await context.close();
   }
  }
+
+ const context=await browser.newContext({viewport:{width:375,height:812}});
+ const page=await context.newPage();
+ await page.goto('http://127.0.0.1:8765/#ficha=IEC-PUB-2026-000001',{waitUntil:'networkidle'});
+ assert.equal(await page.locator('#search').inputValue(),'IEC-PUB-2026-000001');
+ assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
+ await page.goto('http://127.0.0.1:8765/guia.html',{waitUntil:'domcontentloaded'});
+ assert.equal(await page.locator('#checks input[type="checkbox"]').count(),6);
+ await page.locator('#checks input[type="checkbox"]').first().check();
+ assert.match(await page.locator('#progress').innerText(),/1 de 6/);
+ await page.goto('http://127.0.0.1:8765/herramientas.html',{waitUntil:'domcontentloaded'});
+ await page.locator('#name').fill('Departamento de ejemplo');
+ await page.locator('#city').fill('Concepción');
+ await page.locator('#price').fill('2500');
+ await page.getByRole('button',{name:'Crear resumen'}).click();
+ assert.match(await page.locator('#result').innerText(),/UF 2.500/);
+ assert.match(await page.locator('#result').innerText(),/Disponibilidad por confirmar|disponibilidad por confirmar/i);
+ assert.equal(await page.locator('#copy').isEnabled(),true);
+ assert.ok((await page.evaluate(()=>Math.max(0,document.documentElement.scrollWidth-window.innerWidth)))<=1);
+ await context.close();
  console.log(JSON.stringify(report,null,2));
 } finally { await browser.close(); }

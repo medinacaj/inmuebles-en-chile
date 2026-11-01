@@ -5,6 +5,7 @@ const browser = await chromium.launch({headless:true});
 const sizes = [
   [320,700],[375,812],[430,932],[768,1024],[1024,768],[1440,900]
 ];
+async function navTo(page,name){const nav=page.locator('#nav');if(!(await nav.isVisible()))await page.locator('#menuToggle').click();await page.getByRole('button',{name,exact:true}).click()}
 const report = [];
 try {
  for (const [width,height] of sizes) {
@@ -14,9 +15,14 @@ try {
    const failures = [];
    page.on('pageerror',error=>failures.push(error.message));
    await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+   assert.equal(await page.locator('.hero-photo').count(),1);
+   assert.ok(await page.locator('.hero-copy h1').isVisible(),'El titular editorial debe estar visible');
+   assert.ok(await page.locator('.hero-panels .hero-panel').count()>=3);
+   if(width<=680){assert.equal(await page.locator('#menuToggle').isVisible(),true);assert.equal(await page.locator('#nav').isVisible(),false)}
    if (theme==='dark') await page.locator('#theme').click();
    assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('dark')),theme==='dark');
-   await page.getByRole('button',{name:'Propiedades',exact:true}).click();
+   await navTo(page,'Propiedades');
+   if(width<=680)assert.equal(await page.locator('#nav').isVisible(),false,'El menú debe cerrarse tras navegar');
    assert.ok(await page.getByRole('heading',{name:'Explora el mercado inmobiliario.'}).count());
    assert.ok((await page.locator('#propertyGrid .property-card').count())>=8,'El catálogo debe mostrar al menos 8 referencias no retiradas');
    await page.locator('#sourceSummary > span').first().waitFor({state:'visible'});
@@ -48,7 +54,7 @@ try {
    assert.equal(await page.getByRole('dialog').isVisible(),false);
    const overflow = await page.evaluate(()=>Math.max(0,document.documentElement.scrollWidth-window.innerWidth));
    assert.ok(overflow<=1, 'Desbordamiento horizontal en '+width+'px: '+overflow+'px');
-   await page.getByRole('button',{name:'Actualidad',exact:true}).click();
+   await navTo(page,'Actualidad');
    assert.ok(await page.locator('#newsGrid .news').count()>0);
    assert.deepEqual(failures,[], 'Errores de JavaScript en '+width+'px, '+theme);
    report.push({width,height,theme,overflow,results:'ok'});
@@ -102,11 +108,11 @@ try {
  assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
  await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  await page.evaluate(()=>{window.__featuredBefore=document.querySelector('#featured .property-card')});
- await page.getByRole('button',{name:'Propiedades',exact:true}).click();
+ await navTo(page,'Propiedades');
  await page.locator('#search').fill('Rancagua');
  assert.equal(await page.evaluate(()=>window.__featuredBefore===document.querySelector('#featured .property-card')),true,'El filtro no debe reconstruir las destacadas');
  await page.locator('#search').fill('');
- await page.getByRole('button',{name:'Inicio',exact:true}).click();
+ await navTo(page,'Inicio');
  assert.ok((await page.locator('#regionQuick .region-button').count())>=5);
  await page.locator('#regionQuick .region-button[data-region="O\'Higgins"]').click();
  assert.equal(await page.locator('#region').inputValue(),"O'Higgins");

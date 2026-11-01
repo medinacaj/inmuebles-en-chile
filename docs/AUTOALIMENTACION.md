@@ -9,6 +9,7 @@ Fuentes iniciales chilenas, seleccionadas por ofrecer RSS público:
 - Cooperativa, sección Economía: https://www.cooperativa.cl/noticias/site/tax/port/all/rss_5___1.xml
 - Servicio de Impuestos Internos: https://www.sii.cl/pagina/actualizada/noticias/rss/siiall_rss.xml
 - La Tercera: https://www.latercera.com/arcio/rss/
+- El Diario Inmobiliario (fuente en evaluación): https://eldiarioinmobiliario.cl/feed/
 
 El sistema consulta fuentes dos veces al día mediante GitHub Actions (.github/workflows/auto-noticias.yml). La periodicidad depende de GitHub Actions y no constituye garantía de ejecución exacta.
 
@@ -19,6 +20,8 @@ El resultado incluye: titular original, fecha de publicación declarada por el f
 1. Dominio HTTPS permitido y redirecciones comprobadas ANTES de acceder.
 2. Descargas de XML limitadas a 1,5 MB y 14 segundos; sin ejecución de JavaScript.
 3. Noticias con fecha interpretable, antigüedad máxima de 100 días y temática inmobiliaria.
+   - Se excluyen coincidencias engañosas como títulos de novelas que incluyen «Casa».
+   - Se descartan titulares sobre mercados extranjeros cuando no mencionan un contexto chileno. Esto reduce falsos positivos, aunque la revisión editorial sigue siendo necesaria.
 4. Filtrado específico para vivienda, proyectos residenciales, hipotecarios, arriendos, construcción, subsidios y normativa afín.
 5. Deduplicación por URL canónica, sin parámetros de seguimiento.
 6. Máximo 48 enlaces, ordenados por fecha de origen.

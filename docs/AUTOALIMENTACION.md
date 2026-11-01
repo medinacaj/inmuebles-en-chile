@@ -8,6 +8,7 @@ Fuentes iniciales chilenas, seleccionadas por ofrecer RSS público:
 - Diario Financiero: https://www.df.cl/noticias/site/list/port/rss.xml
 - Cooperativa, sección Economía: https://www.cooperativa.cl/noticias/site/tax/port/all/rss_5___1.xml
 - Servicio de Impuestos Internos: https://www.sii.cl/pagina/actualizada/noticias/rss/siiall_rss.xml
+- La Tercera: https://www.latercera.com/arcio/rss/
 
 El sistema consulta fuentes dos veces al día mediante GitHub Actions (.github/workflows/auto-noticias.yml). La periodicidad depende de GitHub Actions y no constituye garantía de ejecución exacta.
 

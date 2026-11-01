@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-01T14:39:34.593Z",
+  "checkedAt": "2026-11-01T14:40:35.668Z",
   "listings": [
     {
       "id": "IEC-PUB-2026-000001",
@@ -8,7 +8,7 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-01T14:39:34.565Z"
+      "checkedAt": "2026-11-01T14:40:35.597Z"
     },
     {
       "id": "IEC-PUB-2026-000002",
@@ -16,7 +16,7 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-01T14:39:34.589Z"
+      "checkedAt": "2026-11-01T14:40:35.665Z"
     }
   ]
 }

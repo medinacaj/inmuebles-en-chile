@@ -19,7 +19,12 @@ try {
    await page.getByRole('button',{name:'Propiedades',exact:true}).click();
    assert.ok(await page.getByRole('heading',{name:'Explora el mercado inmobiliario.'}).count());
    assert.ok((await page.locator('#propertyGrid .property-card').count())>=8,'El catálogo debe mostrar al menos 8 referencias no retiradas');
-   await page.locator('#propertyGrid .listing-tools button').first().click();
+   await page.locator('#propertyGrid .card-fav').first().click();
+   assert.equal(await page.locator('#propertyGrid .photo-link.has-photo img').count(),await page.locator('#propertyGrid .property-card').count());
+   assert.ok(await page.locator('#propertyGrid .card-options').count()>=1);
+   await page.locator('#propertyGrid .card-options').first().click();
+   assert.equal(await page.getByRole('dialog').isVisible(),true);
+   await page.getByRole('button',{name:/Añadir a comparación|Quitar de comparación/}).click();
    await page.getByRole('button',{name:/Favoritos/}).click();
    assert.equal(await page.getByRole('dialog').isVisible(),true);
    await page.keyboard.press('Escape');

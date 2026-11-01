@@ -22,6 +22,15 @@
 - Gestión de foco y teclado en diálogos, aviso de privacidad y mejoras de contraste.
 - La lectura HTTP 403 de los portales inmobiliarios se considera estado desconocido, no disponible.
 
+## Mejoras de experiencia y gobernanza de imágenes (2026-11-01)
+- Filtro adicional por precio inicial anunciado (UF); búsqueda tolerante a tildes por región, comuna, fuente e identificador.
+- Compartir nativo mediante Web Share API en móviles compatibles, con copia de enlace como alternativa.
+- Favoritos sin reconstrucción de tarjetas para preservar foco y reducir trabajo de renderizado.
+- La portada no reconstruye sus seis destacadas ni la navegación regional por cada pulsación de tecla en el buscador.
+- Explicación visible sobre ilustraciones, enlaces a fotografías en origen y aviso accesible si falla la consulta de estado.
+- [Procedimiento para fotografías oficiales](LICENCIAS_FOTOGRAFIAS.md) con autorización escrita, evidencia privada y clasificación de medios.
+- Prueba automatizada que impide marcar una imagen como oficial sin campos de autorización y trazabilidad.
+
 ## Siguientes entregables antes de producción
 - Migración de catálogo a PostgreSQL con tablas `properties`, `listings`, `sources`, `verification_events`, `media_licenses` y `audit_logs`.
 - API con autenticación MFA para administradores, RBAC, políticas por recurso y validación de entrada.

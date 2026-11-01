@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T19:58:27Z",
-  "lastAttemptAt": "2026-11-01T19:58:27Z",
+  "updatedAt": "2026-11-01T20:02:43Z",
+  "lastAttemptAt": "2026-11-01T20:02:43Z",
   "sources": [
     {
       "id": "df-economia",
@@ -13,13 +13,19 @@
       "id": "cooperativa-economia",
       "name": "Cooperativa Economía",
       "ok": true,
-      "count": 1
+      "count": 0
+    },
+    {
+      "id": "diario-inmobiliario",
+      "name": "El Diario Inmobiliario",
+      "ok": true,
+      "count": 5
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "sii-noticias",
@@ -39,13 +45,13 @@
       "publishedAt": "2026-11-01T15:39:30Z"
     },
     {
-      "id": "827b4014cc79b7aec9",
-      "title": "El millonario negocio inmobiliario de Naoshi Matsumoto en Miami",
-      "url": "https://www.latercera.com/pulso/noticia/el-millonario-negocio-inmobiliario-de-naoshi-matsumoto-en-miami/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
+      "id": "2eb66f6ed9144c1d7c",
+      "title": "Departamentos nuevos: Santiago lidera la mayor venta y La Cisterna registra un alza de 46,5%",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/ventas-departamentos-nuevos-comunas-rm/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
       "category": "Mercado",
-      "publishedAt": "2026-11-01T10:00:00Z"
+      "publishedAt": "2026-10-31T10:00:15Z"
     },
     {
       "id": "8f4be39abe2dfb50f9",
@@ -57,13 +63,40 @@
       "publishedAt": "2026-10-30T11:06:05Z"
     },
     {
-      "id": "88378d0b7292bdd8ef",
-      "title": "Isabel Allende ganó el Premio Planeta 2026 por su continuación de \"La Casa de los Espíritus\"",
-      "url": "https://www.cooperativa.cl/noticias/cultura/literatura/isabel-allende/isabel-allende-gano-el-premio-planeta-2026-por-su-continuacion-de-la/2026-10-15/181023.html",
-      "source": "Cooperativa Economía",
-      "sourceId": "cooperativa-economia",
+      "id": "4e18624704844a4935",
+      "title": "Desempleo llega a 9,8%, mientras el empleo crece en construcción y actividades inmobiliarias",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/desempleo-chile-empleo-construccion-actividades-inmobiliarias/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
       "category": "Mercado",
-      "publishedAt": "2026-10-15T21:10:23Z"
+      "publishedAt": "2026-10-30T10:00:41Z"
+    },
+    {
+      "id": "f8460ef5558666de49",
+      "title": "Comprar una vivienda: Qué revisar antes de firmar y cómo evaluar una oferta",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/comprar-una-vivienda-que-revisar-antes-de-firmar-y-como-evaluar-una-oferta/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-10-30T10:00:35Z"
+    },
+    {
+      "id": "9036a88ebd4cc108f1",
+      "title": "Reforma al mercado de capitales avanza al Senado con fondo para financiar viviendas de hasta 6.000 UF",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/reforma-mercado-capitales-fondo-viviendas/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-10-29T10:28:30Z"
+    },
+    {
+      "id": "dc354c3a4cd91703b3",
+      "title": "ENADE 2026: Quiroz advierte que disputa por cambios a la OGUC puede retrasar la reactivación de la construcción",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/enade-2026-quiroz-advierte-que-disputa-por-cambios-a-la-oguc-puede-retrasar-la-reactivacion-de-la-construccion/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-10-29T10:00:34Z"
     }
   ]
 }

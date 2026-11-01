@@ -19,6 +19,9 @@ try {
    await page.getByRole('button',{name:'Propiedades',exact:true}).click();
    assert.ok(await page.getByRole('heading',{name:'Explora el mercado inmobiliario.'}).count());
    assert.ok((await page.locator('#propertyGrid .property-card').count())>=8,'El catálogo debe mostrar al menos 8 referencias no retiradas');
+   const visibleImage=page.locator('#propertyGrid .photo-link.has-photo img').first();
+   await visibleImage.scrollIntoViewIfNeeded();
+   assert.equal(await visibleImage.evaluate(img=>img.decode().then(()=>img.naturalWidth>0).catch(()=>false)),true,'Debe cargar la imagen de la ficha');
    await page.locator('#propertyGrid .card-fav').first().click();
    assert.equal(await page.locator('#propertyGrid .photo-link.has-photo img').count(),await page.locator('#propertyGrid .property-card').count());
    assert.ok(await page.locator('#propertyGrid .card-options').count()>=1);
@@ -44,6 +47,13 @@ try {
  await page.goto('http://127.0.0.1:8765/#ficha=IEC-PUB-2026-000001',{waitUntil:'networkidle'});
  assert.equal(await page.locator('#search').inputValue(),'IEC-PUB-2026-000001');
  assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
+ const sourceCards=page.locator('#propertyGrid .property-card');
+ assert.equal(await sourceCards.locator('.card-fav').count(),1);
+ assert.equal(await sourceCards.locator('.card-options').count(),1);
+ await sourceCards.locator('.card-options').first().click();
+ assert.equal(await page.getByRole('dialog').isVisible(),true);
+ await page.getByRole('button',{name:'Compartir enlace'}).click();
+ assert.equal(await page.getByRole('dialog').isVisible(),false);
  await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
  assert.ok((await page.locator('#regionQuick .region-button').count())>=5);
  await page.locator('#regionQuick .region-button[data-region="O\'Higgins"]').click();

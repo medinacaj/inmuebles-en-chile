@@ -1,0 +1,49 @@
+name: Proponer un proyecto con fuente pública
+description: Enviar un proyecto inmobiliario para evaluación editorial. Requiere cuenta GitHub.
+title: "[Propuesta] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La propuesta **no publica automáticamente** un inmueble y no tiene costo.
+        El portal no certifica disponibilidad ni propiedad. Solo se incorporan fuentes con evidencia pública comprobable.
+        No compartas RUT, teléfonos, direcciones particulares, contratos privados ni archivos protegidos sin permiso.
+  - type: input
+    id: titulo
+    attributes:
+      label: Nombre del proyecto
+      placeholder: Nombre comercial publicado por la inmobiliaria
+    validations:
+      required: true
+  - type: input
+    id: ubicacion
+    attributes:
+      label: Región y comuna
+      placeholder: Región del Biobío, Concepción
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Enlace oficial de la publicación
+      description: Página pública individual del proyecto en sitio del anunciante o portal autorizado.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: datos
+    attributes:
+      label: Información que aparece en la fuente
+      description: Tipo de proyecto, operación, precio orientativo y condiciones, solo si están indicados públicamente.
+    validations:
+      required: false
+  - type: checkboxes
+    id: condiciones
+    attributes:
+      label: Condiciones editoriales
+      options:
+        - label: Entiendo que la propuesta está sujeta a revisión manual y no crea una publicación activa.
+          required: true
+        - label: Entiendo que no debo adjuntar fotografías o renders de terceros sin permiso.
+          required: true

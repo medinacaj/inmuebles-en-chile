@@ -246,3 +246,14 @@ test('el formulario de incidencia no solicita datos sensibles de usuarios', asyn
  assert.match(template,/Identificador de la publicación/);
  assert.doesNotMatch(template,/required: true[\s\S]*RUT|teléfono obligatorio/i);
 });
+
+
+test('la propuesta de publicación es gratuita y requiere revisión editorial', async () => {
+ const template = await fs.readFile('.github/ISSUE_TEMPLATE/proponer-proyecto.yml','utf8');
+ const toolsPage = await fs.readFile('herramientas.html','utf8');
+ assert.match(template,/no publica automáticamente/i);
+ assert.match(template,/No compartas RUT/);
+ assert.match(template,/Enlace oficial de la publicación/);
+ assert.match(toolsPage,/proponer-proyecto\.yml/);
+ assert.match(toolsPage,/revis[aó] manualmente/i);
+});

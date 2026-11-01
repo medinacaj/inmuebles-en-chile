@@ -12,7 +12,7 @@
 - Filtros por texto, operación, tipo, región y presupuesto inicial en UF; búsqueda tolerante a acentos y ordenamiento por precio y superficie.
 - Favoritos y comparación de hasta tres inmuebles, guardados **solo en el navegador**.
 - Mercado Inteligente con indicadores orientativos y calculadora hipotecaria.
-- Selección editorial de enlaces de actualidad, sin sincronización automática.
+- **Actualidad autoalimentada:** la portada y Noticias consumen `data/news-feed.json`, generado automáticamente desde RSS de medios chilenos; filtra, deduplica y enlaza a artículos originales. En caso de fallo se muestra una selección editorial previa identificada como archivo.
 - Navegación adaptativa, modo claro/oscuro y diálogos con gestión de foco.
 - [Información y privacidad](informacion.html).
 - [Guía para evaluar propiedades](guia.html) con lista de comprobación y enlaces a organismos oficiales.
@@ -26,6 +26,14 @@
 - [Reportar un enlace o dato incorrecto](https://github.com/medinacaj/inmuebles-en-chile/issues/new?template=reporte-referencia.yml) para que se evalúe la referencia. No se solicitan datos personales.
 - El menú de cada ficha muestra el enlace de reporte y su identificación interna. La propuesta no acredita identidad o autorización del anunciante.
 - [Procedimiento operativo](docs/OPERACION_CATALOGO.md) para revisión de fuentes, informes de estado y seguimiento de incidencias.
+
+## Contenido editorial automático
+
+- Los titulares RSS se actualizan dos veces al día mediante [GitHub Actions](.github/workflows/auto-noticias.yml).
+- Feeds de Diario Financiero, Cooperativa Economía, La Tercera y Servicio de Impuestos Internos, con filtros de vivienda, proyectos y financiamiento.
+- No se copian artículos ni fotografías, y un artículo sobre un proyecto no se convierte automáticamente en un inmueble disponible.
+- [Diseño, límites y operación del motor RSS](docs/AUTOALIMENTACION.md).
+- La actualización puede retrasarse por fallos, bloqueos de proveedores o por programación de GitHub; la web muestra la fecha real del último éxito.
 
 ## Fiabilidad de referencias
 

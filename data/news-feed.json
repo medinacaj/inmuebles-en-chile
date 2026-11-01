@@ -1,7 +1,69 @@
 {
   "schemaVersion": 1,
-  "updatedAt": null,
-  "lastAttemptAt": null,
-  "sources": [],
-  "items": []
+  "updatedAt": "2026-11-01T19:58:27Z",
+  "lastAttemptAt": "2026-11-01T19:58:27Z",
+  "sources": [
+    {
+      "id": "df-economia",
+      "name": "Diario Financiero",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "id": "cooperativa-economia",
+      "name": "Cooperativa Economía",
+      "ok": true,
+      "count": 1
+    },
+    {
+      "id": "la-tercera",
+      "name": "La Tercera",
+      "ok": true,
+      "count": 2
+    },
+    {
+      "id": "sii-noticias",
+      "name": "Servicio de Impuestos Internos",
+      "ok": true,
+      "count": 1
+    }
+  ],
+  "items": [
+    {
+      "id": "251aeea4ac3bff38c5",
+      "title": "Inicia encuesta Casen 2026: visitarán más de 111 mil viviendas en todo Chile durante tres meses",
+      "url": "https://www.latercera.com/nacional/noticia/inicia-encuesta-casen-2026-visitaran-mas-de-111-mil-viviendas-en-todo-chile-durante-tres-meses/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-01T15:39:30Z"
+    },
+    {
+      "id": "827b4014cc79b7aec9",
+      "title": "El millonario negocio inmobiliario de Naoshi Matsumoto en Miami",
+      "url": "https://www.latercera.com/pulso/noticia/el-millonario-negocio-inmobiliario-de-naoshi-matsumoto-en-miami/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "id": "8f4be39abe2dfb50f9",
+      "title": "SII establece procedimiento especial para solicitar devolución de IVA en ventas de viviendas acogidas a la Ley N° 21.850",
+      "url": "https://www.sii.cl/noticias/2026/301026noti01smn.htm",
+      "source": "Servicio de Impuestos Internos",
+      "sourceId": "sii-noticias",
+      "category": "Normativa",
+      "publishedAt": "2026-10-30T11:06:05Z"
+    },
+    {
+      "id": "88378d0b7292bdd8ef",
+      "title": "Isabel Allende ganó el Premio Planeta 2026 por su continuación de \"La Casa de los Espíritus\"",
+      "url": "https://www.cooperativa.cl/noticias/cultura/literatura/isabel-allende/isabel-allende-gano-el-premio-planeta-2026-por-su-continuacion-de-la/2026-10-15/181023.html",
+      "source": "Cooperativa Economía",
+      "sourceId": "cooperativa-economia",
+      "category": "Mercado",
+      "publishedAt": "2026-10-15T21:10:23Z"
+    }
+  ]
 }

@@ -1,4 +1,22 @@
 {
-  "checkedAt": null,
-  "listings": []
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-01T14:38:30.031Z",
+  "listings": [
+    {
+      "id": "IEC-PUB-2026-000001",
+      "source": "Enlace Inmobiliario",
+      "status": "unknown",
+      "reason": "La fuente devuelve HTTP 403; requiere revisión",
+      "httpStatus": 403,
+      "checkedAt": "2026-11-01T14:38:30.003Z"
+    },
+    {
+      "id": "IEC-PUB-2026-000002",
+      "source": "Enlace Inmobiliario",
+      "status": "unknown",
+      "reason": "La fuente devuelve HTTP 403; requiere revisión",
+      "httpStatus": 403,
+      "checkedAt": "2026-11-01T14:38:30.027Z"
+    }
+  ]
 }

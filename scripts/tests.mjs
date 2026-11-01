@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { extractCatalog, classifyResponse, preserveConfirmedWithdrawal } from './check-listings.mjs';
+import { extractCatalog, classifyResponse, preserveConfirmedWithdrawal, isAllowedSourceUrl, inspectSource, readHtmlResponse } from './check-listings.mjs';
 
 const page = await fs.readFile('index.html', 'utf8');
 const catalog = extractCatalog(page);
@@ -157,4 +157,62 @@ test('fotografías oficiales requieren derechos de reutilización documentados',
    assert.ok(p.imageCredit,p.publicationId+': falta atribución/origen de la fotografía de referencia');
   }
  }
+});
+
+
+test('el verificador solo permite dominios aprobados con HTTPS', () => {
+ for (const url of [
+   'https://www.cfl.cl/proyecto/',
+   'https://enlaceinmobiliario.cl/venta',
+   'https://inmobiliariapatagonia.cl/propiedad'
+ ]) assert.equal(isAllowedSourceUrl(url), true, url);
+ for (const url of [
+   'http://www.cfl.cl/proyecto',
+   'https://cfl.cl.ejemplo.net/malicioso',
+   'https://127.0.0.1/admin',
+   'https://localhost/',
+   'https://cfl.cl@127.0.0.1/privado',
+   'https://cfl.cl:8443/',
+   'file:///etc/passwd',
+   'not-a-url'
+ ]) assert.equal(isAllowedSourceUrl(url), false, url);
+});
+
+test('rechazar redirecciones a dominios no permitidos sin consultarlos', async () => {
+ let calls = 0;
+ const result = await inspectSource('https://www.cfl.cl/test', async () => {
+   calls++;
+   return new Response('', {status:302, headers:{location:'https://127.0.0.1/private'}});
+ });
+ assert.equal(calls, 1);
+ assert.equal(result.status, 'unknown');
+ assert.match(result.reason, /Redirección fuera/);
+});
+
+test('un 404 explícito marca la ficha retirada, pero 403 no confirma nada', async () => {
+ const gone = await inspectSource('https://www.cfl.cl/test', async () => new Response('', {status:404}));
+ assert.equal(gone.status, 'unavailable');
+ const blocked = await inspectSource('https://www.cfl.cl/test', async () => new Response('', {status:403}));
+ assert.equal(blocked.status, 'unknown');
+ const ok = await inspectSource('https://www.cfl.cl/test', async () => new Response('<html>Proyecto</html>', {status:200, headers:{'content-type':'text/html; charset=utf-8'}}));
+ assert.equal(ok.status, 'unknown');
+});
+
+test('redirecciones permitidas solo hacia dominios aprobados', async () => {
+ const calls = [];
+ const result = await inspectSource('https://cfl.cl/inicio', async url => {
+   calls.push(url);
+   return calls.length===1 ?
+     new Response('', {status:301, headers:{location:'/proyecto'}}) :
+     new Response('<main>Esta propiedad ya no se encuentra disponible</main>', {status:200, headers:{'content-type':'text/html'}});
+ });
+ assert.equal(calls[1], 'https://cfl.cl/proyecto');
+ assert.equal(result.status, 'unavailable');
+});
+
+test('descargas grandes o no HTML no provocan carga ilimitada', async () => {
+ const html = await readHtmlResponse(new Response('<html>válido</html>', {headers:{'content-type':'text/html'}}),100);
+ assert.match(html, /válido/);
+ await assert.rejects(() => readHtmlResponse(new Response('archivo binario',{headers:{'content-type':'image/png'}})),/HTML/);
+ await assert.rejects(() => readHtmlResponse(new Response('x'.repeat(200),{headers:{'content-type':'text/html'}}),100),/límite/);
 });

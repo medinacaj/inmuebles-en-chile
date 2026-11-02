@@ -25,7 +25,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: qa-responsive
+  group: qa-responsive-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 jobs:
   browser:

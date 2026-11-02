@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T20:10:36Z",
-  "lastAttemptAt": "2026-11-01T20:10:36Z",
+  "health": "ok",
+  "updatedAt": "2026-11-02T01:44:14Z",
+  "lastAttemptAt": "2026-11-02T01:44:14Z",
   "sources": [
     {
       "id": "df-economia",

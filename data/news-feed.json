@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-02T01:44:14Z",
-  "lastAttemptAt": "2026-11-02T01:44:14Z",
+  "updatedAt": "2026-11-02T20:23:35Z",
+  "lastAttemptAt": "2026-11-02T20:23:35Z",
   "sources": [
     {
       "id": "df-economia",
@@ -36,6 +36,15 @@
     }
   ],
   "items": [
+    {
+      "id": "91332c898eb4733ec5",
+      "title": "El subsidio a la tasa hipotecaria suma más de 35.000 créditos cursados y las solicitudes elegibles superan las 123 mil",
+      "url": "https://www.latercera.com/pulso/noticia/subsidio-tasa-hipotecaria-creditos-solicitudes-elegibles-viviendas/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-02T15:04:07Z"
+    },
     {
       "id": "251aeea4ac3bff38c5",
       "title": "Inicia encuesta Casen 2026: visitarán más de 111 mil viviendas en todo Chile durante tres meses",

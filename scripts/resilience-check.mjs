@@ -95,10 +95,10 @@ try{
   await p.reload({waitUntil:'networkidle'});
   assert.equal(await p.locator('#propertyGrid [data-property-id="1001"]').count(),0);
  });
- await check('fondo de portada cubre toda su altura en móvil',async p=>{
+ await check('imagen de portada mantiene su área completa en móvil',async p=>{
   await p.setViewportSize({width:375,height:812});
   await p.goto(base,{waitUntil:'networkidle'});
-  const heights=await p.evaluate(()=>({hero:document.querySelector('#inicio .hero').getBoundingClientRect().height,art:document.querySelector('#inicio .heroart').getBoundingClientRect().height}));
+  const heights=await p.evaluate(()=>({hero:document.querySelector('.hero-picture').getBoundingClientRect().height,art:document.querySelector('#inicio .heroart').getBoundingClientRect().height}));
   assert.ok(Math.abs(heights.hero-heights.art)<=1,JSON.stringify(heights));
  });
  console.log(JSON.stringify(results,null,2));

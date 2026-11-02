@@ -34,7 +34,8 @@ try {
    assert.ok(await page.locator('#homeNews').evaluate(el=>el.scrollLeft)>scrollStart,'El carrusel debe desplazarse');
    await page.locator('#homeNewsPrev').click();
    assert.equal(await page.evaluate(()=>{const a=document.querySelector('#actualidad-inicio'),b=document.querySelector('.region-discovery');return Boolean(a&&b&&a.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING)}),true,'Actualidad debe aparecer antes de explorar regiones');
-   assert.ok(await page.locator('.hero-panels .hero-panel').count()>=3);
+   assert.ok(await page.locator('#homeSearch').isVisible(),'Buscador protagonista visible');
+   assert.ok(await page.locator('#homeBudget').isVisible(),'Presupuesto accesible desde portada');
    if(width<=680){assert.equal(await page.locator('#menuToggle').isVisible(),true);assert.equal(await page.locator('#nav').isVisible(),false)}
    if (theme==='dark') await page.locator('#theme').click();
    assert.equal(await page.locator('body').evaluate(el=>el.classList.contains('dark')),theme==='dark');

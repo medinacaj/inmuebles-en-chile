@@ -15,7 +15,8 @@
     "serve": "python3 -B -m http.server 8765 --bind 127.0.0.1",
     "images:optimize": "python3 scripts/optimize-images.py",
     "test:accessibility": "node scripts/accessibility-check.mjs",
-    "test:autoplay": "node scripts/autoplay-check.mjs"
+    "test:autoplay": "node scripts/autoplay-check.mjs",
+    "test:brand": "node scripts/brand-check.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

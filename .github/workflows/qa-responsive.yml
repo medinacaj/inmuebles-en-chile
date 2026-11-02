@@ -10,12 +10,14 @@ on:
       - 'assets/css/**'
       - 'assets/illustrations/**'
       - 'assets/photos/**'
+      - 'assets/fonts/**'
       - 'data/**'
       - 'package.json'
       - 'package-lock.json'
       - 'scripts/resilience-check.mjs'
       - 'scripts/accessibility-check.mjs'
       - 'scripts/autoplay-check.mjs'
+      - 'scripts/brand-check.mjs'
       - 'herramientas.html'
       - 'guia.html'
       - 'informacion.html'
@@ -46,6 +48,8 @@ jobs:
         run: |
           mkdir -p test-results
           node scripts/visual-check.mjs > test-results/visual.json
+      - name: Verificar composición coral y presupuesto
+        run: node scripts/brand-check.mjs > test-results/brand.json
       - name: Probar errores de red, filtros e historial
         run: node scripts/resilience-check.mjs > test-results/resilience.json
       - name: Probar reproducción automática del carrusel

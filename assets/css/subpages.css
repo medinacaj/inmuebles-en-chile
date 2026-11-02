@@ -1,55 +1,54 @@
-/* Páginas de apoyo: misma identidad editorial que la portada. */
-:root{
- --bg:#f8f7f4;--paper:#fffefa;--ink:#18221d;--muted:#57645c;
- --line:#deded7;--gold:#4b6859;--soft:#edf0e9
-}
-body.subpage{
- background:var(--bg);color:var(--ink);
- font-family:Inter,"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
- line-height:1.6;-webkit-font-smoothing:antialiased
-}
-.subpage h1,.subpage h2,.subpage h3{font-family:inherit;line-height:1.1;letter-spacing:-.055em}
-.subpage h1{font-weight:820;font-size:clamp(35px,5vw,60px);line-height:1.04}
-.subpage h2{font-weight:780;letter-spacing:-.045em}
-.subpage header,.subpage .top{background:var(--paper);border-bottom:1px solid var(--line)}
-.subpage header a,.subpage .top a{color:var(--ink);text-decoration:none;font-weight:650}
-.subpage header a:hover,.subpage .top a:hover{text-decoration:underline;text-underline-offset:4px}
-.subpage .brand{font-family:inherit;font-weight:850;font-size:22px;letter-spacing:-.07em}
-.subpage main{padding-top:clamp(36px,5vw,70px)}
-.subpage .lead{max-width:68ch;color:var(--muted);font-size:clamp(15px,1.5vw,18px);line-height:1.7}
-.subpage .kicker,.subpage .eyebrow{font-size:11px;letter-spacing:.15em;font-weight:780;color:var(--gold)}
-.subpage .panel,.subpage .card,.subpage .sources a,.subpage .suggest-project{
- background:var(--paper);color:var(--ink);border:1px solid var(--line);
- border-radius:18px;box-shadow:0 7px 28px #14251a0b
-}
-.subpage .note,.subpage .notice{background:var(--soft);border-radius:14px;padding:17px 20px}
-.subpage input,.subpage select,.subpage textarea{
- border-radius:10px;border:1px solid var(--line);background:var(--paper);
- color:var(--ink);min-height:45px
-}
-.subpage button,.subpage .suggest-project a{border-radius:999px;min-height:44px;font-weight:690}
-.subpage button:not(.secondary),.subpage .suggest-project a{background:var(--ink);color:var(--bg)}
-.subpage button.secondary{border-color:var(--line);background:var(--paper);color:var(--ink)}
-.subpage :is(a,button,input,select,textarea):focus-visible{outline:3px solid #ab7c3a;outline-offset:3px}
-.subpage .check{line-height:1.5}.subpage .check input{accent-color:var(--gold)}
-.subpage .sources a:hover{border-color:var(--gold);text-decoration:none}
-.subpage footer{border-top:1px solid var(--line);background:transparent;color:var(--muted)}
-.subpage footer a{color:var(--ink)}
-.subpage #result{background:var(--soft);border:1px solid var(--line);border-radius:13px}
+/* Páginas de apoyo con la misma identidad que el portal. Tokens en brand.css. */
+body.subpage{background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.7}
+.subpage .skip-link{position:absolute;left:18px;top:-100px;background:var(--ink);color:var(--bg);padding:10px 16px;z-index:100;border-radius:10px}
+.subpage .skip-link:focus{top:10px}
+.subpage h1,.subpage h2,.subpage h3{font-family:inherit;line-height:1.12;letter-spacing:-.055em;color:var(--ink)}
+.subpage h1{font-weight:800;font-size:clamp(36px,5vw,58px);margin:15px 0 24px;max-width:20ch}
+.subpage h2{font-size:clamp(25px,3vw,32px);font-weight:800;margin:30px 0 16px}
+.subpage h3{font-weight:800}
+.subpage header,.subpage .top{background:var(--bg);border-bottom:1px solid var(--line);padding-block:18px}
+.subpage header a,.subpage .top a{color:var(--ink);text-decoration:none;font-weight:750}
+.subpage header a:hover,.subpage .top a:hover{color:var(--gold)}
+.subpage .brand{font-family:inherit;font-weight:800;font-size:25px;letter-spacing:-.06em}
+.subpage .top .wrap{padding-block:0}
+.subpage main{padding-top:clamp(32px,5vw,62px);padding-bottom:50px}
+.subpage .lead,.subpage .sub{color:var(--muted);max-width:68ch;font-size:17px;line-height:1.75}
+.subpage .kicker,.subpage .eyebrow{color:var(--gold);font-size:11px;letter-spacing:.12em;font-weight:800}
+.subpage .panel,.subpage .card,.subpage .sources a,.subpage .suggest-project{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.subpage .card{padding:22px;margin-block:15px}
+.subpage .panel{padding:28px}
+.subpage .note,.subpage .notice{background:var(--soft);color:var(--ink);border:0;border-radius:16px;padding:17px 20px;font-size:13px;line-height:1.7}
+.subpage .note:empty{display:none}
+.subpage input,.subpage select,.subpage textarea{min-height:46px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-family:inherit;font-size:14px}
+.subpage .check input{width:21px;min-height:21px;height:21px;accent-color:var(--gold);margin-top:3px}
+.subpage .check{line-height:1.55;gap:14px}
+.subpage .check span span{color:var(--muted);font-size:13px}
+.subpage button,.subpage .suggest-project a{min-height:44px;background:var(--coral);color:var(--on-coral);border:1px solid transparent;border-radius:12px;font-family:inherit;font-weight:800;font-size:13px;padding:11px 17px}
+.subpage button.secondary{background:var(--paper);color:var(--ink);border-color:var(--line)}
+.subpage button:disabled{opacity:.55}
+.subpage :is(a,button,input,select,textarea):focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.subpage .sources a{padding:21px}
+.subpage .sources a:hover{border-color:var(--gold);text-decoration:underline;text-underline-offset:4px}
+.subpage .sources a strong{color:var(--gold)}
+.subpage .suggest-project{background:var(--peach);padding:22px;gap:18px}
+.subpage .suggest-project p{color:var(--muted)}
+.subpage #result{background:var(--soft);border:1px solid var(--line);border-radius:15px;padding:20px;color:var(--ink);font-size:14px;line-height:1.7}
+.subpage .grid{gap:24px}
+.subpage .form{gap:14px}
+.subpage label{font-size:12px;color:var(--muted)}
+.subpage .error{color:var(--gold);font-weight:750}
+.subpage footer{border-top:1px solid var(--line);background:var(--peach);color:var(--muted);padding:28px 0;font-size:12px}
+.subpage footer a{color:var(--gold)}
 .subpage main>p{max-width:72ch}
-.subpage .grid{gap:22px}
-.subpage .form{gap:13px}
-.subpage .error{color:#a63d31}
 @media(max-width:680px){
- .subpage header,.subpage .top{position:static}
+ .subpage header,.subpage .top{position:static;padding-block:15px}
+ .subpage .top .wrap{flex-direction:row;align-items:center;flex-wrap:wrap;gap:10px}
+ .subpage header a:not(.brand){font-size:12px}
  .subpage main{padding-top:30px}
+ .subpage h1{font-size:clamp(35px,8vw,48px)}
+ .subpage .lead,.subpage .sub{font-size:15px}
  .subpage .panel,.subpage .card{padding:20px}
- .subpage h1{font-size:clamp(36px,9.5vw,54px)}
+ .subpage .form{gap:12px}
+ .subpage .suggest-project{padding:20px}
 }
-@media(prefers-color-scheme:dark){
- :root{--bg:#101816;--paper:#202b26;--ink:#f3f5f1;--muted:#becac2;
- --line:#3b5046;--gold:#c4ddc6;--soft:#293a30}
- .subpage .panel,.subpage .card,.subpage .sources a,.subpage .suggest-project{box-shadow:none}
- .subpage button:not(.secondary),.subpage .suggest-project a{color:#17211b}
- .subpage .error{color:#ffaca0}
-}
+@media(prefers-color-scheme:dark){.subpage .panel,.subpage .card{box-shadow:none}}

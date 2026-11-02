@@ -4,6 +4,7 @@
 
 Con servidor iniciado (`npm run serve`) y navegadores de Playwright instalados:
 
+- `npm run test:brand`: composición coral, cabecera en una fila, orden de texto/imagen/buscador, ausencia de desbordamiento y sincronización de presupuesto en seis anchos.
 - `npm run test:visual`: seis resoluciones y dos temas en Chromium; filtros, favoritos, comparación, guía, herramienta y enlaces profundos.
 - `npm run test:resilience`: registros lentos, fallidos, inválidos, caché, bajas conocidas, filtros heredados, historial/foco y carga de imágenes y altura completa del fondo de portada móvil.
 - `npm run test:accessibility`: axe con reglas WCAG 2 A/AA, 2.1 A/AA y 2.2 AA; portada, catálogo, noticias, diálogo y tres páginas de apoyo, dos tamaños y dos temas.

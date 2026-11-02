@@ -2,10 +2,10 @@
 
 **Tu decisión, bien informada.** Portal informativo estático alojado en GitHub Pages: https://medinacaj.github.io/inmuebles-en-chile/
 
-## Experiencia visual renovada
-- Portada fotográfica editorial con navegación minimalista, tarjetas flotantes y llamada a la acción principal.
+## Experiencia visual coral
+- Identidad coral, melocotón y blanco cálido; portada con texto e imagen separados, buscador protagonista y favoritos en cabecera.
 - Composición específica para móviles con menú desplegable accesible.
-- Recursos WebP locales optimizados para móvil y escritorio; no representan ninguna publicación inmobiliaria.
+- Imagen de ambientación generada con IA, identificada como tal, con WebP locales para móvil/escritorio; no representa ninguna publicación inmobiliaria.
 - Páginas de guía, herramientas y privacidad con el mismo sistema visual.
 - [Sistema visual, fuentes fotográficas y licencias](docs/SISTEMA_VISUAL.md).
 
@@ -118,6 +118,7 @@ npm test
 npm run test:news
 npx playwright install --with-deps chromium firefox webkit
 npm run test:visual
+npm run test:brand
 npm run test:resilience
 npm run test:autoplay
 npm run test:accessibility
@@ -137,3 +138,5 @@ El catálogo espera un registro de estados completo antes de mostrar fichas. Con
 No eliminar `noindex` ni declarar WCAG AA, disponibilidad, despliegue exitoso o Core Web Vitals reales sin su evidencia específica.
 
 El carrusel de noticias avanza automáticamente cada cinco segundos mientras está visible y vuelve al inicio al terminar. Tiene control Pausar/Reproducir y pausa durante foco de teclado o puntero encima. Con movimiento reducido, el inicio automático se desactiva; la reproducción puede iniciarse voluntariamente.
+
+El buscador de portada permite filtrar también por presupuesto inicial en UF. La fuente Manrope se sirve desde assets/fonts con licencia OFL, sin llamadas a servicios externos. El sistema coral y las procedencias de imágenes están documentados en docs/SISTEMA_VISUAL.md.

@@ -102,9 +102,9 @@ test('contraste mínimo de tokens tipográficos prioritarios', () => {
    return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
  }
  const targets=[
-   ['#626e74','#f7f6f3'],['#626e74','#ffffff'],
-   ['#88652d','#f0eee8'],['#d6af6d','#263236'],
-   ['#b0babd','#101719']
+   ['#665a54','#fff9f5'],['#665a54','#ffffff'],
+   ['#ad3026','#ffe4d8'],['#262322','#ff6b5e'],
+   ['#d7bfb4','#211c1c']
  ];
  for (const [foreground,background] of targets)
    assert.ok(contrast(foreground,background)>=4.5,
@@ -260,7 +260,7 @@ test('la propuesta de publicación es gratuita y requiere revisión editorial', 
  assert.match(toolsPage,/revis[aó] manualmente/i);
 });
 
-test('el nuevo lenguaje visual dispone de hoja y portada con imagen ambientacional',async()=>{const css=await fs.readFile('assets/css/experience.css','utf8');assert.match(page,/class="hero-photo"/);assert.match(page,/class="hero-panels"/);assert.match(page,/id="menuToggle"/);assert.match(page,/assets\/css\/experience\.css/);assert.match(css,/@media\(max-width:680px\)/);assert.match(css, /prefers-reduced-motion/);assert.match(page,/fotograf[ií]a de ambientaci[oó]n/i)});
+test('el nuevo lenguaje visual dispone de hoja y portada con imagen ambientacional',async()=>{const css=await fs.readFile('assets/css/experience.css','utf8');assert.match(page,/class="hero-photo"/);assert.match(page,/id="homeBudget"/);assert.match(page,/id="menuToggle"/);assert.match(page,/assets\/css\/experience\.css/);assert.match(css,/@media\(max-width:680px\)/);assert.match(css, /prefers-reduced-motion/);assert.match(page,/imagen de ambientaci[oó]n/i)});
 
 test('páginas de apoyo siguen el sistema visual y mantienen sus funcionalidades',async()=>{for(const path of ['guia.html','herramientas.html','informacion.html']){const body=await fs.readFile(path,'utf8');assert.match(body,/class="subpage"/);assert.match(body,/assets\/css\/subpages\.css/)}const style=await fs.readFile('assets/css/subpages.css','utf8');assert.match(style,/prefers-color-scheme:dark/)});
 
@@ -274,7 +274,7 @@ test('Inicio prioriza inmuebles después de un carrusel RSS con imágenes ilustr
  assert.match(page,/NEWS\.slice\(0,10\)\.map\(homeNewsCard\)/);
  assert.match(page,/news-image-note/);
  assert.match(css,/scroll-snap-type:x mandatory/);
- assert.match(css,/height:clamp\(510px,67svh,600px\)/);
+ assert.match(page,/assets\/css\/brand\.css/);
  for(const name of ['mercado','vivienda','financiamiento','normativa']){
   const art=await fs.readFile('assets/illustrations/news-'+name+'.svg','utf8');
   assert.match(art,/<svg/);

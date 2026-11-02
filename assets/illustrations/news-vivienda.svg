@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-label="Ilustración editorial inmobiliaria">
-<defs><linearGradient id="sky" x2=".85" y2="1"><stop stop-color="#f3e8d6"/><stop offset="1" stop-color="#bca98b"/></linearGradient><pattern id="window" width="39" height="43" patternUnits="userSpaceOnUse"><rect x="11" y="10" width="16" height="22" rx="2" fill="#7d6d56" opacity=".47"/></pattern></defs>
+<defs><linearGradient id="sky" x2=".85" y2="1"><stop stop-color="#ffe4d8"/><stop offset="1" stop-color="#cf8b7c"/></linearGradient><pattern id="window" width="39" height="43" patternUnits="userSpaceOnUse"><rect x="11" y="10" width="16" height="22" rx="2" fill="#55332d" opacity=".47"/></pattern></defs>
 <rect width="720" height="420" fill="url(#sky)"/>
-<circle cx="568" cy="88" r="64" fill="#e5a979" opacity=".7"/>
-<path d="M0 315Q130 285 232 311T490 304T720 310V420H0Z" fill="#bca98b" opacity=".65"/>
-<rect x="67" y="145" width="168" height="180" rx="9" fill="#e5a979"/><rect x="67" y="145" width="168" height="180" rx="9" fill="url(#window)"/>
-<rect x="255" y="98" width="162" height="228" rx="7" fill="#7d6d56" opacity=".83"/>
+<circle cx="568" cy="88" r="64" fill="#ff927a" opacity=".7"/>
+<path d="M0 315Q130 285 232 311T490 304T720 310V420H0Z" fill="#cf8b7c" opacity=".65"/>
+<rect x="67" y="145" width="168" height="180" rx="9" fill="#ff927a"/><rect x="67" y="145" width="168" height="180" rx="9" fill="url(#window)"/>
+<rect x="255" y="98" width="162" height="228" rx="7" fill="#55332d" opacity=".83"/>
 <rect x="255" y="98" width="162" height="228" rx="7" fill="url(#window)"/>
-<path d="M248 99h175" stroke="#fff6e8" stroke-width="13" stroke-linecap="round"/>
-<path d="M405 166L522 71L643 166" stroke="#7d6d56" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><rect x="442" y="162" width="164" height="161" rx="8" fill="#e5a979"/><rect x="507" y="216" width="38" height="107" fill="#7d6d56"/>
-<path d="M0 330H720V420H0Z" fill="#7d6d56" opacity=".16"/>
-<path d="M45 355H660" stroke="#e5a979" stroke-width="7" opacity=".5" stroke-linecap="round"/>
+<path d="M248 99h175" stroke="#fff9f5" stroke-width="13" stroke-linecap="round"/>
+<path d="M405 166L522 71L643 166" stroke="#55332d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><rect x="442" y="162" width="164" height="161" rx="8" fill="#ff927a"/><rect x="507" y="216" width="38" height="107" fill="#55332d"/>
+<path d="M0 330H720V420H0Z" fill="#55332d" opacity=".16"/>
+<path d="M45 355H660" stroke="#ff927a" stroke-width="7" opacity=".5" stroke-linecap="round"/>
 </svg>

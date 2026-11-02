@@ -15,7 +15,7 @@
 3. No hay permisos documentados para descargar fotos auténticas; no copiar fotos de terceros sin licencia.
 4. El administrador antiguo en localStorage **no** es seguro y no publica cambios reales. Fue retirado del HTML público. Una administración real requiere autenticación y autorización del servidor.
 5. El catálogo nacional requiere fuentes y acuerdos de publicación; no se debe inventar inventario.
-6. Las noticias son una selección estática. La automatización necesita fuentes RSS/API autorizadas, control editorial, fechas y deduplicación.
+6. Las noticias ya se alimentan mediante RSS con filtrado, fechas y deduplicación. Quedan revisión editorial, seguimiento de fallos por fuente y evaluación continua de relevancia.
 
 ## Mejoras de calidad ya añadidas
 - Pruebas unitarias y de interacción con Node.js (`node --test scripts/tests.mjs`) ejecutadas en CI.
@@ -47,8 +47,8 @@
 - Cobertura regional gradual con fuentes consentidas y geocodificación segura; mapas solo para coordenadas fiables.
 - SEO: URLs por inmueble, canonical, sitemap y datos estructurados `RealEstateListing` cuando el contenido sea verificado; eliminar `noindex` tras auditoría.
 - Datos de mercado con fecha, método, fuente y actualización documentada.
-- Noticias con feeds permitidos, deduplicación, revisión editorial y políticas de atribución.
-- Pruebas automatizadas en 320/375/430/768/1024/1440px, Safari iOS, Chrome Android, escritorio, claro/oscuro, teclado y lector de pantalla.
+- Noticias: feeds y deduplicación implementados; mantener revisión editorial de relevancia y atribución.
+- Chromium automatizado en 320/375/430/768/1024/1440px y dos temas implementado. Firefox/WebKit tienen suite; su ejecución requiere navegadores. Safari iOS, Chrome Android físicos y lector de pantalla continúan pendientes de comprobación manual.
 - Analítica de eventos respetuosa de privacidad y métricas de vigencia, visitas, consultas y calidad.
 
 ## Reglas de publicación
@@ -57,3 +57,21 @@
 - Nunca representar una imagen ilustrativa como imagen del inmueble.
 - No presentar el identificador interno como certificado oficial.
 - Separar claramente contenido editorial, anuncios y resultados patrocinados.
+
+## Correcciones de la auditoría (1 de noviembre de 2026)
+- Catálogo condicionado a un registro completo y válido de estados, con respaldo local y reintento visible. Un fallo de red no debe reactivar bajas.
+- Navegación regional sin filtros heredados; secciones con URL, historial y foco en el encabezado.
+- Salud del RSS y resumen por fuente: la caída total devuelve error, conservando noticias anteriores vigentes y su fecha real.
+- Revisión editorial diferenciada de la comprobación HTTP; [seguimiento por fuente](REVISION_EDITORIAL.md).
+- Cifras y gráfico sin evidencia revisada retirados temporalmente; [requisitos de publicación](INDICADORES.md).
+- Playwright con versión fija y lockfile, Actions con SHA y actualizaciones mediante Dependabot.
+- Variantes WebP responsivas para las dos fotos de referencia; no son fotos de los proyectos.
+
+## Pendientes que requieren evidencia externa
+- Confirmación humana de precios y condiciones en las diez fichas, especialmente las dos fuentes bloqueadas.
+- Permisos de fotos oficiales, feed de inventario y acuerdos de publicación.
+- Contraste de cifras de mercado con los documentos precisos.
+- Verificación del despliegue y Actions remotos; validación física con Safari/iOS, Android y lector de pantalla.
+- Métricas de campo de Core Web Vitals y revisión legal antes de comercializar.
+
+Backend, cuentas, MFA, roles y almacenamiento son una fase posterior condicionada a la publicación propia; no forman parte de la corrección del portal estático. No se ha inventado una administración ni un inventario para cerrar esta lista.

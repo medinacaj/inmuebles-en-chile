@@ -1,0 +1,24 @@
+{
+  "name": "inmuebles-en-chile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portal informativo estático; dependencias solo para QA",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test scripts/tests.mjs",
+    "test:news": "python3 -B -m unittest discover -s scripts -p 'test_news.py' -v",
+    "test:visual": "node scripts/visual-check.mjs",
+    "test:resilience": "node scripts/resilience-check.mjs",
+    "test:compatibility": "node scripts/compatibility-check.mjs",
+    "serve": "python3 -B -m http.server 8765 --bind 127.0.0.1",
+    "images:optimize": "python3 scripts/optimize-images.py",
+    "test:accessibility": "node scripts/accessibility-check.mjs",
+    "test:autoplay": "node scripts/autoplay-check.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "playwright": "1.64.1"
+  }
+}

@@ -8,7 +8,14 @@ on:
     paths:
       - 'index.html'
       - 'assets/css/**'
-      - 'assets/illustrations/news-*.svg'
+      - 'assets/illustrations/**'
+      - 'assets/photos/**'
+      - 'data/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'scripts/resilience-check.mjs'
+      - 'scripts/accessibility-check.mjs'
+      - 'scripts/autoplay-check.mjs'
       - 'herramientas.html'
       - 'guia.html'
       - 'informacion.html'
@@ -25,17 +32,33 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
       - name: Instalar navegador para pruebas (solo CI)
         run: |
-          npm install --no-save playwright@1.55.0
+          npm ci
           npx playwright install --with-deps chromium firefox webkit
       - name: Servir sitio localmente
         run: python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/inmuebles-site.log 2>&1 &
       - name: Probar navegación y desbordamientos en 12 escenarios
-        run: node scripts/visual-check.mjs
+        run: |
+          mkdir -p test-results
+          node scripts/visual-check.mjs > test-results/visual.json
+      - name: Probar errores de red, filtros e historial
+        run: node scripts/resilience-check.mjs > test-results/resilience.json
+      - name: Probar reproducción automática del carrusel
+        run: node scripts/autoplay-check.mjs > test-results/autoplay.json
+      - name: Comprobar accesibilidad automatizada
+        run: node scripts/accessibility-check.mjs > test-results/accessibility.json
       - name: Probar compatibilidad Firefox y motor WebKit
-        run: node scripts/compatibility-check.mjs
+        run: node scripts/compatibility-check.mjs > test-results/compatibility.json
+      - name: Conservar resultados de QA
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: qa-browser
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 14

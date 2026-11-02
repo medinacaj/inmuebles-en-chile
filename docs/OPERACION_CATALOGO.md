@@ -39,3 +39,9 @@ Este repositorio sirve páginas estáticas con GitHub Pages. No hay backend, cue
 
 ## Dependencias externas bloqueadas
 Obtener imágenes oficiales requiere permisos de titulares; sincronizar inventario requiere acuerdos o APIs de anunciantes; y una administración segura requiere autenticación y persistencia. Ninguna tarea se resuelve únicamente con HTML estático.
+
+## Respaldo y revisión editorial
+
+El navegador exige `schemaVersion: 1`, una fecha no futura, un estado permitido y una entrada por cada ID del catálogo; rechaza IDs duplicados/ajenos y registros incompletos. Sin informe válido ni copia local válida, oculta las tarjetas y ofrece reintentar. El respaldo mantiene su fecha original; no sustituye una revisión humana.
+
+Consultar [REVISION_EDITORIAL.md](REVISION_EDITORIAL.md) para fechas de precios/características y [INDICADORES.md](INDICADORES.md) para cifras. Nunca renovar `checkedOn` desde el verificador HTTP.

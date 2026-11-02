@@ -58,12 +58,13 @@ La fuente de información del catálogo está en `const REAL` dentro de [index.h
 
 ## Desarrollo y verificación
 
-Sin dependencias de producción: HTML, CSS y JavaScript en `index.html`.
+Sin dependencias de producción: HTML, CSS y JavaScript. Las dependencias npm son exclusivamente para pruebas de navegador y accesibilidad.
 
 Ejecutar pruebas locales con Node.js 22 o superior:
 
 ```bash
 node --test scripts/tests.mjs
+python3 -B -m unittest discover -s scripts -p 'test_news.py' -v
 ```
 
 [Calidad del sitio](.github/workflows/validar-sitio.yml) ejecuta estas pruebas automáticamente ante cada cambio a `main` y en solicitudes de integración. [QA visual responsivo](.github/workflows/qa-responsive.yml) prueba Chromium en seis tamaños y dos temas; también incluye controles de Firefox y WebKit en móvil y escritorio y valida los enlaces profundos, fichas, el buscador de portada, la guía y la herramienta de anunciantes.
@@ -107,3 +108,32 @@ Ocho fichas adicionales, cada una con enlace al proyecto o anuncio original:
 | Los Lagos | Parque Estación Pupelde | Inmobiliaria Patagonia |
 
 *Datos referenciales consultados en las fichas oficiales. No existe integración comercial con esas empresas, autorización para replicar sus fotografías ni confirmación independiente de unidades disponibles.*
+
+## Entorno reproducible y auditoría
+
+Node.js >=22 (`.nvmrc`: 22) y Python 3.12. Instalar QA con `npm ci`; no se necesita instalar dependencias para servir HTML. Iniciar desde la raíz con `npm run serve`. Las pruebas de navegador esperan el servidor en el puerto 8765.
+
+```bash
+npm test
+npm run test:news
+npx playwright install --with-deps chromium firefox webkit
+npm run test:visual
+npm run test:resilience
+npm run test:autoplay
+npm run test:accessibility
+npm run test:compatibility
+```
+
+Si las descargas de Playwright están bloqueadas y existe Chromium del sistema, ejecutar las suites Chromium con `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium`; no sustituye Firefox o WebKit ni una prueba física de Safari. Las suites visual, de resiliencia y de accesibilidad aceptan esa variable. En contenedores aislados se añade `--no-sandbox` únicamente para ese navegador del sistema.
+
+Las fotos de referencia tienen variantes WebP 480/960. Para regenerarlas: instalar `requirements-dev.txt` en un entorno Python de desarrollo y ejecutar `npm run images:optimize`; no hace falta para servir el sitio. Mantener originales y atribuciones.
+
+El catálogo espera un registro de estados completo antes de mostrar fichas. Conserva una copia pública local como respaldo, avisa de errores/antigüedad y permite reintentar. La fecha de revisión editorial y la accesibilidad HTTP son datos distintos: ninguna acredita stock.
+
+- [Seguimiento editorial del catálogo](docs/REVISION_EDITORIAL.md).
+- [Revisión de indicadores y metodología](docs/INDICADORES.md).
+- [Estado de pendientes y evidencia de cierre](docs/AUDITORIA_2026-11-01.md).
+
+No eliminar `noindex` ni declarar WCAG AA, disponibilidad, despliegue exitoso o Core Web Vitals reales sin su evidencia específica.
+
+El carrusel de noticias avanza automáticamente cada cinco segundos mientras está visible y vuelve al inicio al terminar. Tiene control Pausar/Reproducir y pausa durante foco de teclado o puntero encima. Con movimiento reducido, el inicio automático se desactiva; la reproducción puede iniciarse voluntariamente.

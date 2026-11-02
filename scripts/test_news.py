@@ -1,6 +1,12 @@
 import importlib.util
 from datetime import datetime, timedelta, timezone
 import unittest
+from unittest.mock import patch
+import tempfile
+import json
+import sys
+import io
+from contextlib import redirect_stdout, redirect_stderr
 from pathlib import Path
 
 spec = importlib.util.spec_from_file_location("ingest_news", Path(__file__).with_name("ingest-news.py"))
@@ -113,6 +119,38 @@ class EditorialFeedTests(unittest.TestCase):
         }
         result=ingest.assemble(old,[],[{"id":"la-tercera","name":"La Tercera","ok":False,"count":0}],NOW)
         self.assertEqual(result["items"],[])
+
+    def test_total_outage_reports_failure_and_preserves_prior_news(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / "news.json"
+            article = {"id":"prior", "title":"Proyecto inmobiliario y viviendas en Chile",
+                       "url":"https://www.df.cl/mercado/", "source":SOURCE["name"],
+                       "sourceId":SOURCE["id"], "category":"Mercado",
+                       "publishedAt":datetime.now(timezone.utc).isoformat()}
+            previous = {"items":[article], "updatedAt":"2026-11-01T12:00:00Z"}
+            output.write_text(json.dumps(previous))
+            with patch.object(sys, "argv", ["ingest-news.py", "--output", str(output)]), \
+                 patch.object(ingest, "bounded_fetch", side_effect=OSError("offline")), \
+                 patch.dict("os.environ", {"GITHUB_STEP_SUMMARY":str(Path(tmp) / "summary.md")}), \
+                 redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()):
+                status = ingest.main()
+            result = json.loads(output.read_text())
+            self.assertEqual(result["items"], [article])
+            self.assertEqual(result["updatedAt"], previous["updatedAt"])
+            self.assertEqual(status, 1, "Una caída total debe fallar en CI")
+            self.assertEqual(result["health"], "failed")
+            self.assertIn("Estado: **failed**", (Path(tmp) / "summary.md").read_text())
+
+    def test_empty_success_does_not_invent_new_sync(self):
+        previous = {"items":[], "updatedAt":"2026-10-31T12:00:00Z"}
+        result = ingest.assemble(previous, [], [{"id":SOURCE["id"],"name":SOURCE["name"],"ok":True,"count":0}], NOW)
+        self.assertEqual(result["updatedAt"], previous["updatedAt"])
+        self.assertEqual(result["health"], "empty")
+
+    def test_partial_outage_is_degraded(self):
+        statuses = [{"id":"a","name":"A","ok":True,"count":1},
+                    {"id":"b","name":"B","ok":False,"count":0}]
+        self.assertEqual(ingest.assemble({"items":[]}, [], statuses, NOW)["health"], "degraded")
 
     def test_no_invented_publication_dates(self):
         rss = b'''<rss><channel><item><title>La vivienda y la actividad inmobiliaria en Chile</title>

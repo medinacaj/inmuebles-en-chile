@@ -261,8 +261,12 @@ def assemble(prior: dict, gathered: list[dict], source_status: list[dict], now: 
     ordered = sorted(all_entries.values(), key=lambda a: (a["publishedAt"], a["id"]), reverse=True)[:MAX_ITEMS]
     successful = any(s["ok"] and s["count"] > 0 for s in source_status)
     # Si todos los proveedores fallan, no simular que se obtuvieron datos nuevos.
+    health = ("failed" if not any(s["ok"] for s in source_status) else
+              "empty" if not successful else
+              "degraded" if any(not s["ok"] for s in source_status) else "ok")
     return {
         "schemaVersion": 1,
+        "health": health,
         "updatedAt": now.isoformat(timespec="seconds").replace("+00:00", "Z") if successful else prior.get("updatedAt"),
         "lastAttemptAt": now.isoformat(timespec="seconds").replace("+00:00", "Z"),
         "sources": source_status,
@@ -293,6 +297,21 @@ def main() -> int:
     print(f"Noticias: {len(result['items'])}, fuentes correctas: {sum(s['ok'] for s in statuses)}/{len(SOURCES)}")
     for x in statuses:
         print(f"  {x['id']}: {'OK' if x['ok'] else 'ERROR'} ({x['count']} artículos)")
+    summary = ["## Sincronización RSS", "", f"Estado: **{result['health']}**",
+               f"Titulares conservados: {len(result['items'])}",
+               f"Último éxito con titulares: {result['updatedAt'] or 'sin éxito registrado'}", "",
+               "| Fuente | Respuesta | Titulares |", "| --- | --- | ---: |"]
+    summary.extend(f"| {s['name']} | {'OK' if s['ok'] else 'ERROR'} | {s['count']} |" for s in statuses)
+    import os
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        with open(summary_path, "a", encoding="utf-8") as stream:
+            stream.write("\n".join(summary) + "\n")
+    if result["health"] == "failed":
+        print("::error::Todas las fuentes RSS fallaron; se conservó el contenido anterior vigente", file=sys.stderr)
+        return 1
+    if result["health"] in ("empty", "degraded"):
+        print("::warning::Sincronización RSS parcial o sin titulares válidos", file=sys.stderr)
     return 0
 
 if __name__ == "__main__":

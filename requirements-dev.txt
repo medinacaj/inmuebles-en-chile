@@ -1,0 +1,2 @@
+# Solo regeneración de variantes fotográficas; no se necesita para servir el sitio.
+Pillow==12.3.0

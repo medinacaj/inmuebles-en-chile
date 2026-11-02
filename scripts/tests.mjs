@@ -73,8 +73,10 @@ test('el catálogo y las acciones esenciales funcionan en un DOM simulado', () =
   const localStorage = {getItem(){return null},setItem(){}};
   const script = page.match(/<script>([\s\S]*?)<\/script>/)[1];
   const app = new Function('document','localStorage','window','fetch','alert',script+
-    ';return {toggleFavorite,toggleCompare,showSaved,showCompare,closeModal};')(
+    ';return {toggleFavorite,toggleCompare,showSaved,showCompare,closeModal,applyListingReport};')(
       document,localStorage,{scrollTo(){},addEventListener(){},requestAnimationFrame(fn){fn()},matchMedia(){return {matches:true}}},async()=>({ok:false}),()=>{});
+  assert.equal(getElementById('count').textContent, '0 referencias','No mostrar referencias antes de validar estados');
+  app.applyListingReport({schemaVersion:1,checkedAt:new Date().toISOString(),listings:catalog.map(p=>({id:p.publicationId,status:'unknown',httpStatus:200,checkedAt:new Date().toISOString()}))});
   assert.equal(getElementById('count').textContent, catalog.length+' referencias');
   assert.equal((getElementById('propertyGrid').innerHTML.match(/class="card property-card"/g)||[]).length,catalog.length);
   app.toggleFavorite(catalog[0].id);
@@ -276,5 +278,18 @@ test('Inicio prioriza inmuebles después de un carrusel RSS con imágenes ilustr
  for(const name of ['mercado','vivienda','financiamiento','normativa']){
   const art=await fs.readFile('assets/illustrations/news-'+name+'.svg','utf8');
   assert.match(art,/<svg/);
+ }
+});
+
+
+test('las variantes responsivas existen y pesan menos que las fotos originales',async()=>{
+ for(const p of catalog.filter(p=>p.imageSrcset)){
+  const sources=p.imageSrcset.split(',').map(value=>value.trim().split(/\s+/));
+  assert.deepEqual(sources.map(x=>x[1]),['480w','960w']);
+  for(const [path] of sources){
+   const optimized=await fs.stat(path);
+   const original=await fs.stat(path.replace(/-(480|960)\.webp$/,'.jpg'));
+   assert.ok(optimized.size>0&&optimized.size<original.size,path);
+  }
  }
 });

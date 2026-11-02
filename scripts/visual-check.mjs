@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 
-const browser = await chromium.launch({headless:true});
+const browser = await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,args:['--no-sandbox']}: {})});
 const sizes = [
   [320,700],[375,812],[430,932],[768,1024],[1024,768],[1440,900]
 ];
@@ -14,7 +14,7 @@ try {
    const page = await context.newPage();
    const failures = [];
    page.on('pageerror',error=>failures.push(error.message));
-   await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+   await page.goto((process.env.SITE_URL||'http://127.0.0.1:8765/'),{waitUntil:'networkidle'});
    assert.equal(await page.locator('.hero-photo').count(),1);
    const editorialHero=page.locator('.hero-photo');
    await editorialHero.evaluate(img=>img.decode());
@@ -89,7 +89,7 @@ try {
    ]
  };
  await newsPage.route('**/data/news-feed.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(mockNews)}));
- await newsPage.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ await newsPage.goto((process.env.SITE_URL||'http://127.0.0.1:8765/'),{waitUntil:'networkidle'});
  assert.equal(await newsPage.locator('#homeNews .news').count(),2,'La portada debe publicar titulares RSS');
  assert.equal(await newsPage.locator('#homeNews .news img').count(),2,'Los titulares RSS deben tener imágenes de respaldo');
  assert.ok(await newsPage.locator('#actualidad-inicio').isVisible());
@@ -121,13 +121,13 @@ try {
  await page.getByRole('button',{name:'Compartir enlace'}).click();
  assert.equal(await page.getByRole('dialog').isVisible(),false);
  assert.match(await page.evaluate(()=>window.__shareData?.url||''),/IEC-PUB-2026-000001$/);
- await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ await page.goto((process.env.SITE_URL||'http://127.0.0.1:8765/'),{waitUntil:'networkidle'});
  await page.locator('#homeQuery').fill('Ancud');
  await page.locator('#homeRegion').selectOption('Los Lagos');
  await page.locator('#homeSearch button[type="submit"]').click();
  assert.equal(await page.locator('#region').inputValue(),'Los Lagos');
  assert.equal(await page.locator('#propertyGrid .property-card').count(),1);
- await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});
+ await page.goto((process.env.SITE_URL||'http://127.0.0.1:8765/'),{waitUntil:'networkidle'});
  await page.evaluate(()=>{window.__featuredBefore=document.querySelector('#featured .property-card')});
  await navTo(page,'Propiedades');
  await page.locator('#search').fill('Rancagua');

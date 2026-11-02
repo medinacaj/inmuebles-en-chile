@@ -74,7 +74,7 @@ body.dark .head{background:rgba(19,28,23,.96);border-bottom-color:var(--line)}
 
 /* 03 · FULL BLEED ARCHITECTURE HERO */
 #inicio .hero{position:relative;isolation:isolate;display:block;min-height:650px;height:clamp(610px,52vw,730px);margin-top:22px;padding:0;border-radius:26px;overflow:hidden;background:#26352d;box-shadow:0 22px 55px #0d201924}
-#inicio .heroart{position:absolute;inset:0;display:block;width:100%;height:100%;min-height:0;border-radius:0;background:#354c3c;overflow:hidden}
+#inicio .heroart{position:absolute;inset:0;display:block;width:100%;height:100%;min-height:0;max-height:none;border-radius:0;background:#354c3c;overflow:hidden}
 #inicio .heroart:before{display:none}
 .hero-picture{position:absolute;inset:0;width:100%;height:100%;display:block}
 #inicio .heroart:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(7,17,13,.72) 0%,rgba(9,18,13,.48) 37%,rgba(8,17,13,.04) 75%),linear-gradient(0deg,rgba(8,16,12,.6),transparent 30%)}
@@ -231,7 +231,7 @@ footer a:hover{color:#d0e5d1}
   .head .navbtn.active:after{display:none}
   #inicio .hero{height:calc(min(740px,max(650px,100svh - 75px)));min-height:630px;margin:0 -20px 0;border-radius:0 0 25px 25px;box-shadow:none}
   #inicio .heroart{height:100%;min-height:0}
-  #inicio .heroart:after{background:linear-gradient(180deg,#f8f7f4 0%,#f8f7f4 18%,rgba(248,247,244,.98) 23%,rgba(248,247,244,.64) 31%,transparent 43%,rgba(8,17,12,.18) 65%,rgba(8,18,13,.84) 100%)}
+  #inicio .heroart:after{background:linear-gradient(180deg,#f8f7f4 0%,rgba(248,247,244,.98) 46%,rgba(248,247,244,.85) 55%,transparent 72%,rgba(8,18,13,.84) 100%)}
   .hero-photo{object-position:55% center;filter:saturate(1.04) contrast(1.04)}
   .hero-copy{left:23px;right:20px;width:auto;top:35px;color:#13231b}
   .hero-kicker{color:#365746;text-shadow:none;font-size:9px;letter-spacing:.15em;gap:9px}
@@ -458,3 +458,8 @@ body{overflow-anchor:none}
  #noticias .news{transition:none}
  #noticias .news:hover{transform:none}
 }
+
+/* Rotación voluntariamente pausable, con controles manuales siempre disponibles. */
+.home-news-actions{flex-wrap:wrap}
+.home-news-autoplay{min-height:36px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font-family:inherit;font-size:12px;font-weight:650;cursor:pointer}
+.home-news-autoplay:focus-visible{outline:3px solid var(--gold);outline-offset:3px}

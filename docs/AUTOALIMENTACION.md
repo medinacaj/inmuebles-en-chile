@@ -26,7 +26,7 @@ El resultado incluye: titular original, fecha de publicación declarada por el f
 5. Deduplicación por URL canónica, sin parámetros de seguimiento.
 6. Máximo 48 enlaces, ordenados por fecha de origen.
 7. Si alguna fuente falla, se conservan artículos anteriores vigentes y se registra el resultado de la comprobación.
-8. Si no llegan noticias verificables, el sitio muestra el archivo editorial previo **identificado como archivo**, sin declarar actualización en tiempo real.
+8. Si el JSON no contiene titulares válidos o no carga, el sitio muestra el archivo editorial previo identificado como archivo. Si fallan fuentes pero hay titulares anteriores vigentes en el JSON, se conservan con su fecha de último éxito y un aviso de salud degradada. Nunca se simula una sincronización nueva.
 
 Esta automatización no confirma que una oferta inmobiliaria esté disponible ni incorpora propiedades automáticamente.
 
@@ -58,3 +58,9 @@ La segunda instrucción necesita acceso a Internet. GitHub Actions genera el res
 Para publicar automáticamente viviendas o proyectos con precio y disponibilidad se necesita un feed/API autorizado por la inmobiliaria o corredor y términos que permitan replicar la ficha y sus imágenes. Hasta entonces, **solo se publica información editorial externa**. Las fichas actuales son referenciales y conservan el verificador de enlaces existente.
 
 No se debe convertir un artículo sobre un proyecto inmobiliario en una nueva propiedad anunciada ni asumir disponibilidad por HTTP 200.
+
+## Salud y alertas
+
+`health`: `ok` cuando todas las fuentes responden y alguna aporta titulares; `degraded` cuando hay fallos parciales y titulares; `empty` cuando hay respuestas pero ningún titular válido nuevo; `failed` cuando todas fallan. Los dos estados intermedios generan advertencia; el fallo total devuelve código 1. El resumen de Actions muestra fuente, respuesta y titulares. Un proveedor que responde correctamente con cero titulares no actualiza `updatedAt` por sí solo.
+
+El workflow conserva/publica el diagnóstico y los titulares anteriores vigentes antes de terminar con error ante caída total. No hay mensajes externos automáticos ni creación de incidencias; configurar notificaciones de GitHub Actions para recibir avisos. La publicación mediante el token de Actions puede no disparar otros workflows; comprobar el despliegue real en GitHub Pages.

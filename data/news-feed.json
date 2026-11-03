@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "health": "degraded",
-  "updatedAt": "2026-11-03T17:52:47Z",
-  "lastAttemptAt": "2026-11-03T17:52:47Z",
+  "health": "ok",
+  "updatedAt": "2026-11-03T23:27:17Z",
+  "lastAttemptAt": "2026-11-03T23:27:17Z",
   "sources": [
     {
       "id": "df-economia",
@@ -19,15 +19,14 @@
     {
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPError"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "sii-noticias",

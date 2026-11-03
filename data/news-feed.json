@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "health": "ok",
-  "updatedAt": "2026-11-02T20:23:35Z",
-  "lastAttemptAt": "2026-11-02T20:23:35Z",
+  "health": "degraded",
+  "updatedAt": "2026-11-03T17:52:47Z",
+  "lastAttemptAt": "2026-11-03T17:52:47Z",
   "sources": [
     {
       "id": "df-economia",
@@ -19,8 +19,9 @@
     {
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
-      "ok": true,
-      "count": 5
+      "ok": false,
+      "count": 0,
+      "error": "HTTPError"
     },
     {
       "id": "la-tercera",
@@ -36,6 +37,15 @@
     }
   ],
   "items": [
+    {
+      "id": "bd08ad5ba6b9c451c1",
+      "title": "CChC espera que sector se recupere durante 2027, pero lamenta aplazamiento de la ordenanza de construcción",
+      "url": "https://www.latercera.com/pulso/noticia/cchc-espera-que-sector-se-recupere-durante-2027-pero-lamenta-aplazamiento-de-la-ordenanza-de-construccion/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-03T14:50:00Z"
+    },
     {
       "id": "91332c898eb4733ec5",
       "title": "El subsidio a la tasa hipotecaria suma más de 35.000 créditos cursados y las solicitudes elegibles superan las 123 mil",

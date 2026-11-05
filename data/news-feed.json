@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-04T23:43:41Z",
-  "lastAttemptAt": "2026-11-04T23:43:41Z",
+  "updatedAt": "2026-11-05T18:05:13Z",
+  "lastAttemptAt": "2026-11-05T18:05:13Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,22 +20,40 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 2
+      "count": 3
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "sii-noticias",
       "name": "Servicio de Impuestos Internos",
       "ok": true,
-      "count": 1
+      "count": 0
     }
   ],
   "items": [
+    {
+      "id": "0f7503e542fd928086",
+      "title": "Casen 2026 visitará más de 111 mil viviendas y recogerá datos sobre las condiciones habitacionales de los hogares",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/casen-2026-encuesta-viviendas-chile/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-05T10:00:49Z"
+    },
+    {
+      "id": "26adb47cb77e5b32bf",
+      "title": "Caso Tonka Tomicic pone el foco en el leaseback inmobiliario y las condiciones para recuperar una propiedad",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/caso-tonka-tomicic-pone-el-foco-en-el-leaseback-inmobiliario-y-las-condiciones-para-recuperar-una-propiedad/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-05T10:00:33Z"
+    },
     {
       "id": "eeccd02c6e530f57ce",
       "title": "Entregan 148 viviendas del proyecto La Platina de Puente Alto tras denuncias de hechos delictuales",

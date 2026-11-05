@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "health": "ok",
-  "updatedAt": "2026-11-05T18:05:13Z",
-  "lastAttemptAt": "2026-11-05T18:05:13Z",
+  "health": "degraded",
+  "updatedAt": "2026-11-05T23:40:17Z",
+  "lastAttemptAt": "2026-11-05T23:40:17Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,13 +20,14 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 3
+      "count": 4
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
-      "ok": true,
-      "count": 0
+      "ok": false,
+      "count": 0,
+      "error": "ParseError"
     },
     {
       "id": "sii-noticias",
@@ -36,6 +37,15 @@
     }
   ],
   "items": [
+    {
+      "id": "e5a7aae7847b9d645d",
+      "title": "Crisis de Ueno Bank en Paraguay pone bajo presión al financiamiento inmobiliario: Entidad concentra cerca del 9,3% de los créditos para vivienda",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/crisis-de-ueno-bank-en-paraguay-pone-bajo-presion-al-financiamiento-inmobiliario-entidad-concentra-cerca-del-93-de-los-creditos-para-vivienda/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-05T18:34:10Z"
+    },
     {
       "id": "0f7503e542fd928086",
       "title": "Casen 2026 visitará más de 111 mil viviendas y recogerá datos sobre las condiciones habitacionales de los hogares",

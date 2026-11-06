@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-06T17:31:43Z",
-  "lastAttemptAt": "2026-11-06T17:31:43Z",
+  "updatedAt": "2026-11-06T23:13:27Z",
+  "lastAttemptAt": "2026-11-06T23:13:27Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,7 +20,7 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 5
+      "count": 6
     },
     {
       "id": "la-tercera",
@@ -36,6 +36,15 @@
     }
   ],
   "items": [
+    {
+      "id": "cc1c3d7660a10738a1",
+      "title": "BancoEstado lanzó crédito hipotecario con financiamiento de hasta el 90% y tasas desde 3,1%",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-bancoestado-hipotecario-pro/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-06T23:12:38Z"
+    },
     {
       "id": "0b9d08f0da89903b43",
       "title": "Encuesta Bicentenario UC: Solo el 18% cree que un trabajador tiene altas posibilidades de comprar una vivienda propia",

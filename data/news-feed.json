@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "health": "degraded",
-  "updatedAt": "2026-11-05T23:40:17Z",
-  "lastAttemptAt": "2026-11-05T23:40:17Z",
+  "health": "ok",
+  "updatedAt": "2026-11-06T17:31:43Z",
+  "lastAttemptAt": "2026-11-06T17:31:43Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,14 +20,13 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 4
+      "count": 5
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
-      "ok": false,
-      "count": 0,
-      "error": "ParseError"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "sii-noticias",
@@ -37,6 +36,15 @@
     }
   ],
   "items": [
+    {
+      "id": "0b9d08f0da89903b43",
+      "title": "Encuesta Bicentenario UC: Solo el 18% cree que un trabajador tiene altas posibilidades de comprar una vivienda propia",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/encuesta-bicentenario-uc-solo-el-18-cree-que-un-trabajador-tiene-altas-posibilidades-de-comprar-una-vivienda-propia/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-06T10:00:57Z"
+    },
     {
       "id": "e5a7aae7847b9d645d",
       "title": "Crisis de Ueno Bank en Paraguay pone bajo presión al financiamiento inmobiliario: Entidad concentra cerca del 9,3% de los créditos para vivienda",

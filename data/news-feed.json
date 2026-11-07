@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-06T23:13:27Z",
-  "lastAttemptAt": "2026-11-06T23:13:27Z",
+  "updatedAt": "2026-11-07T16:29:28Z",
+  "lastAttemptAt": "2026-11-07T16:29:28Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,7 +20,7 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 6
+      "count": 7
     },
     {
       "id": "la-tercera",
@@ -36,6 +36,15 @@
     }
   ],
   "items": [
+    {
+      "id": "a8ee39dda581e55134",
+      "title": "Cámara aprueba cambios a la normativa urbanística para facilitar la construcción y regularización de cuarteles de Bomberos",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/regularizacion-cuarteles-bomberos/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-07T10:00:04Z"
+    },
     {
       "id": "cc1c3d7660a10738a1",
       "title": "BancoEstado lanzó crédito hipotecario con financiamiento de hasta el 90% y tasas desde 3,1%",

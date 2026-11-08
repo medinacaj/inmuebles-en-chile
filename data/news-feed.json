@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-07T21:54:58Z",
-  "lastAttemptAt": "2026-11-07T21:54:58Z",
+  "updatedAt": "2026-11-08T16:42:03Z",
+  "lastAttemptAt": "2026-11-08T16:42:03Z",
   "sources": [
     {
       "id": "df-economia",
@@ -26,7 +26,7 @@
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,15 @@
     }
   ],
   "items": [
+    {
+      "id": "f9b4d29894e675d558",
+      "title": "La construcción de Sebastián Lelio: esplendor, resistencia y una última cinta",
+      "url": "https://www.latercera.com/culto/noticia/la-construccion-de-sebastian-lelio-esplendor-resistencia-y-una-ultima-cinta/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-07T23:17:02Z"
+    },
     {
       "id": "a8ee39dda581e55134",
       "title": "Cámara aprueba cambios a la normativa urbanística para facilitar la construcción y regularización de cuarteles de Bomberos",

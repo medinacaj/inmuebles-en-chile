@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-08T22:11:04Z",
-  "lastAttemptAt": "2026-11-08T22:11:04Z",
+  "updatedAt": "2026-11-09T20:47:26Z",
+  "lastAttemptAt": "2026-11-09T20:47:26Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,13 +20,13 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 7
+      "count": 5
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,33 @@
     }
   ],
   "items": [
+    {
+      "id": "67ef3172f6287a2231",
+      "title": "Cambios de ordenanza de construcción: gobierno busca que requerimiento de alcaldes ante el TC se declare inadmisible",
+      "url": "https://www.latercera.com/nacional/noticia/cambios-de-ordenanza-de-construccion-gobierno-busca-que-requerimiento-de-alcaldes-ante-el-tc-se-declare-inadmisible/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-09T16:30:00Z"
+    },
+    {
+      "id": "5517f50fd42544ca1e",
+      "title": "Comienza postulación a la Tarjeta Banco de Materiales 2.0: ¿Cómo acceder a mejoras para casas y departamentos?",
+      "url": "https://www.latercera.com/servicios/noticia/comienza-postulacion-a-la-tarjeta-banco-de-materiales-20-como-acceder-a-mejoras-para-casa-y-departamento/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-09T14:24:21Z"
+    },
+    {
+      "id": "b6d1ed0c715a28ca83",
+      "title": "Revestimientos, muebles y textiles: Cómo influye el diseño interior en la acústica de las viviendas",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/revestimientos-acusticos-viviendas-copiar-slug/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-08T10:00:48Z"
+    },
     {
       "id": "f9b4d29894e675d558",
       "title": "La construcción de Sebastián Lelio: esplendor, resistencia y una última cinta",
@@ -56,7 +83,7 @@
     },
     {
       "id": "cc1c3d7660a10738a1",
-      "title": "BancoEstado lanzó crédito hipotecario con financiamiento de hasta el 90% y tasas desde 3,1%",
+      "title": "BancoEstado lanzó crédito hipotecario con financiamiento de hasta el 90%",
       "url": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-bancoestado-hipotecario-pro/",
       "source": "El Diario Inmobiliario",
       "sourceId": "diario-inmobiliario",

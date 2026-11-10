@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-09T20:47:26Z",
-  "lastAttemptAt": "2026-11-09T20:47:26Z",
+  "updatedAt": "2026-11-10T17:53:51Z",
+  "lastAttemptAt": "2026-11-10T17:53:51Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,13 +20,13 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 5
+      "count": 4
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 2
+      "count": 0
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,15 @@
     }
   ],
   "items": [
+    {
+      "id": "1c7e07138f11812f00",
+      "title": "Minvu lanza “Tu Casa a Tu Pinta 2.0”: Programa contempla 20 mil cupos y subsidios de hasta 40 UF para reparar viviendas",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/tu-casa-a-tu-pinta-2-0-minvu-requisitos-subsidios/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-09T21:11:17Z"
+    },
     {
       "id": "67ef3172f6287a2231",
       "title": "Cambios de ordenanza de construcción: gobierno busca que requerimiento de alcaldes ante el TC se declare inadmisible",

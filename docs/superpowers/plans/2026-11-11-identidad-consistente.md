@@ -37,3 +37,7 @@
 Falta cualquier declaración de favicon. Hay cuatro bloques de estilos en HTML con paletas antiguas, además de tres hojas compartidas; Información conserva reglas propias de enlaces y bordes. La portada repite grandes paneles melocotón y resaltados amarillos en precios/categorías. La apariencia del portal lee `iech_theme`, mientras las páginas de apoyo solo obedecen al sistema: al navegar pueden cambiar de modo.
 
 La auditoría inicial usa colores calculados y capturas de las cuatro páginas en claro/oscuro. Los recursos externos se bloquean durante estas capturas para aislar la interfaz; las ilustraciones de respaldo no indican que hayan desaparecido las imágenes reales de producción.
+
+## Evidencia de ejecución
+
+Node 25 y Python 25 aprobados; visual 12, composición 6, autoplay 5 y axe 28 sin infracciones detectadas. Identidad: 36 escenarios aprobados tanto en raíz local como bajo `/inmuebles-en-chile/`. La revisión independiente identificó un favorito con poco contraste en oscuro; se reprodujo RED y se corrigió GREEN con un color específico para superficies claras, conservando contraste en estado guardado. Publicación y comprobación remota pendientes al preparar este registro.

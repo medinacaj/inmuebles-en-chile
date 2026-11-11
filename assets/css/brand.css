@@ -5,7 +5,7 @@
  --coral:#ff6b5e;--on-coral:#262322;--accent:#ad3026;
  --soft:#fff0e8;--yellow:#ffcd57;--radius:22px;
  --shadow:0 12px 36px #633a2810;--shadow-tint:#633a2815;--focus:#8f291f;
- --badge-bg:#fffffff2;--badge-ink:#262322;--photo-overlay:#262322d9;--overlay:#0009;
+ --badge-bg:#fffffff2;--badge-ink:#262322;--badge-accent:#ad3026;--photo-overlay:#262322d9;--overlay:#0009;
  color-scheme:light
 }
 body.dark,:root[data-theme="dark"]{

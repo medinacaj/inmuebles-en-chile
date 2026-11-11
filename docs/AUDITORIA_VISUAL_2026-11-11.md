@@ -10,6 +10,7 @@ Solicitud: añadir el favicon y ordenar los colores entre secciones. Se conserva
 | Media | Cuatro bloques de CSS dentro del HTML mantenían paletas antiguas; había colores propios en enlaces, bordes y estados. | Colores centralizados en `brand.css`, sin colores literales en las hojas de estructura. HTML sin bloques de estilos. |
 | Media | Paneles melocotón grandes, categorías amarillas y precios resaltados competían con las acciones coral. | Fondo cálido común, paneles y pie con la misma superficie, precios en tinta y etiquetas suaves. El amarillo queda como acento pequeño en portada. |
 | Media | Cabeceras y pie de Información diferían de las otras páginas. Las notas repetidas de Herramientas se mostraban todas como cajas destacadas. | Cabeceras y pies compartidos; notas explicativas en texto secundario y cajas suaves reservadas a avisos o resultados. |
+| Media | El favorito sin guardar perdía contraste con puntero o foco en modo oscuro, al conservar una superficie clara. | Un color oscuro específico para insignias claras mantiene la distinción del corazón en ambos temas, con prueba de hover, foco y favorito guardado. |
 | Media | Ninguna página declaraba un favicon. | Casa original en SVG, ICO 16/32, PNG 32, Apple 180 e iconos 192/512. Manifest y enlaces relativos al subdirectorio de publicación. |
 
 ## Criterio de color
@@ -20,7 +21,7 @@ No se modifican las propiedades, noticias, fuentes ni las condiciones de uso de 
 
 ## Comprobación
 
-La prueba inicial reprodujo 32 fallos de consistencia, preferencia o ausencia de iconos. Tras la corrección pasaron 35 escenarios de identidad, incluidos cambio automático del sistema, navegación y sincronización entre pestañas, almacenamiento bloqueado y legibilidad de Información sin JavaScript con mayor contraste. Las cabeceras de apoyo también se revisaron a 320 píxeles, sin desbordamiento.
+La prueba inicial reprodujo 32 fallos de consistencia, preferencia o ausencia de iconos. Tras la corrección pasaron 36 escenarios de identidad, incluidos cambio automático del sistema, navegación y sincronización entre pestañas, almacenamiento bloqueado y legibilidad de Información sin JavaScript con mayor contraste. Las cabeceras de apoyo también se revisaron a 320 píxeles, sin desbordamiento.
 
 Pruebas locales: 25 Node, 25 Python, seis escenarios de composición, 12 visuales, cinco de carrusel automático y 28 de accesibilidad automatizada sin infracciones detectadas. Se inspeccionaron capturas antes/después de las cuatro páginas en claro y oscuro, además de la imagen del favicon y los tamaños de sus archivos.
 
@@ -29,3 +30,7 @@ La comprobación automatizada de accesibilidad no equivale a una auditoría WCAG
 ## Seguimiento
 
 Los nuevos componentes deben usar los roles de `brand.css` y probar ambas apariencias. La versión común `identity-20261111` de CSS y script permite renovar la caché al publicar este ajuste. El favicon puede conservar una caché independiente del resto de la página según el navegador.
+
+## Revisión independiente
+
+La revisión del cambio confirmó una regresión de contraste en el favorito oscuro (aproximadamente 1,57–1,76:1). La nueva prueba falló antes de corregirlo y pasó después; exige al menos 3:1 en hover, foco de teclado y estado guardado. Tras la corrección pasaron los 36 escenarios de identidad en la raíz local y otros 36 bajo `/inmuebles-en-chile/`, además de las 25 pruebas Node y 25 Python. No quedaron hallazgos funcionales adicionales del cambio revisado.

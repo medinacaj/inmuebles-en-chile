@@ -95,6 +95,33 @@ try{
   report.push({label:'oscuro sin JavaScript y con contraste aumentado',status:'ok'});
   await context.close();
  }
+ // El favorito conserva una superficie clara también en modo oscuro.
+ {
+  const context=await browser.newContext({colorScheme:'dark'});
+  await blockRemote(context);
+  const page=await context.newPage();
+  await page.goto(base,{waitUntil:'networkidle'});
+  const favorite=page.locator('#featured .card-fav').first();
+  const contrast=()=>favorite.evaluate(el=>{
+   const luminance=color=>{
+    const rgb=color.match(/[\d.]+/g).slice(0,3).map(v=>Number(v)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);
+    return .2126*rgb[0]+.7152*rgb[1]+.0722*rgb[2];
+   };
+   const style=getComputedStyle(el),a=luminance(style.color),b=luminance(style.backgroundColor);
+   return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+  });
+  await favorite.hover();
+  assert.ok(await contrast()>=3,'Favorito sin guardar: corazón legible con hover en oscuro');
+  await page.mouse.move(0,0);
+  await page.keyboard.press('Tab');
+  await favorite.focus();
+  assert.ok(await favorite.evaluate(el=>el.matches(':focus-visible')),'Probar el foco de teclado real');
+  assert.ok(await contrast()>=3,'Favorito sin guardar: corazón legible con foco en oscuro');
+  await favorite.click();
+  assert.ok(await contrast()>=3,'Favorito guardado: conservar contraste en oscuro');
+  report.push({label:'contraste de favoritos oscuros con puntero y teclado',status:'ok'});
+  await context.close();
+ }
  console.log(JSON.stringify({report,failures},null,2));
  assert.deepEqual(failures,[],'Identidad coherente en todas las páginas y preferencias');
 }finally{await browser.close();}

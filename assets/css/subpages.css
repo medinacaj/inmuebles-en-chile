@@ -1,54 +1,73 @@
-/* Páginas de apoyo con la misma identidad que el portal. Tokens en brand.css. */
-body.subpage{background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.7}
+/* Páginas de apoyo: estructura común y los mismos roles de color que el portal. */
+body.subpage{font-size:16px;line-height:1.7}
+.subpage .wrap{width:100%;max-width:1380px;margin-inline:auto;padding-inline:clamp(20px,3.3vw,48px)}
+.subpage main.wrap{max-width:1120px;padding-top:clamp(32px,5vw,62px);padding-bottom:50px}
+.subpage.guide main.wrap{max-width:940px}
+.subpage.information main.wrap{max-width:850px}
 .subpage .skip-link{position:absolute;left:18px;top:-100px;background:var(--ink);color:var(--bg);padding:10px 16px;z-index:100;border-radius:10px}
 .subpage .skip-link:focus{top:10px}
-.subpage h1,.subpage h2,.subpage h3{font-family:inherit;line-height:1.12;letter-spacing:-.055em;color:var(--ink)}
-.subpage h1{font-weight:800;font-size:clamp(36px,5vw,58px);margin:15px 0 24px;max-width:20ch}
+.subpage a{color:var(--accent);text-underline-offset:4px}
+.subpage h1,.subpage h2,.subpage h3{font-family:inherit;line-height:1.12;letter-spacing:-.045em;color:var(--ink)}
+.subpage h1{font-weight:800;font-size:clamp(36px,5vw,54px);margin:15px 0 24px;max-width:22ch}
 .subpage h2{font-size:clamp(25px,3vw,32px);font-weight:800;margin:30px 0 16px}
 .subpage h3{font-weight:800}
-.subpage header,.subpage .top{background:var(--bg);border-bottom:1px solid var(--line);padding-block:18px}
-.subpage header a,.subpage .top a{color:var(--ink);text-decoration:none;font-weight:750}
-.subpage header a:hover,.subpage .top a:hover{color:var(--gold)}
-.subpage .brand{font-family:inherit;font-weight:800;font-size:25px;letter-spacing:-.06em}
-.subpage .top .wrap{padding-block:0}
-.subpage main{padding-top:clamp(32px,5vw,62px);padding-bottom:50px}
+.subpage header{background:var(--bg);border-bottom:1px solid var(--line);padding-block:18px}
+.subpage header .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.subpage header a{color:var(--ink);text-decoration:none;font-weight:750}
+.subpage header a:hover{color:var(--accent)}
+.subpage .brand{display:flex;flex-direction:column;position:relative;font-family:inherit;font-weight:800;font-size:30px;line-height:1;letter-spacing:-.085em}
+.subpage .brand-dot{position:absolute;left:100%;top:0}
+.subpage .brand small{font:800 10px/1.7 Manrope,system-ui;letter-spacing:.3em;margin-top:3px}
+.subpage-header-actions{display:flex;align-items:center;gap:18px;font-size:13px}
+.subpage .theme-toggle{display:grid;place-items:center;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:12px;width:44px;min-height:44px;padding:0;font-size:22px;cursor:pointer}
 .subpage .lead,.subpage .sub{color:var(--muted);max-width:68ch;font-size:17px;line-height:1.75}
-.subpage .kicker,.subpage .eyebrow{color:var(--gold);font-size:11px;letter-spacing:.12em;font-weight:800}
+.subpage .kicker,.subpage .eyebrow{color:var(--accent);font-size:11px;letter-spacing:.12em;font-weight:800;text-transform:uppercase}
 .subpage .panel,.subpage .card,.subpage .sources a,.subpage .suggest-project{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
 .subpage .card{padding:22px;margin-block:15px}
-.subpage .panel{padding:28px}
-.subpage .note,.subpage .notice{background:var(--soft);color:var(--ink);border:0;border-radius:16px;padding:17px 20px;font-size:13px;line-height:1.7}
+.subpage .panel{padding:28px;min-width:0}
+.subpage .panel h2{margin-top:0;font-size:26px}
+.subpage .notice{background:var(--soft);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:17px 20px;margin-block:20px;font-size:13px;line-height:1.7}
+.subpage .note{color:var(--muted);font-size:13px;line-height:1.7}
 .subpage .note:empty{display:none}
-.subpage input,.subpage select,.subpage textarea{min-height:46px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-family:inherit;font-size:14px}
-.subpage .check input{width:21px;min-height:21px;height:21px;accent-color:var(--gold);margin-top:3px}
-.subpage .check{line-height:1.55;gap:14px}
-.subpage .check span span{color:var(--muted);font-size:13px}
-.subpage button,.subpage .suggest-project a{min-height:44px;background:var(--coral);color:var(--on-coral);border:1px solid transparent;border-radius:12px;font-family:inherit;font-weight:800;font-size:13px;padding:11px 17px}
+.subpage input,.subpage select,.subpage textarea{width:100%;min-width:0;min-height:46px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit;padding:11px 12px}
+.subpage textarea{resize:vertical;min-height:100px}
+.subpage .check input{width:21px;min-height:21px;height:21px;flex:0 0 21px;accent-color:var(--accent);margin-top:3px}
+.subpage .check{display:flex;align-items:flex-start;line-height:1.55;gap:14px;cursor:pointer}
+.subpage .check strong,.subpage .check span span{display:block}
+.subpage .check span span{color:var(--muted);font-size:14px;margin-top:4px}
+.subpage button,.subpage .suggest-project a{min-height:44px;background:var(--coral);color:var(--on-coral);border:1px solid transparent;border-radius:12px;font-family:inherit;font-weight:800;font-size:13px;padding:11px 17px;cursor:pointer}
 .subpage button.secondary{background:var(--paper);color:var(--ink);border-color:var(--line)}
-.subpage button:disabled{opacity:.55}
+.subpage button:disabled{opacity:.55;cursor:not-allowed}
 .subpage :is(a,button,input,select,textarea):focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-.subpage .sources a{padding:21px}
-.subpage .sources a:hover{border-color:var(--gold);text-decoration:underline;text-underline-offset:4px}
-.subpage .sources a strong{color:var(--gold)}
-.subpage .suggest-project{background:var(--peach);padding:22px;gap:18px}
-.subpage .suggest-project p{color:var(--muted)}
-.subpage #result{background:var(--soft);border:1px solid var(--line);border-radius:15px;padding:20px;color:var(--ink);font-size:14px;line-height:1.7}
-.subpage .grid{gap:24px}
-.subpage .form{gap:14px}
-.subpage label{font-size:12px;color:var(--muted)}
-.subpage .error{color:var(--gold);font-weight:750}
-.subpage footer{border-top:1px solid var(--line);background:var(--peach);color:var(--muted);padding:28px 0;font-size:12px}
-.subpage footer a{color:var(--gold)}
+.subpage .sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.subpage .sources a{padding:21px;text-decoration:none}
+.subpage .sources a:hover{border-color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.subpage .source-description{display:block;color:var(--muted);font-size:13px;margin-top:7px}
+.subpage .suggest-project{display:flex;align-items:center;justify-content:space-between;padding:22px;gap:18px;margin:23px 0 8px}
+.subpage .suggest-project p{color:var(--muted);font-size:13px;margin:4px 0 0}
+.subpage .suggest-project a{display:inline-flex;align-items:center;justify-content:center;gap:5px;flex-shrink:0;text-align:center;text-decoration:none}
+.subpage #result{background:var(--soft);border:1px solid var(--line);border-radius:15px;padding:20px;color:var(--ink);font-size:14px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;min-height:160px}
+.subpage .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:24px;align-items:start}
+.subpage .form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.subpage .full{grid-column:1/-1}
+.subpage .form label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:650;color:var(--muted)}
+.subpage .actions{display:flex;gap:9px;flex-wrap:wrap}
+.subpage .error{color:var(--accent);font-weight:750;font-size:13px;min-height:20px}
+.subpage footer{border-top:1px solid var(--line);background:var(--paper);color:var(--muted);padding:28px 0;margin-top:40px;font-size:12px}
+.subpage footer a{color:var(--accent)}
 .subpage main>p{max-width:72ch}
+@media(max-width:800px){.subpage .grid{grid-template-columns:1fr}}
 @media(max-width:680px){
- .subpage header,.subpage .top{position:static;padding-block:15px}
- .subpage .top .wrap{flex-direction:row;align-items:center;flex-wrap:wrap;gap:10px}
- .subpage header a:not(.brand){font-size:12px}
- .subpage main{padding-top:30px}
+ .subpage header{padding-block:15px}
+ .subpage .brand{font-size:27px}.subpage .brand small{font-size:8px}
+ .subpage-header-actions{gap:10px;font-size:12px}
+ .subpage main.wrap{padding-top:30px}
  .subpage h1{font-size:clamp(35px,8vw,48px)}
  .subpage .lead,.subpage .sub{font-size:15px}
  .subpage .panel,.subpage .card{padding:20px}
  .subpage .form{gap:12px}
- .subpage .suggest-project{padding:20px}
+ .subpage .suggest-project{padding:20px;flex-direction:column;align-items:stretch}
+ .subpage .sources{grid-template-columns:1fr}
 }
-@media(prefers-color-scheme:dark){.subpage .panel,.subpage .card{box-shadow:none}}
+@media(max-width:480px){.subpage .form{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:no-preference){.subpage{scroll-behavior:smooth}}

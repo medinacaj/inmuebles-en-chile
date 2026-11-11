@@ -5,8 +5,8 @@ Dirección elegida y aprobada por el responsable del proyecto: llamativa y cerca
 ## Identidad
 
 - Coral vivo `#FF6B5E` en acciones, con texto carbón `#262322` para legibilidad.
-- Blanco cálido `#FFF9F5`, superficies blancas, melocotón `#FFE4D8` en Actualidad y herramientas.
-- Amarillo `#FFCD57` para pequeños acentos y precios referenciales.
+- Blanco cálido `#FFF9F5`, superficies blancas y bordes cálidos compartidos por noticias, catálogo, guía, simulador, herramientas y pie.
+- Melocotón suave `#FFF0E8` para avisos y estados seleccionados. Amarillo `#FFCD57` limitado al pequeño acento decorativo de portada; precios sin bloques de color y etiquetas editoriales suaves.
 - Coral oscuro `#AD3026` para enlaces/textos pequeños; modo oscuro con superficies marrón cálido y coral claro.
 - Manrope variable, peso 200–800, fuente local. Licencia SIL OFL en assets/fonts/OFL-Manrope.txt; origen @fontsource-variable/manrope 5.3.0, Manrope Project Authors.
 
@@ -21,11 +21,15 @@ Catálogo, noticias, diálogos, guía, herramientas y privacidad comparten token
 ## Archivos
 
 - assets/css/brand.css: tokens, fuente local y temas.
+- assets/css/portal.css: estructura y estados funcionales del portal, extraídos del HTML sin conservar paletas anteriores.
 - assets/css/experience.css: composición del portal y controles responsive, reemplaza las antiguas capas de overrides.
 - assets/css/subpages.css: páginas de apoyo.
+- assets/js/theme.js: apariencia compartida; conserva `iech_theme`, obedece al sistema sin preferencia explícita y sincroniza pestañas. Funciona también cuando el almacenamiento está bloqueado; en ese caso la elección no puede persistir al navegar.
+- assets/icons/favicon.svg: símbolo original de casa en coral y carbón, fuente de los PNG/ICO. Iconos y manifest usan rutas relativas para GitHub Pages; no se declara funcionamiento sin conexión.
 - assets/photos/hero-coral.webp (1440×960) y hero-coral-mobile.webp (840×560): imagen de ambientación generada con IA, escena ficticia inspirada en arquitectura costera. Etiqueta visible y alt indican procedencia; no representa un proyecto del catálogo ni una ubicación verificada. Variantes WebP sin metadatos personales.
 - assets/illustrations/news-*.svg: respaldo editorial cuando el medio no facilita una imagen asociada o esta no carga. Las fotos del artículo se enlazan con crédito desde RSS/OpenGraph; no se descargan al repositorio.
 - scripts/brand-check.mjs: composición en seis anchos, cabecera, fuente, orden y presupuesto de portada.
+- scripts/identity-check.mjs: consistencia entre páginas, preferencia frente al sistema, navegación entre pestañas, almacenamiento bloqueado y disponibilidad de iconos.
 
 Las fotografías antiguas hero-editorial*.webp permanecen como recursos históricos, con atribuciones Unsplash: Justin Wolff (https://unsplash.com/photos/7qD-iDyrdHY) y James Coleman (https://unsplash.com/photos/Ywyr5vjnExA). No se usan en la portada coral. Los originales y atribuciones de las fotos referenciales del catálogo se conservan.
 

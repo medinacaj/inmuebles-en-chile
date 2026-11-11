@@ -1,29 +1,18 @@
 <!doctype html>
 <html lang="es"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#fff9f5"><meta name="robots" content="noindex,nofollow">
 <meta name="description" content="Herramienta gratuita para preparar fichas inmobiliarias descriptivas y compartirlas, sin crear anuncios ni almacenar información en el portal.">
 <title>Herramientas para corredores | Inmuebles en Chile</title>
-<style>
-:root{--bg:#f7f6f3;--paper:#fff;--ink:#192329;--muted:#626e74;--line:#dedfdb;--gold:#88652d;--soft:#f0eee8}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
-a{color:inherit;text-underline-offset:3px}.wrap{max-width:1050px;margin:auto;padding:0 20px}
-header{padding:17px 0;border-bottom:1px solid var(--line);background:var(--paper)}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand{font:700 21px Georgia,serif;text-decoration:none}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold);font-weight:800}
-h1,h2{font-family:Georgia,serif;line-height:1.17}h1{font-size:clamp(32px,6vw,49px);margin:13px 0}h2{font-size:26px}main{padding:35px 0 50px}.lead{color:var(--muted);max-width:64ch}
-.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:22px;align-items:start}.panel{background:var(--paper);padding:24px;border:1px solid var(--line);border-radius:15px}
-.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:650}.full{grid-column:1/-1}
-input,select,textarea{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:12px 11px;border-radius:8px;font:inherit;min-width:0}
-textarea{resize:vertical;min-height:100px}#result{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:18px;border-radius:10px;min-height:160px;font-size:14px}
-button{border:0;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:8px;cursor:pointer;min-height:44px;font:600 14px system-ui}
-button.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}button:disabled{opacity:.45;cursor:not-allowed}
-.actions{display:flex;gap:9px;flex-wrap:wrap}.note{font-size:13px;color:var(--muted)}.error{color:#a03425;font-size:13px;min-height:20px}.footer{border-top:1px solid var(--line);font-size:13px;color:var(--muted);padding:25px 0}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}}
-@media(max-width:480px){.form{grid-template-columns:1fr}.full{grid-column:1}.panel{padding:17px}}
-@media(prefers-color-scheme:dark){:root{--bg:#101719;--paper:#1b2529;--ink:#f1f0e9;--muted:#bbc5c8;--line:#344145;--gold:#d6af6d;--soft:#263236}.error{color:#ffab9c}}
-.suggest-project{background:var(--paper);border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:17px;padding:16px 20px;margin:23px 0 8px}.suggest-project p{margin:4px 0 0;font-size:13px;color:var(--muted)}.suggest-project a{font-size:13px;text-decoration:none;color:var(--bg);background:var(--ink);min-height:44px;padding:11px 15px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;text-align:center;flex-shrink:0}.suggest-project a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}@media(max-width:600px){.suggest-project{flex-direction:column;align-items:stretch}.suggest-project a{width:100%}}</style><link rel="preload" href="assets/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/brand.css?v=coral-20261102"><link rel="stylesheet" href="assets/css/subpages.css?v=coral-20261102"></head>
-<body class="subpage"><a class="skip-link" href="#contenido">Saltar al contenido principal</a><header><div class="wrap"><a class="brand" href="./">inmuebles<span style="color:var(--gold)">.</span> <span style="font-size:.46em;letter-spacing:.12em;font-weight:740">EN CHILE</span></a><a href="./">← Volver al portal</a></div></header>
+<link rel="icon" href="assets/icons/favicon.ico" sizes="16x16 32x32">
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script src="assets/js/theme.js?v=identity-20261111"></script>
+
+<link rel="preload" href="assets/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/brand.css?v=identity-20261111"><link rel="stylesheet" href="assets/css/subpages.css?v=identity-20261111"></head>
+<body class="subpage tools"><a class="skip-link" href="#contenido">Saltar al contenido principal</a><header><div class="wrap"><a class="brand" href="./">inmuebles<span class="brand-dot">.</span><small>EN CHILE</small></a><div class="subpage-header-actions"><a href="./">← Volver al portal</a><button class="theme-toggle" id="theme" type="button" aria-label="Cambiar apariencia" title="Cambiar apariencia">◐</button></div></div></header>
 <main class="wrap" id="contenido">
 <div class="eyebrow">Herramienta gratuita · Sin registro</div><h1>Prepara una ficha para compartir.</h1>
 <p class="lead">Para propietarios y corredores: redacta un resumen profesional de una propiedad a partir de datos que tú proporcionas. Puedes copiarlo para WhatsApp, correo o tus publicaciones.</p>

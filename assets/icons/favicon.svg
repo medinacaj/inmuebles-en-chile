@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Inmuebles en Chile</title>
+  <rect width="64" height="64" rx="15" fill="#ff6b5e"/>
+  <path fill="#262322" fill-rule="evenodd" d="M12 30 32 13l20 17-4 5-3-3v18H19V32l-3 3Zm16 5v15h8V35Z"/>
+</svg>

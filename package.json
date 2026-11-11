@@ -17,7 +17,8 @@
     "test:accessibility": "node scripts/accessibility-check.mjs",
     "test:autoplay": "node scripts/autoplay-check.mjs",
     "test:brand": "node scripts/brand-check.mjs",
-    "test:news-images": "node scripts/news-images-check.mjs"
+    "test:news-images": "node scripts/news-images-check.mjs",
+    "test:identity": "node scripts/identity-check.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

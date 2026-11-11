@@ -8,6 +8,9 @@ on:
     paths:
       - 'index.html'
       - 'assets/css/**'
+      - 'assets/js/**'
+      - 'assets/icons/**'
+      - 'site.webmanifest'
       - 'assets/illustrations/**'
       - 'assets/photos/**'
       - 'assets/fonts/**'
@@ -18,6 +21,7 @@ on:
       - 'scripts/accessibility-check.mjs'
       - 'scripts/autoplay-check.mjs'
       - 'scripts/brand-check.mjs'
+      - 'scripts/identity-check.mjs'
       - 'scripts/news-images-check.mjs'
       - 'herramientas.html'
       - 'guia.html'
@@ -49,6 +53,8 @@ jobs:
         run: |
           mkdir -p test-results
           node scripts/visual-check.mjs > test-results/visual.json
+      - name: Verificar identidad entre páginas y favicons
+        run: node scripts/identity-check.mjs > test-results/identity.json
       - name: Verificar composición coral y presupuesto
         run: node scripts/brand-check.mjs > test-results/brand.json
       - name: Comprobar imágenes asociadas a noticias

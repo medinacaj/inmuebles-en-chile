@@ -34,3 +34,7 @@ Los nuevos componentes deben usar los roles de `brand.css` y probar ambas aparie
 ## Revisión independiente
 
 La revisión del cambio confirmó una regresión de contraste en el favorito oscuro (aproximadamente 1,57–1,76:1). La nueva prueba falló antes de corregirlo y pasó después; exige al menos 3:1 en hover, foco de teclado y estado guardado. Tras la corrección pasaron los 36 escenarios de identidad en la raíz local y otros 36 bajo `/inmuebles-en-chile/`, además de las 25 pruebas Node y 25 Python. No quedaron hallazgos funcionales adicionales del cambio revisado.
+
+## Publicación comprobada
+
+Los cambios `f52e88e` y `cac0435` están integrados en `main`. [GitHub Pages 43023350599](https://github.com/medinacaj/inmuebles-en-chile/actions/runs/43023350599) publicó correctamente `2c46300`, que contiene ambos cambios y la actualización automática de vigencia. La [QA de navegador 43023302161](https://github.com/medinacaj/inmuebles-en-chile/actions/runs/43023302161) terminó correctamente en 3 min 53 s, incluidas identidad/favicons, imágenes, accesibilidad, carrusel y compatibilidad Firefox/WebKit. Calidad del sitio y revisión de vigencia también terminaron correctamente.

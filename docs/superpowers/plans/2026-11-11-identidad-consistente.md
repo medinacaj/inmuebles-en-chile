@@ -30,7 +30,7 @@
 
 - [x] 1. Añadir `scripts/identity-check.mjs`: reproducir pérdida de preferencia entre páginas y diferencias de superficies; comprobar RED antes de corregir. Centralizar temas en `assets/js/theme.js` y `brand.css`; retirar paletas heredadas e inline CSS de las cuatro páginas. Actualizar `experience.css` y `subpages.css` con jerarquía consistente. Verificar GREEN.
 - [x] 2. Crear un símbolo original de casa en coral/carbón (`assets/icons/favicon.svg`), PNG 32/180/192/512 e ICO 16/32. Declararlo en todas las páginas junto al manifest con alcance relativo; comprobar recursos y representación real a tamaño pequeño.
-- [ ] 3. Registrar hallazgos y correcciones en `docs/AUDITORIA_VISUAL_2026-11-11.md`. Ejecutar Node/Python, identidad, composición, visual, accesibilidad y autoplay; revisión independiente del cambio completo. Publicar y comprobar Actions/Pages como en las mejoras anteriores.
+- [x] 3. Registrar hallazgos y correcciones en `docs/AUDITORIA_VISUAL_2026-11-11.md`. Ejecutar Node/Python, identidad, composición, visual, accesibilidad y autoplay; revisión independiente del cambio completo. Publicar y comprobar Actions/Pages como en las mejoras anteriores.
 
 ## Diagnóstico inicial
 
@@ -40,4 +40,4 @@ La auditoría inicial usa colores calculados y capturas de las cuatro páginas e
 
 ## Evidencia de ejecución
 
-Node 25 y Python 25 aprobados; visual 12, composición 6, autoplay 5 y axe 28 sin infracciones detectadas. Identidad: 36 escenarios aprobados tanto en raíz local como bajo `/inmuebles-en-chile/`. La revisión independiente identificó un favorito con poco contraste en oscuro; se reprodujo RED y se corrigió GREEN con un color específico para superficies claras, conservando contraste en estado guardado. Publicación y comprobación remota pendientes al preparar este registro.
+Node 25 y Python 25 aprobados; visual 12, composición 6, autoplay 5 y axe 28 sin infracciones detectadas. Identidad: 36 escenarios aprobados tanto en raíz local como bajo `/inmuebles-en-chile/`. La revisión independiente identificó un favorito con poco contraste en oscuro; se reprodujo RED y se corrigió GREEN con un color específico para superficies claras, conservando contraste en estado guardado. Publicación comprobada: Pages 43023350599 sobre `2c46300` incluye ambos cambios. QA de navegador 43023302161 terminó correctamente, al igual que Calidad del sitio y revisión de vigencia.

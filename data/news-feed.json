@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-11T12:20:41Z",
-  "lastAttemptAt": "2026-11-11T12:20:41Z",
+  "updatedAt": "2026-11-11T17:55:02Z",
+  "lastAttemptAt": "2026-11-11T17:55:02Z",
   "sources": [
     {
       "id": "df-economia",
@@ -299,7 +299,16 @@
       "source": "La Tercera",
       "sourceId": "la-tercera",
       "category": "Financiamiento",
-      "publishedAt": "2026-11-02T15:04:07Z"
+      "publishedAt": "2026-11-02T15:04:07Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/SL52WU6WHZCZFEMGHQ7WBULNP4.jpg?auth=d830dcabf16a67afdb34c185211ee93799583a448f6baf0ff21b361ac51fd73f&height=630&width=1200&smart=true",
+        "sourceUrl": "https://www.latercera.com/pulso/noticia/subsidio-tasa-hipotecaria-creditos-solicitudes-elegibles-viviendas/",
+        "origin": "opengraph",
+        "credit": "La Tercera",
+        "alt": "La tasa de interés de un crédito hipotecario en Chile frente a Europa y Latinoamérica",
+        "checkedAt": "2026-11-11T17:55:02Z"
+      }
     },
     {
       "id": "251aeea4ac3bff38c5",
@@ -308,7 +317,16 @@
       "source": "La Tercera",
       "sourceId": "la-tercera",
       "category": "Mercado",
-      "publishedAt": "2026-11-01T15:39:30Z"
+      "publishedAt": "2026-11-01T15:39:30Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/NDMTP5FUDRC3POBSS3GIX6W63I.jpeg?auth=1f9b54e40b800426ba16bfeb598b16adb7d5bf039622b56589fd43aaa30f3d85&height=630&width=1200&smart=true",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/inicia-encuesta-casen-2026-visitaran-mas-de-111-mil-viviendas-en-todo-chile-durante-tres-meses/",
+        "origin": "opengraph",
+        "credit": "La Tercera",
+        "alt": "Inicia encuesta Casen 2026: visitarán más de 111 mil viviendas en todo Chile durante tres meses",
+        "checkedAt": "2026-11-11T17:55:02Z"
+      }
     },
     {
       "id": "2eb66f6ed9144c1d7c",
@@ -317,7 +335,16 @@
       "source": "El Diario Inmobiliario",
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
-      "publishedAt": "2026-10-31T10:00:15Z"
+      "publishedAt": "2026-10-31T10:00:15Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/10/DEPARTAMENTOS.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/ventas-departamentos-nuevos-comunas-rm/",
+        "origin": "opengraph",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-11T17:55:02Z"
+      }
     },
     {
       "id": "8f4be39abe2dfb50f9",
@@ -326,7 +353,8 @@
       "source": "Servicio de Impuestos Internos",
       "sourceId": "sii-noticias",
       "category": "Normativa",
-      "publishedAt": "2026-10-30T15:06:05Z"
+      "publishedAt": "2026-10-30T15:06:05Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z"
     },
     {
       "id": "4e18624704844a4935",
@@ -335,7 +363,8 @@
       "source": "El Diario Inmobiliario",
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
-      "publishedAt": "2026-10-30T10:00:41Z"
+      "publishedAt": "2026-10-30T10:00:41Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z"
     },
     {
       "id": "f8460ef5558666de49",
@@ -344,7 +373,8 @@
       "source": "El Diario Inmobiliario",
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
-      "publishedAt": "2026-10-30T10:00:35Z"
+      "publishedAt": "2026-10-30T10:00:35Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z"
     },
     {
       "id": "9036a88ebd4cc108f1",
@@ -353,7 +383,8 @@
       "source": "El Diario Inmobiliario",
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
-      "publishedAt": "2026-10-29T10:28:30Z"
+      "publishedAt": "2026-10-29T10:28:30Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z"
     },
     {
       "id": "dc354c3a4cd91703b3",
@@ -362,12 +393,13 @@
       "source": "El Diario Inmobiliario",
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
-      "publishedAt": "2026-10-29T10:00:34Z"
+      "publishedAt": "2026-10-29T10:00:34Z",
+      "imageCheckedAt": "2026-11-11T17:55:02Z"
     }
   ],
   "imageStats": {
-    "total": 12,
-    "checkedArticles": 16,
-    "unavailable": 4
+    "total": 15,
+    "checkedArticles": 8,
+    "unavailable": 5
   }
 }

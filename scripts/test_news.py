@@ -152,6 +152,143 @@ class EditorialFeedTests(unittest.TestCase):
                     {"id":"b","name":"B","ok":False,"count":0}]
         self.assertEqual(ingest.assemble({"items":[]}, [], statuses, NOW)["health"], "degraded")
 
+    def test_rss_media_image_is_preserved(self):
+        rss = b'''<rss xmlns:media="http://search.yahoo.com/mrss/"><channel><item>
+        <title>El mercado inmobiliario y viviendas nuevas en Chile</title>
+        <link>https://www.df.cl/mercado/</link><pubDate>Sat, 31 Oct 2026 12:00:00 +0000</pubDate>
+        <media:content url="https://www.df.cl/images/viviendas.jpg" medium="image" type="image/jpeg" width="800" height="450" />
+        <media:credit>Diario Financiero</media:credit></item></channel></rss>'''
+        result = ingest.parse_source(rss, SOURCE, NOW)
+        self.assertEqual(result[0].get("image", {}).get("url"), "https://www.df.cl/images/viviendas.jpg")
+        report = ingest.assemble({"items":[]}, result, [{"ok":True,"count":1}], NOW)
+        self.assertEqual(report["items"][0]["image"]["sourceUrl"], result[0]["url"])
+        self.assertEqual(report["items"][0]["image"]["origin"], "rss")
+
+    def test_enclosure_and_html_description_images(self):
+        for media in [
+            '<enclosure type="image/jpeg" url="https://www.df.cl/images/casa.jpg"/>',
+            '<description>&lt;p&gt;&lt;img src="https://www.df.cl/images/casa.jpg" width="800" height="450"&gt;&lt;/p&gt;</description>',
+        ]:
+            with self.subTest(media=media):
+                rss = ('<rss><channel><item><title>El mercado inmobiliario y viviendas nuevas en Chile</title>'
+                       '<link>https://www.df.cl/mercado/</link><pubDate>Sat, 31 Oct 2026 12:00:00 +0000</pubDate>'
+                       + media + '</item></channel></rss>').encode()
+                image = ingest.parse_source(rss, SOURCE, NOW)[0].get("image", {})
+                self.assertEqual(image.get("url"), "https://www.df.cl/images/casa.jpg")
+
+    def test_atom_image_and_untrusted_images(self):
+        atom = b'''<feed xmlns="http://www.w3.org/2005/Atom"><entry>
+        <title>El mercado inmobiliario y nuevas viviendas en Chile</title>
+        <link href="https://www.df.cl/mercado/"/><updated>2026-10-31T12:00:00Z</updated>
+        <link rel="enclosure" type="image/jpeg" href="https://www.df.cl/images/casa.jpg"/>
+        </entry></feed>'''
+        self.assertEqual(ingest.parse_source(atom, SOURCE, NOW)[0].get("image", {}).get("url"), "https://www.df.cl/images/casa.jpg")
+        for url in ['http://www.df.cl/a.jpg','https://evil.example/a.jpg','https://127.0.0.1/a.jpg',
+                    'https://www.df.cl:8443/a.jpg','https://user:pass@www.df.cl/a.jpg','javascript:alert(1)',
+                    'https://www.df.cl/logo.svg']:
+            with self.subTest(url=url):
+                bad = atom.decode().replace('https://www.df.cl/images/casa.jpg', url).encode()
+                self.assertNotIn('image', ingest.parse_source(bad, SOURCE, NOW)[0])
+
+    def test_article_metadata_extracts_only_associated_image(self):
+        html = '<meta property="og:image" content="/images/edificio.jpg"><meta property="og:image:alt" content="Edificio en Chile">'
+        image = ingest.parse_article_image(html, 'https://www.df.cl/mercado/', SOURCE, NOW)
+        self.assertEqual(image['url'], 'https://www.df.cl/images/edificio.jpg')
+        self.assertEqual(image['origin'], 'opengraph')
+        self.assertIsNone(ingest.parse_article_image('<meta property="og:image" content="https://evil.example/a.jpg">', 'https://www.df.cl/mercado/', SOURCE, NOW))
+
+    def test_enrichment_is_bounded_and_caches_photo(self):
+        article = {"id":"one","title":"Mercado inmobiliario y viviendas nuevas en Chile",
+                   "url":"https://www.df.cl/mercado/","source":SOURCE['name'],"sourceId":SOURCE['id'],
+                   "category":"Mercado","publishedAt":"2026-10-31T12:00:00Z"}
+        calls = []
+        def fetch(url, source):
+            calls.append(url)
+            return '<meta property="og:image" content="https://www.df.cl/images/casa.jpg">'
+        report = ingest.enrich_images({"items":[article,dict(article,id='two',url='https://www.df.cl/otra/')]}, NOW, fetcher=fetch, max_requests=1)
+        self.assertEqual(len(calls), 1)
+        self.assertIn('image', report['items'][0])
+        self.assertNotIn('image', report['items'][1])
+        calls.clear()
+        cached = ingest.enrich_images({"items":[report['items'][0]]}, NOW, fetcher=fetch, max_requests=1)
+        self.assertEqual(calls, [])
+        self.assertEqual(cached['items'][0]['image']['url'], report['items'][0]['image']['url'])
+
+    def test_existing_photo_survives_refresh_without_new_image(self):
+        rss = b'''<rss><channel><item><title>El mercado inmobiliario y viviendas nuevas en Chile</title>
+        <link>https://www.df.cl/mercado/</link><pubDate>Sat, 31 Oct 2026 12:00:00 +0000</pubDate>
+        <enclosure type="image/jpeg" url="https://www.df.cl/images/casa.jpg"/></item></channel></rss>'''
+        prior = ingest.parse_source(rss, SOURCE, NOW)
+        fresh = [dict(prior[0])]
+        fresh[0].pop('image')
+        report = ingest.assemble({'items':prior}, fresh, [{'ok':True,'count':1}], NOW)
+        self.assertEqual(report['items'][0]['image']['url'], prior[0]['image']['url'])
+        bad = [dict(prior[0], image=dict(prior[0]['image'], sourceUrl='https://www.df.cl/otra-noticia/'))]
+        self.assertNotIn('image', ingest.assemble({'items':[]}, bad, [{'ok':True,'count':1}], NOW)['items'][0])
+
+    def test_small_trackers_do_not_replace_article_photo(self):
+        rss = b'''<rss><channel><item><title>El mercado inmobiliario y viviendas nuevas en Chile</title>
+        <link>https://www.df.cl/mercado/</link><pubDate>Sat, 31 Oct 2026 12:00:00 +0000</pubDate>
+        <description>&lt;img src="https://www.df.cl/images/a.jpg" width="1" height="1"&gt;
+        &lt;img src="https://www.df.cl/images/casa.jpg" width="800" height="450"&gt;</description>
+        </item></channel></rss>'''
+        self.assertEqual(ingest.parse_source(rss,SOURCE,NOW)[0]['image']['url'],'https://www.df.cl/images/casa.jpg')
+
+    def test_article_metadata_respects_bounded_response_and_redirects(self):
+        class Response:
+            headers = {'Content-Type':'text/html'}
+            def __enter__(self): return self
+            def __exit__(self, *args): pass
+            def geturl(self): return 'https://www.df.cl/mercado/'
+            def read(self, count):
+                self.count = count
+                return b'<meta property="og:image" content="/images/casa.jpg">'
+        response = Response()
+        with patch.object(ingest,'build_opener') as opener:
+            opener.return_value.open.return_value = response
+            html = ingest.fetch_article_metadata('https://www.df.cl/mercado/',SOURCE)
+            self.assertEqual(response.count,ingest.MAX_METADATA_BYTES)
+            self.assertIn('og:image',html)
+        with patch.object(ingest,'build_opener') as opener:
+            with self.assertRaises(ValueError):
+                ingest.fetch_article_metadata('https://127.0.0.1/private',SOURCE)
+            opener.assert_not_called()
+
+    def test_homepage_or_other_article_metadata_is_rejected(self):
+        for target in ['https://www.df.cl/','https://www.df.cl/otra-noticia/']:
+            html = f'<meta property="og:url" content="{target}"><meta property="og:image" content="/images/portada.jpg">'
+            self.assertIsNone(ingest.parse_article_image(html,'https://www.df.cl/mercado/',SOURCE,NOW))
+        html = '<link rel="canonical" href="https://www.df.cl/"><meta property="og:image" content="/images/portada.jpg">'
+        self.assertIsNone(ingest.parse_article_image(html,'https://www.df.cl/mercado/',SOURCE,NOW))
+
+    def test_final_article_url_must_match_requested_article(self):
+        class Response:
+            headers = {'Content-Type':'text/html'}
+            def __enter__(self): return self
+            def __exit__(self,*args): pass
+            def geturl(self): return 'https://www.df.cl/'
+            def read(self,count): return b'<meta property="og:image" content="/images/portada.jpg">'
+        with patch.object(ingest,'build_opener') as opener:
+            opener.return_value.open.return_value=Response()
+            with self.assertRaises(ValueError):
+                ingest.fetch_article_metadata('https://www.df.cl/mercado/',SOURCE)
+
+    def test_articles_without_images_do_not_starve_others(self):
+        articles=[{'id':str(i),'title':'Mercado inmobiliario y viviendas nuevas en Chile',
+                   'url':f'https://www.df.cl/noticia-{i}/','source':SOURCE['name'],'sourceId':SOURCE['id'],
+                   'category':'Mercado','publishedAt':f'2026-10-31T{12-i:02d}:00:00Z'} for i in range(3)]
+        calls=[]
+        def fetch(url,source):
+            calls.append(url)
+            return '<meta property="og:image" content="/images/casa.jpg">' if 'noticia-2' in url else '<html></html>'
+        report={'items':articles}
+        for run in range(3):
+            now=NOW+timedelta(hours=16*run)
+            report=ingest.assemble(report,[],[{'ok':True,'count':0}],now)
+            report=ingest.enrich_images(report,now,fetcher=fetch,max_requests=1)
+        self.assertEqual(calls,[item['url'] for item in articles])
+        self.assertTrue(any(x['id']=='2' and 'image' in x for x in report['items']))
+
     def test_no_invented_publication_dates(self):
         rss = b'''<rss><channel><item><title>La vivienda y la actividad inmobiliaria en Chile</title>
         <link>https://www.df.cl/noticias/</link>

@@ -24,7 +24,7 @@ Catálogo, noticias, diálogos, guía, herramientas y privacidad comparten token
 - assets/css/experience.css: composición del portal y controles responsive, reemplaza las antiguas capas de overrides.
 - assets/css/subpages.css: páginas de apoyo.
 - assets/photos/hero-coral.webp (1440×960) y hero-coral-mobile.webp (840×560): imagen de ambientación generada con IA, escena ficticia inspirada en arquitectura costera. Etiqueta visible y alt indican procedencia; no representa un proyecto del catálogo ni una ubicación verificada. Variantes WebP sin metadatos personales.
-- assets/illustrations/news-*.svg: ilustraciones editoriales originales con paleta coral; no fotografías de noticias.
+- assets/illustrations/news-*.svg: respaldo editorial cuando el medio no facilita una imagen asociada o esta no carga. Las fotos del artículo se enlazan con crédito desde RSS/OpenGraph; no se descargan al repositorio.
 - scripts/brand-check.mjs: composición en seis anchos, cabecera, fuente, orden y presupuesto de portada.
 
 Las fotografías antiguas hero-editorial*.webp permanecen como recursos históricos, con atribuciones Unsplash: Justin Wolff (https://unsplash.com/photos/7qD-iDyrdHY) y James Coleman (https://unsplash.com/photos/Ywyr5vjnExA). No se usan en la portada coral. Los originales y atribuciones de las fotos referenciales del catálogo se conservan.

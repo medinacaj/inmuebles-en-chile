@@ -38,7 +38,7 @@
 
 - Los titulares RSS se actualizan dos veces al día mediante [GitHub Actions](.github/workflows/auto-noticias.yml).
 - Feeds de Diario Financiero, Cooperativa Economía, La Tercera y Servicio de Impuestos Internos, con filtros de vivienda, proyectos y financiamiento.
-- No se copian artículos ni fotografías, y un artículo sobre un proyecto no se convierte automáticamente en un inmueble disponible.
+- Se enlazan vistas previas de imágenes del medio con atribución; no se copian artículos ni archivos fotográficos, y un artículo sobre un proyecto no se convierte automáticamente en un inmueble disponible.
 - [Diseño, límites y operación del motor RSS](docs/AUTOALIMENTACION.md).
 - La actualización puede retrasarse por fallos, bloqueos de proveedores o por programación de GitHub; la web muestra la fecha real del último éxito.
 
@@ -116,6 +116,7 @@ Node.js >=22 (`.nvmrc`: 22) y Python 3.12. Instalar QA con `npm ci`; no se neces
 ```bash
 npm test
 npm run test:news
+npm run test:news-images
 npx playwright install --with-deps chromium firefox webkit
 npm run test:visual
 npm run test:brand

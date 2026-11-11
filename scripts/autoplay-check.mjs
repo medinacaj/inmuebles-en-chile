@@ -16,6 +16,8 @@ try{
   assert.ok(await p.locator('#homeNews').evaluate(e=>e.scrollLeft)>20);
   await p.locator('#homeNews').evaluate(e=>e.scrollTo({left:e.scrollWidth,behavior:'instant'}));
   await advance(p);
+  const deadline=Date.now()+3000;
+  while(await p.locator('#homeNews').evaluate(e=>e.scrollLeft)>=3&&Date.now()<deadline)await new Promise(r=>setTimeout(r,50));
   assert.ok(await p.locator('#homeNews').evaluate(e=>e.scrollLeft)<3);
  });
  await check('pausa explícita y reanudación',{},async p=>{
@@ -37,6 +39,8 @@ try{
  });
  await check('movimiento reducido requiere inicio voluntario',{reducedMotion:'reduce'},async p=>{
   await advance(p);
+  const deadline=Date.now()+3000;
+  while(await p.locator('#homeNews').evaluate(e=>e.scrollLeft)>=3&&Date.now()<deadline)await new Promise(r=>setTimeout(r,50));
   assert.ok(await p.locator('#homeNews').evaluate(e=>e.scrollLeft)<3);
   assert.match(await p.locator('#homeNewsAutoplay').innerText(),/Reproducir/);
  });

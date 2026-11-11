@@ -267,3 +267,10 @@ footer a{color:var(--gold)}
 .modal{z-index:100}.toast{z-index:110}
 @media(max-width:360px){#inicio .home-search-fields{grid-template-columns:1fr}}
 @media(min-width:681px) and (max-width:900px){#inicio .home-search-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Actualidad utiliza las mismas imágenes asociadas al artículo que la portada. */
+.newsgrid .news-article{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.news-article .news-image-link{height:190px;min-height:190px}
+.news-article .news-article-body{display:flex;flex-direction:column;gap:12px;padding:22px}
+.news-article .news-image-note{left:10px;right:auto;bottom:10px;max-width:calc(100% - 20px);font-size:10px;padding:5px 8px}
+@media(max-width:680px){.news-article .news-article-body{padding:19px}.news-article .news-image-link{height:180px;min-height:180px}}

@@ -18,6 +18,7 @@ on:
       - 'scripts/accessibility-check.mjs'
       - 'scripts/autoplay-check.mjs'
       - 'scripts/brand-check.mjs'
+      - 'scripts/news-images-check.mjs'
       - 'herramientas.html'
       - 'guia.html'
       - 'informacion.html'
@@ -50,6 +51,8 @@ jobs:
           node scripts/visual-check.mjs > test-results/visual.json
       - name: Verificar composición coral y presupuesto
         run: node scripts/brand-check.mjs > test-results/brand.json
+      - name: Comprobar imágenes asociadas a noticias
+        run: node scripts/news-images-check.mjs > test-results/news-images.json
       - name: Probar errores de red, filtros e historial
         run: node scripts/resilience-check.mjs > test-results/resilience.json
       - name: Probar reproducción automática del carrusel

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-11T17:55:02Z",
-  "lastAttemptAt": "2026-11-11T17:55:02Z",
+  "updatedAt": "2026-11-12T00:47:28Z",
+  "lastAttemptAt": "2026-11-12T00:47:28Z",
   "sources": [
     {
       "id": "df-economia",
@@ -26,7 +26,7 @@
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 0
+      "count": 3
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,57 @@
     }
   ],
   "items": [
+    {
+      "id": "1decea0149237f5b49",
+      "title": "Construcción de viviendas sociales",
+      "url": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-11T23:58:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/YHES3VP5G5C45I3EOVJKGFBZRE.jpg?auth=eaade81c8b747a54cba37ce7e6be3f2be89a593e4a4de0efa2ac596e772548bd&smart=true&width=900&height=600",
+        "sourceUrl": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "PATRICIO FUENTES Y.",
+        "checkedAt": "2026-11-12T00:47:28Z"
+      }
+    },
+    {
+      "id": "d35c080f4f3aa9347b",
+      "title": "TC declara admisible requerimiento de diputados y alcaldes de oposición contra nueva ordenanza de construcción",
+      "url": "https://www.latercera.com/pulso/noticia/tc-declara-admisible-requerimiento-de-diputados-y-alcaldes-de-oposicion-contra-nueva-ordenanza-de-construccion/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-11T23:48:03Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/EY3Z6GM2L5BSFKFPJMTUG3TZZY.jpg?auth=e479adedd8c9e814744fe891dcf957574fd095f2735c42f3e1acaf73bf2b8dae&smart=true&width=6000&height=4000",
+        "sourceUrl": "https://www.latercera.com/pulso/noticia/tc-declara-admisible-requerimiento-de-diputados-y-alcaldes-de-oposicion-contra-nueva-ordenanza-de-construccion/",
+        "origin": "rss",
+        "credit": "JONNATHAN OYARZUN/ATON CHILE",
+        "alt": "Santiago, 25 de Agosto de 2026. Pleno del Tribunal Constitucional revisa el requerimiento de inconstitucionalidad presentado por el gobierno contra el articulo 31 de la megarreforma referido a la reconexion gratuita de servicios basicos en estado de catastrofe. Jonnathan Oyarzun/Aton Chile",
+        "checkedAt": "2026-11-12T00:47:28Z"
+      }
+    },
+    {
+      "id": "03380b3952b87b1345",
+      "title": "Ministerios de la Mujer y Vivienda avanzan en soluciones habitacionales para mujeres víctimas de violencia grave o extrema",
+      "url": "https://www.latercera.com/nacional/noticia/ministerios-de-la-mujer-y-vivienda-avanzan-en-soluciones-habitacionales-para-mujeres-victimas-de-violencia-grave-o-extrema/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-11T20:08:19Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/UZ2XWWBZM5D6TAC4OWCTA4WIUI.jpg?auth=d0a486a8b3a5da4747bb2b70ce02aeb4cbd7a2a9152238bbc6a43b82fd23bdff&smart=true&width=7008&height=4672",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/ministerios-de-la-mujer-y-vivienda-avanzan-en-soluciones-habitacionales-para-mujeres-victimas-de-violencia-grave-o-extrema/",
+        "origin": "rss",
+        "credit": "PABLO",
+        "alt": "Entrega de viviendas.",
+        "checkedAt": "2026-11-12T00:47:28Z"
+      }
+    },
     {
       "id": "378d89ee55f6b26f73",
       "title": "Maule registra el menor precio medio de departamentos en venta, mientras Aysén lidera en casas",
@@ -62,7 +113,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:03:37Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z"
+      "imageCheckedAt": "2026-11-12T00:47:28Z"
     },
     {
       "id": "1c7e07138f11812f00",
@@ -162,7 +213,15 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-07T10:00:04Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z"
+      "imageCheckedAt": "2026-11-12T00:47:28Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/BOMBEROS.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/regularizacion-cuarteles-bomberos/",
+        "origin": "opengraph",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-12T00:47:28Z"
+      }
     },
     {
       "id": "cc1c3d7660a10738a1",
@@ -208,7 +267,15 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T18:34:10Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z"
+      "imageCheckedAt": "2026-11-12T00:47:28Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/UENO-BANK.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/crisis-de-ueno-bank-en-paraguay-pone-bajo-presion-al-financiamiento-inmobiliario-entidad-concentra-cerca-del-93-de-los-creditos-para-vivienda/",
+        "origin": "opengraph",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-12T00:47:28Z"
+      }
     },
     {
       "id": "0f7503e542fd928086",
@@ -236,7 +303,15 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T10:00:33Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z"
+      "imageCheckedAt": "2026-11-12T00:47:28Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/10/EDIFICIO-3.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/caso-tonka-tomicic-pone-el-foco-en-el-leaseback-inmobiliario-y-las-condiciones-para-recuperar-una-propiedad/",
+        "origin": "opengraph",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-12T00:47:28Z"
+      }
     },
     {
       "id": "eeccd02c6e530f57ce",
@@ -398,8 +473,8 @@
     }
   ],
   "imageStats": {
-    "total": 15,
-    "checkedArticles": 8,
-    "unavailable": 5
+    "total": 21,
+    "checkedArticles": 4,
+    "unavailable": 1
   }
 }

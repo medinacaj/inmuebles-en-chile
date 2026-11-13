@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-12T18:22:03Z",
-  "lastAttemptAt": "2026-11-12T18:22:03Z",
+  "updatedAt": "2026-11-13T17:47:27Z",
+  "lastAttemptAt": "2026-11-13T17:47:27Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,7 +20,7 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 5
+      "count": 9
     },
     {
       "id": "la-tercera",
@@ -36,6 +36,66 @@
     }
   ],
   "items": [
+    {
+      "id": "2401f6f075412f7a55",
+      "title": "Proyecto de ley busca agilizar conexiones de agua y luz en viviendas",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-13T10:31:02Z",
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
+    },
+    {
+      "id": "dc56cffef5d8cfe80e",
+      "title": "Viviendas entre 4.000 y 6.000 UF aumentan sus ventas 43% en la RM, pese a retroceso del mercado inmobiliario",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/ventas-viviendas-rm-septiembre-2026/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-13T10:03:16Z",
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
+    },
+    {
+      "id": "aa84f991e9733b742b",
+      "title": "El Salvador proyecta complejo inmobiliario de lujo con 500 residencias y primera marina para superyates",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/the-estate-el-salvador-500-residencias-marina/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-13T10:03:07Z",
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
+    },
+    {
+      "id": "864c638d43886d6879",
+      "title": "Oficinas prime en Santiago: vacancia cae a su menor nivel del año y arriendos llegan a US$24,91 por m²",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/oficinas-prime-santiago-vacancia-tercer-trimestre-2026/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-13T10:02:31Z",
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
+    },
+    {
+      "id": "bc16f3f92a5450e0fd",
+      "title": "Exención del IVA inmobiliario: estiman rebajas de hasta 10% en viviendas nuevas",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/exencion-iva-inmobiliario-estiman-rebajas-hasta-10-viviendas-nuevas/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Proyectos",
+      "publishedAt": "2026-11-13T10:00:08Z",
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
+    },
+    {
+      "id": "040e4f4ee3fc649b20",
+      "title": "Departamentos acumulan más oferta disponible y elevan sus meses para agotar stock, mientras casas reducen sus plazos",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/departamentos-acumulan-mas-oferta-disponible-y-elevan-sus-meses-para-agotar-stock-mientras-casas-reducen-sus-plazos/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-12T20:07:49Z",
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
+    },
     {
       "id": "8a9e2e93c9039a8180",
       "title": "Alcalde de Estación Central: “No podemos seguir aumentando la cantidad de viviendas sin considerar la capacidad real del territorio”",
@@ -62,7 +122,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:33Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     },
     {
       "id": "1decea0149237f5b49",
@@ -123,7 +183,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T19:19:39Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     },
     {
       "id": "378d89ee55f6b26f73",
@@ -151,7 +211,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:03:37Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     },
     {
       "id": "1c7e07138f11812f00",
@@ -467,7 +527,7 @@
       "sourceId": "sii-noticias",
       "category": "Normativa",
       "publishedAt": "2026-10-30T15:06:05Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     },
     {
       "id": "4e18624704844a4935",
@@ -477,7 +537,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-30T10:00:41Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     },
     {
       "id": "f8460ef5558666de49",
@@ -487,7 +547,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-30T10:00:35Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     },
     {
       "id": "9036a88ebd4cc108f1",
@@ -497,7 +557,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-29T10:28:30Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     },
     {
       "id": "dc354c3a4cd91703b3",
@@ -507,12 +567,12 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-29T10:00:34Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z"
+      "imageCheckedAt": "2026-11-13T17:47:27Z"
     }
   ],
   "imageStats": {
     "total": 22,
-    "checkedArticles": 9,
-    "unavailable": 8
+    "checkedArticles": 14,
+    "unavailable": 14
   }
 }

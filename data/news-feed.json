@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-13T17:47:27Z",
-  "lastAttemptAt": "2026-11-13T17:47:27Z",
+  "updatedAt": "2026-11-13T23:37:04Z",
+  "lastAttemptAt": "2026-11-13T23:37:04Z",
   "sources": [
     {
       "id": "df-economia",
@@ -572,7 +572,7 @@
   ],
   "imageStats": {
     "total": 22,
-    "checkedArticles": 14,
-    "unavailable": 14
+    "checkedArticles": 0,
+    "unavailable": 0
   }
 }

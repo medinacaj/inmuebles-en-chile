@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-13T23:37:04Z",
-  "lastAttemptAt": "2026-11-13T23:37:04Z",
+  "updatedAt": "2026-11-14T16:37:36Z",
+  "lastAttemptAt": "2026-11-14T16:37:36Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,7 +20,7 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 9
+      "count": 8
     },
     {
       "id": "la-tercera",
@@ -37,6 +37,16 @@
   ],
   "items": [
     {
+      "id": "bcb00c4aaac19a4c97",
+      "title": "Venta de viviendas nuevas en Lima y Callao crece 26% frente a 2025 y supera las 23.600 unidades a septiembre",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/venta-de-viviendas-nuevas-en-lima-y-callao-crece-26-frente-a-2025-y-supera-las-23-600-unidades-a-septiembre/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Proyectos",
+      "publishedAt": "2026-11-14T06:29:08Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z"
+    },
+    {
       "id": "2401f6f075412f7a55",
       "title": "Proyecto de ley busca agilizar conexiones de agua y luz en viviendas",
       "url": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
@@ -44,7 +54,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:31:02Z",
-      "imageCheckedAt": "2026-11-13T17:47:27Z"
+      "imageCheckedAt": "2026-11-14T16:37:36Z"
     },
     {
       "id": "dc56cffef5d8cfe80e",
@@ -54,7 +64,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-13T17:47:27Z"
+      "imageCheckedAt": "2026-11-14T16:37:36Z"
     },
     {
       "id": "aa84f991e9733b742b",
@@ -64,7 +74,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:07Z",
-      "imageCheckedAt": "2026-11-13T17:47:27Z"
+      "imageCheckedAt": "2026-11-14T16:37:36Z"
     },
     {
       "id": "864c638d43886d6879",
@@ -193,7 +203,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:04:45Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/DEPARTAMENTOS-3.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/precios-viviendas-chile-por-region/",
@@ -221,7 +231,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-09T21:11:17Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/CASA.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/tu-casa-a-tu-pinta-2-0-minvu-requisitos-subsidios/",
@@ -239,14 +249,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-09T16:30:00Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/FHH2LEE3YJAJDD4VZ5FCCIXOW4.jpg?auth=43a6c1fb9a8c6ae9cbbc184f7b2f7b35e5d76da1f5a38c75d8deb1b58abcbecf&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/cambios-de-ordenanza-de-construccion-gobierno-busca-que-requerimiento-de-alcaldes-ante-el-tc-se-declare-inadmisible/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "EDIFICIOS GUETO - Guetos verticales",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-14T16:37:36Z"
       }
     },
     {
@@ -257,14 +267,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-09T14:24:21Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/OAXDH7EHQZAABNPSRIBFJ4PPWM.jpg?auth=22d5a29bffba7ad39865e54bf8c519885e3fb2f31755c56ec2a224f8044fd46b&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/comienza-postulacion-a-la-tarjeta-banco-de-materiales-20-como-acceder-a-mejoras-para-casa-y-departamento/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Comienza postulación a la Tarjeta Banco de Materiales 2.0: ¿Cómo acceder a mejoras para casa y departamento? Foto referencial de archivo",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-14T16:37:36Z"
       }
     },
     {
@@ -275,7 +285,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-08T10:00:48Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/REVESTIMIENTO.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/revestimientos-acusticos-viviendas-copiar-slug/",
@@ -293,14 +303,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-07T23:17:02Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/YKR3PKM77VB3DNS3W4LWCZIB7M.jpg?auth=22ee3265ae145245b1400f6f5a3b5c73d1bb1b37d662fe200f20ae604c793c57&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/culto/noticia/la-construccion-de-sebastian-lelio-esplendor-resistencia-y-una-ultima-cinta/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "La construcción de Sebastián Lelio: esplendor, resistencia y una última cinta",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-14T16:37:36Z"
       }
     },
     {
@@ -329,7 +339,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-06T23:12:38Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2024/03/BANCOESTADO.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-bancoestado-hipotecario-pro/",
@@ -347,7 +357,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-06T10:00:57Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/VIVIENDA-4.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/encuesta-bicentenario-uc-solo-el-18-cree-que-un-trabajador-tiene-altas-posibilidades-de-comprar-una-vivienda-propia/",
@@ -383,7 +393,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T10:00:49Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2025/08/Tema-vivienda-tutelada-Arica.jpg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/casen-2026-encuesta-viviendas-chile/",
@@ -419,14 +429,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-04T17:37:00Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/Z5ZQ4ZS3J5ETVKZEKXJGHAT5RA.jpeg?auth=39aa690369a886d0a7d9a6f621cec527e89288efd8d84aa8f4c0cc1c281cfc12&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/entregan-148-viviendas-del-proyecto-la-platina-de-puente-alto-tras-denuncias-de-hechos-delictuales/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Entregan 148 viviendas del proyecto La Platina de Puente Alto tras denuncias de hechos delictuales",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-14T16:37:36Z"
       }
     },
     {
@@ -437,7 +447,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-04T10:00:03Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2023/11/San-Joaquin-_2-1024x683.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/vacancia-multifamily-san-joaquin-copiar/",
@@ -455,14 +465,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-03T14:50:00Z",
-      "imageCheckedAt": "2026-11-11T12:20:41Z",
+      "imageCheckedAt": "2026-11-14T16:37:36Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/QUZ4OVD64ZD2TINMNO35LGSZYU.JPG?auth=e5586db64a5cf3779a329465b1d427b1a924c7861046c5ef4653443dbddc4f0d&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/cchc-espera-que-sector-se-recupere-durante-2027-pero-lamenta-aplazamiento-de-la-ordenanza-de-construccion/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "CChC Raimundo Rencoret",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-14T16:37:36Z"
       }
     },
     {
@@ -572,7 +582,7 @@
   ],
   "imageStats": {
     "total": 22,
-    "checkedArticles": 0,
-    "unavailable": 0
+    "checkedArticles": 16,
+    "unavailable": 11
   }
 }

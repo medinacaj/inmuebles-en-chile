@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-15T17:13:45Z",
-  "lastAttemptAt": "2026-11-15T17:13:45Z",
+  "updatedAt": "2026-11-15T22:52:53Z",
+  "lastAttemptAt": "2026-11-15T22:52:53Z",
   "sources": [
     {
       "id": "df-economia",
@@ -50,7 +50,7 @@
         "origin": "rss",
         "credit": "JAVIER SALVO/ATON CHILE",
         "alt": "Foto: Referencial",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-15T22:52:53Z"
       }
     },
     {
@@ -67,7 +67,7 @@
         "origin": "rss",
         "credit": "La Tercera",
         "alt": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-15T22:52:53Z"
       }
     },
     {
@@ -126,7 +126,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:02:31Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "bc16f3f92a5450e0fd",
@@ -136,7 +136,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-13T10:00:08Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "040e4f4ee3fc649b20",
@@ -146,7 +146,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T20:07:49Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "8a9e2e93c9039a8180",
@@ -156,14 +156,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:40Z",
-      "imageCheckedAt": "2026-11-12T18:22:03Z",
+      "imageCheckedAt": "2026-11-15T22:52:53Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/ALCALDE-ESTACION-CENTRAL.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/plan-regulador-estacion-central-futuro-inmobiliario/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-12T18:22:03Z"
+        "checkedAt": "2026-11-15T22:52:53Z"
       }
     },
     {
@@ -174,7 +174,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:33Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "1decea0149237f5b49",
@@ -184,6 +184,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:58:00Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/YHES3VP5G5C45I3EOVJKGFBZRE.jpg?auth=eaade81c8b747a54cba37ce7e6be3f2be89a593e4a4de0efa2ac596e772548bd&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
@@ -191,8 +192,7 @@
         "credit": "La Tercera",
         "alt": "VICIENDAS-SOCIALES-EN-1985491.jpg",
         "checkedAt": "2026-11-15T17:13:45Z"
-      },
-      "imageCheckedAt": "2026-11-15T17:13:45Z"
+      }
     },
     {
       "id": "d35c080f4f3aa9347b",
@@ -202,6 +202,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:48:03Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/EY3Z6GM2L5BSFKFPJMTUG3TZZY.jpg?auth=e479adedd8c9e814744fe891dcf957574fd095f2735c42f3e1acaf73bf2b8dae&height=630&width=1200&focal=3526%2C1321",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/tc-declara-admisible-requerimiento-de-diputados-y-alcaldes-de-oposicion-contra-nueva-ordenanza-de-construccion/",
@@ -209,8 +210,7 @@
         "credit": "La Tercera",
         "alt": "Santiago, 25 de Agosto de 2026. Pleno del Tribunal Constitucional revisa el requerimiento de inconstitucionalidad presentado por el gobierno contra el articulo 31 de la megarreforma referido a la reconexion gratuita de servicios basicos en estado de catastrofe. Jonnathan Oyarzun/Aton Chile",
         "checkedAt": "2026-11-15T17:13:45Z"
-      },
-      "imageCheckedAt": "2026-11-15T17:13:45Z"
+      }
     },
     {
       "id": "03380b3952b87b1345",
@@ -220,6 +220,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T20:08:19Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/UZ2XWWBZM5D6TAC4OWCTA4WIUI.jpg?auth=d0a486a8b3a5da4747bb2b70ce02aeb4cbd7a2a9152238bbc6a43b82fd23bdff&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/ministerios-de-la-mujer-y-vivienda-avanzan-en-soluciones-habitacionales-para-mujeres-victimas-de-violencia-grave-o-extrema/",
@@ -227,8 +228,7 @@
         "credit": "La Tercera",
         "alt": "Entrega de viviendas.",
         "checkedAt": "2026-11-15T17:13:45Z"
-      },
-      "imageCheckedAt": "2026-11-15T17:13:45Z"
+      }
     },
     {
       "id": "96a408656121b17346",
@@ -238,7 +238,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T19:19:39Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "378d89ee55f6b26f73",
@@ -266,7 +266,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:03:37Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "1c7e07138f11812f00",
@@ -492,14 +492,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-04T10:00:03Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-15T22:52:53Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2023/11/San-Joaquin-_2-1024x683.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/vacancia-multifamily-san-joaquin-copiar/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-15T22:52:53Z"
       }
     },
     {
@@ -582,7 +582,7 @@
       "sourceId": "sii-noticias",
       "category": "Normativa",
       "publishedAt": "2026-10-30T15:06:05Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "4e18624704844a4935",
@@ -592,7 +592,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-30T10:00:41Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "f8460ef5558666de49",
@@ -602,7 +602,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-30T10:00:35Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "9036a88ebd4cc108f1",
@@ -612,7 +612,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-29T10:28:30Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     },
     {
       "id": "dc354c3a4cd91703b3",
@@ -622,12 +622,12 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-29T10:00:34Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z"
+      "imageCheckedAt": "2026-11-15T22:52:53Z"
     }
   ],
   "imageStats": {
     "total": 25,
-    "checkedArticles": 16,
-    "unavailable": 3
+    "checkedArticles": 13,
+    "unavailable": 11
   }
 }

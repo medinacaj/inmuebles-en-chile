@@ -148,13 +148,18 @@ function showCompare(){
 }
 let lastListingReport=null;
 let listingRequest=0;
+// Historical status snapshots must never be represented as current checks.
+const MAX_LISTING_REPORT_AGE_MS=7*86400000;
 function validateListingReport(data){
  const time=Date.parse(data?.checkedAt);
- if(data?.schemaVersion!==1||!Number.isFinite(time)||time>Date.now()+86400000||!Array.isArray(data.listings)||data.listings.length!==REAL.length)throw Error('Registro incompleto o inválido');
+ if(data?.schemaVersion!==1||!Number.isFinite(time)||time>Date.now()+86400000||
+    Date.now()-time>MAX_LISTING_REPORT_AGE_MS||!Array.isArray(data.listings)||data.listings.length!==REAL.length)
+    throw Error('Registro incompleto, caducado o inválido');
  const ids=new Set();
  for(const item of data.listings){
   if(!REAL.some(p=>p.publicationId===item.id)||ids.has(item.id)||!['unknown','unavailable'].includes(item.status)||
      !Number.isFinite(Date.parse(item.checkedAt))||Date.parse(item.checkedAt)>Date.now()+86400000||
+     Date.now()-Date.parse(item.checkedAt)>MAX_LISTING_REPORT_AGE_MS||
      !(item.httpStatus===null||(Number.isInteger(item.httpStatus)&&item.httpStatus>=100&&item.httpStatus<=599)))throw Error('Entrada de comprobación inválida');
   ids.add(item.id);
  }

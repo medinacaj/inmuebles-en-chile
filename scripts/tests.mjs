@@ -76,7 +76,18 @@ test('el catálogo y las acciones esenciales funcionan en un DOM simulado', () =
     ';return {toggleFavorite,toggleCompare,showSaved,showCompare,closeModal,applyListingReport};')(
       document,localStorage,{scrollTo(){},addEventListener(){},requestAnimationFrame(fn){fn()},matchMedia(){return {matches:true}}},async()=>({ok:false}),()=>{});
   assert.equal(getElementById('count').textContent, '0 referencias','No mostrar referencias antes de validar estados');
-  app.applyListingReport({schemaVersion:1,checkedAt:new Date().toISOString(),listings:catalog.map(p=>({id:p.publicationId,status:'unknown',httpStatus:200,checkedAt:new Date().toISOString()}))});
+  const outdated=new Date(Date.now()-8*86400000).toISOString();
+  const current=new Date().toISOString();
+  assert.throws(()=>app.applyListingReport({
+    schemaVersion:1,checkedAt:outdated,
+    listings:catalog.map(p=>({id:p.publicationId,status:'unknown',httpStatus:200,checkedAt:outdated}))
+  }),/caducado/,'Nunca mostrar una verificación caducada del cache');
+  assert.equal(getElementById('count').textContent,'0 referencias','El catálogo no puede mostrarse tras rechazar cache caducado');
+  assert.throws(()=>app.applyListingReport({
+    schemaVersion:1,checkedAt:current,
+    listings:catalog.map((p,i)=>({id:p.publicationId,status:'unknown',httpStatus:200,checkedAt:i===0?outdated:current}))
+  }),/Entrada de comprobación inválida/,'Un elemento viejo no debe camuflarse bajo fecha general reciente');
+  app.applyListingReport({schemaVersion:1,checkedAt:current,listings:catalog.map(p=>({id:p.publicationId,status:'unknown',httpStatus:200,checkedAt:current}))});
   assert.equal(getElementById('count').textContent, catalog.length+' referencias');
   assert.equal((getElementById('propertyGrid').innerHTML.match(/class="card property-card"/g)||[]).length,catalog.length);
   app.toggleFavorite(catalog[0].id);

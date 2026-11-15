@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-14T22:29:27Z",
-  "lastAttemptAt": "2026-11-14T22:29:27Z",
+  "updatedAt": "2026-11-15T17:13:45Z",
+  "lastAttemptAt": "2026-11-15T17:13:45Z",
   "sources": [
     {
       "id": "df-economia",
@@ -26,7 +26,7 @@
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 0
+      "count": 2
     },
     {
       "id": "sii-noticias",
@@ -37,6 +37,40 @@
   ],
   "items": [
     {
+      "id": "a5ca8d8ec534c7d1c1",
+      "title": "Incendio en Iquique deja dos viviendas afectadas",
+      "url": "https://www.latercera.com/nacional/noticia/incendio-en-iquique-deja-dos-viviendas-afectadas/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-15T13:08:02Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/5HATQQL6AJDETG6324OZHROUJM.jpg?auth=e7e54d15a5c1816c75b64b5729e718657870b77d4cb00da983215af7bf4ceea3&smart=true&width=1600&height=850",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-iquique-deja-dos-viviendas-afectadas/",
+        "origin": "rss",
+        "credit": "JAVIER SALVO/ATON CHILE",
+        "alt": "Foto: Referencial",
+        "checkedAt": "2026-11-15T17:13:45Z"
+      }
+    },
+    {
+      "id": "8e725986b8c3f101aa",
+      "title": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
+      "url": "https://www.latercera.com/nacional/noticia/incendio-en-maipu-deja-una-persona-fallecida-una-vivienda-destruida-y-otras-dos-afectadas/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-15T12:40:35Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/KYMJTMQMUFE3NHF7HHJKIBIO4E.jpg?auth=9c84d69706f202fef232982aa21119a11184a0e8b2331a39b40372d381af9e22&smart=true&width=1900&height=1070",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-maipu-deja-una-persona-fallecida-una-vivienda-destruida-y-otras-dos-afectadas/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
+        "checkedAt": "2026-11-15T17:13:45Z"
+      }
+    },
+    {
       "id": "bcb00c4aaac19a4c97",
       "title": "Venta de viviendas nuevas en Lima y Callao crece 26% frente a 2025 y supera las 23.600 unidades a septiembre",
       "url": "https://eldiarioinmobiliario.cl/destacadas/venta-de-viviendas-nuevas-en-lima-y-callao-crece-26-frente-a-2025-y-supera-las-23-600-unidades-a-septiembre/",
@@ -44,7 +78,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z"
+      "imageCheckedAt": "2026-11-15T17:13:45Z"
     },
     {
       "id": "2401f6f075412f7a55",
@@ -54,7 +88,15 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:31:02Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z"
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/Ministerio_de_Vivienda_MercadosInmobiliarios.jpg",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
+        "origin": "opengraph",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-15T17:13:45Z"
+      }
     },
     {
       "id": "dc56cffef5d8cfe80e",
@@ -64,7 +106,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z"
+      "imageCheckedAt": "2026-11-15T17:13:45Z"
     },
     {
       "id": "aa84f991e9733b742b",
@@ -74,7 +116,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:07Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z"
+      "imageCheckedAt": "2026-11-15T17:13:45Z"
     },
     {
       "id": "864c638d43886d6879",
@@ -143,13 +185,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:58:00Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/YHES3VP5G5C45I3EOVJKGFBZRE.jpg?auth=eaade81c8b747a54cba37ce7e6be3f2be89a593e4a4de0efa2ac596e772548bd&smart=true&width=900&height=600",
+        "url": "https://www.latercera.com/resizer/v2/YHES3VP5G5C45I3EOVJKGFBZRE.jpg?auth=eaade81c8b747a54cba37ce7e6be3f2be89a593e4a4de0efa2ac596e772548bd&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
-        "alt": "PATRICIO FUENTES Y.",
-        "checkedAt": "2026-11-12T00:47:28Z"
-      }
+        "alt": "VICIENDAS-SOCIALES-EN-1985491.jpg",
+        "checkedAt": "2026-11-15T17:13:45Z"
+      },
+      "imageCheckedAt": "2026-11-15T17:13:45Z"
     },
     {
       "id": "d35c080f4f3aa9347b",
@@ -160,13 +203,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:48:03Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/EY3Z6GM2L5BSFKFPJMTUG3TZZY.jpg?auth=e479adedd8c9e814744fe891dcf957574fd095f2735c42f3e1acaf73bf2b8dae&smart=true&width=6000&height=4000",
+        "url": "https://www.latercera.com/resizer/v2/EY3Z6GM2L5BSFKFPJMTUG3TZZY.jpg?auth=e479adedd8c9e814744fe891dcf957574fd095f2735c42f3e1acaf73bf2b8dae&height=630&width=1200&focal=3526%2C1321",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/tc-declara-admisible-requerimiento-de-diputados-y-alcaldes-de-oposicion-contra-nueva-ordenanza-de-construccion/",
-        "origin": "rss",
-        "credit": "JONNATHAN OYARZUN/ATON CHILE",
+        "origin": "opengraph",
+        "credit": "La Tercera",
         "alt": "Santiago, 25 de Agosto de 2026. Pleno del Tribunal Constitucional revisa el requerimiento de inconstitucionalidad presentado por el gobierno contra el articulo 31 de la megarreforma referido a la reconexion gratuita de servicios basicos en estado de catastrofe. Jonnathan Oyarzun/Aton Chile",
-        "checkedAt": "2026-11-12T00:47:28Z"
-      }
+        "checkedAt": "2026-11-15T17:13:45Z"
+      },
+      "imageCheckedAt": "2026-11-15T17:13:45Z"
     },
     {
       "id": "03380b3952b87b1345",
@@ -177,13 +221,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-11T20:08:19Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/UZ2XWWBZM5D6TAC4OWCTA4WIUI.jpg?auth=d0a486a8b3a5da4747bb2b70ce02aeb4cbd7a2a9152238bbc6a43b82fd23bdff&smart=true&width=7008&height=4672",
+        "url": "https://www.latercera.com/resizer/v2/UZ2XWWBZM5D6TAC4OWCTA4WIUI.jpg?auth=d0a486a8b3a5da4747bb2b70ce02aeb4cbd7a2a9152238bbc6a43b82fd23bdff&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/ministerios-de-la-mujer-y-vivienda-avanzan-en-soluciones-habitacionales-para-mujeres-victimas-de-violencia-grave-o-extrema/",
-        "origin": "rss",
-        "credit": "PABLO",
+        "origin": "opengraph",
+        "credit": "La Tercera",
         "alt": "Entrega de viviendas.",
-        "checkedAt": "2026-11-12T00:47:28Z"
-      }
+        "checkedAt": "2026-11-15T17:13:45Z"
+      },
+      "imageCheckedAt": "2026-11-15T17:13:45Z"
     },
     {
       "id": "96a408656121b17346",
@@ -203,14 +248,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:04:45Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/DEPARTAMENTOS-3.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/precios-viviendas-chile-por-region/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -231,14 +276,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-09T21:11:17Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/CASA.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/tu-casa-a-tu-pinta-2-0-minvu-requisitos-subsidios/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -285,14 +330,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-08T10:00:48Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/REVESTIMIENTO.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/revestimientos-acusticos-viviendas-copiar-slug/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -321,14 +366,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-07T10:00:04Z",
-      "imageCheckedAt": "2026-11-12T00:47:28Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/BOMBEROS.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/regularizacion-cuarteles-bomberos/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-12T00:47:28Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -339,14 +384,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-06T23:12:38Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2024/03/BANCOESTADO.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-bancoestado-hipotecario-pro/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -357,14 +402,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-06T10:00:57Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/VIVIENDA-4.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/encuesta-bicentenario-uc-solo-el-18-cree-que-un-trabajador-tiene-altas-posibilidades-de-comprar-una-vivienda-propia/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -375,14 +420,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T18:34:10Z",
-      "imageCheckedAt": "2026-11-12T00:47:28Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/UENO-BANK.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/crisis-de-ueno-bank-en-paraguay-pone-bajo-presion-al-financiamiento-inmobiliario-entidad-concentra-cerca-del-93-de-los-creditos-para-vivienda/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-12T00:47:28Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -393,14 +438,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T10:00:49Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2025/08/Tema-vivienda-tutelada-Arica.jpg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/casen-2026-encuesta-viviendas-chile/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-11T12:20:41Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -411,14 +456,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T10:00:33Z",
-      "imageCheckedAt": "2026-11-12T00:47:28Z",
+      "imageCheckedAt": "2026-11-15T17:13:45Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/10/EDIFICIO-3.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/caso-tonka-tomicic-pone-el-foco-en-el-leaseback-inmobiliario-y-las-condiciones-para-recuperar-una-propiedad/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-12T00:47:28Z"
+        "checkedAt": "2026-11-15T17:13:45Z"
       }
     },
     {
@@ -581,8 +626,8 @@
     }
   ],
   "imageStats": {
-    "total": 22,
-    "checkedArticles": 14,
-    "unavailable": 11
+    "total": 25,
+    "checkedArticles": 16,
+    "unavailable": 3
   }
 }

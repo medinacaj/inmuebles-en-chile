@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-15T22:52:53Z",
-  "lastAttemptAt": "2026-11-15T22:52:53Z",
+  "updatedAt": "2026-11-16T20:31:14Z",
+  "lastAttemptAt": "2026-11-16T20:31:14Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,13 +20,13 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 8
+      "count": 7
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 2
+      "count": 4
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,104 @@
     }
   ],
   "items": [
+    {
+      "id": "89e762df73dc1b01f1",
+      "title": "Esta semana comienza la postulación al Subsidio DS1: ¿Cuáles son los requisitos?",
+      "url": "https://www.latercera.com/servicios/noticia/esta-semana-comienza-la-postulacion-al-subsidio-ds1-cuales-son-los-requisitos/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-16T20:00:55Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/7OKREDKQ3BEWPE4L77CT4QKZQ4.jpg?auth=dfb16613c3f8d1255d26de38f7e64bfd69138db1e3da3fd7a65617c1162c5658&smart=true&width=1200&height=800",
+        "sourceUrl": "https://www.latercera.com/servicios/noticia/esta-semana-comienza-la-postulacion-al-subsidio-ds1-cuales-son-los-requisitos/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Esta semana comienza la postulación al Subsidio DS1: ¿Cuáles son los requisitos? Foto referencial",
+        "checkedAt": "2026-11-16T20:31:14Z"
+      }
+    },
+    {
+      "id": "b1062c6567456e9d02",
+      "title": "Confirman nueva convocatoria al Subsidio Eléctrico: ¿Cuándo se podrá postular?",
+      "url": "https://www.latercera.com/servicios/noticia/confirman-nueva-convocatoria-al-subsidio-electrico-cuando-se-podra-postular/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-16T15:01:40Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/Q4OGLLA6T5EBNNIYF5ZYR5Y6WY.jpg?auth=621dbfacc19e4e9d0d8d0f5ddba6f1dc5056f8bdfb61e972957e7f68a02084f0&smart=true&width=3872&height=2592",
+        "sourceUrl": "https://www.latercera.com/servicios/noticia/confirman-nueva-convocatoria-al-subsidio-electrico-cuando-se-podra-postular/",
+        "origin": "rss",
+        "credit": "Oscar Martín",
+        "alt": "Confirman nueva convocatoria al Subsidio Eléctrico: ¿Cuándo se podrá postular? Foto referencial de archivo",
+        "checkedAt": "2026-11-16T20:31:14Z"
+      }
+    },
+    {
+      "id": "f82abae1a077f830d3",
+      "title": "Poduje destaca alza de 5,8% de presupuesto del Minvu y apunta a aumentar construcción de viviendas industrializadas",
+      "url": "https://www.latercera.com/nacional/noticia/poduje-destaca-alza-de-58-de-presupuesto-del-minvu-y-apunta-a-aumentar-construccion-de-viviendas-industrializadas/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-16T14:47:19Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/RO77IVWYIVETND36IN75ZFC7XQ.jpg?auth=7e5e893891fda67d6b44b1bc6e4660a08c48024d3c02ad70ff0ddf1ea2af7b7c&smart=true&width=5052&height=3368",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/poduje-destaca-alza-de-58-de-presupuesto-del-minvu-y-apunta-a-aumentar-construccion-de-viviendas-industrializadas/",
+        "origin": "rss",
+        "credit": "JONNATHAN OYARZUN/ATON CHILE",
+        "alt": "El Ministro de Vivienda Iván Poduje. Jonnathan Oyarzun/Aton Chile",
+        "checkedAt": "2026-11-16T20:31:14Z"
+      }
+    },
+    {
+      "id": "28f741375591d15cf6",
+      "title": "Proyecto Nueva Centinela supera el 90% de su construcción y entra en fase de pruebas para iniciar operaciones en 2027",
+      "url": "https://www.latercera.com/pulso/noticia/proyecto-nueva-centinela-supera-el-90-de-su-construccion-y-entra-en-fase-de-pruebas-para-iniciar-operaciones-en-2027/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-16T14:36:39Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/UXPR6YWTEVEXZJT3UW3FA3WZVQ.jpg?auth=cd6c3426b039ba7a34850998cfef487f132cdc8737d85a5bb9ce85808021a0dc&smart=true&width=3993&height=2242",
+        "sourceUrl": "https://www.latercera.com/pulso/noticia/proyecto-nueva-centinela-supera-el-90-de-su-construccion-y-entra-en-fase-de-pruebas-para-iniciar-operaciones-en-2027/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Nueva Centinela reporta avance de construcción sobre 90%.",
+        "checkedAt": "2026-11-16T20:31:14Z"
+      }
+    },
+    {
+      "id": "94dbd063b0bb315842",
+      "title": "Devolución del IVA en viviendas nuevas: Margarita González explica los requisitos para acceder al beneficio",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/devolucion-iva-viviendas-nuevas-requisitos/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Proyectos",
+      "publishedAt": "2026-11-16T08:43:03Z",
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
+    },
+    {
+      "id": "41e0c361629c5541f2",
+      "title": "Más de 40 días de diferencia entre comunas: los contrastes en los tiempos para arrendar departamentos en Santiago",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/arriendo-departamentos-santiago-tiempos-comuna/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-16T08:42:49Z",
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
+    },
+    {
+      "id": "328e12fedcc2db3d0c",
+      "title": "El 63% de las ventas de departamentos nuevos en Santiago corresponde a unidades terminadas o en terminaciones.",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/ventas-departamentos-nuevos-santiago/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-16T08:42:31Z",
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
+    },
     {
       "id": "a5ca8d8ec534c7d1c1",
       "title": "Incendio en Iquique deja dos viviendas afectadas",
@@ -78,7 +176,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "2401f6f075412f7a55",
@@ -106,7 +204,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "aa84f991e9733b742b",
@@ -116,7 +214,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:07Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "864c638d43886d6879",
@@ -126,7 +224,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:02:31Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "bc16f3f92a5450e0fd",
@@ -136,7 +234,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-13T10:00:08Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "040e4f4ee3fc649b20",
@@ -146,7 +244,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T20:07:49Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "8a9e2e93c9039a8180",
@@ -174,7 +272,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:33Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "1decea0149237f5b49",
@@ -238,7 +336,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T19:19:39Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "378d89ee55f6b26f73",
@@ -266,7 +364,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:03:37Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "1c7e07138f11812f00",
@@ -582,7 +680,7 @@
       "sourceId": "sii-noticias",
       "category": "Normativa",
       "publishedAt": "2026-10-30T15:06:05Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "4e18624704844a4935",
@@ -592,7 +690,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-30T10:00:41Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "f8460ef5558666de49",
@@ -602,7 +700,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-30T10:00:35Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "9036a88ebd4cc108f1",
@@ -612,7 +710,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-10-29T10:28:30Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
+      "imageCheckedAt": "2026-11-16T20:31:14Z"
     },
     {
       "id": "dc354c3a4cd91703b3",
@@ -626,8 +724,8 @@
     }
   ],
   "imageStats": {
-    "total": 25,
-    "checkedArticles": 13,
-    "unavailable": 11
+    "total": 29,
+    "checkedArticles": 16,
+    "unavailable": 16
   }
 }

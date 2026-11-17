@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-16T20:31:14Z",
-  "lastAttemptAt": "2026-11-16T20:31:14Z",
+  "updatedAt": "2026-11-17T19:12:19Z",
+  "lastAttemptAt": "2026-11-17T19:12:19Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,22 +20,96 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 7
+      "count": 6
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 4
+      "count": 2
     },
     {
       "id": "sii-noticias",
       "name": "Servicio de Impuestos Internos",
       "ok": true,
-      "count": 0
+      "count": 1
     }
   ],
   "items": [
+    {
+      "id": "7e97f75ae81c47c427",
+      "title": "El jaque de La Florida al gobierno: modificará plan regulador para anticiparse a cambios en la ordenanza de construcción",
+      "url": "https://www.latercera.com/nacional/noticia/el-jaque-de-la-florida-al-gobierno-modificara-plan-regulador-para-anticiparse-a-cambios-en-la-ordenanza-de-construccion/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-17T16:30:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/EQ3W5WG76FBK7IQOHT5CVM4P54.jpg?auth=de59236b33d61ae0a17a14dc94999f0e77e4b939dfa19f023f56c90b917aefeb&smart=true&width=5701&height=3427",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/el-jaque-de-la-florida-al-gobierno-modificara-plan-regulador-para-anticiparse-a-cambios-en-la-ordenanza-de-construccion/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "El alcalde de La Florida, Daniel Reyes. Foto: Municipalidad de La Florida.",
+        "checkedAt": "2026-11-17T19:12:19Z"
+      }
+    },
+    {
+      "id": "1c45783c54e0d92608",
+      "title": "SII introduce cambios en sitio web para facilitar el acceso a la declaración de vivienda principal y obtener la exención del 100% en las contribuciones",
+      "url": "https://www.sii.cl/noticias/2026/171126noti01smn.htm",
+      "source": "Servicio de Impuestos Internos",
+      "sourceId": "sii-noticias",
+      "category": "Normativa",
+      "publishedAt": "2026-11-17T13:14:30Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
+    },
+    {
+      "id": "fdebb24870cd097011",
+      "title": "Más de 800 personas aisladas y una treintena de viviendas dañadas por crecidas en las regiones de Atacama y Coquimbo",
+      "url": "https://www.latercera.com/nacional/noticia/mas-de-800-personas-aisladas-y-una-treintena-de-viviendas-danadas-por-crecidas-en-las-regiones-de-atacama-y-coquimbo/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-17T10:58:34Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/CGRHIPEQXVDFBNIEAZ5STRCX3U.jpeg?auth=ab82a2288fc9c0d9e972b6d7c7664f413b7cf6fe5111f030becfc072c45e5df6&smart=true&width=1600&height=1200",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/mas-de-800-personas-aisladas-y-una-treintena-de-viviendas-danadas-por-crecidas-en-las-regiones-de-atacama-y-coquimbo/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "",
+        "checkedAt": "2026-11-17T19:12:19Z"
+      }
+    },
+    {
+      "id": "f7e0c142ba1e9b4563",
+      "title": "Santiago concentra los desistimientos de departamentos y Buin lidera los de casas en septiembre",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/santiago-concentra-los-desistimientos-de-departamentos-y-buin-lidera-los-de-casas-en-septiembre/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-17T09:10:52Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
+    },
+    {
+      "id": "00fd619acfbc99110c",
+      "title": "Puerto Varas, Puerto Montt, y Punta Arenas incorporan la construcción industrializada en proyectos residenciales",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/construccion-industrializada-sur-chile/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Proyectos",
+      "publishedAt": "2026-11-17T09:10:43Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
+    },
+    {
+      "id": "739d2564251afaca05",
+      "title": "CChC proyecta un alza de 20,3% en las ventas de viviendas para 2027 y anticipa recuperación de la inversión en construcción",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/cchc-proyecta-alza-ventas-viviendas-2027/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-17T09:10:36Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
+    },
     {
       "id": "89e762df73dc1b01f1",
       "title": "Esta semana comienza la postulación al Subsidio DS1: ¿Cuáles son los requisitos?",
@@ -112,7 +186,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-16T08:43:03Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "41e0c361629c5541f2",
@@ -122,7 +196,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:49Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "328e12fedcc2db3d0c",
@@ -132,7 +206,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:31Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "a5ca8d8ec534c7d1c1",
@@ -176,7 +250,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "2401f6f075412f7a55",
@@ -204,7 +278,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "aa84f991e9733b742b",
@@ -214,7 +288,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:07Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "864c638d43886d6879",
@@ -224,7 +298,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:02:31Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "bc16f3f92a5450e0fd",
@@ -392,14 +466,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-09T16:30:00Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/FHH2LEE3YJAJDD4VZ5FCCIXOW4.jpg?auth=43a6c1fb9a8c6ae9cbbc184f7b2f7b35e5d76da1f5a38c75d8deb1b58abcbecf&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/cambios-de-ordenanza-de-construccion-gobierno-busca-que-requerimiento-de-alcaldes-ante-el-tc-se-declare-inadmisible/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "EDIFICIOS GUETO - Guetos verticales",
-        "checkedAt": "2026-11-14T16:37:36Z"
+        "checkedAt": "2026-11-17T19:12:19Z"
       }
     },
     {
@@ -410,14 +484,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-09T14:24:21Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/OAXDH7EHQZAABNPSRIBFJ4PPWM.jpg?auth=22d5a29bffba7ad39865e54bf8c519885e3fb2f31755c56ec2a224f8044fd46b&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/comienza-postulacion-a-la-tarjeta-banco-de-materiales-20-como-acceder-a-mejoras-para-casa-y-departamento/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Comienza postulación a la Tarjeta Banco de Materiales 2.0: ¿Cómo acceder a mejoras para casa y departamento? Foto referencial de archivo",
-        "checkedAt": "2026-11-14T16:37:36Z"
+        "checkedAt": "2026-11-17T19:12:19Z"
       }
     },
     {
@@ -446,14 +520,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-07T23:17:02Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/YKR3PKM77VB3DNS3W4LWCZIB7M.jpg?auth=22ee3265ae145245b1400f6f5a3b5c73d1bb1b37d662fe200f20ae604c793c57&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/culto/noticia/la-construccion-de-sebastian-lelio-esplendor-resistencia-y-una-ultima-cinta/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "La construcción de Sebastián Lelio: esplendor, resistencia y una última cinta",
-        "checkedAt": "2026-11-14T16:37:36Z"
+        "checkedAt": "2026-11-17T19:12:19Z"
       }
     },
     {
@@ -572,14 +646,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-04T17:37:00Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/Z5ZQ4ZS3J5ETVKZEKXJGHAT5RA.jpeg?auth=39aa690369a886d0a7d9a6f621cec527e89288efd8d84aa8f4c0cc1c281cfc12&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/entregan-148-viviendas-del-proyecto-la-platina-de-puente-alto-tras-denuncias-de-hechos-delictuales/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Entregan 148 viviendas del proyecto La Platina de Puente Alto tras denuncias de hechos delictuales",
-        "checkedAt": "2026-11-14T16:37:36Z"
+        "checkedAt": "2026-11-17T19:12:19Z"
       }
     },
     {
@@ -608,14 +682,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-03T14:50:00Z",
-      "imageCheckedAt": "2026-11-14T16:37:36Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/QUZ4OVD64ZD2TINMNO35LGSZYU.JPG?auth=e5586db64a5cf3779a329465b1d427b1a924c7861046c5ef4653443dbddc4f0d&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/cchc-espera-que-sector-se-recupere-durante-2027-pero-lamenta-aplazamiento-de-la-ordenanza-de-construccion/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "CChC Raimundo Rencoret",
-        "checkedAt": "2026-11-14T16:37:36Z"
+        "checkedAt": "2026-11-17T19:12:19Z"
       }
     },
     {
@@ -681,51 +755,11 @@
       "category": "Normativa",
       "publishedAt": "2026-10-30T15:06:05Z",
       "imageCheckedAt": "2026-11-16T20:31:14Z"
-    },
-    {
-      "id": "4e18624704844a4935",
-      "title": "Desempleo llega a 9,8%, mientras el empleo crece en construcción y actividades inmobiliarias",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/desempleo-chile-empleo-construccion-actividades-inmobiliarias/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-10-30T10:00:41Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
-    },
-    {
-      "id": "f8460ef5558666de49",
-      "title": "Comprar una vivienda: Qué revisar antes de firmar y cómo evaluar una oferta",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/comprar-una-vivienda-que-revisar-antes-de-firmar-y-como-evaluar-una-oferta/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-10-30T10:00:35Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
-    },
-    {
-      "id": "9036a88ebd4cc108f1",
-      "title": "Reforma al mercado de capitales avanza al Senado con fondo para financiar viviendas de hasta 6.000 UF",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/reforma-mercado-capitales-fondo-viviendas/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-10-29T10:28:30Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
-    },
-    {
-      "id": "dc354c3a4cd91703b3",
-      "title": "ENADE 2026: Quiroz advierte que disputa por cambios a la OGUC puede retrasar la reactivación de la construcción",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/enade-2026-quiroz-advierte-que-disputa-por-cambios-a-la-oguc-puede-retrasar-la-reactivacion-de-la-construccion/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-10-29T10:00:34Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z"
     }
   ],
   "imageStats": {
-    "total": 29,
+    "total": 31,
     "checkedArticles": 16,
-    "unavailable": 16
+    "unavailable": 11
   }
 }

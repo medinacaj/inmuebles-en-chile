@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-17T19:12:19Z",
-  "lastAttemptAt": "2026-11-17T19:12:19Z",
+  "updatedAt": "2026-11-18T18:52:24Z",
+  "lastAttemptAt": "2026-11-18T18:52:24Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,7 +20,7 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 6
+      "count": 7
     },
     {
       "id": "la-tercera",
@@ -37,6 +37,97 @@
   ],
   "items": [
     {
+      "id": "e9194666efa381b22a",
+      "title": "Comienza la postulación al nuevo Tramo 4.000 del Subsidio DS1: ¿Cómo postular?",
+      "url": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-nuevo-tramo-4000-del-subsidio-ds1-como-postular/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-18T13:36:17Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/CCKGB7UFXBF7ZFGLI2DNUERBCA.jpg?auth=a7cab1b05dce8238aa0618e865b869efe7a108d3ef589fc3a68fc4e2656fdc11&smart=true&width=1280&height=961",
+        "sourceUrl": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-nuevo-tramo-4000-del-subsidio-ds1-como-postular/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Comienza la postulación al nuevo Tramo 4.000 del Subsidio DS1: ¿Cómo postular? Foto Pixabay.",
+        "checkedAt": "2026-11-18T18:52:24Z"
+      }
+    },
+    {
+      "id": "789c7f4015ea1276eb",
+      "title": "Senapred reporta más de 1.700 personas aisladas y 34 viviendas con daños menores por crecidas de ríos en Atacama y Coquimbo",
+      "url": "https://www.latercera.com/nacional/noticia/senapred-reporta-mas-de-1700-personas-aisladas-y-34-viviendas-con-danos-menores-por-crecidas-de-rios-en-atacama-y-coquimbo/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-18T12:21:56Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/WYSMVGO72FCQNOYZU3BWJTF23A.jpg?auth=044681e4ead42ef000bbe694a2731df06a23644cc9e72daf8355a64001abbce0&smart=true&width=4096&height=3072",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/senapred-reporta-mas-de-1700-personas-aisladas-y-34-viviendas-con-danos-menores-por-crecidas-de-rios-en-atacama-y-coquimbo/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Senapred reporta más de 1.700 personas aisladas y 34 viviendas con daños menores por crecidas de ríos en Atacama y Coquimbo",
+        "checkedAt": "2026-11-18T18:52:24Z"
+      }
+    },
+    {
+      "id": "a5aabf95daa0f5d498",
+      "title": "En la Región Metropolitana se pide hasta un 8% más de lo que se paga por un departamento ya arrendado",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/en-la-region-metropolitana-se-pide-hasta-un-8-mas-de-lo-que-se-paga-por-un-departamento-ya-arrendado/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-18T10:54:18Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/Data_Inmobiliaria_1-300x200.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/en-la-region-metropolitana-se-pide-hasta-un-8-mas-de-lo-que-se-paga-por-un-departamento-ya-arrendado/",
+        "origin": "rss",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-18T18:52:24Z"
+      }
+    },
+    {
+      "id": "f2be8b4d9d56d5df9a",
+      "title": "Santander lanza crédito hipotecario para jóvenes con financiamiento de hasta 90% y plazos de 40 años",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-jovenes-santander-40-anos/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-18T10:07:18Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z"
+    },
+    {
+      "id": "562c9003723ed873de",
+      "title": "Departamentos de menos de 45 m² concentran el 53% de la oferta nueva: La Florida lideraría recuperación de ventas",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/departamentos-de-menos-de-45-m%c2%b2-concentran-el-53-de-la-oferta-nueva-la-florida-lideraria-recuperacion-de-ventas/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-18T10:05:56Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z"
+    },
+    {
+      "id": "8f941e144e4167bfb9",
+      "title": "Precios de las viviendas en China caen 2,4% en doce meses, pero registran su menor retroceso desde noviembre de 2025",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/precios-viviendas-china-octubre-2026/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-18T10:05:39Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z"
+    },
+    {
+      "id": "1c45783c54e0d92608",
+      "title": "SII introduce cambios en sitio web para facilitar el acceso a la declaraciÃ³n de vivienda principal y obtener la exenciÃ³n del 100% en las contribuciones",
+      "url": "https://www.sii.cl/noticias/2026/171126noti01smn.htm",
+      "source": "Servicio de Impuestos Internos",
+      "sourceId": "sii-noticias",
+      "category": "Normativa",
+      "publishedAt": "2026-11-17T17:14:30Z",
+      "imageCheckedAt": "2026-11-17T19:12:19Z"
+    },
+    {
       "id": "7e97f75ae81c47c427",
       "title": "El jaque de La Florida al gobierno: modificará plan regulador para anticiparse a cambios en la ordenanza de construcción",
       "url": "https://www.latercera.com/nacional/noticia/el-jaque-de-la-florida-al-gobierno-modificara-plan-regulador-para-anticiparse-a-cambios-en-la-ordenanza-de-construccion/",
@@ -52,16 +143,6 @@
         "alt": "El alcalde de La Florida, Daniel Reyes. Foto: Municipalidad de La Florida.",
         "checkedAt": "2026-11-17T19:12:19Z"
       }
-    },
-    {
-      "id": "1c45783c54e0d92608",
-      "title": "SII introduce cambios en sitio web para facilitar el acceso a la declaración de vivienda principal y obtener la exención del 100% en las contribuciones",
-      "url": "https://www.sii.cl/noticias/2026/171126noti01smn.htm",
-      "source": "Servicio de Impuestos Internos",
-      "sourceId": "sii-noticias",
-      "category": "Normativa",
-      "publishedAt": "2026-11-17T13:14:30Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
     },
     {
       "id": "fdebb24870cd097011",
@@ -260,7 +341,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:31:02Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/Ministerio_de_Vivienda_MercadosInmobiliarios.jpg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
@@ -356,14 +437,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:58:00Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/YHES3VP5G5C45I3EOVJKGFBZRE.jpg?auth=eaade81c8b747a54cba37ce7e6be3f2be89a593e4a4de0efa2ac596e772548bd&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "VICIENDAS-SOCIALES-EN-1985491.jpg",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -374,14 +455,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:48:03Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/EY3Z6GM2L5BSFKFPJMTUG3TZZY.jpg?auth=e479adedd8c9e814744fe891dcf957574fd095f2735c42f3e1acaf73bf2b8dae&height=630&width=1200&focal=3526%2C1321",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/tc-declara-admisible-requerimiento-de-diputados-y-alcaldes-de-oposicion-contra-nueva-ordenanza-de-construccion/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Santiago, 25 de Agosto de 2026. Pleno del Tribunal Constitucional revisa el requerimiento de inconstitucionalidad presentado por el gobierno contra el articulo 31 de la megarreforma referido a la reconexion gratuita de servicios basicos en estado de catastrofe. Jonnathan Oyarzun/Aton Chile",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -392,14 +473,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T20:08:19Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/UZ2XWWBZM5D6TAC4OWCTA4WIUI.jpg?auth=d0a486a8b3a5da4747bb2b70ce02aeb4cbd7a2a9152238bbc6a43b82fd23bdff&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/ministerios-de-la-mujer-y-vivienda-avanzan-en-soluciones-habitacionales-para-mujeres-victimas-de-violencia-grave-o-extrema/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Entrega de viviendas.",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -420,7 +501,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:04:45Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/DEPARTAMENTOS-3.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/precios-viviendas-chile-por-region/",
@@ -448,7 +529,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-09T21:11:17Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/CASA.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/tu-casa-a-tu-pinta-2-0-minvu-requisitos-subsidios/",
@@ -502,14 +583,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-08T10:00:48Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/REVESTIMIENTO.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/revestimientos-acusticos-viviendas-copiar-slug/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -538,14 +619,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-07T10:00:04Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/BOMBEROS.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/regularizacion-cuarteles-bomberos/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -556,7 +637,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-06T23:12:38Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2024/03/BANCOESTADO.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-bancoestado-hipotecario-pro/",
@@ -574,14 +655,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-06T10:00:57Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/VIVIENDA-4.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/encuesta-bicentenario-uc-solo-el-18-cree-que-un-trabajador-tiene-altas-posibilidades-de-comprar-una-vivienda-propia/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -592,14 +673,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T18:34:10Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/UENO-BANK.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/crisis-de-ueno-bank-en-paraguay-pone-bajo-presion-al-financiamiento-inmobiliario-entidad-concentra-cerca-del-93-de-los-creditos-para-vivienda/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -610,7 +691,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T10:00:49Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2025/08/Tema-vivienda-tutelada-Arica.jpg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/casen-2026-encuesta-viviendas-chile/",
@@ -628,14 +709,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-05T10:00:33Z",
-      "imageCheckedAt": "2026-11-15T17:13:45Z",
+      "imageCheckedAt": "2026-11-18T18:52:24Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/10/EDIFICIO-3.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/caso-tonka-tomicic-pone-el-foco-en-el-leaseback-inmobiliario-y-las-condiciones-para-recuperar-una-propiedad/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-18T18:52:24Z"
       }
     },
     {
@@ -655,111 +736,11 @@
         "alt": "Entregan 148 viviendas del proyecto La Platina de Puente Alto tras denuncias de hechos delictuales",
         "checkedAt": "2026-11-17T19:12:19Z"
       }
-    },
-    {
-      "id": "0bab25dc1e0649b3e2",
-      "title": "San Joaquín alcanza 41,9% de vacancia en departamentos multifamily y Vitacura supera los $1,4 millones en arriendo",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/vacancia-multifamily-san-joaquin-copiar/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-04T10:00:03Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2023/11/San-Joaquin-_2-1024x683.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/vacancia-multifamily-san-joaquin-copiar/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-15T22:52:53Z"
-      }
-    },
-    {
-      "id": "bd08ad5ba6b9c451c1",
-      "title": "CChC espera que sector se recupere durante 2027, pero lamenta aplazamiento de la ordenanza de construcción",
-      "url": "https://www.latercera.com/pulso/noticia/cchc-espera-que-sector-se-recupere-durante-2027-pero-lamenta-aplazamiento-de-la-ordenanza-de-construccion/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-03T14:50:00Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/QUZ4OVD64ZD2TINMNO35LGSZYU.JPG?auth=e5586db64a5cf3779a329465b1d427b1a924c7861046c5ef4653443dbddc4f0d&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/pulso/noticia/cchc-espera-que-sector-se-recupere-durante-2027-pero-lamenta-aplazamiento-de-la-ordenanza-de-construccion/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "CChC Raimundo Rencoret",
-        "checkedAt": "2026-11-17T19:12:19Z"
-      }
-    },
-    {
-      "id": "91332c898eb4733ec5",
-      "title": "El subsidio a la tasa hipotecaria suma más de 35.000 créditos cursados y las solicitudes elegibles superan las 123 mil",
-      "url": "https://www.latercera.com/pulso/noticia/subsidio-tasa-hipotecaria-creditos-solicitudes-elegibles-viviendas/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Financiamiento",
-      "publishedAt": "2026-11-02T15:04:07Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/SL52WU6WHZCZFEMGHQ7WBULNP4.jpg?auth=d830dcabf16a67afdb34c185211ee93799583a448f6baf0ff21b361ac51fd73f&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/pulso/noticia/subsidio-tasa-hipotecaria-creditos-solicitudes-elegibles-viviendas/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "La tasa de interés de un crédito hipotecario en Chile frente a Europa y Latinoamérica",
-        "checkedAt": "2026-11-14T22:29:27Z"
-      }
-    },
-    {
-      "id": "251aeea4ac3bff38c5",
-      "title": "Inicia encuesta Casen 2026: visitarán más de 111 mil viviendas en todo Chile durante tres meses",
-      "url": "https://www.latercera.com/nacional/noticia/inicia-encuesta-casen-2026-visitaran-mas-de-111-mil-viviendas-en-todo-chile-durante-tres-meses/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-01T15:39:30Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/NDMTP5FUDRC3POBSS3GIX6W63I.jpeg?auth=1f9b54e40b800426ba16bfeb598b16adb7d5bf039622b56589fd43aaa30f3d85&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/nacional/noticia/inicia-encuesta-casen-2026-visitaran-mas-de-111-mil-viviendas-en-todo-chile-durante-tres-meses/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "Inicia encuesta Casen 2026: visitarán más de 111 mil viviendas en todo Chile durante tres meses",
-        "checkedAt": "2026-11-14T22:29:27Z"
-      }
-    },
-    {
-      "id": "2eb66f6ed9144c1d7c",
-      "title": "Departamentos nuevos: Santiago lidera la mayor venta y La Cisterna registra un alza de 46,5%",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/ventas-departamentos-nuevos-comunas-rm/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-10-31T10:00:15Z",
-      "imageCheckedAt": "2026-11-14T22:29:27Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/10/DEPARTAMENTOS.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/ventas-departamentos-nuevos-comunas-rm/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-14T22:29:27Z"
-      }
-    },
-    {
-      "id": "8f4be39abe2dfb50f9",
-      "title": "SII establece procedimiento especial para solicitar devoluciÃ³n de IVA en ventas de viviendas acogidas a la Ley NÂ° 21.850",
-      "url": "https://www.sii.cl/noticias/2026/301026noti01smn.htm",
-      "source": "Servicio de Impuestos Internos",
-      "sourceId": "sii-noticias",
-      "category": "Normativa",
-      "publishedAt": "2026-10-30T15:06:05Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
     }
   ],
   "imageStats": {
-    "total": 31,
+    "total": 29,
     "checkedArticles": 16,
-    "unavailable": 11
+    "unavailable": 8
   }
 }

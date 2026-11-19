@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-18T18:52:24Z",
-  "lastAttemptAt": "2026-11-18T18:52:24Z",
+  "updatedAt": "2026-11-19T19:00:36Z",
+  "lastAttemptAt": "2026-11-19T19:00:36Z",
   "sources": [
     {
       "id": "df-economia",
@@ -26,7 +26,7 @@
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "sii-noticias",
@@ -37,8 +37,58 @@
   ],
   "items": [
     {
+      "id": "c79f13cc4340560c82",
+      "title": "ETMDay 2026: El Diario Inmobiliario llevará la conversación sobre el futuro del sector al Cluster Inmobiliario",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/etmday-2026-el-diario-inmobiliario-llevara-la-conversacion-sobre-el-futuro-del-sector-al-cluster-inmobiliario/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-19T08:33:29Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
+    },
+    {
+      "id": "8e3f004aeb39b12c6f",
+      "title": "Santiago y Macul concentran el mayor ingreso de departamentos nuevos a la oferta inmobiliaria en septiembre",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/departamentos-nuevos-santiago-septiembre-2026/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-19T08:31:30Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
+    },
+    {
+      "id": "17897c99c3b6a7b501",
+      "title": "Subsidio DS1 Tramo 4: comenzó la postulación al beneficio que entrega 400 UF para comprar viviendas de hasta 4.000 UF",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/subsidio-ds1-tramo-4-requisitos-postulacion-2026/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-19T08:31:14Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
+    },
+    {
+      "id": "b97c4f47322071a461",
+      "title": "Cenco Malls inicia construcción de su primer outlet en Maipú con una inversión de US$35 millones",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/outlet-maipu-cenco-malls/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-19T08:30:58Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
+    },
+    {
+      "id": "7abee1b361c2813431",
+      "title": "El 88% de los franceses considera difícil encontrar una vivienda, según encuesta de Ifop",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/franceses-dificultades-acceso-vivienda-ifop/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-19T08:19:34Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
+    },
+    {
       "id": "e9194666efa381b22a",
-      "title": "Comienza la postulación al nuevo Tramo 4.000 del Subsidio DS1: ¿Cómo postular?",
+      "title": "Comienza la postulación al nuevo Tramo 4.000 del Subsidio DS1: ¿Cómo solicitarlo?",
       "url": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-nuevo-tramo-4000-del-subsidio-ds1-como-postular/",
       "source": "La Tercera",
       "sourceId": "la-tercera",
@@ -50,7 +100,7 @@
         "origin": "rss",
         "credit": "La Tercera",
         "alt": "Comienza la postulación al nuevo Tramo 4.000 del Subsidio DS1: ¿Cómo postular? Foto Pixabay.",
-        "checkedAt": "2026-11-18T18:52:24Z"
+        "checkedAt": "2026-11-19T19:00:36Z"
       }
     },
     {
@@ -84,7 +134,7 @@
         "origin": "rss",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-18T18:52:24Z"
+        "checkedAt": "2026-11-19T19:00:36Z"
       }
     },
     {
@@ -125,7 +175,7 @@
       "sourceId": "sii-noticias",
       "category": "Normativa",
       "publishedAt": "2026-11-17T17:14:30Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "7e97f75ae81c47c427",
@@ -169,7 +219,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:52Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "00fd619acfbc99110c",
@@ -179,7 +229,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-17T09:10:43Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "739d2564251afaca05",
@@ -298,13 +348,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-15T13:08:02Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/5HATQQL6AJDETG6324OZHROUJM.jpg?auth=e7e54d15a5c1816c75b64b5729e718657870b77d4cb00da983215af7bf4ceea3&smart=true&width=1600&height=850",
+        "url": "https://www.latercera.com/resizer/v2/5HATQQL6AJDETG6324OZHROUJM.jpg?auth=e7e54d15a5c1816c75b64b5729e718657870b77d4cb00da983215af7bf4ceea3&height=630&width=1200&focal=835%2C447",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-iquique-deja-dos-viviendas-afectadas/",
-        "origin": "rss",
-        "credit": "JAVIER SALVO/ATON CHILE",
+        "origin": "opengraph",
+        "credit": "La Tercera",
         "alt": "Foto: Referencial",
-        "checkedAt": "2026-11-15T22:52:53Z"
-      }
+        "checkedAt": "2026-11-19T19:00:36Z"
+      },
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "8e725986b8c3f101aa",
@@ -315,13 +366,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-15T12:40:35Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/KYMJTMQMUFE3NHF7HHJKIBIO4E.jpg?auth=9c84d69706f202fef232982aa21119a11184a0e8b2331a39b40372d381af9e22&smart=true&width=1900&height=1070",
+        "url": "https://www.latercera.com/resizer/v2/KYMJTMQMUFE3NHF7HHJKIBIO4E.jpg?auth=9c84d69706f202fef232982aa21119a11184a0e8b2331a39b40372d381af9e22&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-maipu-deja-una-persona-fallecida-una-vivienda-destruida-y-otras-dos-afectadas/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
-        "checkedAt": "2026-11-15T22:52:53Z"
-      }
+        "checkedAt": "2026-11-19T19:00:36Z"
+      },
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "bcb00c4aaac19a4c97",
@@ -389,7 +441,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-13T10:00:08Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "040e4f4ee3fc649b20",
@@ -399,7 +451,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T20:07:49Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "8a9e2e93c9039a8180",
@@ -409,7 +461,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:40Z",
-      "imageCheckedAt": "2026-11-15T22:52:53Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/ALCALDE-ESTACION-CENTRAL.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/plan-regulador-estacion-central-futuro-inmobiliario/",
@@ -427,7 +479,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:33Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "1decea0149237f5b49",
@@ -491,7 +543,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T19:19:39Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "378d89ee55f6b26f73",
@@ -519,7 +571,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-11T09:03:37Z",
-      "imageCheckedAt": "2026-11-16T20:31:14Z"
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "1c7e07138f11812f00",
@@ -646,101 +698,11 @@
         "alt": "",
         "checkedAt": "2026-11-15T17:13:45Z"
       }
-    },
-    {
-      "id": "0b9d08f0da89903b43",
-      "title": "Encuesta Bicentenario UC: Solo el 18% cree que un trabajador tiene altas posibilidades de comprar una vivienda propia",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/encuesta-bicentenario-uc-solo-el-18-cree-que-un-trabajador-tiene-altas-posibilidades-de-comprar-una-vivienda-propia/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-06T10:00:57Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/VIVIENDA-4.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/encuesta-bicentenario-uc-solo-el-18-cree-que-un-trabajador-tiene-altas-posibilidades-de-comprar-una-vivienda-propia/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-18T18:52:24Z"
-      }
-    },
-    {
-      "id": "e5a7aae7847b9d645d",
-      "title": "Crisis de Ueno Bank en Paraguay pone bajo presión al financiamiento inmobiliario: Entidad concentra cerca del 9,3% de los créditos para vivienda",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/crisis-de-ueno-bank-en-paraguay-pone-bajo-presion-al-financiamiento-inmobiliario-entidad-concentra-cerca-del-93-de-los-creditos-para-vivienda/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-05T18:34:10Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/UENO-BANK.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/crisis-de-ueno-bank-en-paraguay-pone-bajo-presion-al-financiamiento-inmobiliario-entidad-concentra-cerca-del-93-de-los-creditos-para-vivienda/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-18T18:52:24Z"
-      }
-    },
-    {
-      "id": "0f7503e542fd928086",
-      "title": "Casen 2026 visitará más de 111 mil viviendas y recogerá datos sobre las condiciones habitacionales de los hogares",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/casen-2026-encuesta-viviendas-chile/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-05T10:00:49Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2025/08/Tema-vivienda-tutelada-Arica.jpg",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/casen-2026-encuesta-viviendas-chile/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
-      }
-    },
-    {
-      "id": "26adb47cb77e5b32bf",
-      "title": "Caso Tonka Tomicic pone el foco en el leaseback inmobiliario y las condiciones para recuperar una propiedad",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/caso-tonka-tomicic-pone-el-foco-en-el-leaseback-inmobiliario-y-las-condiciones-para-recuperar-una-propiedad/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-05T10:00:33Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/10/EDIFICIO-3.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/caso-tonka-tomicic-pone-el-foco-en-el-leaseback-inmobiliario-y-las-condiciones-para-recuperar-una-propiedad/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-18T18:52:24Z"
-      }
-    },
-    {
-      "id": "eeccd02c6e530f57ce",
-      "title": "Entregan 148 viviendas del proyecto La Platina de Puente Alto tras denuncias de hechos delictuales",
-      "url": "https://www.latercera.com/nacional/noticia/entregan-148-viviendas-del-proyecto-la-platina-de-puente-alto-tras-denuncias-de-hechos-delictuales/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-04T17:37:00Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/Z5ZQ4ZS3J5ETVKZEKXJGHAT5RA.jpeg?auth=39aa690369a886d0a7d9a6f621cec527e89288efd8d84aa8f4c0cc1c281cfc12&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/nacional/noticia/entregan-148-viviendas-del-proyecto-la-platina-de-puente-alto-tras-denuncias-de-hechos-delictuales/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "Entregan 148 viviendas del proyecto La Platina de Puente Alto tras denuncias de hechos delictuales",
-        "checkedAt": "2026-11-17T19:12:19Z"
-      }
     }
   ],
   "imageStats": {
-    "total": 29,
+    "total": 24,
     "checkedArticles": 16,
-    "unavailable": 8
+    "unavailable": 14
   }
 }

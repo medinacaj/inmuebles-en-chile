@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-19T19:00:36Z",
-  "lastAttemptAt": "2026-11-19T19:00:36Z",
+  "updatedAt": "2026-11-20T18:37:48Z",
+  "lastAttemptAt": "2026-11-20T18:37:48Z",
   "sources": [
     {
       "id": "df-economia",
@@ -36,6 +36,43 @@
     }
   ],
   "items": [
+    {
+      "id": "cdf47f2a500cc0730f",
+      "title": "Emergencia por crecidas: más de 2 mil personas aisladas y 41 viviendas con daños en Atacama y Coquimbo",
+      "url": "https://www.latercera.com/nacional/noticia/emergencia-por-crecidas-mas-de-2-mil-personas-aisladas-y-41-viviendas-con-danos-en-atacama-y-coquimbo/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-20T12:59:08Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/RD6YA4IS7ZEQHMPD5OYC5B5W3U.png?auth=4264b66623d4ed0be5e09c774a8027b84068ff24c80014901840b733923231ac&smart=true&width=3204&height=1802",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/emergencia-por-crecidas-mas-de-2-mil-personas-aisladas-y-41-viviendas-con-danos-en-atacama-y-coquimbo/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Crecida de ríos en Atacama.",
+        "checkedAt": "2026-11-20T18:37:48Z"
+      }
+    },
+    {
+      "id": "97ccd4f62e709926cd",
+      "title": "Arriendos en Chile: Región Metropolitana registra los departamentos más económicos, mientras Maule lidera en casas",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/precios-arriendo-chile-regiones/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-20T09:12:07Z",
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
+    },
+    {
+      "id": "be21692cf1631c1150",
+      "title": "Vivienda, crédito hipotecario y tecnología marcaron la jornada del Cluster Inmobiliario en ETMday 2026",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/cluster-inmobiliario-etmday-2026-copiar/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-20T02:39:08Z",
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
+    },
     {
       "id": "c79f13cc4340560c82",
       "title": "ETMDay 2026: El Diario Inmobiliario llevará la conversación sobre el futuro del sector al Cluster Inmobiliario",
@@ -145,7 +182,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-18T10:07:18Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "562c9003723ed873de",
@@ -155,7 +192,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:56Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "8f941e144e4167bfb9",
@@ -166,16 +203,6 @@
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:39Z",
       "imageCheckedAt": "2026-11-18T18:52:24Z"
-    },
-    {
-      "id": "1c45783c54e0d92608",
-      "title": "SII introduce cambios en sitio web para facilitar el acceso a la declaraciÃ³n de vivienda principal y obtener la exenciÃ³n del 100% en las contribuciones",
-      "url": "https://www.sii.cl/noticias/2026/171126noti01smn.htm",
-      "source": "Servicio de Impuestos Internos",
-      "sourceId": "sii-noticias",
-      "category": "Normativa",
-      "publishedAt": "2026-11-17T17:14:30Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "7e97f75ae81c47c427",
@@ -193,6 +220,16 @@
         "alt": "El alcalde de La Florida, Daniel Reyes. Foto: Municipalidad de La Florida.",
         "checkedAt": "2026-11-17T19:12:19Z"
       }
+    },
+    {
+      "id": "1c45783c54e0d92608",
+      "title": "SII introduce cambios en sitio web para facilitar el acceso a la declaración de vivienda principal y obtener la exención del 100% en las contribuciones",
+      "url": "https://www.sii.cl/noticias/2026/171126noti01smn.htm",
+      "source": "Servicio de Impuestos Internos",
+      "sourceId": "sii-noticias",
+      "category": "Normativa",
+      "publishedAt": "2026-11-17T13:14:30Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z"
     },
     {
       "id": "fdebb24870cd097011",
@@ -239,7 +276,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:36Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "89e762df73dc1b01f1",
@@ -250,13 +287,14 @@
       "category": "Financiamiento",
       "publishedAt": "2026-11-16T20:00:55Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/7OKREDKQ3BEWPE4L77CT4QKZQ4.jpg?auth=dfb16613c3f8d1255d26de38f7e64bfd69138db1e3da3fd7a65617c1162c5658&smart=true&width=1200&height=800",
+        "url": "https://www.latercera.com/resizer/v2/7OKREDKQ3BEWPE4L77CT4QKZQ4.jpg?auth=dfb16613c3f8d1255d26de38f7e64bfd69138db1e3da3fd7a65617c1162c5658&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/esta-semana-comienza-la-postulacion-al-subsidio-ds1-cuales-son-los-requisitos/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Esta semana comienza la postulación al Subsidio DS1: ¿Cuáles son los requisitos? Foto referencial",
-        "checkedAt": "2026-11-16T20:31:14Z"
-      }
+        "checkedAt": "2026-11-20T18:37:48Z"
+      },
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "b1062c6567456e9d02",
@@ -267,13 +305,14 @@
       "category": "Financiamiento",
       "publishedAt": "2026-11-16T15:01:40Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/Q4OGLLA6T5EBNNIYF5ZYR5Y6WY.jpg?auth=621dbfacc19e4e9d0d8d0f5ddba6f1dc5056f8bdfb61e972957e7f68a02084f0&smart=true&width=3872&height=2592",
+        "url": "https://www.latercera.com/resizer/v2/Q4OGLLA6T5EBNNIYF5ZYR5Y6WY.jpg?auth=621dbfacc19e4e9d0d8d0f5ddba6f1dc5056f8bdfb61e972957e7f68a02084f0&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/confirman-nueva-convocatoria-al-subsidio-electrico-cuando-se-podra-postular/",
-        "origin": "rss",
-        "credit": "Oscar Martín",
+        "origin": "opengraph",
+        "credit": "La Tercera",
         "alt": "Confirman nueva convocatoria al Subsidio Eléctrico: ¿Cuándo se podrá postular? Foto referencial de archivo",
-        "checkedAt": "2026-11-16T20:31:14Z"
-      }
+        "checkedAt": "2026-11-20T18:37:48Z"
+      },
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "f82abae1a077f830d3",
@@ -284,13 +323,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-16T14:47:19Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/RO77IVWYIVETND36IN75ZFC7XQ.jpg?auth=7e5e893891fda67d6b44b1bc6e4660a08c48024d3c02ad70ff0ddf1ea2af7b7c&smart=true&width=5052&height=3368",
+        "url": "https://www.latercera.com/resizer/v2/RO77IVWYIVETND36IN75ZFC7XQ.jpg?auth=7e5e893891fda67d6b44b1bc6e4660a08c48024d3c02ad70ff0ddf1ea2af7b7c&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/poduje-destaca-alza-de-58-de-presupuesto-del-minvu-y-apunta-a-aumentar-construccion-de-viviendas-industrializadas/",
-        "origin": "rss",
-        "credit": "JONNATHAN OYARZUN/ATON CHILE",
+        "origin": "opengraph",
+        "credit": "La Tercera",
         "alt": "El Ministro de Vivienda Iván Poduje. Jonnathan Oyarzun/Aton Chile",
-        "checkedAt": "2026-11-16T20:31:14Z"
-      }
+        "checkedAt": "2026-11-20T18:37:48Z"
+      },
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "28f741375591d15cf6",
@@ -301,13 +341,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-16T14:36:39Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/UXPR6YWTEVEXZJT3UW3FA3WZVQ.jpg?auth=cd6c3426b039ba7a34850998cfef487f132cdc8737d85a5bb9ce85808021a0dc&smart=true&width=3993&height=2242",
+        "url": "https://www.latercera.com/resizer/v2/UXPR6YWTEVEXZJT3UW3FA3WZVQ.jpg?auth=cd6c3426b039ba7a34850998cfef487f132cdc8737d85a5bb9ce85808021a0dc&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/proyecto-nueva-centinela-supera-el-90-de-su-construccion-y-entra-en-fase-de-pruebas-para-iniciar-operaciones-en-2027/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Nueva Centinela reporta avance de construcción sobre 90%.",
-        "checkedAt": "2026-11-16T20:31:14Z"
-      }
+        "checkedAt": "2026-11-20T18:37:48Z"
+      },
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "94dbd063b0bb315842",
@@ -317,7 +358,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-16T08:43:03Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "41e0c361629c5541f2",
@@ -327,7 +368,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:49Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "328e12fedcc2db3d0c",
@@ -337,7 +378,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:31Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "a5ca8d8ec534c7d1c1",
@@ -347,6 +388,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-15T13:08:02Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/5HATQQL6AJDETG6324OZHROUJM.jpg?auth=e7e54d15a5c1816c75b64b5729e718657870b77d4cb00da983215af7bf4ceea3&height=630&width=1200&focal=835%2C447",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-iquique-deja-dos-viviendas-afectadas/",
@@ -354,8 +396,7 @@
         "credit": "La Tercera",
         "alt": "Foto: Referencial",
         "checkedAt": "2026-11-19T19:00:36Z"
-      },
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      }
     },
     {
       "id": "8e725986b8c3f101aa",
@@ -365,6 +406,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-15T12:40:35Z",
+      "imageCheckedAt": "2026-11-19T19:00:36Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/KYMJTMQMUFE3NHF7HHJKIBIO4E.jpg?auth=9c84d69706f202fef232982aa21119a11184a0e8b2331a39b40372d381af9e22&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-maipu-deja-una-persona-fallecida-una-vivienda-destruida-y-otras-dos-afectadas/",
@@ -372,8 +414,7 @@
         "credit": "La Tercera",
         "alt": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
         "checkedAt": "2026-11-19T19:00:36Z"
-      },
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      }
     },
     {
       "id": "bcb00c4aaac19a4c97",
@@ -383,7 +424,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "2401f6f075412f7a55",
@@ -411,7 +452,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "aa84f991e9733b742b",
@@ -421,7 +462,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:07Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "864c638d43886d6879",
@@ -431,7 +472,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:02:31Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z"
+      "imageCheckedAt": "2026-11-20T18:37:48Z"
     },
     {
       "id": "bc16f3f92a5450e0fd",
@@ -644,65 +685,11 @@
         "alt": "",
         "checkedAt": "2026-11-18T18:52:24Z"
       }
-    },
-    {
-      "id": "f9b4d29894e675d558",
-      "title": "La construcción de Sebastián Lelio: esplendor, resistencia y una última cinta",
-      "url": "https://www.latercera.com/culto/noticia/la-construccion-de-sebastian-lelio-esplendor-resistencia-y-una-ultima-cinta/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-07T23:17:02Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/YKR3PKM77VB3DNS3W4LWCZIB7M.jpg?auth=22ee3265ae145245b1400f6f5a3b5c73d1bb1b37d662fe200f20ae604c793c57&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/culto/noticia/la-construccion-de-sebastian-lelio-esplendor-resistencia-y-una-ultima-cinta/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "La construcción de Sebastián Lelio: esplendor, resistencia y una última cinta",
-        "checkedAt": "2026-11-17T19:12:19Z"
-      }
-    },
-    {
-      "id": "a8ee39dda581e55134",
-      "title": "Cámara aprueba cambios a la normativa urbanística para facilitar la construcción y regularización de cuarteles de Bomberos",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/regularizacion-cuarteles-bomberos/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-07T10:00:04Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/BOMBEROS.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/regularizacion-cuarteles-bomberos/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-18T18:52:24Z"
-      }
-    },
-    {
-      "id": "cc1c3d7660a10738a1",
-      "title": "BancoEstado lanzó crédito hipotecario con financiamiento de hasta el 90%",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-bancoestado-hipotecario-pro/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Financiamiento",
-      "publishedAt": "2026-11-06T23:12:38Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2024/03/BANCOESTADO.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/credito-hipotecario-bancoestado-hipotecario-pro/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
-      }
     }
   ],
   "imageStats": {
-    "total": 24,
+    "total": 22,
     "checkedArticles": 16,
-    "unavailable": 14
+    "unavailable": 12
   }
 }

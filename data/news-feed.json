@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-20T18:37:48Z",
-  "lastAttemptAt": "2026-11-20T18:37:48Z",
+  "updatedAt": "2026-11-21T17:36:34Z",
+  "lastAttemptAt": "2026-11-21T17:36:34Z",
   "sources": [
     {
       "id": "df-economia",
@@ -26,7 +26,7 @@
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 1
+      "count": 4
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,110 @@
     }
   ],
   "items": [
+    {
+      "id": "e6ad486c2f2b757268",
+      "title": "Gobernador Orrego cuestiona nueva ordenanza de construcción: “Esto es pan para hoy, hambre para mañana”",
+      "url": "https://www.latercera.com/nacional/noticia/gobernador-orrego-cuestiona-nueva-ordenanza-de-construccion-esto-es-pan-para-hoy-pan-para-manana/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-21T15:41:06Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/5UCPLIL7Y5FCTGUVOF6BFWPWFE.jpg?auth=6cebe6fd11e5f367490b296edb5fba5854b21f4a2ab501927214ab146c107ba5&smart=true&width=5712&height=3808",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/gobernador-orrego-cuestiona-nueva-ordenanza-de-construccion-esto-es-pan-para-hoy-pan-para-manana/",
+        "origin": "rss",
+        "credit": "JONNATHAN OYARZUN/ATON CHILE",
+        "alt": "",
+        "checkedAt": "2026-11-21T17:36:34Z"
+      }
+    },
+    {
+      "id": "71107d97e7de6ae925",
+      "title": "Cluster Inmobiliario reúne a representantes del Congreso y municipios para discutir el desarrollo de las ciudades en ETMday 2026",
+      "url": "https://eldiarioinmobiliario.cl/portada/cluster-inmobiliario-etmday-2026/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-21T14:07:08Z",
+      "imageCheckedAt": "2026-11-21T17:36:34Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-11.06.01.jpeg",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/portada/cluster-inmobiliario-etmday-2026/",
+        "origin": "opengraph",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-21T17:36:34Z"
+      }
+    },
+    {
+      "id": "f33e5759abd6591fdc",
+      "title": "Crecida de ríos en Atacama y Coquimbo: más de 2 mil aislados y casi 40 viviendas con daños desde mediados de noviembre",
+      "url": "https://www.latercera.com/nacional/noticia/mas-de-2-mil-aislados-y-casi-40-viviendas-afectadas-se-registran-en-las-regiones-de-coquimbo-y-atacama/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-21T13:07:39Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/NIEWMJUTD5HWZIIZ5P5RF7OAHQ.jpeg?auth=b812fa8228e1ff9061ad7158ee57440d9d6c7380a7f9920194948c73b0e6c619&smart=true&width=1024&height=576",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/mas-de-2-mil-aislados-y-casi-40-viviendas-afectadas-se-registran-en-las-regiones-de-coquimbo-y-atacama/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Crecida de ríos en Atacama",
+        "checkedAt": "2026-11-21T17:36:34Z"
+      }
+    },
+    {
+      "id": "6a36346daefba4b6b4",
+      "title": "Estudiantes impulsan el mercado de arriendos en el eje República",
+      "url": "https://eldiarioinmobiliario.cl/noticias/nacional/estudiantes-impulsan-el-mercado-de-arriendos-en-el-eje-republica/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-21T12:07:19Z",
+      "imageCheckedAt": "2026-11-21T17:36:34Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/images.jpeg",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/noticias/nacional/estudiantes-impulsan-el-mercado-de-arriendos-en-el-eje-republica/",
+        "origin": "opengraph",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-21T17:36:34Z"
+      }
+    },
+    {
+      "id": "f03ecfcbf0b5de2744",
+      "title": "Subsidios de emergencia al empleo: demanda duplica cupos que quedan por asignar",
+      "url": "https://www.latercera.com/pulso/noticia/subsidios-de-emergencia-al-empleo-demanda-duplica-cupos-que-quedan-por-asignar/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-21T10:00:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/JCSAOIE7D5FJHNDOZ5SXQKUNWM.JPG?auth=9e1a4d398a3be235a32ff2188fbc7599c2d697f7a2d15907c43e7ad331b811c9&smart=true&width=4728&height=2928",
+        "sourceUrl": "https://www.latercera.com/pulso/noticia/subsidios-de-emergencia-al-empleo-demanda-duplica-cupos-que-quedan-por-asignar/",
+        "origin": "rss",
+        "credit": "Andres Perez",
+        "alt": "06 Mayo 2025 Construccion , Trabajadores, empleo, cemento. Foto: Andres Perez",
+        "checkedAt": "2026-11-21T17:36:34Z"
+      }
+    },
+    {
+      "id": "ec41977d4027a89839",
+      "title": "Colliers calcula el efecto de nueva ordenanza de construcción en el acceso a la vivienda",
+      "url": "https://www.latercera.com/pulso/noticia/colliers-calcula-el-efecto-de-nueva-ordenanza-de-construccion-en-el-acceso-a-la-vivienda/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-21T10:00:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/OCWMV2SUG5EBRA63MBWYETZAJI.jpg?auth=6d15bc6b89816f608fdb14ef2bf69fc0b3addd2cc59bb5621f90066d1fbbfa70&smart=true&width=4592&height=3448",
+        "sourceUrl": "https://www.latercera.com/pulso/noticia/colliers-calcula-el-efecto-de-nueva-ordenanza-de-construccion-en-el-acceso-a-la-vivienda/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "",
+        "checkedAt": "2026-11-21T17:36:34Z"
+      }
+    },
     {
       "id": "cdf47f2a500cc0730f",
       "title": "Emergencia por crecidas: más de 2 mil personas aisladas y 41 viviendas con daños en Atacama y Coquimbo",
@@ -81,7 +185,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:33:29Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "8e3f004aeb39b12c6f",
@@ -91,7 +195,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:31:30Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "17897c99c3b6a7b501",
@@ -101,7 +205,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-19T08:31:14Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "b97c4f47322071a461",
@@ -111,7 +215,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:30:58Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "7abee1b361c2813431",
@@ -121,7 +225,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:19:34Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "e9194666efa381b22a",
@@ -202,7 +306,17 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:39Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
+    },
+    {
+      "id": "1c45783c54e0d92608",
+      "title": "SII introduce cambios en sitio web para facilitar el acceso a la declaraciÃ³n de vivienda principal y obtener la exenciÃ³n del 100% en las contribuciones",
+      "url": "https://www.sii.cl/noticias/2026/171126noti01smn.htm",
+      "source": "Servicio de Impuestos Internos",
+      "sourceId": "sii-noticias",
+      "category": "Normativa",
+      "publishedAt": "2026-11-17T17:14:30Z",
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "7e97f75ae81c47c427",
@@ -213,23 +327,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-17T16:30:00Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/EQ3W5WG76FBK7IQOHT5CVM4P54.jpg?auth=de59236b33d61ae0a17a14dc94999f0e77e4b939dfa19f023f56c90b917aefeb&smart=true&width=5701&height=3427",
+        "url": "https://www.latercera.com/resizer/v2/EQ3W5WG76FBK7IQOHT5CVM4P54.jpg?auth=de59236b33d61ae0a17a14dc94999f0e77e4b939dfa19f023f56c90b917aefeb&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/el-jaque-de-la-florida-al-gobierno-modificara-plan-regulador-para-anticiparse-a-cambios-en-la-ordenanza-de-construccion/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "El alcalde de La Florida, Daniel Reyes. Foto: Municipalidad de La Florida.",
-        "checkedAt": "2026-11-17T19:12:19Z"
-      }
-    },
-    {
-      "id": "1c45783c54e0d92608",
-      "title": "SII introduce cambios en sitio web para facilitar el acceso a la declaración de vivienda principal y obtener la exención del 100% en las contribuciones",
-      "url": "https://www.sii.cl/noticias/2026/171126noti01smn.htm",
-      "source": "Servicio de Impuestos Internos",
-      "sourceId": "sii-noticias",
-      "category": "Normativa",
-      "publishedAt": "2026-11-17T13:14:30Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+        "checkedAt": "2026-11-21T17:36:34Z"
+      },
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "fdebb24870cd097011",
@@ -240,13 +345,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-17T10:58:34Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/CGRHIPEQXVDFBNIEAZ5STRCX3U.jpeg?auth=ab82a2288fc9c0d9e972b6d7c7664f413b7cf6fe5111f030becfc072c45e5df6&smart=true&width=1600&height=1200",
+        "url": "https://www.latercera.com/resizer/v2/CGRHIPEQXVDFBNIEAZ5STRCX3U.jpeg?auth=ab82a2288fc9c0d9e972b6d7c7664f413b7cf6fe5111f030becfc072c45e5df6&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/mas-de-800-personas-aisladas-y-una-treintena-de-viviendas-danadas-por-crecidas-en-las-regiones-de-atacama-y-coquimbo/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
-        "alt": "",
-        "checkedAt": "2026-11-17T19:12:19Z"
-      }
+        "alt": "Senapred llama a evitar acercamientos al Río del Carmen en Alto del Carmen por alerta de crecida",
+        "checkedAt": "2026-11-21T17:36:34Z"
+      },
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "f7e0c142ba1e9b4563",
@@ -256,7 +362,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:52Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "00fd619acfbc99110c",
@@ -266,7 +372,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-17T09:10:43Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "739d2564251afaca05",
@@ -286,6 +392,7 @@
       "sourceId": "la-tercera",
       "category": "Financiamiento",
       "publishedAt": "2026-11-16T20:00:55Z",
+      "imageCheckedAt": "2026-11-20T18:37:48Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/7OKREDKQ3BEWPE4L77CT4QKZQ4.jpg?auth=dfb16613c3f8d1255d26de38f7e64bfd69138db1e3da3fd7a65617c1162c5658&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/esta-semana-comienza-la-postulacion-al-subsidio-ds1-cuales-son-los-requisitos/",
@@ -293,8 +400,7 @@
         "credit": "La Tercera",
         "alt": "Esta semana comienza la postulación al Subsidio DS1: ¿Cuáles son los requisitos? Foto referencial",
         "checkedAt": "2026-11-20T18:37:48Z"
-      },
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      }
     },
     {
       "id": "b1062c6567456e9d02",
@@ -304,6 +410,7 @@
       "sourceId": "la-tercera",
       "category": "Financiamiento",
       "publishedAt": "2026-11-16T15:01:40Z",
+      "imageCheckedAt": "2026-11-20T18:37:48Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/Q4OGLLA6T5EBNNIYF5ZYR5Y6WY.jpg?auth=621dbfacc19e4e9d0d8d0f5ddba6f1dc5056f8bdfb61e972957e7f68a02084f0&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/confirman-nueva-convocatoria-al-subsidio-electrico-cuando-se-podra-postular/",
@@ -311,8 +418,7 @@
         "credit": "La Tercera",
         "alt": "Confirman nueva convocatoria al Subsidio Eléctrico: ¿Cuándo se podrá postular? Foto referencial de archivo",
         "checkedAt": "2026-11-20T18:37:48Z"
-      },
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      }
     },
     {
       "id": "f82abae1a077f830d3",
@@ -322,6 +428,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-16T14:47:19Z",
+      "imageCheckedAt": "2026-11-20T18:37:48Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/RO77IVWYIVETND36IN75ZFC7XQ.jpg?auth=7e5e893891fda67d6b44b1bc6e4660a08c48024d3c02ad70ff0ddf1ea2af7b7c&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/poduje-destaca-alza-de-58-de-presupuesto-del-minvu-y-apunta-a-aumentar-construccion-de-viviendas-industrializadas/",
@@ -329,8 +436,7 @@
         "credit": "La Tercera",
         "alt": "El Ministro de Vivienda Iván Poduje. Jonnathan Oyarzun/Aton Chile",
         "checkedAt": "2026-11-20T18:37:48Z"
-      },
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      }
     },
     {
       "id": "28f741375591d15cf6",
@@ -340,6 +446,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-16T14:36:39Z",
+      "imageCheckedAt": "2026-11-20T18:37:48Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/UXPR6YWTEVEXZJT3UW3FA3WZVQ.jpg?auth=cd6c3426b039ba7a34850998cfef487f132cdc8737d85a5bb9ce85808021a0dc&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/proyecto-nueva-centinela-supera-el-90-de-su-construccion-y-entra-en-fase-de-pruebas-para-iniciar-operaciones-en-2027/",
@@ -347,8 +454,7 @@
         "credit": "La Tercera",
         "alt": "Nueva Centinela reporta avance de construcción sobre 90%.",
         "checkedAt": "2026-11-20T18:37:48Z"
-      },
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      }
     },
     {
       "id": "94dbd063b0bb315842",
@@ -434,14 +540,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:31:02Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
+      "imageCheckedAt": "2026-11-21T17:36:34Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/Ministerio_de_Vivienda_MercadosInmobiliarios.jpg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
+        "checkedAt": "2026-11-21T17:36:34Z"
       }
     },
     {
@@ -482,7 +588,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-13T10:00:08Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "040e4f4ee3fc649b20",
@@ -492,7 +598,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T20:07:49Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T17:36:34Z"
     },
     {
       "id": "8a9e2e93c9039a8180",
@@ -585,111 +691,11 @@
       "category": "Mercado",
       "publishedAt": "2026-11-11T19:19:39Z",
       "imageCheckedAt": "2026-11-19T19:00:36Z"
-    },
-    {
-      "id": "378d89ee55f6b26f73",
-      "title": "Maule registra el menor precio medio de departamentos en venta, mientras Aysén lidera en casas",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/precios-viviendas-chile-por-region/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-11T09:04:45Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/DEPARTAMENTOS-3.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/precios-viviendas-chile-por-region/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
-      }
-    },
-    {
-      "id": "728c052a0e88e1ca15",
-      "title": "Bienes Nacionales proyecta desarrollar 420 hectáreas fiscales en Bahía Inglesa con foco inmobiliario y turístico",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/bienes-nacionales-proyecta-desarrollar-420-hectareas-fiscales-en-bahia-inglesa-con-foco-inmobiliario-y-turistico/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-11T09:03:37Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
-    },
-    {
-      "id": "1c7e07138f11812f00",
-      "title": "Minvu lanza “Tu Casa a Tu Pinta 2.0”: Programa contempla 20 mil cupos y subsidios de hasta 40 UF para reparar viviendas",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/tu-casa-a-tu-pinta-2-0-minvu-requisitos-subsidios/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Financiamiento",
-      "publishedAt": "2026-11-09T21:11:17Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/CASA.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/tu-casa-a-tu-pinta-2-0-minvu-requisitos-subsidios/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-15T17:13:45Z"
-      }
-    },
-    {
-      "id": "67ef3172f6287a2231",
-      "title": "Cambios de ordenanza de construcción: gobierno busca que requerimiento de alcaldes ante el TC se declare inadmisible",
-      "url": "https://www.latercera.com/nacional/noticia/cambios-de-ordenanza-de-construccion-gobierno-busca-que-requerimiento-de-alcaldes-ante-el-tc-se-declare-inadmisible/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-09T16:30:00Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/FHH2LEE3YJAJDD4VZ5FCCIXOW4.jpg?auth=43a6c1fb9a8c6ae9cbbc184f7b2f7b35e5d76da1f5a38c75d8deb1b58abcbecf&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/nacional/noticia/cambios-de-ordenanza-de-construccion-gobierno-busca-que-requerimiento-de-alcaldes-ante-el-tc-se-declare-inadmisible/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "EDIFICIOS GUETO - Guetos verticales",
-        "checkedAt": "2026-11-17T19:12:19Z"
-      }
-    },
-    {
-      "id": "5517f50fd42544ca1e",
-      "title": "Comienza postulación a la Tarjeta Banco de Materiales 2.0: ¿Cómo acceder a mejoras para casas y departamentos?",
-      "url": "https://www.latercera.com/servicios/noticia/comienza-postulacion-a-la-tarjeta-banco-de-materiales-20-como-acceder-a-mejoras-para-casa-y-departamento/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-09T14:24:21Z",
-      "imageCheckedAt": "2026-11-17T19:12:19Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/OAXDH7EHQZAABNPSRIBFJ4PPWM.jpg?auth=22d5a29bffba7ad39865e54bf8c519885e3fb2f31755c56ec2a224f8044fd46b&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/servicios/noticia/comienza-postulacion-a-la-tarjeta-banco-de-materiales-20-como-acceder-a-mejoras-para-casa-y-departamento/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "Comienza postulación a la Tarjeta Banco de Materiales 2.0: ¿Cómo acceder a mejoras para casa y departamento? Foto referencial de archivo",
-        "checkedAt": "2026-11-17T19:12:19Z"
-      }
-    },
-    {
-      "id": "b6d1ed0c715a28ca83",
-      "title": "Revestimientos, muebles y textiles: Cómo influye el diseño interior en la acústica de las viviendas",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/revestimientos-acusticos-viviendas-copiar-slug/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-08T10:00:48Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/REVESTIMIENTO.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/revestimientos-acusticos-viviendas-copiar-slug/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-18T18:52:24Z"
-      }
     }
   ],
   "imageStats": {
-    "total": 22,
+    "total": 23,
     "checkedArticles": 16,
-    "unavailable": 12
+    "unavailable": 11
   }
 }

@@ -147,3 +147,17 @@ El buscador de portada permite filtrar también por presupuesto inicial en UF. L
 El [sistema visual](docs/SISTEMA_VISUAL.md) define los roles de color compartidos y la apariencia entre páginas. La [auditoría visual del 11 de noviembre](docs/AUDITORIA_VISUAL_2026-11-11.md) registra las diferencias corregidas. `assets/icons/favicon.svg` es el original vectorial de los iconos del portal.
 
 Con el servidor local iniciado, `npm run test:identity` comprueba las cuatro páginas, temas, almacenamiento y recursos de iconos. Se puede establecer `SITE_URL` para comprobar una publicación bajo un subdirectorio.
+
+## Continuidad y estado verificable · 21/11/2026
+
+**Propósito:** Portal informativo de referencias inmobiliarias externas y noticias RSS.
+
+**Límite del alcance:** No garantiza disponibilidad ni precio vigente de inmuebles.
+
+- **Código:** revisar la rama por defecto, los PR y los commits antes de afirmar novedades; las evidencias históricas anteriores mantienen su fecha.
+- **Pruebas:** consultar los workflows correspondientes al commit evaluado. Esta modificación documental no verifica funcionalidades mediante pruebas de aplicación.
+- **Entorno:** no confundir demo, CI y código fusionado con despliegue funcional o producción comprobada.
+- **Próxima acción:** identificar el bloqueo vigente en los issues y registrar en este repositorio rama, SHA, pruebas, entorno verificado, pendientes y siguiente paso.
+- **Seguridad:** preservar los datos ficticios útiles y no publicar secretos ni información personal.
+
+**Fuente de verdad:** las decisiones y la documentación del propio producto.  

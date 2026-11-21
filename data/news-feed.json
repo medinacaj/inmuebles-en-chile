@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-21T17:36:34Z",
-  "lastAttemptAt": "2026-11-21T17:36:34Z",
+  "updatedAt": "2026-11-21T23:23:19Z",
+  "lastAttemptAt": "2026-11-21T23:23:19Z",
   "sources": [
     {
       "id": "df-economia",
@@ -37,6 +37,23 @@
   ],
   "items": [
     {
+      "id": "5dbf70074aaf3bd1df",
+      "title": "Avioneta cae en condominio de Peñalolén: hay cuatro personas lesionadas",
+      "url": "https://www.latercera.com/nacional/noticia/reportan-caida-de-avioneta-en-condominio-de-penalolen-habria-cuatro-personas-lesionadas/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-21T21:13:14Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/DRM6URJ5JBHNZOCVN2ATTOXJ5Y.jpeg?auth=b106cc2abf57a06c507a4206bcc68137a784e10afeacaf473562914c6f24af19&smart=true&width=1402&height=788",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/reportan-caida-de-avioneta-en-condominio-de-penalolen-habria-cuatro-personas-lesionadas/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "",
+        "checkedAt": "2026-11-21T23:23:19Z"
+      }
+    },
+    {
       "id": "e6ad486c2f2b757268",
       "title": "Gobernador Orrego cuestiona nueva ordenanza de construcción: “Esto es pan para hoy, hambre para mañana”",
       "url": "https://www.latercera.com/nacional/noticia/gobernador-orrego-cuestiona-nueva-ordenanza-de-construccion-esto-es-pan-para-hoy-pan-para-manana/",
@@ -50,7 +67,7 @@
         "origin": "rss",
         "credit": "JONNATHAN OYARZUN/ATON CHILE",
         "alt": "",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-21T23:23:19Z"
       }
     },
     {
@@ -85,7 +102,7 @@
         "origin": "rss",
         "credit": "La Tercera",
         "alt": "Crecida de ríos en Atacama",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-21T23:23:19Z"
       }
     },
     {
@@ -137,7 +154,7 @@
         "origin": "rss",
         "credit": "La Tercera",
         "alt": "",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-21T23:23:19Z"
       }
     },
     {
@@ -165,7 +182,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-20T09:12:07Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "be21692cf1631c1150",
@@ -175,7 +192,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-20T02:39:08Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "c79f13cc4340560c82",
@@ -253,13 +270,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-18T12:21:56Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/WYSMVGO72FCQNOYZU3BWJTF23A.jpg?auth=044681e4ead42ef000bbe694a2731df06a23644cc9e72daf8355a64001abbce0&smart=true&width=4096&height=3072",
+        "url": "https://www.latercera.com/resizer/v2/WYSMVGO72FCQNOYZU3BWJTF23A.jpg?auth=044681e4ead42ef000bbe694a2731df06a23644cc9e72daf8355a64001abbce0&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/senapred-reporta-mas-de-1700-personas-aisladas-y-34-viviendas-con-danos-menores-por-crecidas-de-rios-en-atacama-y-coquimbo/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Senapred reporta más de 1.700 personas aisladas y 34 viviendas con daños menores por crecidas de ríos en Atacama y Coquimbo",
-        "checkedAt": "2026-11-18T18:52:24Z"
-      }
+        "checkedAt": "2026-11-21T23:23:19Z"
+      },
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "a5aabf95daa0f5d498",
@@ -286,7 +304,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-18T10:07:18Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "562c9003723ed873de",
@@ -296,7 +314,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:56Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "8f941e144e4167bfb9",
@@ -326,6 +344,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-17T16:30:00Z",
+      "imageCheckedAt": "2026-11-21T17:36:34Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/EQ3W5WG76FBK7IQOHT5CVM4P54.jpg?auth=de59236b33d61ae0a17a14dc94999f0e77e4b939dfa19f023f56c90b917aefeb&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/el-jaque-de-la-florida-al-gobierno-modificara-plan-regulador-para-anticiparse-a-cambios-en-la-ordenanza-de-construccion/",
@@ -333,8 +352,7 @@
         "credit": "La Tercera",
         "alt": "El alcalde de La Florida, Daniel Reyes. Foto: Municipalidad de La Florida.",
         "checkedAt": "2026-11-21T17:36:34Z"
-      },
-      "imageCheckedAt": "2026-11-21T17:36:34Z"
+      }
     },
     {
       "id": "fdebb24870cd097011",
@@ -344,6 +362,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-17T10:58:34Z",
+      "imageCheckedAt": "2026-11-21T17:36:34Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/CGRHIPEQXVDFBNIEAZ5STRCX3U.jpeg?auth=ab82a2288fc9c0d9e972b6d7c7664f413b7cf6fe5111f030becfc072c45e5df6&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/mas-de-800-personas-aisladas-y-una-treintena-de-viviendas-danadas-por-crecidas-en-las-regiones-de-atacama-y-coquimbo/",
@@ -351,8 +370,7 @@
         "credit": "La Tercera",
         "alt": "Senapred llama a evitar acercamientos al Río del Carmen en Alto del Carmen por alerta de crecida",
         "checkedAt": "2026-11-21T17:36:34Z"
-      },
-      "imageCheckedAt": "2026-11-21T17:36:34Z"
+      }
     },
     {
       "id": "f7e0c142ba1e9b4563",
@@ -382,7 +400,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:36Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "89e762df73dc1b01f1",
@@ -464,7 +482,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-16T08:43:03Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "41e0c361629c5541f2",
@@ -474,7 +492,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:49Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "328e12fedcc2db3d0c",
@@ -484,7 +502,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:31Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "a5ca8d8ec534c7d1c1",
@@ -530,7 +548,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "2401f6f075412f7a55",
@@ -558,7 +576,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-20T18:37:48Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "aa84f991e9733b742b",
@@ -608,14 +626,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:40Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z",
+      "imageCheckedAt": "2026-11-21T23:23:19Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/ALCALDE-ESTACION-CENTRAL.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/plan-regulador-estacion-central-futuro-inmobiliario/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-15T22:52:53Z"
+        "checkedAt": "2026-11-21T23:23:19Z"
       }
     },
     {
@@ -626,7 +644,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:33Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
+      "imageCheckedAt": "2026-11-21T23:23:19Z"
     },
     {
       "id": "1decea0149237f5b49",
@@ -636,14 +654,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:58:00Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
+      "imageCheckedAt": "2026-11-21T23:23:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/YHES3VP5G5C45I3EOVJKGFBZRE.jpg?auth=eaade81c8b747a54cba37ce7e6be3f2be89a593e4a4de0efa2ac596e772548bd&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "VICIENDAS-SOCIALES-EN-1985491.jpg",
-        "checkedAt": "2026-11-18T18:52:24Z"
+        "checkedAt": "2026-11-21T23:23:19Z"
       }
     },
     {
@@ -654,14 +672,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T23:48:03Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
+      "imageCheckedAt": "2026-11-21T23:23:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/EY3Z6GM2L5BSFKFPJMTUG3TZZY.jpg?auth=e479adedd8c9e814744fe891dcf957574fd095f2735c42f3e1acaf73bf2b8dae&height=630&width=1200&focal=3526%2C1321",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/tc-declara-admisible-requerimiento-de-diputados-y-alcaldes-de-oposicion-contra-nueva-ordenanza-de-construccion/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Santiago, 25 de Agosto de 2026. Pleno del Tribunal Constitucional revisa el requerimiento de inconstitucionalidad presentado por el gobierno contra el articulo 31 de la megarreforma referido a la reconexion gratuita de servicios basicos en estado de catastrofe. Jonnathan Oyarzun/Aton Chile",
-        "checkedAt": "2026-11-18T18:52:24Z"
+        "checkedAt": "2026-11-21T23:23:19Z"
       }
     },
     {
@@ -672,29 +690,19 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-11T20:08:19Z",
-      "imageCheckedAt": "2026-11-18T18:52:24Z",
+      "imageCheckedAt": "2026-11-21T23:23:19Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/UZ2XWWBZM5D6TAC4OWCTA4WIUI.jpg?auth=d0a486a8b3a5da4747bb2b70ce02aeb4cbd7a2a9152238bbc6a43b82fd23bdff&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/ministerios-de-la-mujer-y-vivienda-avanzan-en-soluciones-habitacionales-para-mujeres-victimas-de-violencia-grave-o-extrema/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Entrega de viviendas.",
-        "checkedAt": "2026-11-18T18:52:24Z"
+        "checkedAt": "2026-11-21T23:23:19Z"
       }
-    },
-    {
-      "id": "96a408656121b17346",
-      "title": "Compradores latinoamericanos concentran el 64% de las inversiones inmobiliarias extranjeras en el sur de Florida",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/inversion-inmobiliaria-miami-latinoamericanos/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-11T19:19:39Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z"
     }
   ],
   "imageStats": {
-    "total": 23,
+    "total": 24,
     "checkedArticles": 16,
     "unavailable": 11
   }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-22T17:52:16Z",
-  "lastAttemptAt": "2026-11-22T17:52:16Z",
+  "updatedAt": "2026-11-22T23:38:18Z",
+  "lastAttemptAt": "2026-11-22T23:38:18Z",
   "sources": [
     {
       "id": "df-economia",
@@ -253,13 +253,14 @@
       "category": "Financiamiento",
       "publishedAt": "2026-11-18T13:36:17Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/CCKGB7UFXBF7ZFGLI2DNUERBCA.jpg?auth=a7cab1b05dce8238aa0618e865b869efe7a108d3ef589fc3a68fc4e2656fdc11&smart=true&width=1280&height=961",
+        "url": "https://www.latercera.com/resizer/v2/CCKGB7UFXBF7ZFGLI2DNUERBCA.jpg?auth=a7cab1b05dce8238aa0618e865b869efe7a108d3ef589fc3a68fc4e2656fdc11&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-nuevo-tramo-4000-del-subsidio-ds1-como-postular/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Comienza la postulación al nuevo Tramo 4.000 del Subsidio DS1: ¿Cómo postular? Foto Pixabay.",
-        "checkedAt": "2026-11-19T19:00:36Z"
-      }
+        "checkedAt": "2026-11-22T23:38:18Z"
+      },
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "789c7f4015ea1276eb",
@@ -288,13 +289,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:54:18Z",
       "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/Data_Inmobiliaria_1-300x200.png",
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2023/10/SANTIAGO-DE-CHILE-region-metropolitana.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/en-la-region-metropolitana-se-pide-hasta-un-8-mas-de-lo-que-se-paga-por-un-departamento-ya-arrendado/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-19T19:00:36Z"
-      }
+        "checkedAt": "2026-11-22T23:38:18Z"
+      },
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "f2be8b4d9d56d5df9a",
@@ -314,7 +316,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:56Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "8f941e144e4167bfb9",
@@ -400,7 +402,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:36Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "89e762df73dc1b01f1",
@@ -482,7 +484,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-16T08:43:03Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "41e0c361629c5541f2",
@@ -492,7 +494,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:49Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "328e12fedcc2db3d0c",
@@ -502,7 +504,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:31Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "a5ca8d8ec534c7d1c1",
@@ -512,14 +514,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-15T13:08:02Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z",
+      "imageCheckedAt": "2026-11-22T23:38:18Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/5HATQQL6AJDETG6324OZHROUJM.jpg?auth=e7e54d15a5c1816c75b64b5729e718657870b77d4cb00da983215af7bf4ceea3&height=630&width=1200&focal=835%2C447",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-iquique-deja-dos-viviendas-afectadas/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Foto: Referencial",
-        "checkedAt": "2026-11-19T19:00:36Z"
+        "checkedAt": "2026-11-22T23:38:18Z"
       }
     },
     {
@@ -530,14 +532,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-15T12:40:35Z",
-      "imageCheckedAt": "2026-11-19T19:00:36Z",
+      "imageCheckedAt": "2026-11-22T23:38:18Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/KYMJTMQMUFE3NHF7HHJKIBIO4E.jpg?auth=9c84d69706f202fef232982aa21119a11184a0e8b2331a39b40372d381af9e22&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-maipu-deja-una-persona-fallecida-una-vivienda-destruida-y-otras-dos-afectadas/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
-        "checkedAt": "2026-11-19T19:00:36Z"
+        "checkedAt": "2026-11-22T23:38:18Z"
       }
     },
     {
@@ -548,7 +550,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "2401f6f075412f7a55",
@@ -576,7 +578,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "aa84f991e9733b742b",
@@ -644,7 +646,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-12T09:09:33Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z"
+      "imageCheckedAt": "2026-11-22T23:38:18Z"
     },
     {
       "id": "1decea0149237f5b49",
@@ -703,7 +705,7 @@
   ],
   "imageStats": {
     "total": 24,
-    "checkedArticles": 16,
-    "unavailable": 16
+    "checkedArticles": 12,
+    "unavailable": 8
   }
 }

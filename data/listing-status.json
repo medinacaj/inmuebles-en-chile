@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-22T18:35:50.817Z",
+  "checkedAt": "2026-11-23T22:46:32.637Z",
   "listings": [
     {
       "id": "IEC-PUB-2026-000001",
@@ -8,7 +8,7 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-22T18:35:39.196Z"
+      "checkedAt": "2026-11-23T22:46:22.300Z"
     },
     {
       "id": "IEC-PUB-2026-000002",
@@ -16,7 +16,7 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-22T18:35:39.250Z"
+      "checkedAt": "2026-11-23T22:46:22.320Z"
     },
     {
       "id": "IEC-PUB-2026-000003",
@@ -24,7 +24,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-22T18:35:41.153Z"
+      "checkedAt": "2026-11-23T22:46:23.896Z"
     },
     {
       "id": "IEC-PUB-2026-000004",
@@ -32,7 +32,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-22T18:35:42.708Z"
+      "checkedAt": "2026-11-23T22:46:25.272Z"
     },
     {
       "id": "IEC-PUB-2026-000005",
@@ -40,7 +40,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-22T18:35:44.302Z"
+      "checkedAt": "2026-11-23T22:46:26.703Z"
     },
     {
       "id": "IEC-PUB-2026-000006",
@@ -48,7 +48,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-22T18:35:45.960Z"
+      "checkedAt": "2026-11-23T22:46:28.113Z"
     },
     {
       "id": "IEC-PUB-2026-000007",
@@ -56,7 +56,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-22T18:35:47.485Z"
+      "checkedAt": "2026-11-23T22:46:29.496Z"
     },
     {
       "id": "IEC-PUB-2026-000008",
@@ -64,7 +64,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-22T18:35:49.034Z"
+      "checkedAt": "2026-11-23T22:46:30.823Z"
     },
     {
       "id": "IEC-PUB-2026-000009",
@@ -72,7 +72,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-22T18:35:50.640Z"
+      "checkedAt": "2026-11-23T22:46:32.227Z"
     },
     {
       "id": "IEC-PUB-2026-000010",
@@ -80,7 +80,7 @@
       "status": "unavailable",
       "reason": "La ficha devuelve HTTP 404",
       "httpStatus": 404,
-      "checkedAt": "2026-11-22T18:35:50.816Z"
+      "checkedAt": "2026-11-23T22:46:32.637Z"
     }
   ]
 }

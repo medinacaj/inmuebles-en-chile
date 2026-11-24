@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-23T22:46:32.637Z",
+  "checkedAt": "2026-11-24T21:24:30.636Z",
   "listings": [
     {
       "id": "IEC-PUB-2026-000001",
@@ -8,7 +8,7 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-23T22:46:22.300Z"
+      "checkedAt": "2026-11-24T21:24:19.170Z"
     },
     {
       "id": "IEC-PUB-2026-000002",
@@ -16,7 +16,7 @@
       "status": "unknown",
       "reason": "La fuente devuelve HTTP 403; requiere revisión",
       "httpStatus": 403,
-      "checkedAt": "2026-11-23T22:46:22.320Z"
+      "checkedAt": "2026-11-24T21:24:19.194Z"
     },
     {
       "id": "IEC-PUB-2026-000003",
@@ -24,7 +24,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-23T22:46:23.896Z"
+      "checkedAt": "2026-11-24T21:24:21.028Z"
     },
     {
       "id": "IEC-PUB-2026-000004",
@@ -32,7 +32,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-23T22:46:25.272Z"
+      "checkedAt": "2026-11-24T21:24:22.446Z"
     },
     {
       "id": "IEC-PUB-2026-000005",
@@ -40,7 +40,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-23T22:46:26.703Z"
+      "checkedAt": "2026-11-24T21:24:23.938Z"
     },
     {
       "id": "IEC-PUB-2026-000006",
@@ -48,7 +48,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-23T22:46:28.113Z"
+      "checkedAt": "2026-11-24T21:24:25.380Z"
     },
     {
       "id": "IEC-PUB-2026-000007",
@@ -56,7 +56,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-23T22:46:29.496Z"
+      "checkedAt": "2026-11-24T21:24:26.789Z"
     },
     {
       "id": "IEC-PUB-2026-000008",
@@ -64,7 +64,7 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-23T22:46:30.823Z"
+      "checkedAt": "2026-11-24T21:24:28.175Z"
     },
     {
       "id": "IEC-PUB-2026-000009",
@@ -72,15 +72,15 @@
       "status": "unknown",
       "reason": "Ficha accesible; disponibilidad no confirmada",
       "httpStatus": 200,
-      "checkedAt": "2026-11-23T22:46:32.227Z"
+      "checkedAt": "2026-11-24T21:24:29.620Z"
     },
     {
       "id": "IEC-PUB-2026-000010",
       "source": "Inmobiliaria Patagonia",
       "status": "unavailable",
-      "reason": "La ficha devuelve HTTP 404",
-      "httpStatus": 404,
-      "checkedAt": "2026-11-23T22:46:32.637Z"
+      "reason": "Baja detectada anteriormente; requiere revisión manual para reactivar",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-24T21:24:30.635Z"
     }
   ]
 }

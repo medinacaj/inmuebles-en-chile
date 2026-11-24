@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-23T22:04:30Z",
-  "lastAttemptAt": "2026-11-23T22:04:30Z",
+  "updatedAt": "2026-11-24T20:40:58Z",
+  "lastAttemptAt": "2026-11-24T20:40:58Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,22 +20,100 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 6
+      "count": 5
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "sii-noticias",
       "name": "Servicio de Impuestos Internos",
       "ok": true,
-      "count": 1
+      "count": 0
     }
   ],
   "items": [
+    {
+      "id": "d527fe9194d89a0130",
+      "title": "Expectativas para comprar vivienda se deterioran y optimismo cae a su nivel más bajo desde abril de 2024, según sondeo",
+      "url": "https://www.latercera.com/pulso/noticia/expectativas-para-comprar-vivienda-se-deterioran-y-optimismo-cae-a-su-nivel-mas-bajo-desde-abril-de-2024-segun-sondeo/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-24T19:11:35Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/BYFBKDV3VNFTVDGU7O6CGTB63E.jpg?auth=2ed6bf585c0ad547047fa8e569f9be50bfa3db6d75fd48ccbe2f92dc1ff928dd&smart=true&width=6720&height=4480",
+        "sourceUrl": "https://www.latercera.com/pulso/noticia/expectativas-para-comprar-vivienda-se-deterioran-y-optimismo-cae-a-su-nivel-mas-bajo-desde-abril-de-2024-segun-sondeo/",
+        "origin": "rss",
+        "credit": "JAVIER SALVO/ATON CHILE",
+        "alt": "Javier Salvo/Aton Chile",
+        "checkedAt": "2026-11-24T20:40:58Z"
+      }
+    },
+    {
+      "id": "7bd4630998b102bfd5",
+      "title": "Planos reguladores vs cambios a la ordenanza de construcción: la batalla legal que se viene entre municipios y gobierno",
+      "url": "https://www.latercera.com/nacional/noticia/planos-reguladores-vs-cambios-a-la-ordenanza-de-construccion-la-batalla-legal-que-se-viene-entre-municipios-y-gobierno/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/FHH2LEE3YJAJDD4VZ5FCCIXOW4.jpg?auth=43a6c1fb9a8c6ae9cbbc184f7b2f7b35e5d76da1f5a38c75d8deb1b58abcbecf&smart=true&width=900&height=581",
+        "sourceUrl": "https://www.latercera.com/nacional/noticia/planos-reguladores-vs-cambios-a-la-ordenanza-de-construccion-la-batalla-legal-que-se-viene-entre-municipios-y-gobierno/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "",
+        "checkedAt": "2026-11-24T20:40:58Z"
+      }
+    },
+    {
+      "id": "e503b9934a557672dc",
+      "title": "Arriendo de departamentos en el Gran Concepción equivale al 38% del ingreso familiar",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/arriendo-departamentos-gran-concepcion/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-24T10:20:33Z",
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
+    },
+    {
+      "id": "2cd06cf18ee53140d8",
+      "title": "60 empresas y 150 speakers: el balance del Cluster Inmobiliario en ETMday 2026",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/cluster-inmobiliario-etmday-2026-copiar-2/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-24T10:20:17Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/CLUSTER-INMOBILIARIO-4.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/cluster-inmobiliario-etmday-2026-copiar-2/",
+        "origin": "rss",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-24T20:40:58Z"
+      }
+    },
+    {
+      "id": "d9880af7d4991ef216",
+      "title": "Portugal cambia su mapa de arriendos: ciudades fuera de Lisboa registran las mayores alzas de precios",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/arriendos-portugal-alzas-precios/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-24T10:19:34Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/BEJA.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/arriendos-portugal-alzas-precios/",
+        "origin": "rss",
+        "credit": "El Diario Inmobiliario",
+        "alt": "Viviendas en Beja, Portugal, distrito que registró la mayor alza anual de los precios de arriendo.",
+        "checkedAt": "2026-11-24T20:40:58Z"
+      }
+    },
     {
       "id": "e4a922e72a9a7b59fb",
       "title": "Pedro Sánchez anuncia un nuevo impuesto a ultrarricos que recaudará 2.000 millones para vivienda, pensiones y crianza",
@@ -105,14 +183,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-21T14:07:08Z",
-      "imageCheckedAt": "2026-11-21T17:36:34Z",
+      "imageCheckedAt": "2026-11-24T20:40:58Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-21-at-11.06.01.jpeg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/portada/cluster-inmobiliario-etmday-2026/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-24T20:40:58Z"
       }
     },
     {
@@ -140,14 +218,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-21T12:07:19Z",
-      "imageCheckedAt": "2026-11-21T17:36:34Z",
+      "imageCheckedAt": "2026-11-24T20:40:58Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/images.jpeg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/noticias/nacional/estudiantes-impulsan-el-mercado-de-arriendos-en-el-eje-republica/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-24T20:40:58Z"
       }
     },
     {
@@ -159,13 +237,14 @@
       "category": "Financiamiento",
       "publishedAt": "2026-11-21T10:00:00Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/JCSAOIE7D5FJHNDOZ5SXQKUNWM.JPG?auth=9e1a4d398a3be235a32ff2188fbc7599c2d697f7a2d15907c43e7ad331b811c9&smart=true&width=4728&height=2928",
+        "url": "https://www.latercera.com/resizer/v2/JCSAOIE7D5FJHNDOZ5SXQKUNWM.JPG?auth=9e1a4d398a3be235a32ff2188fbc7599c2d697f7a2d15907c43e7ad331b811c9&height=630&width=1200&focal=2459%2C1240",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/subsidios-de-emergencia-al-empleo-demanda-duplica-cupos-que-quedan-por-asignar/",
-        "origin": "rss",
-        "credit": "Andres Perez",
+        "origin": "opengraph",
+        "credit": "La Tercera",
         "alt": "06 Mayo 2025 Construccion , Trabajadores, empleo, cemento. Foto: Andres Perez",
-        "checkedAt": "2026-11-21T17:36:34Z"
-      }
+        "checkedAt": "2026-11-24T20:40:58Z"
+      },
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "ec41977d4027a89839",
@@ -192,6 +271,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-20T12:59:08Z",
+      "imageCheckedAt": "2026-11-23T22:04:30Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/RD6YA4IS7ZEQHMPD5OYC5B5W3U.png?auth=4264b66623d4ed0be5e09c774a8027b84068ff24c80014901840b733923231ac&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/emergencia-por-crecidas-mas-de-2-mil-personas-aisladas-y-41-viviendas-con-danos-en-atacama-y-coquimbo/",
@@ -199,8 +279,7 @@
         "credit": "La Tercera",
         "alt": "Crecida de ríos en Atacama.",
         "checkedAt": "2026-11-23T22:04:30Z"
-      },
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      }
     },
     {
       "id": "97ccd4f62e709926cd",
@@ -344,7 +423,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:56Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "8f941e144e4167bfb9",
@@ -374,14 +453,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-17T16:30:00Z",
-      "imageCheckedAt": "2026-11-21T17:36:34Z",
+      "imageCheckedAt": "2026-11-24T20:40:58Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/EQ3W5WG76FBK7IQOHT5CVM4P54.jpg?auth=de59236b33d61ae0a17a14dc94999f0e77e4b939dfa19f023f56c90b917aefeb&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/el-jaque-de-la-florida-al-gobierno-modificara-plan-regulador-para-anticiparse-a-cambios-en-la-ordenanza-de-construccion/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "El alcalde de La Florida, Daniel Reyes. Foto: Municipalidad de La Florida.",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-24T20:40:58Z"
       }
     },
     {
@@ -392,14 +471,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-17T10:58:34Z",
-      "imageCheckedAt": "2026-11-21T17:36:34Z",
+      "imageCheckedAt": "2026-11-24T20:40:58Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/CGRHIPEQXVDFBNIEAZ5STRCX3U.jpeg?auth=ab82a2288fc9c0d9e972b6d7c7664f413b7cf6fe5111f030becfc072c45e5df6&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/mas-de-800-personas-aisladas-y-una-treintena-de-viviendas-danadas-por-crecidas-en-las-regiones-de-atacama-y-coquimbo/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Senapred llama a evitar acercamientos al Río del Carmen en Alto del Carmen por alerta de crecida",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-24T20:40:58Z"
       }
     },
     {
@@ -410,7 +489,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:52Z",
-      "imageCheckedAt": "2026-11-22T17:52:16Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "00fd619acfbc99110c",
@@ -420,7 +499,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-17T09:10:43Z",
-      "imageCheckedAt": "2026-11-22T17:52:16Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "739d2564251afaca05",
@@ -430,7 +509,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:36Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "89e762df73dc1b01f1",
@@ -512,7 +591,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-16T08:43:03Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "41e0c361629c5541f2",
@@ -522,7 +601,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:49Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "328e12fedcc2db3d0c",
@@ -532,7 +611,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:31Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "a5ca8d8ec534c7d1c1",
@@ -588,14 +667,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:31:02Z",
-      "imageCheckedAt": "2026-11-21T17:36:34Z",
+      "imageCheckedAt": "2026-11-24T20:40:58Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/Ministerio_de_Vivienda_MercadosInmobiliarios.jpg",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-21T17:36:34Z"
+        "checkedAt": "2026-11-24T20:40:58Z"
       }
     },
     {
@@ -616,7 +695,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:07Z",
-      "imageCheckedAt": "2026-11-22T17:52:16Z"
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     },
     {
       "id": "864c638d43886d6879",
@@ -626,78 +705,12 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:02:31Z",
-      "imageCheckedAt": "2026-11-22T17:52:16Z"
-    },
-    {
-      "id": "bc16f3f92a5450e0fd",
-      "title": "Exención del IVA inmobiliario: estiman rebajas de hasta 10% en viviendas nuevas",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/exencion-iva-inmobiliario-estiman-rebajas-hasta-10-viviendas-nuevas/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Proyectos",
-      "publishedAt": "2026-11-13T10:00:08Z",
-      "imageCheckedAt": "2026-11-22T17:52:16Z"
-    },
-    {
-      "id": "040e4f4ee3fc649b20",
-      "title": "Departamentos acumulan más oferta disponible y elevan sus meses para agotar stock, mientras casas reducen sus plazos",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/departamentos-acumulan-mas-oferta-disponible-y-elevan-sus-meses-para-agotar-stock-mientras-casas-reducen-sus-plazos/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-12T20:07:49Z",
-      "imageCheckedAt": "2026-11-22T17:52:16Z"
-    },
-    {
-      "id": "8a9e2e93c9039a8180",
-      "title": "Alcalde de Estación Central: “No podemos seguir aumentando la cantidad de viviendas sin considerar la capacidad real del territorio”",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/plan-regulador-estacion-central-futuro-inmobiliario/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-12T09:09:40Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/ALCALDE-ESTACION-CENTRAL.png",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/plan-regulador-estacion-central-futuro-inmobiliario/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-21T23:23:19Z"
-      }
-    },
-    {
-      "id": "15190a8d7631fd4a51",
-      "title": "Providencia lidera alza real de arriendos de departamentos de un dormitorio en el Gran Santiago: suben 5,1% en 2026",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/arriendos-departamentos-un-dormitorio-providencia/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-12T09:09:33Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
-    },
-    {
-      "id": "1decea0149237f5b49",
-      "title": "Construcción de viviendas sociales",
-      "url": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-11T23:58:00Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/YHES3VP5G5C45I3EOVJKGFBZRE.jpg?auth=eaade81c8b747a54cba37ce7e6be3f2be89a593e4a4de0efa2ac596e772548bd&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/cartas-al-director/noticia/construccion-de-viviendas-sociales/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "VICIENDAS-SOCIALES-EN-1985491.jpg",
-        "checkedAt": "2026-11-21T23:23:19Z"
-      }
+      "imageCheckedAt": "2026-11-24T20:40:58Z"
     }
   ],
   "imageStats": {
-    "total": 23,
+    "total": 25,
     "checkedArticles": 16,
-    "unavailable": 11
+    "unavailable": 10
   }
 }

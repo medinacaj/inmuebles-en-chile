@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-24T20:40:58Z",
-  "lastAttemptAt": "2026-11-24T20:40:58Z",
+  "updatedAt": "2026-11-25T19:57:47Z",
+  "lastAttemptAt": "2026-11-25T19:57:47Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,13 +20,13 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 5
+      "count": 4
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,40 @@
     }
   ],
   "items": [
+    {
+      "id": "005abd3b1906f5f9a6",
+      "title": "Las propuestas de los partidos españoles en políticas de vivienda de cara a las elecciones",
+      "url": "https://www.latercera.com/mundo/noticia/que-proponen-los-partidos-espanoles-en-politicas-de-vivienda/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-25T16:30:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/N2D52SGW4NE37DPGO5MKFMC3HY.jpeg?auth=341a5510a5ce0eb3efb340bc68082aabdecf687f0322853b3ff1620d1b774268&smart=true&width=1280&height=981",
+        "sourceUrl": "https://www.latercera.com/mundo/noticia/que-proponen-los-partidos-espanoles-en-politicas-de-vivienda/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Protesta contra los desahucios en España. Fotografía recuperada del sitio web de PAH",
+        "checkedAt": "2026-11-25T19:57:47Z"
+      }
+    },
+    {
+      "id": "8ba752aad406ef317e",
+      "title": "Ministro Poduje concreta desalojo de la Federación de Tenis y anuncia proyecto habitacional y deportivo en terreno de Las Condes",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/poduje-desalojo-federacion-tenis-las-condes/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Proyectos",
+      "publishedAt": "2026-11-25T09:16:31Z",
+      "image": {
+        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/FEDERACION-DE-TENIS-DE-CHILE-2.png",
+        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/poduje-desalojo-federacion-tenis-las-condes/",
+        "origin": "rss",
+        "credit": "El Diario Inmobiliario",
+        "alt": "",
+        "checkedAt": "2026-11-25T19:57:47Z"
+      }
+    },
     {
       "id": "d527fe9194d89a0130",
       "title": "Expectativas para comprar vivienda se deterioran y optimismo cae a su nivel más bajo desde abril de 2024, según sondeo",
@@ -94,7 +128,7 @@
         "origin": "rss",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-24T20:40:58Z"
+        "checkedAt": "2026-11-25T19:57:47Z"
       }
     },
     {
@@ -111,7 +145,7 @@
         "origin": "rss",
         "credit": "El Diario Inmobiliario",
         "alt": "Viviendas en Beja, Portugal, distrito que registró la mayor alza anual de los precios de arriendo.",
-        "checkedAt": "2026-11-24T20:40:58Z"
+        "checkedAt": "2026-11-25T19:57:47Z"
       }
     },
     {
@@ -139,7 +173,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-23T13:23:00Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "5dbf70074aaf3bd1df",
@@ -150,13 +184,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-21T21:13:14Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/DRM6URJ5JBHNZOCVN2ATTOXJ5Y.jpeg?auth=b106cc2abf57a06c507a4206bcc68137a784e10afeacaf473562914c6f24af19&smart=true&width=1402&height=788",
+        "url": "https://www.latercera.com/resizer/v2/DRM6URJ5JBHNZOCVN2ATTOXJ5Y.jpeg?auth=b106cc2abf57a06c507a4206bcc68137a784e10afeacaf473562914c6f24af19&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/reportan-caida-de-avioneta-en-condominio-de-penalolen-habria-cuatro-personas-lesionadas/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
-        "alt": "",
-        "checkedAt": "2026-11-21T23:23:19Z"
-      }
+        "alt": "Accidente aéreo en Peñalolén",
+        "checkedAt": "2026-11-25T19:57:47Z"
+      },
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "e6ad486c2f2b757268",
@@ -167,13 +202,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-21T15:41:06Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/5UCPLIL7Y5FCTGUVOF6BFWPWFE.jpg?auth=6cebe6fd11e5f367490b296edb5fba5854b21f4a2ab501927214ab146c107ba5&smart=true&width=5712&height=3808",
+        "url": "https://www.latercera.com/resizer/v2/5UCPLIL7Y5FCTGUVOF6BFWPWFE.jpg?auth=6cebe6fd11e5f367490b296edb5fba5854b21f4a2ab501927214ab146c107ba5&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/gobernador-orrego-cuestiona-nueva-ordenanza-de-construccion-esto-es-pan-para-hoy-pan-para-manana/",
-        "origin": "rss",
-        "credit": "JONNATHAN OYARZUN/ATON CHILE",
-        "alt": "",
-        "checkedAt": "2026-11-21T23:23:19Z"
-      }
+        "origin": "opengraph",
+        "credit": "La Tercera",
+        "alt": "Claudio Orrego",
+        "checkedAt": "2026-11-25T19:57:47Z"
+      },
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "71107d97e7de6ae925",
@@ -202,13 +238,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-21T13:07:39Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/NIEWMJUTD5HWZIIZ5P5RF7OAHQ.jpeg?auth=b812fa8228e1ff9061ad7158ee57440d9d6c7380a7f9920194948c73b0e6c619&smart=true&width=1024&height=576",
+        "url": "https://www.latercera.com/resizer/v2/NIEWMJUTD5HWZIIZ5P5RF7OAHQ.jpeg?auth=b812fa8228e1ff9061ad7158ee57440d9d6c7380a7f9920194948c73b0e6c619&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/mas-de-2-mil-aislados-y-casi-40-viviendas-afectadas-se-registran-en-las-regiones-de-coquimbo-y-atacama/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Crecida de ríos en Atacama",
-        "checkedAt": "2026-11-21T23:23:19Z"
-      }
+        "checkedAt": "2026-11-25T19:57:47Z"
+      },
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "6a36346daefba4b6b4",
@@ -236,6 +273,7 @@
       "sourceId": "la-tercera",
       "category": "Financiamiento",
       "publishedAt": "2026-11-21T10:00:00Z",
+      "imageCheckedAt": "2026-11-24T20:40:58Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/JCSAOIE7D5FJHNDOZ5SXQKUNWM.JPG?auth=9e1a4d398a3be235a32ff2188fbc7599c2d697f7a2d15907c43e7ad331b811c9&height=630&width=1200&focal=2459%2C1240",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/subsidios-de-emergencia-al-empleo-demanda-duplica-cupos-que-quedan-por-asignar/",
@@ -243,8 +281,7 @@
         "credit": "La Tercera",
         "alt": "06 Mayo 2025 Construccion , Trabajadores, empleo, cemento. Foto: Andres Perez",
         "checkedAt": "2026-11-24T20:40:58Z"
-      },
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      }
     },
     {
       "id": "ec41977d4027a89839",
@@ -255,13 +292,14 @@
       "category": "Mercado",
       "publishedAt": "2026-11-21T10:00:00Z",
       "image": {
-        "url": "https://www.latercera.com/resizer/v2/OCWMV2SUG5EBRA63MBWYETZAJI.jpg?auth=6d15bc6b89816f608fdb14ef2bf69fc0b3addd2cc59bb5621f90066d1fbbfa70&smart=true&width=4592&height=3448",
+        "url": "https://www.latercera.com/resizer/v2/OCWMV2SUG5EBRA63MBWYETZAJI.jpg?auth=6d15bc6b89816f608fdb14ef2bf69fc0b3addd2cc59bb5621f90066d1fbbfa70&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/colliers-calcula-el-efecto-de-nueva-ordenanza-de-construccion-en-el-acceso-a-la-vivienda/",
-        "origin": "rss",
+        "origin": "opengraph",
         "credit": "La Tercera",
-        "alt": "",
-        "checkedAt": "2026-11-21T23:23:19Z"
-      }
+        "alt": "vivienda",
+        "checkedAt": "2026-11-25T19:57:47Z"
+      },
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "cdf47f2a500cc0730f",
@@ -289,7 +327,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-20T09:12:07Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "be21692cf1631c1150",
@@ -299,7 +337,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-20T02:39:08Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "c79f13cc4340560c82",
@@ -309,7 +347,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:33:29Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "8e3f004aeb39b12c6f",
@@ -319,7 +357,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:31:30Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "17897c99c3b6a7b501",
@@ -329,7 +367,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-19T08:31:14Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "b97c4f47322071a461",
@@ -339,7 +377,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:30:58Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "7abee1b361c2813431",
@@ -349,7 +387,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-19T08:19:34Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "e9194666efa381b22a",
@@ -377,14 +415,14 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-18T12:21:56Z",
-      "imageCheckedAt": "2026-11-21T23:23:19Z",
+      "imageCheckedAt": "2026-11-25T19:57:47Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/WYSMVGO72FCQNOYZU3BWJTF23A.jpg?auth=044681e4ead42ef000bbe694a2731df06a23644cc9e72daf8355a64001abbce0&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/senapred-reporta-mas-de-1700-personas-aisladas-y-34-viviendas-con-danos-menores-por-crecidas-de-rios-en-atacama-y-coquimbo/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Senapred reporta más de 1.700 personas aisladas y 34 viviendas con daños menores por crecidas de ríos en Atacama y Coquimbo",
-        "checkedAt": "2026-11-21T23:23:19Z"
+        "checkedAt": "2026-11-25T19:57:47Z"
       }
     },
     {
@@ -413,7 +451,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Financiamiento",
       "publishedAt": "2026-11-18T10:07:18Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "562c9003723ed873de",
@@ -657,7 +695,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     },
     {
       "id": "2401f6f075412f7a55",
@@ -685,32 +723,12 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z"
-    },
-    {
-      "id": "aa84f991e9733b742b",
-      "title": "El Salvador proyecta complejo inmobiliario de lujo con 500 residencias y primera marina para superyates",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/the-estate-el-salvador-500-residencias-marina/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-13T10:03:07Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
-    },
-    {
-      "id": "864c638d43886d6879",
-      "title": "Oficinas prime en Santiago: vacancia cae a su menor nivel del año y arriendos llegan a US$24,91 por m²",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/oficinas-prime-santiago-vacancia-tercer-trimestre-2026/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-13T10:02:31Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-25T19:57:47Z"
     }
   ],
   "imageStats": {
-    "total": 25,
+    "total": 27,
     "checkedArticles": 16,
-    "unavailable": 10
+    "unavailable": 11
   }
 }

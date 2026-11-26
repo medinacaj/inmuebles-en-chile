@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "health": "ok",
-  "updatedAt": "2026-11-25T19:57:47Z",
-  "lastAttemptAt": "2026-11-25T19:57:47Z",
+  "updatedAt": "2026-11-26T19:39:58Z",
+  "lastAttemptAt": "2026-11-26T19:39:58Z",
   "sources": [
     {
       "id": "df-economia",
@@ -20,13 +20,13 @@
       "id": "diario-inmobiliario",
       "name": "El Diario Inmobiliario",
       "ok": true,
-      "count": 4
+      "count": 3
     },
     {
       "id": "la-tercera",
       "name": "La Tercera",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "sii-noticias",
@@ -36,6 +36,60 @@
     }
   ],
   "items": [
+    {
+      "id": "7da32500aef106bc01",
+      "title": "Este viernes termina la postulación al Subsidio DS1: ¿Cómo solicitar el nuevo Tramo 4.000?",
+      "url": "https://www.latercera.com/servicios/noticia/este-viernes-termina-la-postulacion-al-subsidio-ds1-como-solicitar-el-nuevo-tramo-4000/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Financiamiento",
+      "publishedAt": "2026-11-26T18:07:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/7OKREDKQ3BEWPE4L77CT4QKZQ4.jpg?auth=dfb16613c3f8d1255d26de38f7e64bfd69138db1e3da3fd7a65617c1162c5658&smart=true&width=1200&height=800",
+        "sourceUrl": "https://www.latercera.com/servicios/noticia/este-viernes-termina-la-postulacion-al-subsidio-ds1-como-solicitar-el-nuevo-tramo-4000/",
+        "origin": "rss",
+        "credit": "La Tercera",
+        "alt": "Este viernes termina la postulación al Subsidio DS1: ¿Cómo solicitar el nuevo Tramo 4.000? Foto referencial.",
+        "checkedAt": "2026-11-26T19:39:58Z"
+      }
+    },
+    {
+      "id": "95d7f0c0b273c03c33",
+      "title": "Justicia culpa a Fisco por socavón en Viña y lo obliga a indemnizar a dueño de departamento desalojado",
+      "url": "https://www.latercera.com/pulso/noticia/justicia-culpa-a-fisco-por-socavon-en-vina-y-lo-obliga-a-indemnizar-a-dueno-de-departamento-desalojado/",
+      "source": "La Tercera",
+      "sourceId": "la-tercera",
+      "category": "Mercado",
+      "publishedAt": "2026-11-26T14:50:00Z",
+      "image": {
+        "url": "https://www.latercera.com/resizer/v2/RIAHH6W7Z5HCBBYBPJAA3LV6FU.jpg?auth=1a02c9dca5a7f5d0e51bb7cf841785083126252bc952a7e61d01ce0957d054e7&smart=true&width=3500&height=2625",
+        "sourceUrl": "https://www.latercera.com/pulso/noticia/justicia-culpa-a-fisco-por-socavon-en-vina-y-lo-obliga-a-indemnizar-a-dueno-de-departamento-desalojado/",
+        "origin": "rss",
+        "credit": "DEDVI MISSENE",
+        "alt": "21 MARZO 2024 VISTA AEREA DEL SOCAVON EN LAS DUNAS DE VINA DEL MAR CON CON..",
+        "checkedAt": "2026-11-26T19:39:58Z"
+      }
+    },
+    {
+      "id": "d2310eec886838cd85",
+      "title": "Resistencia municipal a los cambios de la OGUC abre dudas sobre la densificación y la oferta de viviendas",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/modificaciones-oguc-providencia-nunoa/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-26T08:12:37Z",
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
+    },
+    {
+      "id": "66dbc17a046e64aeb7",
+      "title": "Santiago, La Florida y Ñuñoa concentran cerca de la mitad de las ventas de departamentos nuevos en la RM",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/santiago-la-florida-y-nunoa-concentran-cerca-de-la-mitad-de-las-ventas-de-departamentos-nuevos-en-la-rm/",
+      "source": "El Diario Inmobiliario",
+      "sourceId": "diario-inmobiliario",
+      "category": "Mercado",
+      "publishedAt": "2026-11-26T08:12:22Z",
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
+    },
     {
       "id": "005abd3b1906f5f9a6",
       "title": "Las propuestas de los partidos españoles en políticas de vivienda de cara a las elecciones",
@@ -67,7 +121,7 @@
         "origin": "rss",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-25T19:57:47Z"
+        "checkedAt": "2026-11-26T19:39:58Z"
       }
     },
     {
@@ -112,7 +166,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-24T10:20:33Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "2cd06cf18ee53140d8",
@@ -173,7 +227,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-23T13:23:00Z",
-      "imageCheckedAt": "2026-11-25T19:57:47Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "5dbf70074aaf3bd1df",
@@ -183,6 +237,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-21T21:13:14Z",
+      "imageCheckedAt": "2026-11-25T19:57:47Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/DRM6URJ5JBHNZOCVN2ATTOXJ5Y.jpeg?auth=b106cc2abf57a06c507a4206bcc68137a784e10afeacaf473562914c6f24af19&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/reportan-caida-de-avioneta-en-condominio-de-penalolen-habria-cuatro-personas-lesionadas/",
@@ -190,8 +245,7 @@
         "credit": "La Tercera",
         "alt": "Accidente aéreo en Peñalolén",
         "checkedAt": "2026-11-25T19:57:47Z"
-      },
-      "imageCheckedAt": "2026-11-25T19:57:47Z"
+      }
     },
     {
       "id": "e6ad486c2f2b757268",
@@ -201,6 +255,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-21T15:41:06Z",
+      "imageCheckedAt": "2026-11-25T19:57:47Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/5UCPLIL7Y5FCTGUVOF6BFWPWFE.jpg?auth=6cebe6fd11e5f367490b296edb5fba5854b21f4a2ab501927214ab146c107ba5&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/gobernador-orrego-cuestiona-nueva-ordenanza-de-construccion-esto-es-pan-para-hoy-pan-para-manana/",
@@ -208,8 +263,7 @@
         "credit": "La Tercera",
         "alt": "Claudio Orrego",
         "checkedAt": "2026-11-25T19:57:47Z"
-      },
-      "imageCheckedAt": "2026-11-25T19:57:47Z"
+      }
     },
     {
       "id": "71107d97e7de6ae925",
@@ -237,6 +291,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-21T13:07:39Z",
+      "imageCheckedAt": "2026-11-25T19:57:47Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/NIEWMJUTD5HWZIIZ5P5RF7OAHQ.jpeg?auth=b812fa8228e1ff9061ad7158ee57440d9d6c7380a7f9920194948c73b0e6c619&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/mas-de-2-mil-aislados-y-casi-40-viviendas-afectadas-se-registran-en-las-regiones-de-coquimbo-y-atacama/",
@@ -244,8 +299,7 @@
         "credit": "La Tercera",
         "alt": "Crecida de ríos en Atacama",
         "checkedAt": "2026-11-25T19:57:47Z"
-      },
-      "imageCheckedAt": "2026-11-25T19:57:47Z"
+      }
     },
     {
       "id": "6a36346daefba4b6b4",
@@ -291,6 +345,7 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-21T10:00:00Z",
+      "imageCheckedAt": "2026-11-25T19:57:47Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/OCWMV2SUG5EBRA63MBWYETZAJI.jpg?auth=6d15bc6b89816f608fdb14ef2bf69fc0b3addd2cc59bb5621f90066d1fbbfa70&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/pulso/noticia/colliers-calcula-el-efecto-de-nueva-ordenanza-de-construccion-en-el-acceso-a-la-vivienda/",
@@ -298,8 +353,7 @@
         "credit": "La Tercera",
         "alt": "vivienda",
         "checkedAt": "2026-11-25T19:57:47Z"
-      },
-      "imageCheckedAt": "2026-11-25T19:57:47Z"
+      }
     },
     {
       "id": "cdf47f2a500cc0730f",
@@ -397,14 +451,14 @@
       "sourceId": "la-tercera",
       "category": "Financiamiento",
       "publishedAt": "2026-11-18T13:36:17Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z",
+      "imageCheckedAt": "2026-11-26T19:39:58Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/CCKGB7UFXBF7ZFGLI2DNUERBCA.jpg?auth=a7cab1b05dce8238aa0618e865b869efe7a108d3ef589fc3a68fc4e2656fdc11&height=630&width=1200&smart=true",
         "sourceUrl": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-nuevo-tramo-4000-del-subsidio-ds1-como-postular/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Comienza la postulación al nuevo Tramo 4.000 del Subsidio DS1: ¿Cómo postular? Foto Pixabay.",
-        "checkedAt": "2026-11-22T23:38:18Z"
+        "checkedAt": "2026-11-26T19:39:58Z"
       }
     },
     {
@@ -433,14 +487,14 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:54:18Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z",
+      "imageCheckedAt": "2026-11-26T19:39:58Z",
       "image": {
         "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2023/10/SANTIAGO-DE-CHILE-region-metropolitana.png",
         "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/en-la-region-metropolitana-se-pide-hasta-un-8-mas-de-lo-que-se-paga-por-un-departamento-ya-arrendado/",
         "origin": "opengraph",
         "credit": "El Diario Inmobiliario",
         "alt": "",
-        "checkedAt": "2026-11-22T23:38:18Z"
+        "checkedAt": "2026-11-26T19:39:58Z"
       }
     },
     {
@@ -461,7 +515,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:56Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "8f941e144e4167bfb9",
@@ -471,7 +525,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-18T10:05:39Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "1c45783c54e0d92608",
@@ -481,7 +535,7 @@
       "sourceId": "sii-noticias",
       "category": "Normativa",
       "publishedAt": "2026-11-17T17:14:30Z",
-      "imageCheckedAt": "2026-11-23T22:04:30Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "7e97f75ae81c47c427",
@@ -527,7 +581,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:52Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "00fd619acfbc99110c",
@@ -537,7 +591,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-17T09:10:43Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "739d2564251afaca05",
@@ -547,7 +601,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-17T09:10:36Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "89e762df73dc1b01f1",
@@ -629,7 +683,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Proyectos",
       "publishedAt": "2026-11-16T08:43:03Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "41e0c361629c5541f2",
@@ -639,7 +693,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:49Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "328e12fedcc2db3d0c",
@@ -649,7 +703,7 @@
       "sourceId": "diario-inmobiliario",
       "category": "Mercado",
       "publishedAt": "2026-11-16T08:42:31Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z"
+      "imageCheckedAt": "2026-11-26T19:39:58Z"
     },
     {
       "id": "a5ca8d8ec534c7d1c1",
@@ -659,76 +713,20 @@
       "sourceId": "la-tercera",
       "category": "Mercado",
       "publishedAt": "2026-11-15T13:08:02Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z",
+      "imageCheckedAt": "2026-11-26T19:39:58Z",
       "image": {
         "url": "https://www.latercera.com/resizer/v2/5HATQQL6AJDETG6324OZHROUJM.jpg?auth=e7e54d15a5c1816c75b64b5729e718657870b77d4cb00da983215af7bf4ceea3&height=630&width=1200&focal=835%2C447",
         "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-iquique-deja-dos-viviendas-afectadas/",
         "origin": "opengraph",
         "credit": "La Tercera",
         "alt": "Foto: Referencial",
-        "checkedAt": "2026-11-22T23:38:18Z"
+        "checkedAt": "2026-11-26T19:39:58Z"
       }
-    },
-    {
-      "id": "8e725986b8c3f101aa",
-      "title": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
-      "url": "https://www.latercera.com/nacional/noticia/incendio-en-maipu-deja-una-persona-fallecida-una-vivienda-destruida-y-otras-dos-afectadas/",
-      "source": "La Tercera",
-      "sourceId": "la-tercera",
-      "category": "Mercado",
-      "publishedAt": "2026-11-15T12:40:35Z",
-      "imageCheckedAt": "2026-11-22T23:38:18Z",
-      "image": {
-        "url": "https://www.latercera.com/resizer/v2/KYMJTMQMUFE3NHF7HHJKIBIO4E.jpg?auth=9c84d69706f202fef232982aa21119a11184a0e8b2331a39b40372d381af9e22&height=630&width=1200&smart=true",
-        "sourceUrl": "https://www.latercera.com/nacional/noticia/incendio-en-maipu-deja-una-persona-fallecida-una-vivienda-destruida-y-otras-dos-afectadas/",
-        "origin": "opengraph",
-        "credit": "La Tercera",
-        "alt": "Incendio en Maipú deja una persona fallecida, una vivienda destruida y otras dos afectadas",
-        "checkedAt": "2026-11-22T23:38:18Z"
-      }
-    },
-    {
-      "id": "bcb00c4aaac19a4c97",
-      "title": "Venta de viviendas nuevas en Lima y Callao crece 26% frente a 2025 y supera las 23.600 unidades a septiembre",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/venta-de-viviendas-nuevas-en-lima-y-callao-crece-26-frente-a-2025-y-supera-las-23-600-unidades-a-septiembre/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Proyectos",
-      "publishedAt": "2026-11-14T06:29:08Z",
-      "imageCheckedAt": "2026-11-25T19:57:47Z"
-    },
-    {
-      "id": "2401f6f075412f7a55",
-      "title": "Proyecto de ley busca agilizar conexiones de agua y luz en viviendas",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-13T10:31:02Z",
-      "imageCheckedAt": "2026-11-24T20:40:58Z",
-      "image": {
-        "url": "https://eldiarioinmobiliario.cl/wp-content/uploads/2026/11/Ministerio_de_Vivienda_MercadosInmobiliarios.jpg",
-        "sourceUrl": "https://eldiarioinmobiliario.cl/destacadas/proyecto-ley-agilizar-conexiones-agua-luz-viviendas/",
-        "origin": "opengraph",
-        "credit": "El Diario Inmobiliario",
-        "alt": "",
-        "checkedAt": "2026-11-24T20:40:58Z"
-      }
-    },
-    {
-      "id": "dc56cffef5d8cfe80e",
-      "title": "Viviendas entre 4.000 y 6.000 UF aumentan sus ventas 43% en la RM, pese a retroceso del mercado inmobiliario",
-      "url": "https://eldiarioinmobiliario.cl/destacadas/ventas-viviendas-rm-septiembre-2026/",
-      "source": "El Diario Inmobiliario",
-      "sourceId": "diario-inmobiliario",
-      "category": "Mercado",
-      "publishedAt": "2026-11-13T10:03:16Z",
-      "imageCheckedAt": "2026-11-25T19:57:47Z"
     }
   ],
   "imageStats": {
     "total": 27,
     "checkedArticles": 16,
-    "unavailable": 11
+    "unavailable": 13
   }
 }

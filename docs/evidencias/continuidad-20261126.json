@@ -1,0 +1,470 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/Santiago",
+  "product": "Inmuebles en Chile",
+  "repository": "https://github.com/medinacaj/inmuebles-en-chile",
+  "code_base": "437b4d647fa33ac1b5e676dd5203852ccb4911f9",
+  "environment": "local Linux; Node 24.19.0; Python 3.12.14; Chromium del sistema; Playwright 1.64.1",
+  "application_code_changed": false,
+  "node": {
+    "command": "npm test",
+    "passed": 25,
+    "failed": 0
+  },
+  "python": {
+    "command": "npm run test:news",
+    "passed": 25,
+    "failed": 0
+  },
+  "browser": {
+    "brand": {
+      "command": "npm run test:brand",
+      "result": null,
+      "error": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n3 !== 4\n\n    at file://<repo>/scripts/brand-check.mjs:29:10 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 3,\n  expected: 4,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v24.19.0\n"
+    },
+    "visual": {
+      "command": "npm run test:visual",
+      "result": null,
+      "error": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at file://<repo>/scripts/visual-check.mjs:130:9 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 0,\n  expected: 1,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v24.19.0\n"
+    },
+    "resilience": {
+      "command": "npm run test:resilience",
+      "result": [
+        {
+          "name": "primera carga fallida no publica referencias",
+          "status": "ok"
+        },
+        {
+          "name": "carga lenta no expone fichas pendientes",
+          "status": "ok"
+        },
+        {
+          "name": "registro inválido o incompleto no habilita catálogo",
+          "status": "ok"
+        },
+        {
+          "name": "una baja validada no reaparece con fallo posterior",
+          "status": "failed",
+          "reason": "Expected values to be strictly equal:\n\n8 !== 9\n"
+        },
+        {
+          "name": "caché corrupta no habilita fichas",
+          "status": "ok"
+        },
+        {
+          "name": "región inicia exploración limpia y mueve foco",
+          "status": "failed",
+          "reason": "Expected values to be strictly equal:\n\n0 !== 1\n"
+        },
+        {
+          "name": "secciones conservan URL, historial y foco",
+          "status": "ok"
+        },
+        {
+          "name": "favoritos sobreviven a la carga inicial de estados",
+          "status": "ok"
+        },
+        {
+          "name": "fotografías usan variantes WebP responsivas",
+          "status": "ok"
+        },
+        {
+          "name": "respuesta antigua no reactiva una baja guardada más reciente",
+          "status": "failed",
+          "reason": "Expected values to be strictly equal:\n\n1 !== 0\n"
+        },
+        {
+          "name": "imagen de portada mantiene su área completa en móvil",
+          "status": "ok"
+        }
+      ]
+    },
+    "identity": {
+      "command": "npm run test:identity",
+      "result": {
+        "report": [
+          {
+            "label": "375/light/dark/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "375/light/dark/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/light/dark/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/light/dark/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/light/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/light/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/light/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/light/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/auto/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/auto/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/auto/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/dark/auto/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/light/auto/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "375/light/auto/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/light/auto/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "375/light/auto/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/dark/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/dark/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/dark/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/dark/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/light/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/light/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/light/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/light/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/auto/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/auto/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/auto/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/dark/auto/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/auto/inicio",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/auto/guia.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/auto/herramientas.html",
+            "status": "ok"
+          },
+          {
+            "label": "1440/light/auto/informacion.html",
+            "status": "ok"
+          },
+          {
+            "label": "sistema, navegación, cambio y sincronización entre pestañas",
+            "status": "ok"
+          },
+          {
+            "label": "almacenamiento bloqueado",
+            "status": "ok"
+          },
+          {
+            "label": "oscuro sin JavaScript y con contraste aumentado",
+            "status": "ok"
+          },
+          {
+            "label": "contraste de favoritos oscuros con puntero y teclado",
+            "status": "ok"
+          }
+        ],
+        "failures": []
+      }
+    },
+    "news-images": {
+      "command": "npm run test:news-images",
+      "result": [
+        {
+          "scenario": "photo",
+          "status": "ok"
+        },
+        {
+          "scenario": "unavailable",
+          "status": "ok"
+        },
+        {
+          "scenario": "unsafe",
+          "status": "ok"
+        },
+        {
+          "scenario": "mismatched",
+          "status": "ok"
+        },
+        {
+          "scenario": "no-image",
+          "status": "ok"
+        }
+      ]
+    },
+    "autoplay": {
+      "command": "npm run test:autoplay",
+      "result": [
+        {
+          "name": "avance automático cada cinco segundos y vuelta al inicio",
+          "status": "ok"
+        },
+        {
+          "name": "pausa explícita y reanudación",
+          "status": "ok"
+        },
+        {
+          "name": "foco de teclado detiene la rotación",
+          "status": "ok"
+        },
+        {
+          "name": "movimiento reducido requiere inicio voluntario",
+          "status": "ok"
+        },
+        {
+          "name": "puntero encima pausa la rotación",
+          "status": "ok"
+        }
+      ]
+    },
+    "accessibility": {
+      "command": "npm run test:accessibility",
+      "result": [
+        {
+          "width": 375,
+          "theme": "light",
+          "target": "inicio",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "light",
+          "target": "propiedades",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "light",
+          "target": "noticias",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "light",
+          "target": "dialogo",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "light",
+          "target": "guia.html",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "light",
+          "target": "herramientas.html",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "light",
+          "target": "informacion.html",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "dark",
+          "target": "inicio",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "dark",
+          "target": "propiedades",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "dark",
+          "target": "noticias",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "dark",
+          "target": "dialogo",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "dark",
+          "target": "guia.html",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "dark",
+          "target": "herramientas.html",
+          "violations": []
+        },
+        {
+          "width": 375,
+          "theme": "dark",
+          "target": "informacion.html",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "light",
+          "target": "inicio",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "light",
+          "target": "propiedades",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "light",
+          "target": "noticias",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "light",
+          "target": "dialogo",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "light",
+          "target": "guia.html",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "light",
+          "target": "herramientas.html",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "light",
+          "target": "informacion.html",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "dark",
+          "target": "inicio",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "dark",
+          "target": "propiedades",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "dark",
+          "target": "noticias",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "dark",
+          "target": "dialogo",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "dark",
+          "target": "guia.html",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "dark",
+          "target": "herramientas.html",
+          "violations": []
+        },
+        {
+          "width": 1440,
+          "theme": "dark",
+          "target": "informacion.html",
+          "violations": []
+        }
+      ]
+    },
+    "compatibility": {
+      "command": "npm run test:compatibility",
+      "result": null,
+      "error": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nbrowserType.launch: Executable doesn't exist at <playwright-cache>/firefox-1555/firefox/firefox\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝\n    at <repo>/scripts/compatibility-check.mjs:8:29\n    at async node:internal/modules/esm/loader:643:26 {\n  log: [],\n  name: 'Error'\n}\n\nNode.js v24.19.0\n"
+    }
+  },
+  "limitations": [
+    "Pruebas funcionales incluyen escenarios simulados, no disponibilidad comercial.",
+    "Firefox/WebKit no instalados; compatibilidad no ejecutada.",
+    "Produccion no comprobada funcionalmente; API de GitHub denegada.",
+    "No hay compilacion, lint ni tipos configurados.",
+    "Sin cambios de infraestructura, datos, dependencias o aplicacion en este respaldo."
+  ]
+}

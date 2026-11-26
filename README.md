@@ -18,7 +18,7 @@
 - Enlaces al portal de origen desde las imágenes y los títulos.
 - Filtros por texto, operación, tipo, región y presupuesto inicial en UF; búsqueda tolerante a acentos y ordenamiento por precio y superficie.
 - Favoritos y comparación de hasta tres inmuebles, guardados **solo en el navegador**.
-- Mercado Inteligente con indicadores orientativos y calculadora hipotecaria.
+- Simulador hipotecario con supuestos editables. Los indicadores sin revisión documental completa se retiraron; su evidencia pendiente está en [INDICADORES.md](docs/INDICADORES.md).
 - **Actualidad autoalimentada:** la portada y Noticias consumen `data/news-feed.json`, generado automáticamente desde RSS de medios chilenos; filtra, deduplica y enlaza a artículos originales. En caso de fallo se muestra una selección editorial previa identificada como archivo.
 - Navegación adaptativa, modo claro/oscuro y diálogos con gestión de foco.
 - [Información y privacidad](informacion.html).
@@ -161,3 +161,16 @@ Con el servidor local iniciado, `npm run test:identity` comprueba las cuatro pá
 - **Seguridad:** preservar los datos ficticios útiles y no publicar secretos ni información personal.
 
 **Fuente de verdad:** las decisiones y la documentación del propio producto.  
+
+## Respaldo y reanudación · 26/11/2026
+
+Propietario: **medinacaj**. Repositorio público oficial: https://github.com/medinacaj/inmuebles-en-chile; rama principal `main`. Versión del manifiesto: `1.0.0`, sin release formal identificada. El respaldo documental se prepara sobre `437b4d647fa33ac1b5e676dd5203852ccb4911f9` en `docs/respaldo-continuidad-20261126`, con el aporte del PR #17 recuperado por cherry-pick. No implica fusión o despliegue.
+
+Para retomar, leer en este orden:
+
+1. [Memoria operativa](docs/MEMORIA_OPERATIVA.md) y [decisiones](docs/DECISIONES.md).
+2. [Reglas para agentes](AGENTS.md), [historial](CHANGELOG.md) y [arquitectura/operación](docs/ARQUITECTURA_Y_OPERACION.md).
+3. [Pruebas, límites y evidencia del respaldo](docs/RESPALDO_2026-11-26.md).
+4. [Instrucción autónoma para un nuevo chat](docs/CONTINUIDAD_NUEVA_SESION.md).
+
+La implementación anterior está en main. El registro del 25/11 conserva una baja: diez referencias maestras y nueve visibles; ninguna disponibilidad confirmada. El respaldo no modifica aplicación, inventario o infraestructura. Hay fallos de QA pendientes de diagnóstico; no se declara aprobación global ni producción funcional. Véanse comandos y resultados actuales en el informe, separados de los históricos.
